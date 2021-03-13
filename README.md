@@ -9,6 +9,9 @@ The group is public and anyone can join.
 Docs and other calendar invites may be shared directly with this group, so please join this
 before requesting access to anything that appears private.
 
+## sigstore
+
+sigstore's umbrella roadmap is [available here](./ROADMAP.md)
 ## Slack
 
 Come on over to our [slack channel](https://sigstore.slack.com)!

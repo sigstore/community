@@ -18,4 +18,4 @@
 - [ ] Root CA rotation plan draft published
 - [ ] Generic signing sigstore client release published (and self-signed!)
 
-* Last Updated: 13/03/20201
+* Last Updated: 13/03/2021

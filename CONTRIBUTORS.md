@@ -5,7 +5,7 @@ to make via an [issue](https://github.com/sigstore/rekor/issues).
 
 ## Pull Request Process
 
-1. Create an [issue](https://github.com/sigstore/rekor/issues)
+1. Create an [issue](https://github.com/sigstore/community/issues)
    outlining the fix or feature.
 2. Fork the rekor repository to your own github account and clone it locally.
 3. Hack on your changes.
@@ -16,8 +16,7 @@ to make via an [issue](https://github.com/sigstore/rekor/issues).
    below.
 6. Sign off your commit
 7. Ensure that CI passes, if it fails, fix the failures.
-8. Every pull request requires a review from the [core rekor team](https://github.com/orgs/github.com/sigstore/teams/core-team)
-   before merging.
+8. Every pull request requires a review from the sigstore subprojects MAINTAINERS.
 9. If your pull request consists of more than one commit, please squash your
    commits as described in [Squash Commits](#Squash Commits)
 

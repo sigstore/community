@@ -12,6 +12,14 @@ before requesting access to anything that appears private.
 ## sigstore
 
 sigstore's umbrella roadmap is [available here](./ROADMAP.md)
+
+## Community Meetings
+
+We meet every [Thursday @ 17:30 UTC
+time](https://www.starts-at.com/event/3400112355)
+
+Please use the [community calendar invite](https://calendar.google.com/event?action=TEMPLATE&tmeid=Njc2b2xoYTlkamdlaGN1MTMza3ZoM21iZXZfMjAyMTAzMTZUMTczMDAwWiBkbWk5M3Nibjl0OTJqZTlobXVodXVsYnZma0Bn&tmsrc=dmi93sbn9t92je9hmuhuulbvfk%40group.calendar.google.com&scp=ALL)
+
 ## Slack
 
 Come on over to our [slack channel](https://sigstore.slack.com)!

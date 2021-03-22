@@ -15,10 +15,20 @@ sigstore's umbrella roadmap is [available here](./ROADMAP.md)
 
 ## Community Meetings
 
-We meet every [Thursday @ 17:30 UTC
-time](https://www.starts-at.com/event/3400112355)
+We now have a community calendar [available here](https://calendar.google.com/calendar/u/0?cid=ZnE0a2dvbTJjZTQzaG5jbmJjZmphMmNrMjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ).
+All recurring and one-off meetings will be shared here.
 
-Please use the [community calendar invite](https://calendar.google.com/event?action=TEMPLATE&tmeid=Njc2b2xoYTlkamdlaGN1MTMza3ZoM21iZXZfMjAyMTAzMTZUMTczMDAwWiBkbWk5M3Nibjl0OTJqZTlobXVodXVsYnZma0Bn&tmsrc=dmi93sbn9t92je9hmuhuulbvfk%40group.calendar.google.com&scp=ALL)
+We typically meet for a community wide meetng every [Thursday @ 17:30 UTC
+time](https://www.starts-at.com/event/3400112355).
+This is available via the shared calendar above.
+
+We also used to use a specific calendar invite for the weekly call.
+This direct link will continue to work as well, and is available 
+[here](https://calendar.google.com/event?action=TEMPLATE&tmeid=Njc2b2xoYTlkamdlaGN1MTMza3ZoM21iZXZfMjAyMTAzMTZUMTczMDAwWiBkbWk5M3Nibjl0OTJqZTlobXVodXVsYnZma0Bn&tmsrc=dmi93sbn9t92je9hmuhuulbvfk%40group.calendar.google.com&scp=ALL)
+
+Recordings for all of the above meetings should be on our [YouTube channel](https://www.youtube.com/channel/UCWPVc8glVGOODxsA_ep0VVw
+
+).
 
 ## Slack
 

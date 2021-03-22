@@ -26,9 +26,7 @@ We also used to use a specific calendar invite for the weekly call.
 This direct link will continue to work as well, and is available 
 [here](https://calendar.google.com/event?action=TEMPLATE&tmeid=Njc2b2xoYTlkamdlaGN1MTMza3ZoM21iZXZfMjAyMTAzMTZUMTczMDAwWiBkbWk5M3Nibjl0OTJqZTlobXVodXVsYnZma0Bn&tmsrc=dmi93sbn9t92je9hmuhuulbvfk%40group.calendar.google.com&scp=ALL)
 
-Recordings for all of the above meetings should be on our [YouTube channel](https://www.youtube.com/channel/UCWPVc8glVGOODxsA_ep0VVw
-
-).
+Recordings for all of the above meetings should be on our [YouTube channel](https://www.youtube.com/channel/UCWPVc8glVGOODxsA_ep0VVw)
 
 ## Slack
 

@@ -88,10 +88,10 @@ These steps should be completed within the 1-7 days of Disclosure.
 - The SRC will request a [CVE](https://cveform.mitre.org/).
 - The SRC will create a new [security advisory](https://docs.github.com/en/code-security/security-advisories/) in affected repository by visiting `https://github.com/sigstore/<project>/security/advisories/new`
 - As many details as possible should be entered such as versions affected, CVE (if available yet). As more information is discovered, edit and update the advisory accordingly.
-![Security Advisory](docs/images/opensec.png")
+![Security Advisory](docs/images/opensec.png)
 - The Fix team is added to the security advisory as collaborators
 - The SRC / Fix Team create a private temporary fork
-![Security Advisory](docs/images/fork.png")
+![Security Advisory](docs/images/fork.png)
 - The Fix team performs all work in a 'security advisory' and its temporary fork
 - All communication happens within the security advisory, it is *not* discussed in slack channels or non private issues.
 - The Fix Team will notify the SRC that work on the fix branch is completed, this can be done by tagging names in the advisory
@@ -113,7 +113,7 @@ With the Fix Development underway, the SRC needs to come up with an overall comm
 
 - The Fix Team will approve the related pull requests in the private temporary branch of the security advisory
 - The SRC will merge the security advisory / temporary fork and its commits into the main branch of the affected repository
-![Security Advisory](docs/images/publish.png")
+![Security Advisory](docs/images/publish.png)
 - The SRC will ensure all the binaries are built, signed, publicly available, and functional.
 - The SRC will announce the new releases, the CVE number, severity, and impact, and the location of the binaries to get wide distribution and user action. As much as possible this announcement should be actionable, and include any mitigating steps users can take prior to upgrading to a fixed version. An announcement template is available below. The announcement will be sent to the the following channels:
   - sigstore-dev@googlegroups.com

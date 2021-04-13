@@ -7,7 +7,7 @@
 - [ ] Official release of client binaries
 
 ## Cosign
-- [*] First official cosign release published (and self-signed!)
+- [x] First official cosign release published (and self-signed!)
 - [ ] Distroless images signed with cosign, checked upstream
 - [ ] Rekor tlog support available by default (non experimental)
 - [ ] Keyless support in experimental

@@ -7,7 +7,7 @@
 - [ ] Official release of client binaries
 
 ## Cosign
-- [ ] First official cosign release published (and self-signed!)
+- [*] First official cosign release published (and self-signed!)
 - [ ] Distroless images signed with cosign, checked upstream
 - [ ] Rekor tlog support available by default (non experimental)
 - [ ] Keyless support in experimental
@@ -18,4 +18,4 @@
 - [ ] Root CA rotation plan draft published
 - [ ] Generic signing sigstore client release published (and self-signed!)
 
-* Last Updated: 13/03/2021
+* Last Updated: 13/04/2021

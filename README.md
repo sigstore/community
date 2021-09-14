@@ -18,8 +18,8 @@ sigstore's umbrella roadmap is [available here](./ROADMAP.md)
 We now have a community calendar [available here](https://calendar.google.com/calendar/u/0?cid=ZnE0a2dvbTJjZTQzaG5jbmJjZmphMmNrMjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ).
 All recurring and one-off meetings will be shared here.
 
-We typically meet for a community wide meeting every [Thursday @ 17:30 UTC
-time](https://www.starts-at.com/event/3400112355).
+We typically meet for a community wide meeting every [Tuesday @ 16:30 UTC
+time](https://dateful.com/eventlink/1067430297).
 This is available via the shared calendar above.
 
 We also used to use a specific calendar invite for the weekly call.

@@ -1,0 +1,5 @@
+config:
+  github:owner: YOUR_ORG
+  github:token:
+    secure: GitHub TOKEN
+  github-data-directory: "github-data/"

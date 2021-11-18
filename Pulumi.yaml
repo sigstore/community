@@ -1,0 +1,3 @@
+name: pulumi-github-sync
+runtime: go
+description: Sync GitHub users, collaborators and repositories for an organization

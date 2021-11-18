@@ -1,0 +1,44 @@
+repositories:
+- name: playground
+  owner: kingdom-tower
+  allowAutoMerge: false
+  allowMergeCommit: true
+  allowRebaseMerge: true
+  allowSquashMerge: true
+  deleteBranchOnMerge: false
+  hasDownloads: true
+  hasIssues: true
+  hasProjects: false
+  hasWiki: false
+  visibility: public
+  collaborators:
+    - username: cpanatoBOT
+      permission: push
+
+- name: kingdom
+  owner: kingdom-tower
+  allowAutoMerge: false
+  allowMergeCommit: true
+  allowRebaseMerge: true
+  allowSquashMerge: true
+  deleteBranchOnMerge: false
+  hasDownloads: true
+  hasIssues: true
+  hasProjects: false
+  hasWiki: false
+  vulnerabilityAlerts: true
+  visibility: public
+
+# - name: testing-pulumi
+#   owner: kingdom-tower
+#   allowAutoMerge: false
+#   allowMergeCommit: true
+#   allowRebaseMerge: true
+#   allowSquashMerge: true
+#   deleteBranchOnMerge: false
+#   hasDownloads: true
+#   hasIssues: true
+#   hasProjects: false
+#   hasWiki: false
+#   vulnerabilityAlerts: true
+#   visibility: public

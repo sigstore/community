@@ -1,0 +1,10 @@
+teams:
+  - name: team-b
+    privacy: closed
+    description: super cool team
+  - name: team-c
+    privacy: closed
+    description: another super cool team
+  - name: mytestingteam
+    privacy: closed
+    description: just to test

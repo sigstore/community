@@ -1,0 +1,14 @@
+users:
+  - username: cpanato
+    role: admin
+    teams:
+      - team-b
+  - username: anotheruser
+    role: admin
+  - username: anotheruser
+    role: member
+  - username: cpanatoBOT
+    role: member
+    teams:
+      - team-b
+      - mytestingteam

@@ -13,9 +13,10 @@ type User struct {
 }
 
 type Team struct {
-	Name        string `yaml:"name"`
-	Description string `yaml:"description"`
-	Privacy     string `yaml:"privacy"`
+	Name         string `yaml:"name"`
+	Description  string `yaml:"description"`
+	Privacy      string `yaml:"privacy"`
+	ParentTeamID int    `yaml:"parentTeamId"`
 }
 
 type Repository struct {
@@ -23,6 +24,7 @@ type Repository struct {
 	AllowMergeCommit    bool           `yaml:"allowMergeCommit"`
 	AllowRebaseMerge    bool           `yaml:"allowRebaseMerge"`
 	AllowSquashMerge    bool           `yaml:"allowSquashMerge"`
+	Archived            bool           `yaml:"archived"`
 	AutoInit            bool           `yaml:"autoInit"`
 	DeleteBranchOnMerge bool           `yaml:"deleteBranchOnMerge"`
 	HasDownloads        bool           `yaml:"hasDownloads"`
@@ -37,7 +39,21 @@ type Repository struct {
 	HomepageUrl         string         `yaml:"homepageUrl"`
 	LicenseTemplate     string         `yaml:"licenseTemplate"`
 	Topics              []string       `yaml:"topics"`
+	Pages               Pages          `yaml:"pages"`
+	IsTemplate          bool           `yaml:"isTemplate"`
+	Template            Template       `yaml:"template"`
 	Collaborators       []Collaborator `yaml:"collaborators"`
+}
+
+type Pages struct {
+	CNAME  string `yaml:"cname"`
+	Branch string `yaml:"branch"`
+	Path   string `yaml:"path"`
+}
+
+type Template struct {
+	Owner      string `yaml:"owner"`
+	Repository string `yaml:"repository"`
 }
 
 type Collaborator struct {

@@ -5,6 +5,7 @@ import (
 	"log"
 	"os"
 	"path"
+	"strings"
 
 	github "github.com/pulumi/pulumi-github/sdk/v4/go/github"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
@@ -45,11 +46,18 @@ func main() {
 		}
 
 		for _, team := range p.Config.Teams {
-			syncedTeam, err := github.NewTeam(ctx, team.Name, &github.TeamArgs{
-				Name:        pulumi.String(team.Name),
-				Description: pulumi.String(team.Description),
-				Privacy:     pulumi.String(team.Privacy),
-			}, pulumi.Protect(true))
+			syncedTeams := strings.ReplaceAll(team.Name, " ", "-")
+
+			teamArgs := &github.TeamArgs{
+				Name:                    pulumi.String(team.Name),
+				CreateDefaultMaintainer: pulumi.Bool(false),
+				Description:             pulumi.String(team.Description),
+				Privacy:                 pulumi.String(team.Privacy),
+			}
+			if team.ParentTeamID != 0 {
+				teamArgs.ParentTeamId = pulumi.Int(team.ParentTeamID)
+			}
+			syncedTeam, err := github.NewTeam(ctx, strings.ToLower(syncedTeams), teamArgs, pulumi.Protect(true))
 			if err != nil {
 				return err
 			}
@@ -57,7 +65,7 @@ func main() {
 			for _, member := range p.Config.Users {
 				for _, userTeam := range member.Teams {
 					if userTeam == team.Name {
-						_, err = github.NewTeamMembership(ctx, fmt.Sprintf("%s-%s", member.Username, team.Name), &github.TeamMembershipArgs{
+						_, err = github.NewTeamMembership(ctx, fmt.Sprintf("%s-%s", member.Username, strings.ToLower(syncedTeams)), &github.TeamMembershipArgs{
 							TeamId:   syncedTeam.ID(),
 							Username: pulumi.String(member.Username),
 							Role:     pulumi.String("member"),
@@ -72,9 +80,10 @@ func main() {
 
 		for _, repo := range p.Config.Repositories {
 			// sync repos
-			_, err := github.NewRepository(ctx, repo.Name, &github.RepositoryArgs{
+			repoSync := &github.RepositoryArgs{
 				Name:                pulumi.String(repo.Name),
 				Description:         pulumi.String(repo.Description),
+				HomepageUrl:         pulumi.String(repo.HomepageUrl),
 				AllowAutoMerge:      pulumi.Bool(repo.AllowAutoMerge),
 				AllowMergeCommit:    pulumi.Bool(repo.AllowMergeCommit),
 				AllowRebaseMerge:    pulumi.Bool(repo.AllowRebaseMerge),
@@ -85,12 +94,41 @@ func main() {
 				HasIssues:           pulumi.Bool(repo.HasIssues),
 				HasProjects:         pulumi.Bool(repo.HasProjects),
 				HasWiki:             pulumi.Bool(repo.HasWiki),
-				HomepageUrl:         pulumi.String(repo.HomepageUrl),
 				LicenseTemplate:     pulumi.String(repo.LicenseTemplate),
 				Topics:              pulumi.ToStringArray(repo.Topics),
 				VulnerabilityAlerts: pulumi.Bool(repo.VulnerabilityAlerts),
 				Visibility:          pulumi.String(repo.Visibility),
-			}, pulumi.Protect(true))
+				IsTemplate:          pulumi.Bool(repo.IsTemplate),
+			}
+
+			if repo.Pages.Branch != "" {
+				repoPages := &github.RepositoryPagesArgs{}
+
+				source := &github.RepositoryPagesSourceArgs{
+					Branch: pulumi.String(repo.Pages.Branch),
+				}
+
+				if repo.Pages.Path != "" {
+					source.Path = pulumi.String(repo.Pages.Path)
+				}
+
+				repoPages.Source = source
+
+				if repo.Pages.CNAME != "" {
+					repoPages.Cname = pulumi.String(repo.Pages.CNAME)
+				}
+
+				repoSync.Pages = repoPages
+			}
+
+			if repo.Template.Owner != "" && repo.Template.Repository != "" {
+				repoSync.Template = &github.RepositoryTemplateArgs{
+					Owner:      pulumi.String(repo.Template.Owner),
+					Repository: pulumi.String(repo.Template.Repository),
+				}
+			}
+
+			_, err := github.NewRepository(ctx, repo.Name, repoSync, pulumi.Protect(true))
 			if err != nil {
 				return err
 			}
@@ -98,9 +136,10 @@ func main() {
 			for _, collaborator := range repo.Collaborators {
 				// sync collaborators
 				_, err := github.NewRepositoryCollaborator(ctx, fmt.Sprintf("%s-%s", repo.Name, collaborator.Username), &github.RepositoryCollaboratorArgs{
-					Permission: pulumi.String(collaborator.Permission),
-					Repository: pulumi.String(repo.Name),
-					Username:   pulumi.String(collaborator.Username),
+					Permission:                pulumi.String(collaborator.Permission),
+					Repository:                pulumi.String(repo.Name),
+					Username:                  pulumi.String(collaborator.Username),
+					PermissionDiffSuppression: pulumi.Bool(false),
 				})
 				if err != nil {
 					return err

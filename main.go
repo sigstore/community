@@ -46,7 +46,7 @@ func main() {
 		}
 
 		for _, team := range p.Config.Teams {
-			syncedTeams := strings.ReplaceAll(team.Name, " ", "-")
+			syncedTeams := strings.ToLower(strings.ReplaceAll(team.Name, " ", "-"))
 
 			teamArgs := &github.TeamArgs{
 				Name:                    pulumi.String(team.Name),
@@ -57,18 +57,19 @@ func main() {
 			if team.ParentTeamID != 0 {
 				teamArgs.ParentTeamId = pulumi.Int(team.ParentTeamID)
 			}
-			syncedTeam, err := github.NewTeam(ctx, strings.ToLower(syncedTeams), teamArgs, pulumi.Protect(true))
+			syncedTeam, err := github.NewTeam(ctx, syncedTeams, teamArgs, pulumi.Protect(true))
 			if err != nil {
 				return err
 			}
 
+			// sync users in teams
 			for _, member := range p.Config.Users {
 				for _, userTeam := range member.Teams {
-					if userTeam == team.Name {
+					if userTeam.Name == team.Name {
 						_, err = github.NewTeamMembership(ctx, fmt.Sprintf("%s-%s", member.Username, strings.ToLower(syncedTeams)), &github.TeamMembershipArgs{
 							TeamId:   syncedTeam.ID(),
 							Username: pulumi.String(member.Username),
-							Role:     pulumi.String("member"),
+							Role:     pulumi.String(userTeam.Role),
 						})
 						if err != nil {
 							return err
@@ -140,6 +141,20 @@ func main() {
 					Repository:                pulumi.String(repo.Name),
 					Username:                  pulumi.String(collaborator.Username),
 					PermissionDiffSuppression: pulumi.Bool(false),
+				})
+				if err != nil {
+					return err
+				}
+			}
+
+			for _, team := range repo.Teams {
+				// sync teams for a repo
+				// format the team name to be the team slug, eg. "My Team" become "my-team"
+				formatedTeam := strings.ToLower(strings.ReplaceAll(team.Name, " ", "-"))
+				_, err := github.NewTeamRepository(ctx, fmt.Sprintf("%s-%s", repo.Name, formatedTeam), &github.TeamRepositoryArgs{
+					Permission: pulumi.String(team.Permission),
+					Repository: pulumi.String(repo.Name),
+					TeamId:     pulumi.String(formatedTeam),
 				})
 				if err != nil {
 					return err

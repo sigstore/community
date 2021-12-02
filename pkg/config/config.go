@@ -7,9 +7,14 @@ type Config struct {
 }
 
 type User struct {
-	Username string   `yaml:"username"`
-	Role     string   `yaml:"role"`
-	Teams    []string `yaml:"teams"`
+	Username string     `yaml:"username"`
+	Role     string     `yaml:"role"`
+	Teams    []UserTeam `yaml:"teams"`
+}
+
+type UserTeam struct {
+	Name string `yaml:"name"`
+	Role string `yaml:"role"`
 }
 
 type Team struct {
@@ -43,6 +48,7 @@ type Repository struct {
 	IsTemplate          bool           `yaml:"isTemplate"`
 	Template            Template       `yaml:"template"`
 	Collaborators       []Collaborator `yaml:"collaborators"`
+	Teams               []RepoTeam     `yaml:"teams"`
 }
 
 type Pages struct {
@@ -58,5 +64,10 @@ type Template struct {
 
 type Collaborator struct {
 	Username   string `yaml:"username"`
+	Permission string `yaml:"permission"`
+}
+
+type RepoTeam struct {
+	Name       string `yaml:"name"`
 	Permission string `yaml:"permission"`
 }

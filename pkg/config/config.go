@@ -69,5 +69,6 @@ type Collaborator struct {
 
 type RepoTeam struct {
 	Name       string `yaml:"name"`
+	ID         string `yaml:"id"`
 	Permission string `yaml:"permission"`
 }

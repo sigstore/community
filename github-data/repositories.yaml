@@ -14,6 +14,14 @@ repositories:
   collaborators:
     - username: cpanatoBOT
       permission: push
+  teams:
+    - name: A Team with space
+      permission: triage
+    - name: My team 2
+      permission: pull
+    - name: team-b
+      id: 5368944
+      permission: push
 
 - name: kingdom
   owner: kingdom-tower

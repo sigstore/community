@@ -151,10 +151,15 @@ func main() {
 				// sync teams for a repo
 				// format the team name to be the team slug, eg. "My Team" become "my-team"
 				formatedTeam := strings.ToLower(strings.ReplaceAll(team.Name, " ", "-"))
+				teamID := formatedTeam
+				if team.ID != "" {
+					// used when importing existing team
+					teamID = team.ID
+				}
 				_, err := github.NewTeamRepository(ctx, fmt.Sprintf("%s-%s", repo.Name, formatedTeam), &github.TeamRepositoryArgs{
 					Permission: pulumi.String(team.Permission),
 					Repository: pulumi.String(repo.Name),
-					TeamId:     pulumi.String(formatedTeam),
+					TeamId:     pulumi.String(teamID),
 				})
 				if err != nil {
 					return err

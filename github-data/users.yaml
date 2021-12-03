@@ -2,7 +2,10 @@ users:
   - username: cpanato
     role: admin
     teams:
-      - team-b
+      - name: team-b
+        role: maintainer
+      - name: A Team with space
+        role: member
   - username: anotheruser
     role: admin
   - username: anotheruser
@@ -10,5 +13,5 @@ users:
   - username: cpanatoBOT
     role: member
     teams:
-      - team-b
-      - mytestingteam
+      - name: team-b
+        role: member

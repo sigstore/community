@@ -1,5 +1,6 @@
-# community
-General sigstore community repo
+# Sigstore Community
+
+General sigstore community repository
 
 ## Mailing List
 

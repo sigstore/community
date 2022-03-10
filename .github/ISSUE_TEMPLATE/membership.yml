@@ -58,7 +58,7 @@ body:
 - id: contributions
   type: textarea
   attributes:
-    label: List of contributions to the Kubernetes project
+    label: List of contributions to the Sigstore project
     placeholder: |
       - PRs reviewed / authored
       - Issues responded to

@@ -3,14 +3,14 @@
 **Note:** This document is a work in progress
 
 This doc outlines the various responsibilities of contributor roles in
-Sigstore.
+Sigstore Organization.
 Responsibilities for most roles are scoped to these subprojects.
 
 | Role | Responsibilities | Requirements | Defined by |
 | -----| ---------------- | ------------ | -------|
 | Member | Active contributor in the community | Sponsored by 2 reviewers and multiple contributions to the project | Sigstore GitHub org member|
-| Reviewer | Review contributions from other members | History of review and authorship in a subproject | [CODEOWNERS] file reviewer entry |
-| Approver | Contributions acceptance approval| Highly experienced active reviewer and contributor to a subproject | [CODEOWNERS] file approver entry|
+| Triage | Triage issues/pull requests | History of review and authorship in a subproject | GitHub Team membership |
+| Codeowners | Contributions acceptance approval| Highly experienced active reviewer and contributor to a subproject | GitHub Team membership |
 
 ## New contributors
 
@@ -28,7 +28,7 @@ below.
 
 ## Member
 
-Members are continuously active contributors in the community.  They can have
+Members are continuously active contributors in the community. They can have
 issues and PRs assigned to them, participate through GitHub teams, and
 pre-submit tests are automatically run for their PRs. Members are expected to
 remain active contributors to the community.
@@ -71,14 +71,13 @@ remain active contributors to the community.
 perform code reviews and work towards becoming a primary *reviewer* for the
 subproject that they are active in.
 
-## Reviewer
+## Triage
 
-Reviewers are able to review code for quality and correctness on some part of a
+Triage role are able to review code for quality and correctness on some part of a
 subproject. They are knowledgeable about both the codebase and software
 engineering principles.
 
-**Defined by:** *reviewers* entry in an CODEOWNERS file in a repo owned by the
-Sigstore project.
+**Defined by:** *triage* team membership in the subproject
 
 Reviewer status is scoped to a part of the codebase.
 
@@ -87,22 +86,15 @@ addition to the assigned reviewers.
 
 ### Requirements
 
-The following apply to the part of codebase for which one would be a reviewer in
-an [CODEOWNERS] file (for repos using the bot).
-
 - member for at least 3 months
-- Primary reviewer for at least 5 PRs to the codebase
-- Reviewed or merged at least 20 substantial PRs to the codebase
+- Helped to triage issues and Pull requests
 - Knowledgeable about the codebase
 - Sponsored by a project approver
   - With no objections from other approvers
-  - Done through PR to update the OWNERS file
-- May either self-nominate, be nominated by an approver in this subproject, or be nominated by a robot
+  - Done through PR to update the CODEOWNERS file
+- May either self-nominate, be nominated by an approver in this subproject.
 
 ### Responsibilities and privileges
-
-The following apply to the part of codebase for which one would be a reviewer in
-an [CODEOWNERS] file (for repos using the bot).
 
 - Tests are automatically run for PullRequests from members of the Sigstore GitHub organization
 - Code reviewer status may be a precondition to accepting large code contributions
@@ -112,37 +104,31 @@ an [CODEOWNERS] file (for repos using the bot).
 - Expected to be responsive to review requests as per [community expectations]
 - Assigned PRs to review related to the project of expertise
 - Assigned test bugs related to the project of expertise
-- May get a badge on PR and issue comments
 
-## Approver
+## Codeowners
 
-Code approvers are able to both review and approve code contributions.  While
+Codeowners are able to both review and approve code contributions.  While
 code review is focused on code quality and correctness, approval is focused on
 holistic acceptance of a contribution including: backwards / forwards
 compatibility, adhering to API and flag conventions, subtle performance and
 correctness issues, interactions with other parts of the system, etc.
 
-**Defined by:** *approvers* entry in an CODEOWNERS file in a repo owned by the
-Sigstore project.
+**Defined by:** *Team membership* in the Codeowners team for a subproject and update the
+entry in an CODEOWNERS file in a repo owned by the Sigstore project.
 
-Approver status is scoped to a part of the codebase.
+Codeowners status is scoped to a part of the codebase.
 
 ### Requirements
-
-The following apply to the part of codebase for which one would be an approver
-in an [CODEOWNERS] file (for repos using the bot).
 
 - Reviewer of the codebase for at least 3 months
 - Primary reviewer for at least 10 substantial PRs to the codebase
 - Reviewed or merged at least 30 PRs to the codebase
+- Being a Subject Matter Expert in the area of the code that they're responsible for, i.e PKI, transparency logs, OCI, etc.
 - Nominated by a subproject owner
   - With no objections from other subproject owners
-  - Done through PR to update the top-level CODEOWNERS file
+  - Done through PR to update the team membership and the top-level CODEOWNERS file
 
 ### Responsibilities and privileges
-
-The following apply to the part of codebase for which one would be an approver
-in an [CODEOWNERS] file (for repos using the bot).
 
 - Approver status may be a precondition to accepting large code contributions
 - Demonstrate sound technical judgement
@@ -161,7 +147,11 @@ A core principle in maintaining a healthy community is encouraging active
 participation. It is inevitable that people's focuses will change over time and
 they are not expected to be actively contributing forever.
 
-_TBD how to track inactive members and phase down._
+- Lack of significant contribution to the repository
+- Not assisting with reviews or triaging issues
+- Not replying when get mention either in GitHub or in the Sigstore Collaboration tool (today we are using Slack)
+
+The LFX Dashboard can help to extract metrics.
 
 [New contributors]: /CONTRIBUTING.md
 [two-factor authentication]: https://help.github.com/articles/about-two-factor-authentication

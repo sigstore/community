@@ -41,6 +41,10 @@ Recordings for all of the above meetings should be on our [YouTube channel](http
 Come on over to our [slack channel](https://sigstore.slack.com)!
 [Invite link](https://join.slack.com/t/sigstore/shared_invite/zt-mhs55zh0-XmY3bcfWn4XEyMqUUutbUQ)
 
+## Membership
+
+We encourage all contributors to become members. We aim to grow an active, healthy community of contributors, reviewers, and code owners. Learn more about requirements and responsibilities of membership in our [Community Membership page](/community-membership.md).
+
 ## Adding Users/Collaborators, Teams, Repositories to Sigstore GitHub Organization
 
 To add or change to add/change an Org Member, team, collaborator or repository please [follow this steps](github-sync/README.md)

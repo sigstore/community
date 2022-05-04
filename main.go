@@ -136,12 +136,14 @@ func main() {
 
 			for _, protection := range repo.BranchesProtection {
 				_, err = github.NewBranchProtection(ctx, fmt.Sprintf("%s-%s", repo.Name, protection.Branch), &github.BranchProtectionArgs{
-					RepositoryId:          newRepo.NodeId,
-					Pattern:               pulumi.String(protection.Branch),
-					EnforceAdmins:         pulumi.Bool(protection.EnforceAdmins),
-					AllowsDeletions:       pulumi.Bool(protection.AllowsDeletions),
-					RequiredLinearHistory: pulumi.Bool(protection.RequiredLinearHistory),
-					RequireSignedCommits:  pulumi.Bool(protection.RequireSignedCommits),
+					RepositoryId:                  newRepo.NodeId,
+					Pattern:                       pulumi.String(protection.Branch),
+					EnforceAdmins:                 pulumi.Bool(protection.EnforceAdmins),
+					AllowsDeletions:               pulumi.Bool(protection.AllowsDeletions),
+					AllowsForcePushes:             pulumi.Bool(protection.AllowsForcePushes),
+					RequiredLinearHistory:         pulumi.Bool(protection.RequiredLinearHistory),
+					RequireSignedCommits:          pulumi.Bool(protection.RequireSignedCommits),
+					RequireConversationResolution: pulumi.Bool(protection.RequireConversationResolution),
 					RequiredStatusChecks: github.BranchProtectionRequiredStatusCheckArray{
 						&github.BranchProtectionRequiredStatusCheckArgs{
 							Strict:   pulumi.Bool(false),
@@ -150,8 +152,10 @@ func main() {
 					},
 					RequiredPullRequestReviews: github.BranchProtectionRequiredPullRequestReviewArray{
 						&github.BranchProtectionRequiredPullRequestReviewArgs{
-							DismissStaleReviews: pulumi.Bool(protection.DismissStaleReviews),
-							RestrictDismissals:  pulumi.Bool(protection.RestrictDismissals),
+							DismissStaleReviews:          pulumi.Bool(protection.DismissStaleReviews),
+							RestrictDismissals:           pulumi.Bool(protection.RestrictDismissals),
+							RequireCodeOwnerReviews:      pulumi.Bool(protection.RequireCodeOwnerReviews),
+							RequiredApprovingReviewCount: pulumi.Int(protection.RequiredApprovingReviewCount),
 						},
 					},
 				})

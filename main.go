@@ -129,9 +129,33 @@ func main() {
 				}
 			}
 
-			_, err := github.NewRepository(ctx, repo.Name, repoSync, pulumi.Protect(true))
+			newRepo, err := github.NewRepository(ctx, repo.Name, repoSync, pulumi.Protect(true))
 			if err != nil {
 				return err
+			}
+
+			for _, protection := range repo.BranchesProtection {
+				_, err = github.NewBranchProtection(ctx, fmt.Sprintf("%s-%s", repo.Name, protection.Branch), &github.BranchProtectionArgs{
+					RepositoryId:    newRepo.NodeId,
+					Pattern:         pulumi.String(protection.Branch),
+					EnforceAdmins:   pulumi.Bool(protection.EnforceAdmins),
+					AllowsDeletions: pulumi.Bool(protection.AllowsDeletions),
+					RequiredStatusChecks: github.BranchProtectionRequiredStatusCheckArray{
+						&github.BranchProtectionRequiredStatusCheckArgs{
+							Strict:   pulumi.Bool(false),
+							Contexts: pulumi.ToStringArray(protection.StatusChecks),
+						},
+					},
+					RequiredPullRequestReviews: github.BranchProtectionRequiredPullRequestReviewArray{
+						&github.BranchProtectionRequiredPullRequestReviewArgs{
+							DismissStaleReviews: pulumi.Bool(protection.DismissStaleReviews),
+							RestrictDismissals:  pulumi.Bool(protection.RestrictDismissals),
+						},
+					},
+				})
+				if err != nil {
+					return err
+				}
 			}
 
 			for _, collaborator := range repo.Collaborators {

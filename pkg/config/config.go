@@ -25,30 +25,31 @@ type Team struct {
 }
 
 type Repository struct {
-	AllowAutoMerge      bool           `yaml:"allowAutoMerge"`
-	AllowMergeCommit    bool           `yaml:"allowMergeCommit"`
-	AllowRebaseMerge    bool           `yaml:"allowRebaseMerge"`
-	AllowSquashMerge    bool           `yaml:"allowSquashMerge"`
-	Archived            bool           `yaml:"archived"`
-	AutoInit            bool           `yaml:"autoInit"`
-	DeleteBranchOnMerge bool           `yaml:"deleteBranchOnMerge"`
-	HasDownloads        bool           `yaml:"hasDownloads"`
-	HasIssues           bool           `yaml:"hasIssues"`
-	HasProjects         bool           `yaml:"hasProjects"`
-	HasWiki             bool           `yaml:"hasWiki"`
-	VulnerabilityAlerts bool           `yaml:"vulnerabilityAlerts"`
-	Visibility          string         `yaml:"visibility"`
-	Name                string         `yaml:"name"`
-	Owner               string         `yaml:"owner"`
-	Description         string         `yaml:"description"`
-	HomepageUrl         string         `yaml:"homepageUrl"`
-	LicenseTemplate     string         `yaml:"licenseTemplate"`
-	Topics              []string       `yaml:"topics"`
-	Pages               Pages          `yaml:"pages"`
-	IsTemplate          bool           `yaml:"isTemplate"`
-	Template            Template       `yaml:"template"`
-	Collaborators       []Collaborator `yaml:"collaborators"`
-	Teams               []RepoTeam     `yaml:"teams"`
+	AllowAutoMerge      bool               `yaml:"allowAutoMerge"`
+	AllowMergeCommit    bool               `yaml:"allowMergeCommit"`
+	AllowRebaseMerge    bool               `yaml:"allowRebaseMerge"`
+	AllowSquashMerge    bool               `yaml:"allowSquashMerge"`
+	Archived            bool               `yaml:"archived"`
+	AutoInit            bool               `yaml:"autoInit"`
+	DeleteBranchOnMerge bool               `yaml:"deleteBranchOnMerge"`
+	HasDownloads        bool               `yaml:"hasDownloads"`
+	HasIssues           bool               `yaml:"hasIssues"`
+	HasProjects         bool               `yaml:"hasProjects"`
+	HasWiki             bool               `yaml:"hasWiki"`
+	VulnerabilityAlerts bool               `yaml:"vulnerabilityAlerts"`
+	Visibility          string             `yaml:"visibility"`
+	Name                string             `yaml:"name"`
+	Owner               string             `yaml:"owner"`
+	Description         string             `yaml:"description"`
+	HomepageUrl         string             `yaml:"homepageUrl"`
+	LicenseTemplate     string             `yaml:"licenseTemplate"`
+	Topics              []string           `yaml:"topics"`
+	Pages               Pages              `yaml:"pages"`
+	IsTemplate          bool               `yaml:"isTemplate"`
+	Template            Template           `yaml:"template"`
+	Collaborators       []Collaborator     `yaml:"collaborators"`
+	Teams               []RepoTeam         `yaml:"teams"`
+	BranchesProtection  []BranchProtection `yaml:"branchProtection"`
 }
 
 type Pages struct {
@@ -71,4 +72,13 @@ type RepoTeam struct {
 	Name       string `yaml:"name"`
 	ID         string `yaml:"id"`
 	Permission string `yaml:"permission"`
+}
+
+type BranchProtection struct {
+	Branch              string   `yaml:"Branch"`
+	EnforceAdmins       bool     `yaml:"enforceAdmins"`
+	AllowsDeletions     bool     `yaml:"allowsDeletions"`
+	DismissStaleReviews bool     `yaml:"dismissStaleReviews"`
+	RestrictDismissals  bool     `yaml:"restrictDismissals"`
+	StatusChecks        []string `yaml:"statusChecks"`
 }

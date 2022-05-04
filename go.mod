@@ -1,11 +1,11 @@
 module github.com/cpanato/pulumi-github-sync
 
-go 1.17
+go 1.18
 
 require (
 	github.com/bmatcuk/doublestar/v3 v3.0.0
-	github.com/pulumi/pulumi-github/sdk/v4 v4.6.0
-	github.com/pulumi/pulumi/sdk/v3 v3.17.1
+	github.com/pulumi/pulumi-github/sdk/v4 v4.11.0
+	github.com/pulumi/pulumi/sdk/v3 v3.31.1
 	sigs.k8s.io/yaml v1.3.0
 )
 
@@ -14,9 +14,8 @@ require (
 	github.com/cheggaaa/pb v1.0.18 // indirect
 	github.com/djherbis/times v1.2.0 // indirect
 	github.com/emirpasic/gods v1.12.0 // indirect
-	github.com/gofrs/flock v0.7.1 // indirect
 	github.com/gofrs/uuid v3.3.0+incompatible // indirect
-	github.com/gogo/protobuf v1.3.1 // indirect
+	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b // indirect
 	github.com/golang/protobuf v1.4.2 // indirect
 	github.com/google/go-cmp v0.5.1 // indirect
@@ -32,12 +31,14 @@ require (
 	github.com/opentracing/basictracer-go v1.0.0 // indirect
 	github.com/opentracing/opentracing-go v1.1.0 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
+	github.com/pkg/term v1.1.0 // indirect
 	github.com/rivo/uniseg v0.2.0 // indirect
+	github.com/rogpeppe/go-internal v1.8.1 // indirect
 	github.com/sabhiram/go-gitignore v0.0.0-20180611051255-d3107576ba94 // indirect
 	github.com/sergi/go-diff v1.1.0 // indirect
 	github.com/spf13/cast v1.3.1 // indirect
-	github.com/spf13/cobra v1.0.0 // indirect
-	github.com/spf13/pflag v1.0.3 // indirect
+	github.com/spf13/cobra v1.4.0 // indirect
+	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/src-d/gcfg v1.4.0 // indirect
 	github.com/texttheater/golang-levenshtein v0.0.0-20191208221605-eb6844b05fc6 // indirect
 	github.com/tweekmonster/luser v0.0.0-20161003172636-3fa38070dbd7 // indirect
@@ -46,11 +47,9 @@ require (
 	github.com/xanzy/ssh-agent v0.2.1 // indirect
 	go.uber.org/atomic v1.6.0 // indirect
 	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9 // indirect
-	golang.org/x/net v0.0.0-20200822124328-c89045814202 // indirect
+	golang.org/x/net v0.0.0-20201021035429-f5854403a974 // indirect
 	golang.org/x/sys v0.0.0-20210817190340-bfb29a6856f2 // indirect
 	golang.org/x/text v0.3.3 // indirect
-	golang.org/x/tools v0.0.0-20200825202427-b303f430e36d // indirect
-	golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1 // indirect
 	google.golang.org/genproto v0.0.0-20200825200019-8632dd797987 // indirect
 	google.golang.org/grpc v1.31.0 // indirect
 	google.golang.org/protobuf v1.25.0 // indirect

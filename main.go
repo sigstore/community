@@ -136,10 +136,12 @@ func main() {
 
 			for _, protection := range repo.BranchesProtection {
 				_, err = github.NewBranchProtection(ctx, fmt.Sprintf("%s-%s", repo.Name, protection.Branch), &github.BranchProtectionArgs{
-					RepositoryId:    newRepo.NodeId,
-					Pattern:         pulumi.String(protection.Branch),
-					EnforceAdmins:   pulumi.Bool(protection.EnforceAdmins),
-					AllowsDeletions: pulumi.Bool(protection.AllowsDeletions),
+					RepositoryId:          newRepo.NodeId,
+					Pattern:               pulumi.String(protection.Branch),
+					EnforceAdmins:         pulumi.Bool(protection.EnforceAdmins),
+					AllowsDeletions:       pulumi.Bool(protection.AllowsDeletions),
+					RequiredLinearHistory: pulumi.Bool(protection.RequiredLinearHistory),
+					RequireSignedCommits:  pulumi.Bool(protection.RequireSignedCommits),
 					RequiredStatusChecks: github.BranchProtectionRequiredStatusCheckArray{
 						&github.BranchProtectionRequiredStatusCheckArgs{
 							Strict:   pulumi.Bool(false),

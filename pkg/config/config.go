@@ -75,10 +75,12 @@ type RepoTeam struct {
 }
 
 type BranchProtection struct {
-	Branch              string   `yaml:"Branch"`
-	EnforceAdmins       bool     `yaml:"enforceAdmins"`
-	AllowsDeletions     bool     `yaml:"allowsDeletions"`
-	DismissStaleReviews bool     `yaml:"dismissStaleReviews"`
-	RestrictDismissals  bool     `yaml:"restrictDismissals"`
-	StatusChecks        []string `yaml:"statusChecks"`
+	Branch                string   `yaml:"Branch"`
+	EnforceAdmins         bool     `yaml:"enforceAdmins"`
+	AllowsDeletions       bool     `yaml:"allowsDeletions"`
+	DismissStaleReviews   bool     `yaml:"dismissStaleReviews"`
+	RestrictDismissals    bool     `yaml:"restrictDismissals"`
+	RequiredLinearHistory bool     `yaml:"requiredLinearHistory"`
+	RequireSignedCommits  bool     `yaml:"requireSignedCommits"`
+	StatusChecks          []string `yaml:"statusChecks"`
 }

@@ -75,7 +75,7 @@ type RepoTeam struct {
 }
 
 type BranchProtection struct {
-	Branch                        string   `yaml:"Branch"`
+	Pattern                       string   `yaml:"pattern"`
 	EnforceAdmins                 bool     `yaml:"enforceAdmins"`
 	AllowsDeletions               bool     `yaml:"allowsDeletions"`
 	AllowsForcePushes             bool     `yaml:"allowsForcePushes"`

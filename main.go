@@ -135,9 +135,9 @@ func main() {
 			}
 
 			for _, protection := range repo.BranchesProtection {
-				_, err = github.NewBranchProtection(ctx, fmt.Sprintf("%s-%s", repo.Name, protection.Branch), &github.BranchProtectionArgs{
+				_, err = github.NewBranchProtection(ctx, fmt.Sprintf("%s-%s", repo.Name, protection.Pattern), &github.BranchProtectionArgs{
 					RepositoryId:                  newRepo.NodeId,
-					Pattern:                       pulumi.String(protection.Branch),
+					Pattern:                       pulumi.String(protection.Pattern),
 					EnforceAdmins:                 pulumi.Bool(protection.EnforceAdmins),
 					AllowsDeletions:               pulumi.Bool(protection.AllowsDeletions),
 					AllowsForcePushes:             pulumi.Bool(protection.AllowsForcePushes),

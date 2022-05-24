@@ -135,7 +135,6 @@ func main() {
 			}
 
 			for _, protection := range repo.BranchesProtection {
-
 				var pushRestrictionsID []string
 				for _, pushRestTeam := range protection.PushRestrictions {
 					team, err := github.LookupTeam(ctx, &github.LookupTeamArgs{
@@ -212,7 +211,6 @@ func main() {
 				if team.ID != "" {
 					teamID = team.ID
 				}
-
 				_, err := github.NewTeamRepository(ctx, fmt.Sprintf("%s-%s", repo.Name, formatedTeam), &github.TeamRepositoryArgs{
 					Permission: pulumi.String(team.Permission),
 					Repository: pulumi.String(repo.Name),

@@ -1,0 +1,32 @@
+---
+name: Update GitHub configuration on merge on main
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'github-sync/github-data/*.yaml'
+
+env:
+ GITHUB_TOKEN: ${{ secrets.PULUMI_GITHUB_TOKEN }}
+ PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+ GITHUB_OWNER: sigstore
+
+jobs:
+  update:
+    name: Update
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-go@v2
+        with:
+          go-version: 1.18.x
+      - run: go mod download
+      - uses: pulumi/actions@v3
+        with:
+          command: up
+          # stack-name: dev
+          refresh: true
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}

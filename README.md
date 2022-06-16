@@ -30,7 +30,7 @@ Recordings for all of the above meetings should be on our [YouTube channel](http
 
 ### Infrastructure Working Group meeting
 
-We typically meet for a Infrastructure Working Group meeting every 2 [Tuesday @ 15:30 UTC time](https://dateful.com/eventlink/1236491091).
+We typically meet for an Infrastructure Working Group meeting every other [Tuesday @ 15:30 UTC time](https://dateful.com/eventlink/1236491091).
 This is available via the shared calendar above.
 
 Recordings for all of the above meetings should be on our [YouTube channel](https://www.youtube.com/channel/UCWPVc8glVGOODxsA_ep0VVw)

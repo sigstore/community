@@ -1,16 +1,88 @@
 teams:
-  - name: team-b
+  - name: Core Team
     privacy: closed
-    description: super cool team
-  - name: A Team with space
+    description: tsc
+  - name: architecture-doc-team
     privacy: closed
-    description: super cool team
-  - name: team-c
+    description: ""
+  - name: codeowners-k8s-manifest-sigstore
     privacy: closed
-    description: another super cool team
-  - name: mytestingteam
+    description: Team for codeowners of k8s-manifest-sigstore
+  - name: codeowners-maven-sigstore
     privacy: closed
-    description: just to test
-  - name: My team 2
+    description: ""
+  - name: codeowners-ruby-sigstore
     privacy: closed
-    description: super cool team
+    description: ""
+  - name: codeowners-sigstore-python
+    privacy: closed
+    description: sigstore-python maintainers
+  - name: codeowners-sigstore-website
+    privacy: closed
+    description: codeowners for sigstores website
+  - name: cosign-codeowners
+    privacy: closed
+    description: ""
+  - name: cosign-installer-codeowners
+    privacy: closed
+    description: ""
+  - name: fulcio-codeowners
+    privacy: closed
+    description: ""
+  - name: git-verifier-codeowners
+    privacy: closed
+    description: ""
+  - name: helm
+    privacy: closed
+    description: Helm Maintenance
+  - name: helm-sigstore-codeowners
+    privacy: closed
+    description: ""
+  - name: maven-plugin-codeowners
+    privacy: closed
+    description: ""
+  - name: policy-controller-codeowners
+    privacy: closed
+    description: Codeowners for sigstore/policy-controller
+  - name: public-good-instance-team
+    privacy: secret
+    description: those with access to configuration of the public good service
+  - name: rekor-codeowners
+    privacy: closed
+    description: ""
+  - name: rekor-monitor-codeowners
+    privacy: closed
+    description: ""
+  - name: rekor-operator-team
+    privacy: closed
+    description: ""
+  - name: scaffolding-codeowners
+    privacy: closed
+    description: maintainers on sigstore/scaffolding
+  - name: security-response-team
+    privacy: closed
+    description: ""
+  - name: sget-codeowners
+    privacy: closed
+    description: ""
+  - name: sigstore-codeowners
+    privacy: closed
+    description: 'Note: this is for the sigstore repo, not for the entire organization'
+  - name: sigstore-java-codeowners
+    privacy: closed
+    description: ""
+  - name: sigstore-keyholders
+    privacy: closed
+    description: Current Keyholders for the Root Keys!
+  - name: sigstore-release-team
+    privacy: closed
+    description: ""
+  - name: sigstore-rs-codeowners
+    privacy: closed
+    description: 'sigstore rust library '
+  - name: sigstore-triage
+    privacy: closed
+    description: ""
+  - name: triage
+    privacy: closed
+    description: ""

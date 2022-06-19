@@ -11,7 +11,7 @@ import (
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi/config"
 
-	ghData "github.com/cpanato/pulumi-github-sync/pkg/config"
+	ghData "github.com/sigstore/community/github-sync/sigstore-github-sync/pkg/config"
 )
 
 func main() {
@@ -135,6 +135,29 @@ func main() {
 			}
 
 			for _, protection := range repo.BranchesProtection {
+
+				var pushRestrictionsID []string
+				for _, pushRestTeam := range protection.PushRestrictions {
+					team, err := github.LookupTeam(ctx, &github.LookupTeamArgs{
+						Slug: strings.ToLower(strings.ReplaceAll(pushRestTeam, " ", "-")),
+					}, nil)
+					if err != nil {
+						return err
+					}
+					pushRestrictionsID = append(pushRestrictionsID, team.NodeId)
+				}
+
+				var dismissalRestrictionsID []string
+				for _, dismissRestrictionTeam := range protection.DismissalRestrictions {
+					team, err := github.LookupTeam(ctx, &github.LookupTeamArgs{
+						Slug: strings.ToLower(strings.ReplaceAll(dismissRestrictionTeam, " ", "-")),
+					}, nil)
+					if err != nil {
+						return err
+					}
+					dismissalRestrictionsID = append(dismissalRestrictionsID, team.NodeId)
+				}
+
 				_, err = github.NewBranchProtection(ctx, fmt.Sprintf("%s-%s", repo.Name, protection.Pattern), &github.BranchProtectionArgs{
 					RepositoryId:                  newRepo.NodeId,
 					Pattern:                       pulumi.String(protection.Pattern),
@@ -146,7 +169,7 @@ func main() {
 					RequireConversationResolution: pulumi.Bool(protection.RequireConversationResolution),
 					RequiredStatusChecks: github.BranchProtectionRequiredStatusCheckArray{
 						&github.BranchProtectionRequiredStatusCheckArgs{
-							Strict:   pulumi.Bool(false),
+							Strict:   pulumi.Bool(protection.RequireBranchesUpToDate),
 							Contexts: pulumi.ToStringArray(protection.StatusChecks),
 						},
 					},
@@ -156,8 +179,10 @@ func main() {
 							RestrictDismissals:           pulumi.Bool(protection.RestrictDismissals),
 							RequireCodeOwnerReviews:      pulumi.Bool(protection.RequireCodeOwnerReviews),
 							RequiredApprovingReviewCount: pulumi.Int(protection.RequiredApprovingReviewCount),
+							DismissalRestrictions:        pulumi.ToStringArray(dismissalRestrictionsID),
 						},
 					},
+					PushRestrictions: pulumi.ToStringArray(pushRestrictionsID),
 				})
 				if err != nil {
 					return err
@@ -187,6 +212,7 @@ func main() {
 				if team.ID != "" {
 					teamID = team.ID
 				}
+
 				_, err := github.NewTeamRepository(ctx, fmt.Sprintf("%s-%s", repo.Name, formatedTeam), &github.TeamRepositoryArgs{
 					Permission: pulumi.String(team.Permission),
 					Repository: pulumi.String(repo.Name),

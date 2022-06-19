@@ -1,17 +1,376 @@
 users:
+  - username: A0su
+    role: member
+    teams:
+      - name: rekor-monitor-codeowners
+        role: member
+  - username: Dentrax
+    role: member
+    teams:
+      - name: cosign-codeowners
+        role: member
+  - username: SantiagoTorres
+    role: member
+    teams:
+      - name: rekor-monitor-codeowners
+        role: member
+      - name: sigstore-keyholders
+        role: member
+  - username: ariel-kirson
+    role: member
+    teams:
+      - name: public-good-instance-team
+        role: member
+  - username: asraa
+    role: member
+    teams:
+      - name: sigstore-rs-codeowners
+        role: member
+      - name: architecture-doc-team
+        role: member
+      - name: cosign-codeowners
+        role: member
+      - name: rekor-codeowners
+        role: member
+      - name: sget-codeowners
+        role: member
+      - name: sigstore-keyholders
+        role: member
+  - username: bobcallaway
+    role: admin
+    teams:
+      - name: sigstore-codeowners
+        role: maintainer
+      - name: sigstore-keyholders
+        role: maintainer
+      - name: architecture-doc-team
+        role: maintainer
+      - name: codeowners-maven-sigstore
+        role: maintainer
+      - name: Core Team
+        role: maintainer
+      - name: cosign-codeowners
+        role: maintainer
+      - name: cosign-installer-codeowners
+        role: maintainer
+      - name: fulcio-codeowners
+        role: maintainer
+      - name: maven-plugin-codeowners
+        role: maintainer
+      - name: policy-controller-codeowners
+        role: maintainer
+      - name: rekor-codeowners
+        role: maintainer
+      - name: scaffolding-codeowners
+        role: maintainer
+      - name: security-response-team
+        role: maintainer
+      - name: public-good-instance-team
+        role: maintainer
+  - username: caniszczyk
+    role: admin
+    teams: []
+  - username: coyote240
+    role: member
+    teams: []
   - username: cpanato
     role: admin
     teams:
-      - name: team-b
+      - name: cosign-installer-codeowners
         role: maintainer
-      - name: A Team with space
-        role: member
-  - username: anotheruser
-    role: admin
-  - username: anotheruser
-    role: member
-  - username: cpanatoBOT
+      - name: helm
+        role: maintainer
+      - name: sigstore-release-team
+        role: maintainer
+  - username: cstamas
     role: member
     teams:
-      - name: team-b
+      - name: codeowners-maven-sigstore
+        role: member
+  - username: dekkagaijin
+    role: member
+    teams:
+      - name: cosign-codeowners
+        role: member
+      - name: cosign-installer-codeowners
+        role: member
+      - name: sigstore-codeowners
+        role: member
+  - username: developer-guy
+    role: member
+    teams:
+      - name: cosign-codeowners
+        role: member
+  - username: di
+    role: member
+    teams: []
+  - username: dlorenc
+    role: admin
+    teams:
+      - name: Core Team
+        role: maintainer
+      - name: cosign-codeowners
+        role: maintainer
+      - name: cosign-installer-codeowners
+        role: maintainer
+      - name: fulcio-codeowners
+        role: maintainer
+      - name: helm
+        role: maintainer
+      - name: policy-controller-codeowners
+        role: maintainer
+      - name: rekor-codeowners
+        role: maintainer
+      - name: security-response-team
+        role: maintainer
+      - name: sigstore-codeowners
+        role: maintainer
+      - name: sigstore-java-codeowners
+        role: maintainer
+      - name: sigstore-keyholders
+        role: maintainer
+      - name: sigstore-triage
+        role: maintainer
+      - name: triage
+        role: maintainer
+  - username: efebarlas
+    role: member
+    teams:
+      - name: rekor-monitor-codeowners
+        role: member
+  - username: endorama
+    role: member
+    teams:
+      - name: codeowners-ruby-sigstore
+        role: member
+  - username: erikaheidi
+    role: member
+    teams:
+      - name: codeowners-sigstore-website
+        role: member
+  - username: flavio
+    role: member
+    teams:
+      - name: sigstore-rs-codeowners
+        role: member
+  - username: font
+    role: member
+    teams:
+      - name: cosign-codeowners
+        role: member
+      - name: rekor-operator-team
+        role: member
+  - username: haydentherapper
+    role: member
+    teams:
+      - name: triage
+        role: member
+      - name: architecture-doc-team
+        role: member
+      - name: fulcio-codeowners
+        role: member
+  - username: hectorj2f
+    role: member
+    teams:
+      - name: cosign-codeowners
+        role: member
+      - name: helm
+        role: member
+      - name: policy-controller-codeowners
+        role: member
+  - username: hepwori
+    role: member
+    teams:
+      - name: public-good-instance-team
+        role: member
+  - username: hirokuni-kitahara
+    role: member
+    teams:
+      - name: codeowners-k8s-manifest-sigstore
+        role: member
+  - username: imjasonh
+    role: member
+    teams:
+      - name: architecture-doc-team
+        role: member
+  - username: inferno-chromium
+    role: member
+    teams: []
+  - username: joshuagl
+    role: member
+    teams:
+      - name: sigstore-keyholders
+        role: member
+  - username: jvanzyl
+    role: member
+    teams:
+      - name: codeowners-maven-sigstore
+        role: maintainer
+  - username: jyotsna-penumaka
+    role: member
+    teams:
+      - name: sget-codeowners
+        role: member
+      - name: sigstore-rs-codeowners
+        role: member
+  - username: k4leung4
+    role: member
+    teams:
+      - name: triage
+        role: member
+      - name: scaffolding-codeowners
+        role: member
+  - username: lkatalin
+    role: member
+    teams:
+      - name: sget-codeowners
+        role: member
+      - name: sigstore-rs-codeowners
+        role: member
+  - username: loosebazooka
+    role: member
+    teams:
+      - name: codeowners-maven-sigstore
+        role: member
+      - name: cosign-codeowners
+        role: member
+      - name: sigstore-java-codeowners
+        role: maintainer
+  - username: ltagliaferri
+    role: member
+    teams:
+      - name: codeowners-sigstore-website
+        role: member
+  - username: luhring
+    role: member
+    teams:
+      - name: cosign-codeowners
+        role: member
+  - username: lukehinds
+    role: admin
+    teams:
+      - name: cosign-installer-codeowners
+        role: maintainer
+      - name: fulcio-codeowners
+        role: maintainer
+      - name: git-verifier-codeowners
+        role: maintainer
+      - name: helm-sigstore-codeowners
+        role: maintainer
+      - name: policy-controller-codeowners
+        role: maintainer
+      - name: rekor-codeowners
+        role: maintainer
+      - name: rekor-monitor-codeowners
+        role: maintainer
+      - name: rekor-operator-team
+        role: maintainer
+      - name: security-response-team
+        role: maintainer
+      - name: sget-codeowners
+        role: maintainer
+      - name: sigstore-codeowners
+        role: maintainer
+      - name: sigstore-keyholders
+        role: maintainer
+      - name: sigstore-release-team
+        role: maintainer
+      - name: sigstore-rs-codeowners
+        role: maintainer
+      - name: codeowners-k8s-manifest-sigstore
+        role: maintainer
+      - name: codeowners-ruby-sigstore
+        role: maintainer
+      - name: codeowners-sigstore-python
+        role: maintainer
+      - name: codeowners-sigstore-website
+        role: maintainer
+      - name: Core Team
+        role: maintainer
+      - name: cosign-codeowners
+        role: maintainer
+  - username: mattmoor
+    role: member
+    teams:
+      - name: fulcio-codeowners
+        role: member
+      - name: cosign-codeowners
+        role: member
+  - username: mbestavros
+    role: member
+    teams:
+      - name: cosign-installer-codeowners
+        role: member
+      - name: git-verifier-codeowners
+        role: member
+  - username: mdunbavan
+    role: member
+    teams:
+      - name: codeowners-sigstore-website
+        role: member
+  - username: michael-o
+    role: member
+    teams:
+      - name: codeowners-maven-sigstore
+        role: member
+  - username: mnm678
+    role: member
+    teams:
+      - name: sigstore-keyholders
+        role: member
+  - username: n3wscott
+    role: member
+    teams:
+      - name: cosign-codeowners
+        role: member
+  - username: naveensrinivasan
+    role: member
+    teams:
+      - name: sigstore-triage
+        role: member
+  - username: patflynn
+    role: member
+    teams:
+      - name: codeowners-maven-sigstore
+        role: member
+  - username: priyawadhwa
+    role: member
+    teams:
+      - name: cosign-codeowners
+        role: member
+      - name: triage
+        role: member
+  - username: puerco
+    role: member
+    teams:
+      - name: triage
+        role: member
+  - username: sabre1041
+    role: member
+    teams:
+      - name: helm
+        role: maintainer
+      - name: helm-sigstore-codeowners
+        role: member
+  - username: thelinuxfoundation
+    role: admin
+    teams: []
+  - username: vaikas
+    role: member
+    teams:
+      - name: policy-controller-codeowners
+        role: maintainer
+      - name: scaffolding-codeowners
+        role: member
+      - name: cosign-codeowners
+        role: member
+  - username: yuji-watanabe-jp
+    role: member
+    teams:
+      - name: codeowners-k8s-manifest-sigstore
+        role: member
+  - username: znewman01
+    role: member
+    teams:
+      - name: architecture-doc-team
         role: member

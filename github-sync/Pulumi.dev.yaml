@@ -1,5 +1,0 @@
-config:
-  github:owner: YOUR_ORG
-  github:token:
-    secure: GitHub TOKEN
-  pulumi-github-sync:github-data-directory: "github-data/"

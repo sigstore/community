@@ -1,0 +1,5 @@
+config:
+  github:owner: sigstore
+  github:token:
+    secure: AAABAK2Z0MKagipJWyZTiI0PjKci/M/hR9LU4aVsArwMyKnt6YuFaPwBF1T0J/DGQYH8mRl5Z8unQeY6Yk9XGPxPdmqTmhe2
+  sigstore-github-sync:github-data-directory: "github-data/"

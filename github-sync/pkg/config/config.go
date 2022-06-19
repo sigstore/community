@@ -80,6 +80,7 @@ type BranchProtection struct {
 	AllowsDeletions               bool     `yaml:"allowsDeletions"`
 	AllowsForcePushes             bool     `yaml:"allowsForcePushes"`
 	DismissStaleReviews           bool     `yaml:"dismissStaleReviews"`
+	DismissalRestrictions         []string `yaml:"dismissalRestrictions"`
 	RestrictDismissals            bool     `yaml:"restrictDismissals"`
 	RequiredLinearHistory         bool     `yaml:"requiredLinearHistory"`
 	RequireSignedCommits          bool     `yaml:"requireSignedCommits"`
@@ -87,4 +88,6 @@ type BranchProtection struct {
 	RequireCodeOwnerReviews       bool     `yaml:"requireCodeOwnerReviews"`
 	RequiredApprovingReviewCount  int      `yaml:"requiredApprovingReviewCount"`
 	StatusChecks                  []string `yaml:"statusChecks"`
+	RequireBranchesUpToDate       bool     `yaml:"requireBranchesUpToDate"`
+	PushRestrictions              []string `yaml:"pushRestrictions"`
 }

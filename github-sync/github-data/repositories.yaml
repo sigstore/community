@@ -1,52 +1,1445 @@
 repositories:
-- name: playground
-  owner: kingdom-tower
-  allowAutoMerge: false
-  allowMergeCommit: true
-  allowRebaseMerge: true
-  allowSquashMerge: true
-  deleteBranchOnMerge: false
-  hasDownloads: true
-  hasIssues: true
-  hasProjects: false
-  hasWiki: false
-  visibility: public
-  collaborators:
-    - username: cpanatoBOT
-      permission: push
-  teams:
-    - name: A Team with space
-      permission: triage
-    - name: My team 2
-      permission: pull
-    - name: team-b
-      id: 5368944
-      permission: push
-
-- name: kingdom
-  owner: kingdom-tower
-  allowAutoMerge: false
-  allowMergeCommit: true
-  allowRebaseMerge: true
-  allowSquashMerge: true
-  deleteBranchOnMerge: false
-  hasDownloads: true
-  hasIssues: true
-  hasProjects: false
-  hasWiki: false
-  vulnerabilityAlerts: true
-  visibility: public
-
-# - name: testing-pulumi
-#   owner: kingdom-tower
-#   allowAutoMerge: false
-#   allowMergeCommit: true
-#   allowRebaseMerge: true
-#   allowSquashMerge: true
-#   deleteBranchOnMerge: false
-#   hasDownloads: true
-#   hasIssues: true
-#   hasProjects: false
-#   hasWiki: false
-#   vulnerabilityAlerts: true
-#   visibility: public
+  - name: .github
+    owner: sigstore
+    description: Default community health files for the Sigstore organization.
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: false
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: mbestavros
+        permission: admin
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+  - name: TSC
+    owner: sigstore
+    description: sigstore Technical Advisory Council
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: false
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators: []
+    teams:
+      - name: Core Team
+        id: 4563391
+        permission: maintain
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - Core Team
+        dismissalRestrictions:
+          - Core Team
+  - name: community
+    owner: sigstore
+    description: General sigstore community repo
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators: []
+    teams:
+      - name: Core Team
+        id: 4563391
+        permission: admin
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        allowsForcePushes: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - Core Team
+        dismissalRestrictions:
+          - Core Team
+  - name: cosign
+    owner: sigstore
+    description: Container Signing
+    homepageUrl: ""
+    allowAutoMerge: true
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: false
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: sigstore-bot
+        permission: push
+    teams:
+      - name: cosign-codeowners
+        id: 4722092
+        permission: admin
+      - name: sigstore-release-team
+        id: 4845328
+        permission: maintain
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - cosign-codeowners
+  - name: cosign-gatekeeper-provider
+    owner: sigstore
+    description: "\U0001F52E ✈️ to integrate OPA Gatekeeper's new ExternalData feature with cosign to determine whether the images are valid by verifying their signatures"
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - opa
+      - gatekeeper
+      - keyless
+      - cosign
+      - sigstore
+      - rekor
+      - fulcio
+    collaborators:
+      - username: Dentrax
+        permission: maintain
+      - username: developer-guy
+        permission: maintain
+      - username: erkanzileli
+        permission: push
+      - username: sozercan
+        permission: push
+    teams:
+      - name: cosign-codeowners
+        id: 4722092
+        permission: maintain
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+  - name: cosign-installer
+    owner: sigstore
+    description: Cosign Github Action
+    homepageUrl: https://sigstore.dev
+    allowAutoMerge: true
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: false
+    hasWiki: false
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - cosign
+    collaborators: []
+    teams:
+      - name: cosign-installer-codeowners
+        id: 4728120
+        permission: maintain
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - cosign-installer-codeowners
+        dismissalRestrictions:
+          - cosign-installer-codeowners
+  - name: dex
+    owner: sigstore
+    description: ""
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: private
+    licenseTemplate: ""
+    topics: []
+    collaborators: []
+    teams:
+      - name: fulcio-codeowners
+        id: 4721751
+        permission: maintain
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+  - name: examples
+    owner: sigstore
+    description: Repository to store various monitors for upstream release sites
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators: []
+    teams:
+      - name: Core Team
+        id: 4563391
+        permission: maintain
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: false
+        allowsDeletions: true
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requireConversationResolution: false
+        requireSignedCommits: false
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - Core Team
+        dismissalRestrictions:
+          - Core Team
+  - name: fish-food
+    owner: sigstore
+    description: ""
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: false
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - fish
+    collaborators:
+      - username: cpanato
+        permission: admin
+      - username: sigstore-bot
+        permission: push
+    teams:
+      - name: sigstore-release-team
+        id: 4845328
+        permission: push
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+  - name: friends
+    owner: sigstore
+    description: Sigstore user stories
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: false
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators: []
+  - name: fulcio
+    owner: sigstore
+    description: Sigstore OIDC PKI
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: sigstore-bot
+        permission: push
+    teams:
+      - name: fulcio-codeowners
+        id: 4721751
+        permission: maintain
+      - name: sigstore-release-team
+        id: 4845328
+        permission: push
+      - name: triage
+        id: 5643322
+        permission: triage
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        statusChecks:
+          - DCO
+          - build
+          - Analyze (go)
+        pushRestrictions:
+          - fulcio-codeowners
+        dismissalRestrictions:
+          - fulcio-codeowners
+  - name: gitsign
+    owner: sigstore
+    description: Keyless Git signing using Sigstore
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: false
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    template:
+      owner: sigstore
+      repository: sigstore-project-template
+    topics:
+      - git
+      - signing
+      - sigstore
+    collaborators:
+      - username: imjasonh
+        permission: maintain
+      - username: jyotsna-penumaka
+        permission: maintain
+      - username: lkatalin
+        permission: maintain
+      - username: nsmith5
+        permission: maintain
+      - username: wlynch
+        permission: admin
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+          - e2e
+          - ci
+  - name: helm-charts
+    owner: sigstore
+    description: Helm charts for sigstore project
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: false
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - chart
+      - helm
+      - helm-charts
+    pages:
+      branch: gh-pages
+      path: /
+    collaborators:
+      - username: SantiagoTorres
+        permission: admin
+      - username: cpanato
+        permission: admin
+      - username: k4leung4
+        permission: maintain
+      - username: priyawadhwa
+        permission: maintain
+      - username: sabre1041
+        permission: admin
+    teams:
+      - name: Core Team
+        id: 4563391
+        permission: pull
+      - name: helm
+        id: 5291354
+        permission: admin
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+  - name: helm-sigstore
+    owner: sigstore
+    description: Plugin for Helm to integrate the sigstore ecosystem
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: false
+    hasWiki: false
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - helm
+      - sigstore
+    collaborators: []
+    teams:
+      - name: helm
+        id: 5291354
+        permission: admin
+      - name: helm-sigstore-codeowners
+        id: 4807653
+        permission: maintain
+    branchesProtection:
+      - pattern: main
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        requireBranchesUpToDate: true
+        pushRestrictions:
+          - helm-sigstore-codeowners
+        dismissalRestrictions:
+          - helm-sigstore-codeowners
+  - name: homebrew-tap
+    owner: sigstore
+    description: Sigstore Homebrew Tap
+    homepageUrl: https://sigstore.dev
+    allowAutoMerge: true
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: false
+    hasWiki: false
+    vulnerabilityAlerts: false
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - homebrew
+      - tap
+      - homebrew-formula
+      - homebrew-tap
+      - cosign
+      - rekor
+    collaborators:
+      - username: cpanato
+        permission: admin
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+          - test-bot (macos-latest)
+          - test-bot (ubuntu-latest)
+  - name: k8s-manifest-sigstore
+    owner: sigstore
+    description: kubectl plugin for signing Kubernetes manifest YAML files with sigstore
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators: []
+    teams:
+      - name: codeowners-k8s-manifest-sigstore
+        id: 4910210
+        permission: admin
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - codeowners-k8s-manifest-sigstore
+  - name: landscape
+    owner: sigstore
+    description: ""
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: false
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: AndreyKozlov1984
+        permission: maintain
+  - name: policy-controller
+    owner: sigstore
+    description: ""
+    homepageUrl: ""
+    allowAutoMerge: true
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    template:
+      owner: sigstore
+      repository: sigstore-project-template
+    topics: []
+    collaborators:
+      - username: hectorj2f
+        permission: maintain
+      - username: vaikas
+        permission: admin
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - Run unit tests (ubuntu-latest)
+          - lint
+          - Verify codegen
+          - check gofmt
+          - license boilerplate check
+          - Check Whitespace
+          - DCO
+          - check goimports
+  - name: public-good-instance
+    owner: sigstore
+    description: ""
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: false
+    visibility: private
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: IncludeSec
+        permission: push
+      - username: afeddersen
+        permission: maintain
+      - username: asraa
+        permission: maintain
+      - username: bobcallaway
+        permission: admin
+      - username: chainguardian
+        permission: pull
+      - username: cpanato
+        permission: admin
+      - username: dekkagaijin
+        permission: maintain
+      - username: haydentherapper
+        permission: push
+      - username: joshrwolf
+        permission: push
+      - username: k4leung4
+        permission: admin
+      - username: loosebazooka
+        permission: maintain
+      - username: mattmoor
+        permission: push
+      - username: nsmith5
+        permission: maintain
+      - username: priyawadhwa
+        permission: push
+      - username: puerco
+        permission: push
+      - username: sabre1041
+        permission: push
+      - username: strongjz
+        permission: maintain
+      - username: var-sdk
+        permission: pull
+    teams:
+      - name: public-good-instance-team
+        id: 5623385
+        permission: push
+      - name: triage
+        id: 5643322
+        permission: triage
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+  - name: rekor
+    owner: sigstore
+    description: Software Supply Chain Transparency Log
+    homepageUrl: https://sigstore.dev
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - security
+      - supply-chain
+      - provenance
+      - transparency-log
+    collaborators:
+      - username: sigstore-bot
+        permission: push
+    teams:
+      - name: rekor-codeowners
+        id: 4721448
+        permission: maintain
+      - name: sigstore-release-team
+        id: 4845328
+        permission: push
+      - name: triage
+        id: 5643322
+        permission: triage
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: false
+        allowsDeletions: true
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requireConversationResolution: false
+        requireSignedCommits: false
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - build
+          - DCO
+          - e2e
+          - Analyze (go)
+          - CodeQL
+        pushRestrictions:
+          - rekor-codeowners
+  - name: rekor-monitor
+    owner: sigstore
+    description: Purdue's Rekor monitor
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: SantiagoTorres
+        permission: admin
+      - username: hojoung97
+        permission: push
+      - username: jehanshah8
+        permission: push
+    teams:
+      - name: rekor-monitor-codeowners
+        id: 4722221
+        permission: push
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: false
+        allowsDeletions: true
+        allowsForcePushes: true
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        requireBranchesUpToDate: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - rekor-monitor-codeowners
+        dismissalRestrictions:
+          - rekor-monitor-codeowners
+  - name: rekor-operator
+    owner: sigstore
+    description: K8S Operator for Rekor
+    homepageUrl: ""
+    allowAutoMerge: true
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - operator
+      - k8s
+      - rekor
+    collaborators: []
+    teams:
+      - name: rekor-operator-team
+        id: 4753279
+        permission: push
+      - name: helm
+        id: 5291354
+        permission: admin
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+          - lint
+          - build
+          - license boilerplate check
+  - name: root-signing
+    owner: sigstore
+    description: ""
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: false
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: haydentherapper
+        permission: maintain
+    teams:
+      - name: sigstore-keyholders
+        id: 4899309
+        permission: admin
+      - name: triage
+        id: 5643322
+        permission: triage
+    branchesProtection:
+      - pattern: main
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+  - name: ruby-sigstore
+    owner: sigstore
+    description: Rubygems sigstore signing plugin
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators: []
+    teams:
+      - name: codeowners-ruby-sigstore
+        id: 4728095
+        permission: maintain
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        allowsForcePushes: true
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        requireBranchesUpToDate: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - codeowners-ruby-sigstore
+        dismissalRestrictions:
+          - codeowners-ruby-sigstore
+  - name: scaffolding
+    owner: sigstore
+    description: Stuff to make standing up sigstore (esp. for testing) easier for e2e/integration testing.
+    homepageUrl: ""
+    allowAutoMerge: true
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: cpanato
+        permission: admin
+      - username: nsmith5
+        permission: push
+      - username: priyawadhwa
+        permission: admin
+    teams:
+      - name: scaffolding-codeowners
+        id: 5757921
+        permission: admin
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        statusChecks:
+          - Test github action (v1.21.x, test github action)
+          - Test github action (v1.22.x, test github action)
+          - license boilerplate check
+          - DCO
+          - Analyze (go)
+          - Shellcheck
+          - e2e tests using release (v1.21.x, fulcio rekor ctlog e2e)
+        pushRestrictions:
+          - scaffolding-codeowners
+  - name: sget
+    owner: sigstore
+    description: ""
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: false
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: imjasonh
+        permission: maintain
+      - username: luhring
+        permission: maintain
+    teams:
+      - name: sigstore-release-team
+        id: 4845328
+        permission: maintain
+      - name: triage
+        id: 5643322
+        permission: triage
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+          - Build
+  - name: sigstore
+    owner: sigstore
+    description: Common go library shared across sigstore services and clients
+    homepageUrl: https://sigstore.dev
+    allowAutoMerge: true
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - go
+      - golang
+      - security
+      - supply-chain
+      - cosign
+      - sigstore
+    collaborators: []
+    teams:
+      - name: sigstore-codeowners
+        id: 4722047
+        permission: maintain
+      - name: sigstore-release-team
+        id: 4845328
+        permission: maintain
+      - name: sigstore-triage
+        id: 5761415
+        permission: triage
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        statusChecks:
+          - DCO
+          - license boilerplate check
+          - Analyze (go)
+          - e2e integration tests
+          - lint checks
+        pushRestrictions:
+          - sigstore-codeowners
+        dismissalRestrictions:
+          - sigstore-codeowners
+  - name: sigstore-git-verifier
+    owner: sigstore
+    description: A Github Action to verify that new commits are present in the sigstore transparency log.
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators: []
+    teams:
+      - name: git-verifier-codeowners
+        id: 4728109
+        permission: maintain
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        requireBranchesUpToDate: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - git-verifier-codeowners
+        dismissalRestrictions:
+          - git-verifier-codeowners
+  - name: sigstore-helm-operator
+    owner: sigstore
+    description: Helm based operator for the sigstore project
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: false
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: cpanato
+        permission: admin
+      - username: sabre1041
+        permission: admin
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+  - name: sigstore-installer
+    owner: sigstore
+    description: ""
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: false
+    hasWiki: false
+    vulnerabilityAlerts: false
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators: []
+    teams:
+      - name: cosign-codeowners
+        id: 4722092
+        permission: maintain
+      - name: cosign-installer-codeowners
+        id: 4728120
+        permission: maintain
+      - name: fulcio-codeowners
+        id: 4721751
+        permission: maintain
+      - name: rekor-codeowners
+        id: 4721448
+        permission: maintain
+      - name: sigstore-release-team
+        id: 4845328
+        permission: admin
+      - name: triage
+        id: 5643322
+        permission: triage
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+          - shellcheck
+          - license boilerplate check
+  - name: sigstore-java
+    owner: sigstore
+    description: java clients for sigstore
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: false
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: jvanzyl
+        permission: push
+      - username: loosebazooka
+        permission: admin
+      - username: patflynn
+        permission: maintain
+    teams:
+      - name: sigstore-java-codeowners
+        id: 5754835
+        permission: maintain
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+  - name: sigstore-maven
+    owner: sigstore
+    description: sigstore maven plugin
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: false
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: jvanzyl
+        permission: admin
+    template:
+      owner: sigstore
+      repository: sigstore-project-template
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+  - name: sigstore-project-template
+    owner: sigstore
+    description: cookiecutter template for sigstore projects
+    isTemplate: true
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators: []
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        requireConversationResolution: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        statusChecks:
+          - DCO
+  - name: sigstore-python
+    owner: sigstore
+    description: A codesigning tool for Python packages
+    homepageUrl: https://pypi.org/p/sigstore
+    allowAutoMerge: false
+    allowMergeCommit: false
+    allowRebaseMerge: false
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: false
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - python
+      - security
+      - supply-chain
+      - codesigning
+    collaborators:
+      - username: di
+        permission: admin
+      - username: lukehinds
+        permission: admin
+      - username: tetsuo-cpp
+        permission: maintain
+      - username: woodruffw
+        permission: maintain
+    teams:
+      - name: Core Team
+        id: 4563391
+        permission: pull
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        requireBranchesUpToDate: true
+        statusChecks:
+          - DCO
+  - name: sigstore-rs
+    owner: sigstore
+    description: An experimental Rust crate for sigstore
+    homepageUrl: https://sigstore.github.io/sigstore-rs/sigstore/
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - rust-lang
+      - rust-libraries
+      - sigstore
+    pages:
+      branch: gh-pages
+      path: /
+    collaborators:
+      - username: flavio
+        permission: admin
+      - username: viccuad
+        permission: maintain
+    teams:
+      - name: sigstore-rs-codeowners
+        id: 5274103
+        permission: maintain
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requireSignedCommits: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        statusChecks:
+          - DCO
+          - Test Suite
+          - Rustfmt
+        pushRestrictions:
+          - sigstore-rs-codeowners
+        dismissalRestrictions:
+          - sigstore-rs-codeowners
+  - name: sigstore-website
+    owner: sigstore
+    description: Codebase for sigstore.dev
+    homepageUrl: https://sigstore.dev
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: devmoran
+        permission: push
+    teams:
+      - name: codeowners-sigstore-website
+        id: 4932390
+        permission: admin
+      - name: triage
+        id: 5643322
+        permission: triage
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - codeowners-sigstore-website

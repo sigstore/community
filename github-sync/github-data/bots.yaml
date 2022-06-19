@@ -1,0 +1,4 @@
+users:
+  - username: sigstore-bot
+    role: member
+    teams: []

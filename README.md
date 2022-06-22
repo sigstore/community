@@ -28,6 +28,13 @@ This direct link will continue to work as well, and is available
 
 Recordings for all of the above meetings should be on our [YouTube channel](https://www.youtube.com/channel/UCWPVc8glVGOODxsA_ep0VVw)
 
+### Infrastructure Working Group meeting
+
+We typically meet for an Infrastructure Working Group meeting every other [Tuesday @ 15:30 UTC time](https://dateful.com/eventlink/1236491091).
+This is available via the shared calendar above.
+
+Recordings for all of the above meetings should be on our [YouTube channel](https://www.youtube.com/channel/UCWPVc8glVGOODxsA_ep0VVw)
+
 ## Slack
 
 Come on over to our [slack channel](https://sigstore.slack.com)!

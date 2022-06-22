@@ -26,11 +26,13 @@ jobs:
         working-directory: ./github-sync
 
       - run: go mod download
+        working-directory: ./github-sync
 
       - uses: pulumi/actions@d1936f654af277244c132c9c0cbb42c7ad81050a # v3
         with:
           command: preview
           stack-name: github-prod
           refresh: true
+          work-dir: ./github-sync
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}

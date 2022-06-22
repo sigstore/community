@@ -31,7 +31,7 @@ jobs:
       - uses: pulumi/actions@d1936f654af277244c132c9c0cbb42c7ad81050a # v3
         with:
           command: up
-          stack-name: github-prod
+          stack-name: sigstore/github-prod
           refresh: true
           work-dir: ./github-sync
         env:

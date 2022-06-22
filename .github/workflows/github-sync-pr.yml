@@ -1,0 +1,37 @@
+name: Preview changes to GitHub configuration on Pull Request
+
+on:
+  pull_request:
+    paths:
+      - 'github-sync/github-data/*.yaml'
+      - 'github-sync/main.go'
+      - 'github-sync/go.*'
+
+env:
+ PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+ GITHUB_OWNER: sigstore
+
+jobs:
+  preview:
+    name: Preview
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # v3
+      - uses: actions/setup-go@b22fbbc2921299758641fab08929b4ac52b32923 # v3
+        with:
+          go-version: 1.18
+          check-latest: true
+          cache: true
+
+      - run: make yaml-sort
+        working-directory: ./github-sync
+
+      - run: go mod download
+
+      - uses: pulumi/actions@d1936f654af277244c132c9c0cbb42c7ad81050a # v3
+        with:
+          command: preview
+          stack-name: github-prod
+          refresh: true
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}

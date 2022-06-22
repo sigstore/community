@@ -23,7 +23,7 @@ time](https://dateful.com/eventlink/1067430297).
 This is available via the shared calendar above.
 
 We also used to use a specific calendar invite for the weekly call.
-This direct link will continue to work as well, and is available 
+This direct link will continue to work as well, and is available
 [here](https://calendar.google.com/event?action=TEMPLATE&tmeid=Njc2b2xoYTlkamdlaGN1MTMza3ZoM21iZXZfMjAyMTAzMTZUMTczMDAwWiBkbWk5M3Nibjl0OTJqZTlobXVodXVsYnZma0Bn&tmsrc=dmi93sbn9t92je9hmuhuulbvfk%40group.calendar.google.com&scp=ALL)
 
 Recordings for all of the above meetings should be on our [YouTube channel](https://www.youtube.com/channel/UCWPVc8glVGOODxsA_ep0VVw)
@@ -32,3 +32,7 @@ Recordings for all of the above meetings should be on our [YouTube channel](http
 
 Come on over to our [slack channel](https://sigstore.slack.com)!
 [Invite link](https://join.slack.com/t/sigstore/shared_invite/zt-mhs55zh0-XmY3bcfWn4XEyMqUUutbUQ)
+
+## Adding Users/Collaborators, Teams, Repositories to Sigstore GitHub Organization
+
+To add or change to add/change an Org Member, team, collaborator or repository please [follow this steps](github-sync/README.md)

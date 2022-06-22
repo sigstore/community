@@ -28,7 +28,7 @@ repositories:
   - name: TSC
     owner: sigstore
     description: sigstore Technical Advisory Council
-    homepageUrl: ""
+    homepageUrl: "https://sigstore.dev"
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true

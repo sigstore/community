@@ -83,7 +83,7 @@ teams:
   - name: sigstore-rs-codeowners
     privacy: closed
     description: 'sigstore rust library '
-  - name: sigstore-triage
+  - name: sigstore-go-triage
     privacy: closed
     description: ""
   - name: triage

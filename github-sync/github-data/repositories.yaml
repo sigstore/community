@@ -131,6 +131,9 @@ repositories:
       - name: sigstore-release-team
         id: 4845328
         permission: maintain
+      - name: triage
+        id: 5643322
+        permission: triage
     branchesProtection:
       - pattern: main
         enforceAdmins: true
@@ -1076,8 +1079,11 @@ repositories:
       - name: sigstore-release-team
         id: 4845328
         permission: maintain
-      - name: sigstore-triage
+      - name: sigstore-go-triage
         id: 5761415
+        permission: triage
+      - name: triage
+        id: 5643322
         permission: triage
     branchesProtection:
       - pattern: main

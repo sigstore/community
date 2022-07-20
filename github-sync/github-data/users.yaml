@@ -131,7 +131,7 @@ users:
         role: maintainer
       - name: sigstore-keyholders
         role: maintainer
-      - name: sigstore-triage
+      - name: sigstore-go-triage
         role: maintainer
       - name: triage
         role: maintainer
@@ -334,7 +334,7 @@ users:
   - username: naveensrinivasan
     role: member
     teams:
-      - name: sigstore-triage
+      - name: sigstore-go-triage
         role: member
   - username: patflynn
     role: member

@@ -56,6 +56,9 @@ teams:
   - name: rekor-operator-team
     privacy: closed
     description: ""
+  - name: tuf-root-signing-codeowners
+    privacy: closed
+    description: ""
   - name: scaffolding-codeowners
     privacy: closed
     description: maintainers on sigstore/scaffolding

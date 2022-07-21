@@ -903,7 +903,10 @@ repositories:
     teams:
       - name: sigstore-keyholders
         id: 4899309
-        permission: admin
+        permission: write
+      - name: tuf-root-signing-codeowners
+        id: 4899309
+        permission: maintain
       - name: triage
         id: 5643322
         permission: triage

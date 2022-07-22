@@ -657,6 +657,8 @@ repositories:
         permission: maintain
       - username: vaikas
         permission: admin
+      - username: sigstore-bot
+        permission: push
     branchesProtection:
       - pattern: main
         dismissStaleReviews: true

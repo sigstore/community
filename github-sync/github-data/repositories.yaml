@@ -907,7 +907,7 @@ repositories:
         id: 4899309
         permission: push
       - name: tuf-root-signing-codeowners
-        id: 4899309
+        id: 6378909
         permission: maintain
       - name: triage
         id: 5643322

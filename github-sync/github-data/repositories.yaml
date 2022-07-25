@@ -435,6 +435,33 @@ repositories:
           - fulcio-codeowners
         dismissalRestrictions:
           - fulcio-codeowners
+  - name: github-sync
+    owner: sigstore
+    description: Pulumi GitHub Sync for sigstore
+    homepageUrl: https://sigstore.dev
+    allowAutoMerge: true
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: false
+    hasWiki: false
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - sigstore
+      - automation
+      - pulumi
+    collaborators:
+      - username: bobcallaway
+        permission: admin
+      - username: cpanato
+        permission: admin
   - name: gitsign
     owner: sigstore
     description: Keyless Git signing using Sigstore

@@ -1080,7 +1080,7 @@ repositories:
         id: 4845328
         permission: maintain
       - name: sigstore-go-triage
-        id: 5761415
+        id: 6379072
         permission: triage
       - name: triage
         id: 5643322

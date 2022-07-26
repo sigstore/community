@@ -1255,7 +1255,12 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         statusChecks:
+          - Validation
           - DCO
+          - "gha-oidc-tests (17)"
+          - "gha-oidc-tests (11)"
+          - "build (17)"
+          - "build (11)"
   - name: sigstore-maven
     owner: sigstore
     description: sigstore maven plugin
@@ -1322,7 +1327,7 @@ repositories:
     owner: sigstore
     description: A codesigning tool for Python packages
     homepageUrl: https://pypi.org/p/sigstore
-    allowAutoMerge: false
+    allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: false
     allowSquashMerge: true

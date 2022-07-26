@@ -28,7 +28,7 @@ repositories:
   - name: TSC
     owner: sigstore
     description: sigstore Technical Advisory Council
-    homepageUrl: "https://sigstore.dev"
+    homepageUrl: https://sigstore.dev
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -258,6 +258,38 @@ repositories:
         enforceAdmins: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+  - name: docs
+    owner: sigstore
+    description: Sigstore documentation
+    homepageUrl: https://sigstore.dev
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: ltagliaferri
+        permission: admin
+    teams: []
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
         statusChecks:
           - DCO
   - name: examples
@@ -658,10 +690,10 @@ repositories:
     collaborators:
       - username: hectorj2f
         permission: maintain
-      - username: vaikas
-        permission: admin
       - username: sigstore-bot
         permission: push
+      - username: vaikas
+        permission: admin
     branchesProtection:
       - pattern: main
         dismissStaleReviews: true
@@ -1257,10 +1289,10 @@ repositories:
         statusChecks:
           - Validation
           - DCO
-          - "gha-oidc-tests (17)"
-          - "gha-oidc-tests (11)"
-          - "build (17)"
-          - "build (11)"
+          - gha-oidc-tests (17)
+          - gha-oidc-tests (11)
+          - build (17)
+          - build (11)
   - name: sigstore-maven
     owner: sigstore
     description: sigstore maven plugin

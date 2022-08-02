@@ -1293,6 +1293,46 @@ repositories:
           - gha-oidc-tests (11)
           - build (17)
           - build (11)
+  - name: sigstore-js
+    owner: sigstore
+    description: Code-signing for npm packages
+    homepageUrl: ""
+    allowAutoMerge: true
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: false
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - javascript
+      - node
+      - security
+      - supply-chain
+      - codesigning
+    collaborators:
+      - username: bdehamer
+        permission: admin
+    teams:
+      - name: Core Team
+        id: 4563391
+        permission: pull
+    branchesProtection:
+      - pattern: main
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        requireBranchesUpToDate: true
+        statusChecks:
+          - DCO
   - name: sigstore-maven
     owner: sigstore
     description: sigstore maven plugin

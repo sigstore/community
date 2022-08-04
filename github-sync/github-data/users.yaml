@@ -36,6 +36,11 @@ users:
         role: member
       - name: tuf-root-signing-codeowners
         role: member
+  - username: bdehamer
+    role: member
+    teams:
+      - name: sigstore-js-codeowners
+        role: maintainer
   - username: bobcallaway
     role: admin
     teams:

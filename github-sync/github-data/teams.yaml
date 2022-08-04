@@ -14,6 +14,9 @@ teams:
   - name: codeowners-ruby-sigstore
     privacy: closed
     description: ""
+  - name: codeowners-sigstore-js
+    privacy: closed
+    description: sigstore-js maintainers
   - name: codeowners-sigstore-python
     privacy: closed
     description: sigstore-python maintainers

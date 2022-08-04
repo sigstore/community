@@ -351,6 +351,8 @@ users:
     teams:
       - name: cosign-codeowners
         role: member
+      - name: rekor-codeowners
+        role: member
       - name: triage
         role: member
   - username: puerco

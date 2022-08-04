@@ -1,4 +1,4 @@
-name: Update GitHub configuration on merge on main
+name: GitHub Sync Update
 
 on:
   push:
@@ -6,33 +6,23 @@ on:
       - main
     paths:
       - 'github-sync/github-data/*.yaml'
-      - 'github-sync/main.go'
-      - 'github-sync/go.*'
+      - 'github-sync/Pulumi*.yaml'
 
 env:
- GITHUB_TOKEN: ${{ secrets.PULUMI_GITHUB_TOKEN }}
  PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
  GITHUB_OWNER: sigstore
 
 jobs:
-  update:
+  Update:
     name: Update
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # v3
-      - uses: actions/setup-go@b22fbbc2921299758641fab08929b4ac52b32923 # v3
-        with:
-          go-version: 1.18
-          check-latest: true
-
-      - run: go mod download
-        working-directory: ./github-sync
-
-      - uses: pulumi/actions@d1936f654af277244c132c9c0cbb42c7ad81050a # v3
-        with:
-          command: up
-          stack-name: sigstore/github-prod
-          refresh: false
-          work-dir: ./github-sync
-        env:
-          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+    - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # v3
+    - uses: sigstore/github-sync@main
+      with:
+        work_dir: ./github-sync
+        config_directory: ./github-sync/github-data
+        stack_name: sigstore/github-prod
+        pulumi_access_token: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+        pulumi_command: up

@@ -142,6 +142,11 @@ users:
         role: maintainer
       - name: tuf-root-signing-codeowners
         role: maintainer
+  - username: eddiezane
+    role: member
+    teams:
+      - name: codeowners-sigstore-js
+        role: maintainer
   - username: efebarlas
     role: member
     teams:
@@ -157,6 +162,11 @@ users:
     teams:
       - name: codeowners-sigstore-website
         role: member
+  - username: feelepxyz
+    role: member
+    teams:
+      - name: codeowners-sigstore-js
+        role: maintainer
   - username: flavio
     role: member
     teams:

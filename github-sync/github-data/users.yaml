@@ -39,7 +39,7 @@ users:
   - username: bdehamer
     role: member
     teams:
-      - name: sigstore-js-codeowners
+      - name: codeowners-sigstore-js
         role: maintainer
   - username: bobcallaway
     role: admin

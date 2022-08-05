@@ -754,12 +754,10 @@ repositories:
     licenseTemplate: ""
     topics: []
     collaborators:
-      - username: IncludeSec
-        permission: push
       - username: afeddersen
-        permission: maintain
+        permission: pull
       - username: asraa
-        permission: maintain
+        permission: triage
       - username: bobcallaway
         permission: admin
       - username: chainguardian
@@ -767,33 +765,33 @@ repositories:
       - username: cpanato
         permission: admin
       - username: dekkagaijin
-        permission: maintain
-      - username: haydentherapper
-        permission: push
-      - username: joshrwolf
-        permission: push
-      - username: k4leung4
-        permission: admin
-      - username: loosebazooka
-        permission: maintain
-      - username: mattmoor
-        permission: push
-      - username: nsmith5
-        permission: maintain
-      - username: priyawadhwa
-        permission: push
-      - username: puerco
-        permission: push
-      - username: sabre1041
-        permission: push
-      - username: strongjz
-        permission: maintain
-      - username: var-sdk
         permission: pull
+      - username: haydentherapper
+        permission: maintain
+      - username: joshrwolf
+        permission: pull
+      - username: k4leung4
+        permission: maintain
+      - username: loosebazooka
+        permission: pull
+      - username: mattmoor
+        permission: pull
+      - username: nsmith5
+        permission: triage
+      - username: priyawadhwa
+        permission: maintain
+      - username: puerco
+        permission: triage
+      - username: sabre1041
+        permission: pull
+      - username: strongjz
+        permission: triage
+      - username: var-sdk
+        permission: maintain
     teams:
       - name: public-good-instance-team
         id: 5623385
-        permission: push
+        permission: triage
       - name: triage
         id: 5643322
         permission: triage

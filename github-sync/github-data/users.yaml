@@ -77,6 +77,11 @@ users:
   - username: caniszczyk
     role: admin
     teams: []
+  - username: cdris
+    role: member
+    teams:
+      - name: public-good-instance-team
+        role: member
   - username: coyote240
     role: member
     teams: []

@@ -755,7 +755,7 @@ repositories:
     topics: []
     collaborators:
       - username: afeddersen
-        permission: pull
+        permission: maintain
       - username: asraa
         permission: triage
       - username: bobcallaway
@@ -786,12 +786,11 @@ repositories:
         permission: pull
       - username: strongjz
         permission: triage
+      - username: vaikas
+        permission: maintain
       - username: var-sdk
         permission: maintain
     teams:
-      - name: public-good-instance-team
-        id: 5623385
-        permission: triage
       - name: triage
         id: 5643322
         permission: triage

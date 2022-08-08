@@ -786,6 +786,10 @@ repositories:
         permission: pull
       - username: strongjz
         permission: triage
+      - username: trevrosen
+        permission: pull
+      - username: trixor
+        permission: triage
       - username: vaikas
         permission: maintain
       - username: var-sdk

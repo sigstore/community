@@ -27,7 +27,7 @@ repositories:
         requiredApprovingReviewCount: 1
   - name: TSC
     owner: sigstore
-    description: sigstore Technical Advisory Council
+    description: sigstore Technical Steering Committee
     homepageUrl: https://sigstore.dev
     allowAutoMerge: false
     allowMergeCommit: true

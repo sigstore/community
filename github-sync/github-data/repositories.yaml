@@ -755,7 +755,7 @@ repositories:
     topics: []
     collaborators:
       - username: afeddersen
-        permission: maintain
+        permission: triage
       - username: asraa
         permission: triage
       - username: bobcallaway

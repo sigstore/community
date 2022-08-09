@@ -1062,13 +1062,10 @@ repositories:
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
         statusChecks:
-          - Test github action (v1.21.x, test github action)
-          - Test github action (v1.22.x, test github action)
           - license boilerplate check
           - DCO
           - Analyze (go)
           - Shellcheck
-          - e2e tests using release (v1.21.x, fulcio rekor ctlog e2e)
         pushRestrictions:
           - scaffolding-codeowners
   - name: sget

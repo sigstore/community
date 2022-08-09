@@ -1351,10 +1351,10 @@ repositories:
     teams:
       - name: Core Team
         id: 4563391
-        permission: pull
+        permission: push
       - name: codeowners-sigstore-js
         id: 6411558
-        permission: pull
+        permission: maintain
     branchesProtection:
       - pattern: main
         requiredLinearHistory: true

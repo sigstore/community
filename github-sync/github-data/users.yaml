@@ -204,6 +204,8 @@ users:
     teams:
       - name: architecture-doc-team
         role: member
+      - name: gitsign-codeowners
+        role: member
   - username: inferno-chromium
     role: member
     teams: []
@@ -384,6 +386,11 @@ users:
     teams:
       - name: codeowners-k8s-manifest-sigstore
         role: member
+  - username: wlynch
+    role: member
+    teams:
+      - name: gitsign-codeowners
+        role: maintainer
   - username: znewman01
     role: member
     teams:

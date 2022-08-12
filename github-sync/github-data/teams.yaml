@@ -32,6 +32,9 @@ teams:
   - name: fulcio-codeowners
     privacy: closed
     description: ""
+  - name: gitsign-codeowners
+    privacy: closed
+    description: ""
   - name: git-verifier-codeowners
     privacy: closed
     description: ""

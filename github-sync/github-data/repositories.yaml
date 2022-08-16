@@ -514,6 +514,10 @@ repositories:
         permission: maintain
       - username: wlynch
         permission: admin
+    teams:
+      - name: gitsign-codeowners
+        id: 6463637
+        permission: maintain
     branchesProtection:
       - pattern: main
         enforceAdmins: true

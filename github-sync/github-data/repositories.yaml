@@ -746,14 +746,30 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         statusChecks:
-          - Run unit tests (ubuntu-latest)
-          - lint
-          - Verify codegen
-          - check gofmt
-          - license boilerplate check
+          - Analyze (go)
           - Check Whitespace
           - DCO
+          - Do Not Submit
+          - Run unit tests (ubuntu-latest)
+          - Verify codegen
+          - check gofmt
           - check goimports
+          - dependency-review
+          - license boilerplate check
+          - lint
+          - verify
+          - e2e tests (v1.22.x)
+          - e2e tests (v1.23.x)
+          - e2e tests (v1.24.x)
+          - ClusterImagePolicy e2e tests (v1.22.x, cluster_image_policy)
+          - ClusterImagePolicy e2e tests (v1.22.x, cluster_with_scalable)
+          - ClusterImagePolicy e2e tests (v1.22.x, cluster_image_policy_with_attestations)
+          - ClusterImagePolicy e2e tests (v1.23.x, cluster_image_policy)
+          - ClusterImagePolicy e2e tests (v1.23.x, cluster_with_scalable)
+          - ClusterImagePolicy e2e tests (v1.23.x, cluster_image_policy_with_attestations)
+          - ClusterImagePolicy e2e tests (v1.24.x, cluster_image_policy)
+          - ClusterImagePolicy e2e tests (v1.24.x, cluster_with_scalable)
+          - ClusterImagePolicy e2e tests (v1.24.x, cluster_image_policy_with_attestations)
   - name: public-good-instance
     owner: sigstore
     description: ""

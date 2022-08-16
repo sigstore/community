@@ -142,7 +142,23 @@ repositories:
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
         statusChecks:
+          - Check Whitespace
           - DCO
+          - Do Not Submit
+          - Run PowerShell E2E tests
+          - Run e2e tests
+          - Run unit tests (macos-latest)
+          - Run unit tests (ubuntu-latest)
+          - Run unit tests (windows-latest)
+          - Verify Docgen
+          - build (macos-latest)
+          - build (ubuntu-latest)
+          - build (windows-latest)
+          - dependency-review
+          - license boilerplate check
+          - lint
+          - validate-release-job
+          - attest / verify-attestation test (v1.24.x)
         pushRestrictions:
           - cosign-codeowners
   - name: cosign-gatekeeper-provider

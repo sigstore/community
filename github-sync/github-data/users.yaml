@@ -84,7 +84,9 @@ users:
         role: member
   - username: codysoyland
     role: member
-    teams: []
+    teams:
+      - name: triage
+        role: member
   - username: coyote240
     role: member
     teams: []
@@ -160,6 +162,11 @@ users:
     teams:
       - name: rekor-monitor-codeowners
         role: member
+  - username: ejahngithub
+    role: member
+    teams:
+      - name: codeowners-sigstore-js
+        role: maintainer
   - username: endorama
     role: member
     teams:
@@ -324,7 +331,9 @@ users:
         role: maintainer
   - username: malancas
     role: member
-    teams: []
+    teams:
+      - name: triage
+        role: member
   - username: mattmoor
     role: member
     teams:
@@ -385,7 +394,9 @@ users:
         role: member
   - username: pwelch
     role: member
-    teams: []
+    teams:
+      - name: triage
+        role: member
   - username: sabre1041
     role: member
     teams:
@@ -398,7 +409,9 @@ users:
     teams: []
   - username: trevrosen
     role: member
-    teams: []
+    teams:
+      - name: triage
+        role: member
   - username: vaikas
     role: member
     teams:

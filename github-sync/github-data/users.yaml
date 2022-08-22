@@ -82,6 +82,9 @@ users:
     teams:
       - name: public-good-instance-team
         role: member
+  - username: codysoyland
+    role: member
+    teams: []
   - username: coyote240
     role: member
     teams: []
@@ -319,6 +322,9 @@ users:
         role: maintainer
       - name: cosign-codeowners
         role: maintainer
+  - username: malancas
+    role: member
+    teams: []
   - username: mattmoor
     role: member
     teams:
@@ -377,6 +383,9 @@ users:
     teams:
       - name: triage
         role: member
+  - username: pwelch
+    role: member
+    teams: []
   - username: sabre1041
     role: member
     teams:
@@ -386,6 +395,9 @@ users:
         role: member
   - username: thelinuxfoundation
     role: admin
+    teams: []
+  - username: trevrosen
+    role: member
     teams: []
   - username: vaikas
     role: member

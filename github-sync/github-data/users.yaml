@@ -396,6 +396,11 @@ users:
         role: member
       - name: cosign-codeowners
         role: member
+  - username: var-sdk
+    role: member
+    teams:
+      - name: triage
+        role: member
   - username: yuji-watanabe-jp
     role: member
     teams:

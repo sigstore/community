@@ -10,7 +10,7 @@ users:
       - name: cosign-codeowners
         role: member
   - username: SantiagoTorres
-    role: member
+    role: admin
     teams:
       - name: rekor-monitor-codeowners
         role: member
@@ -84,9 +84,7 @@ users:
         role: member
   - username: codysoyland
     role: member
-    teams:
-      - name: triage
-        role: member
+    teams: []
   - username: coyote240
     role: member
     teams: []
@@ -331,9 +329,7 @@ users:
         role: maintainer
   - username: malancas
     role: member
-    teams:
-      - name: triage
-        role: member
+    teams: []
   - username: mattmoor
     role: member
     teams:
@@ -394,9 +390,7 @@ users:
         role: member
   - username: pwelch
     role: member
-    teams:
-      - name: triage
-        role: member
+    teams: []
   - username: sabre1041
     role: member
     teams:
@@ -408,7 +402,7 @@ users:
     role: admin
     teams: []
   - username: trevrosen
-    role: member
+    role: admin
     teams:
       - name: triage
         role: member

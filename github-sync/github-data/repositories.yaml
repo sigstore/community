@@ -798,6 +798,8 @@ repositories:
         permission: admin
       - username: chainguardian
         permission: pull
+      - username: codysoyland
+        permission: triage
       - username: cpanato
         permission: admin
       - username: dekkagaijin
@@ -810,6 +812,8 @@ repositories:
         permission: maintain
       - username: loosebazooka
         permission: pull
+      - username: malancas
+        permission: triage
       - username: mattmoor
         permission: pull
       - username: nsmith5
@@ -817,6 +821,8 @@ repositories:
       - username: priyawadhwa
         permission: maintain
       - username: puerco
+        permission: triage
+      - username: pwelch
         permission: triage
       - username: sabre1041
         permission: pull

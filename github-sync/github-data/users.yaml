@@ -10,7 +10,7 @@ users:
       - name: cosign-codeowners
         role: member
   - username: SantiagoTorres
-    role: member
+    role: admin
     teams:
       - name: rekor-monitor-codeowners
         role: member
@@ -82,6 +82,9 @@ users:
     teams:
       - name: public-good-instance-team
         role: member
+  - username: codysoyland
+    role: member
+    teams: []
   - username: coyote240
     role: member
     teams: []
@@ -157,6 +160,11 @@ users:
     teams:
       - name: rekor-monitor-codeowners
         role: member
+  - username: ejahngithub
+    role: member
+    teams:
+      - name: codeowners-sigstore-js
+        role: maintainer
   - username: endorama
     role: member
     teams:
@@ -319,6 +327,9 @@ users:
         role: maintainer
       - name: cosign-codeowners
         role: maintainer
+  - username: malancas
+    role: member
+    teams: []
   - username: mattmoor
     role: member
     teams:
@@ -377,6 +388,9 @@ users:
     teams:
       - name: triage
         role: member
+  - username: pwelch
+    role: member
+    teams: []
   - username: sabre1041
     role: member
     teams:
@@ -387,6 +401,11 @@ users:
   - username: thelinuxfoundation
     role: admin
     teams: []
+  - username: trevrosen
+    role: admin
+    teams:
+      - name: triage
+        role: member
   - username: vaikas
     role: member
     teams:

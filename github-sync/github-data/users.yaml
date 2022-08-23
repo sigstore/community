@@ -75,7 +75,7 @@ users:
       - name: tuf-root-signing-codeowners
         role: maintainer
   - username: caniszczyk
-    role: admin
+    role: member
     teams: []
   - username: cdris
     role: member

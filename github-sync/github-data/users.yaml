@@ -16,6 +16,8 @@ users:
         role: member
       - name: sigstore-keyholders
         role: member
+      - name: Core Team
+        role: maintainer
   - username: ariel-kirson
     role: member
     teams:
@@ -405,7 +407,9 @@ users:
     role: admin
     teams:
       - name: triage
-        role: member
+        role: maintainer
+      - name: Core Team
+        role: maintainer
   - username: vaikas
     role: member
     teams:

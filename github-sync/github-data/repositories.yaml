@@ -922,17 +922,13 @@ repositories:
     visibility: public
     licenseTemplate: ""
     topics: []
-    collaborators:
-      - username: SantiagoTorres
-        permission: admin
-      - username: hojoung97
-        permission: push
-      - username: jehanshah8
-        permission: push
     teams:
       - name: rekor-monitor-codeowners
         id: 4722221
-        permission: push
+        permission: maintain
+      - name: triage
+        id: 5643322
+        permission: triage
     branchesProtection:
       - pattern: main
         enforceAdmins: false

@@ -1,9 +1,7 @@
 users:
   - username: A0su
     role: member
-    teams:
-      - name: rekor-monitor-codeowners
-        role: member
+    teams: []
   - username: Dentrax
     role: member
     teams:
@@ -33,6 +31,8 @@ users:
       - name: cosign-codeowners
         role: member
       - name: rekor-codeowners
+        role: member
+      - name: rekor-monitor-codeowners
         role: member
       - name: sget-codeowners
         role: member
@@ -67,6 +67,8 @@ users:
       - name: policy-controller-codeowners
         role: maintainer
       - name: rekor-codeowners
+        role: maintainer
+      - name: rekor-monitor-codeowners
         role: maintainer
       - name: scaffolding-codeowners
         role: maintainer
@@ -159,9 +161,7 @@ users:
         role: maintainer
   - username: efebarlas
     role: member
-    teams:
-      - name: rekor-monitor-codeowners
-        role: member
+    teams: []
   - username: ejahngithub
     role: member
     teams:
@@ -202,6 +202,8 @@ users:
       - name: architecture-doc-team
         role: member
       - name: fulcio-codeowners
+        role: member
+      - name: rekor-monitor-codeowners
         role: member
       - name: tuf-root-signing-codeowners
         role: member

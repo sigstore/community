@@ -26,3 +26,4 @@ jobs:
         stack_name: sigstore/github-prod
         pulumi_access_token: ${{ secrets.PULUMI_ACCESS_TOKEN }}
         pulumi_command: up
+        gh_token: ${{ secrets.GITHUB_TOKEN }}

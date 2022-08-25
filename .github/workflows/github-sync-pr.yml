@@ -27,5 +27,5 @@ jobs:
         work_dir: ./github-sync
         config_directory: ./github-sync/github-data
         stack_name: sigstore/github-prod
-        pulumi_access_token: ${{ secrets.PULUMI_TOKEN }}
+        pulumi_access_token: ${{ secrets.PULUMI_ACCESS_TOKEN }}
         pulumi_command: preview

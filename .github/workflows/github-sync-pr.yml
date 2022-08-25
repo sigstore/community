@@ -17,6 +17,9 @@ jobs:
     name: Preview Pulimi changes
     runs-on: ubuntu-latest
 
+    permissions:
+      pull-requests: write
+
     steps:
     - uses: actions/checkout@v3
       with:
@@ -29,3 +32,5 @@ jobs:
         stack_name: sigstore/github-prod
         pulumi_access_token: ${{ secrets.PULUMI_ACCESS_TOKEN }}
         pulumi_command: preview
+        gh_token: ${{ secrets.GITHUB_TOKEN }}
+        comment_on_pr: true

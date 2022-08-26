@@ -1,6 +1,4 @@
 users:
-  - username: A0su
-    role: member
   - username: Dentrax
     role: member
     teams:
@@ -158,8 +156,6 @@ users:
     teams:
       - name: codeowners-sigstore-js
         role: maintainer
-  - username: efebarlas
-    role: member
   - username: ejahngithub
     role: member
     teams:

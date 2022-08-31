@@ -828,6 +828,8 @@ repositories:
         permission: pull
       - username: strongjz
         permission: triage
+      - username: tstromberg
+        permission: pull
       - username: trevrosen
         permission: pull
       - username: trixor

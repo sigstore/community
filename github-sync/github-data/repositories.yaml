@@ -1569,7 +1569,7 @@ repositories:
     branchesProtection:
       - pattern: main
         allowsDeletions: true
-        requireSignedCommits: true
+        requireSignedCommits: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true

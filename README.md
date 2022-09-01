@@ -48,3 +48,11 @@ We encourage all contributors to become members. We aim to grow an active, healt
 ## Adding Users/Collaborators, Teams, Repositories to Sigstore GitHub Organization
 
 To add or change to add/change an Org Member, team, collaborator or repository please [follow this steps](github-sync/README.md)
+
+## Support Tools
+
+We would like to thank the following companies who provide us with an OpenSource plan to support Sigstore development.
+
+<a target="_blank" href="https://pulumi.com/"><img style="width: 130px; height: 52px;" alt="Universal Infrastructure as Code" src="https://www.pulumi.com/images/logo/logo-on-white.svg" /></a>
+
+<a target="_blank" href="https://betteruptime.com/"><img style="width: 130px; height: 52px;" alt="Better Uptime Website Monitoring" src="https://betteruptime.com/assets/static_assets/badges/dark.png" /></a>

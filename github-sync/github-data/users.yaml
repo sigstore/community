@@ -437,5 +437,7 @@ users:
   - username: znewman01
     role: member
     teams:
+      - name: triage
+        role: member
       - name: architecture-doc-team
         role: member

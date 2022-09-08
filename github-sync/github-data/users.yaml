@@ -332,6 +332,11 @@ users:
   - username: malancas
     role: member
     teams: []
+  - username: mathieu-benoit
+    role: member
+    teams:
+      - name: public-good-instance-team
+        role: member
   - username: mattmoor
     role: member
     teams:

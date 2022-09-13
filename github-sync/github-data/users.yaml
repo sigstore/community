@@ -34,7 +34,7 @@ users:
       - name: sget-codeowners
         role: member
       - name: rekor-monitor-codeowners
-        role: maintainer
+        role: member
       - name: tuf-root-signing-codeowners
         role: member
   - username: bdehamer
@@ -202,7 +202,9 @@ users:
       - name: fulcio-codeowners
         role: member
       - name: rekor-monitor-codeowners
-        role: maintainer
+        role: member
+      - name: sigstore-codeowners
+        role: member
       - name: tuf-root-signing-codeowners
         role: member
   - username: hectorj2f

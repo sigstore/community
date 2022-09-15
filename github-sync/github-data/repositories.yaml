@@ -478,6 +478,14 @@ repositories:
         permission: admin
       - username: cpanato
         permission: admin
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
   - name: gitsign
     owner: sigstore
     description: Keyless Git signing using Sigstore

@@ -416,6 +416,11 @@ users:
     teams:
       - name: sigstore-oncall
         role: member
+  - username: rawlingsj
+    role: member
+    teams:
+      - name: public-good-instance-team
+        role: member
   - username: sabre1041
     role: member
     teams:

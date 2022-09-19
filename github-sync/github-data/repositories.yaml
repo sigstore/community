@@ -837,7 +837,7 @@ repositories:
       - username: strongjz
         permission: triage
       - username: tstromberg
-        permission: pull
+        permission: triage
       - username: trevrosen
         permission: pull
       - username: trixor

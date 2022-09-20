@@ -435,6 +435,11 @@ users:
     teams:
       - name: gitsign-codeowners
         role: maintainer
+  - username: Xynnn007
+    role: member
+    teams:
+      - name: sigstore-rs-codeowners
+        role: member
   - username: znewman01
     role: member
     teams:

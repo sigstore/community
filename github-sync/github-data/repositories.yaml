@@ -814,8 +814,6 @@ repositories:
         permission: pull
       - username: haydentherapper
         permission: maintain
-      - username: joshrwolf
-        permission: pull
       - username: k4leung4
         permission: maintain
       - username: loosebazooka
@@ -824,8 +822,6 @@ repositories:
         permission: triage
       - username: mattmoor
         permission: pull
-      - username: nsmith5
-        permission: triage
       - username: priyawadhwa
         permission: maintain
       - username: puerco

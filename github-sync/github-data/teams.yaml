@@ -83,6 +83,9 @@ teams:
   - name: sigstore-keyholders
     privacy: closed
     description: Current Keyholders for the Root Keys!
+  - name: sigstore-oncall
+    privacy: closed
+    description: "sigstore oncall team"
   - name: sigstore-release-team
     privacy: closed
     description: ""

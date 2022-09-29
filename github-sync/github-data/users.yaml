@@ -75,6 +75,8 @@ users:
         role: maintainer
       - name: tuf-root-signing-codeowners
         role: maintainer
+      - name: sigstore-oncall
+        role: member
   - username: caniszczyk
     role: member
     teams: []
@@ -85,7 +87,9 @@ users:
         role: member
   - username: codysoyland
     role: member
-    teams: []
+    teams:
+      - name: sigstore-oncall
+        role: member
   - username: coyote240
     role: member
     teams: []
@@ -202,6 +206,8 @@ users:
       - name: sigstore-codeowners
         role: member
       - name: tuf-root-signing-codeowners
+        role: member
+      - name: sigstore-oncall
         role: member
   - username: hectorj2f
     role: member
@@ -327,6 +333,8 @@ users:
         role: maintainer
       - name: cosign-codeowners
         role: maintainer
+      - name: sigstore-oncall
+        role: member
   - username: malancas
     role: member
     teams: []
@@ -334,6 +342,8 @@ users:
     role: member
     teams:
       - name: public-good-instance-team
+        role: member
+      - name: sigstore-oncall
         role: member
   - username: mattmoor
     role: member
@@ -379,6 +389,8 @@ users:
     teams:
       - name: codeowners-maven-sigstore
         role: member
+      - name: sigstore-oncall
+        role: member
   - username: priyawadhwa
     role: member
     teams:
@@ -388,6 +400,8 @@ users:
         role: member
       - name: triage
         role: member
+      - name: sigstore-oncall
+        role: member
   - username: puerco
     role: member
     teams:
@@ -395,7 +409,9 @@ users:
         role: member
   - username: pwelch
     role: member
-    teams: []
+    teams:
+      - name: sigstore-oncall
+        role: member
   - username: sabre1041
     role: member
     teams:
@@ -413,6 +429,11 @@ users:
         role: maintainer
       - name: Core Team
         role: maintainer
+  - username: tstromberg
+    role: member
+    teams:
+      - name: sigstore-oncall
+        role: member
   - username: vaikas
     role: member
     teams:
@@ -421,6 +442,8 @@ users:
       - name: scaffolding-codeowners
         role: member
       - name: cosign-codeowners
+        role: member
+      - name: sigstore-oncall
         role: member
   - username: var-sdk
     role: member

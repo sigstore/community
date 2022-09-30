@@ -92,6 +92,9 @@ teams:
   - name: sigstore-rs-codeowners
     privacy: closed
     description: 'sigstore rust library '
+  - name: timestamp-codeowners
+    privacy: closed
+    description: ""
   - name: triage
     privacy: closed
     description: ""

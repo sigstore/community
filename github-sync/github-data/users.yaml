@@ -35,6 +35,8 @@ users:
         role: member
       - name: tuf-root-signing-codeowners
         role: member
+      - name: security-response-team
+        role: maintainer
   - username: bdehamer
     role: member
     teams:
@@ -121,10 +123,7 @@ users:
     role: member
     teams: []
   - username: dlorenc
-    role: admin
     teams:
-      - name: Core Team
-        role: maintainer
       - name: cosign-codeowners
         role: maintainer
       - name: cosign-installer-codeowners
@@ -203,6 +202,8 @@ users:
         role: member
       - name: tuf-root-signing-codeowners
         role: member
+      - name: security-response-team
+        role: maintainer
   - username: hectorj2f
     role: member
     teams:
@@ -380,7 +381,7 @@ users:
       - name: codeowners-maven-sigstore
         role: member
   - username: priyawadhwa
-    role: member
+    role: admin
     teams:
       - name: cosign-codeowners
         role: member
@@ -388,6 +389,8 @@ users:
         role: member
       - name: triage
         role: member
+      - name: Core Team
+        role: maintainer
   - username: puerco
     role: member
     teams:

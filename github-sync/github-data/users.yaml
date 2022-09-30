@@ -123,6 +123,7 @@ users:
     role: member
     teams: []
   - username: dlorenc
+    role: member
     teams:
       - name: cosign-codeowners
         role: maintainer

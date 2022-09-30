@@ -413,6 +413,8 @@ users:
         role: maintainer
       - name: Core Team
         role: maintainer
+  - username: tstromberg
+    role: member
   - username: vaikas
     role: member
     teams:

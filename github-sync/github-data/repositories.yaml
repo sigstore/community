@@ -579,6 +579,9 @@ repositories:
       - name: helm
         id: 5291354
         permission: admin
+      - name: sigstore-oncall
+        id: 6693572
+        permission: write
     branchesProtection:
       - pattern: main
         dismissStaleReviews: true
@@ -849,6 +852,9 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
+      - name: sigstore-oncall
+        id: 6693572
+        permission: write
     branchesProtection:
       - pattern: main
         dismissStaleReviews: true
@@ -1099,6 +1105,9 @@ repositories:
       - name: scaffolding-codeowners
         id: 5757921
         permission: admin
+      - name: sigstore-oncall
+        id: 6693572
+        permission: write
     branchesProtection:
       - pattern: main
         enforceAdmins: true

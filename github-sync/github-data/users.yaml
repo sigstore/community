@@ -77,8 +77,6 @@ users:
         role: maintainer
       - name: tuf-root-signing-codeowners
         role: maintainer
-      - name: sigstore-oncall
-        role: member
   - username: caniszczyk
     role: member
     teams: []
@@ -335,8 +333,6 @@ users:
         role: maintainer
       - name: cosign-codeowners
         role: maintainer
-      - name: sigstore-oncall
-        role: member
   - username: malancas
     role: member
     teams: []
@@ -401,8 +397,6 @@ users:
       - name: rekor-codeowners
         role: member
       - name: triage
-        role: member
-      - name: sigstore-oncall
         role: member
       - name: Core Team
         role: maintainer

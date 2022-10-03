@@ -944,9 +944,9 @@ repositories:
         permission: triage
     branchesProtection:
       - pattern: main
-        enforceAdmins: false
-        allowsDeletions: true
-        allowsForcePushes: true
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
@@ -1672,3 +1672,46 @@ repositories:
           - DCO
         pushRestrictions:
           - codeowners-sigstore-website
+  - name: timestamp-authority
+    owner: sigstore
+    description: RFC3161 Timestamp Authority
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators: []
+    teams:
+      - name: timestamp-codeowners
+        id: 6735686
+        permission: maintain
+      - name: triage
+        id: 5643322
+        permission: triage
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        requireBranchesUpToDate: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - timestamp-codeowners
+        dismissalRestrictions:
+          - timestamp-codeowners

@@ -335,7 +335,9 @@ users:
         role: maintainer
   - username: malancas
     role: member
-    teams: []
+    teams:
+      - name: sigstore-oncall
+        role: member
   - username: mathieu-benoit
     role: member
     teams:

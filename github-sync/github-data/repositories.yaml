@@ -581,7 +581,7 @@ repositories:
         permission: admin
       - name: sigstore-oncall
         id: 6693572
-        permission: write
+        permission: push
     branchesProtection:
       - pattern: main
         dismissStaleReviews: true
@@ -854,7 +854,7 @@ repositories:
         permission: triage
       - name: sigstore-oncall
         id: 6693572
-        permission: write
+        permission: push
     branchesProtection:
       - pattern: main
         dismissStaleReviews: true
@@ -1107,7 +1107,7 @@ repositories:
         permission: admin
       - name: sigstore-oncall
         id: 6693572
-        permission: write
+        permission: push
     branchesProtection:
       - pattern: main
         enforceAdmins: true

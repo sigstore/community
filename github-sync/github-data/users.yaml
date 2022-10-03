@@ -343,8 +343,6 @@ users:
     teams:
       - name: public-good-instance-team
         role: member
-      - name: sigstore-oncall
-        role: member
   - username: mattmoor
     role: member
     teams:

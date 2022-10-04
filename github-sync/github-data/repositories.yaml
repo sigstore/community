@@ -1141,6 +1141,7 @@ repositories:
           - Test github action with TUF (v1.24.x, v0.4.6, 1.19, test github action with TUF)
         pushRestrictions:
           - scaffolding-codeowners
+          - sigstore-oncall
   - name: sget
     owner: sigstore
     description: ""

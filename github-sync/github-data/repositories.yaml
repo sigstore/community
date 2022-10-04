@@ -1691,7 +1691,9 @@ repositories:
     visibility: public
     licenseTemplate: ""
     topics: []
-    collaborators: []
+    collaborators:
+      - username: malancas
+        permission: triage
     teams:
       - name: timestamp-codeowners
         id: 6735686

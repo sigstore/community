@@ -1695,6 +1695,8 @@ repositories:
     collaborators:
       - username: malancas
         permission: triage
+      - username: haydentherapper
+        permission: admin
     teams:
       - name: timestamp-codeowners
         id: 6735686

@@ -934,7 +934,9 @@ repositories:
     visibility: public
     licenseTemplate: ""
     topics: []
-    collaborators: []
+    collaborators:
+      - username: haydentherapper
+        permission: admin
     teams:
       - name: rekor-monitor-codeowners
         id: 4722221

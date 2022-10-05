@@ -37,6 +37,8 @@ users:
         role: member
       - name: security-response-team
         role: maintainer
+      - name: timestamp-codeowners
+        role: member
   - username: bdehamer
     role: member
     teams:
@@ -76,6 +78,8 @@ users:
       - name: public-good-instance-team
         role: maintainer
       - name: tuf-root-signing-codeowners
+        role: maintainer
+      - name: timestamp-codeowners
         role: maintainer
   - username: caniszczyk
     role: member
@@ -209,6 +213,8 @@ users:
         role: member
       - name: security-response-team
         role: maintainer
+      - name: timestamp-codeowners
+        role: member
   - username: hectorj2f
     role: member
     teams:

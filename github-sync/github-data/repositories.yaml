@@ -408,7 +408,7 @@ repositories:
     description: Sigstore OIDC PKI
     homepageUrl: ""
     allowAutoMerge: false
-    allowMergeCommit: true
+    allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true
     archived: false
@@ -437,6 +437,7 @@ repositories:
         permission: triage
     branchesProtection:
       - pattern: main
+        enforceAdmins: true
         allowsDeletions: true
         requiredLinearHistory: true
         dismissStaleReviews: true
@@ -964,12 +965,12 @@ repositories:
     description: Purdue's Rekor monitor
     homepageUrl: ""
     allowAutoMerge: false
-    allowMergeCommit: true
+    allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true
     archived: false
     autoInit: false
-    deleteBranchOnMerge: false
+    deleteBranchOnMerge: true
     hasDownloads: true
     hasIssues: true
     hasProjects: true
@@ -997,7 +998,8 @@ repositories:
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
         restrictDismissals: true
-        requireBranchesUpToDate: true
+        requireBranchesUpToDate: false
+        dismissStaleReviews: true
         statusChecks:
           - DCO
         pushRestrictions:
@@ -1729,7 +1731,7 @@ repositories:
     allowSquashMerge: true
     archived: false
     autoInit: false
-    deleteBranchOnMerge: false
+    deleteBranchOnMerge: true
     hasDownloads: true
     hasIssues: true
     hasProjects: true
@@ -1759,7 +1761,8 @@ repositories:
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
         restrictDismissals: true
-        requireBranchesUpToDate: true
+        requireBranchesUpToDate: false
+        dismissStaleReviews: true
         statusChecks:
           - DCO
         pushRestrictions:

@@ -1742,7 +1742,7 @@ repositories:
     topics: []
     collaborators:
       - username: malancas
-        permission: triage
+        permission: maintain
       - username: haydentherapper
         permission: admin
     teams:

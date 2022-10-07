@@ -536,6 +536,50 @@ repositories:
           - DCO
           - e2e
           - ci
+  - name: gh-action-sigstore-python
+    owner: sigstore
+    description: A GitHub Action for sigstore-python
+    homepageUrl: https://github.com/marketplace/actions/gh-action-sigstore-python
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: false
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - github-actions
+      - security
+      - supply-chain
+      - codesigning
+    collaborators:
+      - username: di
+        permission: admin
+      - username: tetsuo-cpp
+        permission: admin
+      - username: woodruffw
+        permission: admin
+    teams: []
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+          - selftest-glob
+          - selftest
+          - selftest-custom-paths
+          - selftest-staging
+          - selftest-verify-issuer
+          - selftest-identity-token
+          - selftest-upload-artifacts
   - name: helm-charts
     owner: sigstore
     description: Helm charts for sigstore project

@@ -1742,11 +1742,11 @@ repositories:
     topics: []
     collaborators:
       - username: codysoyland
-        permission: write
+        permission: push
       - username: haydentherapper
         permission: admin
       - username: malancas
-        permission: write
+        permission: push
     teams:
       - name: timestamp-codeowners
         id: 6735686

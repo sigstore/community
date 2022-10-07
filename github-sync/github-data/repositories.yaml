@@ -970,7 +970,7 @@ repositories:
     allowSquashMerge: true
     archived: false
     autoInit: false
-    deleteBranchOnMerge: false
+    deleteBranchOnMerge: true
     hasDownloads: true
     hasIssues: true
     hasProjects: true
@@ -999,6 +999,7 @@ repositories:
         requireCodeOwnerReviews: true
         restrictDismissals: true
         requireBranchesUpToDate: false
+        dismissStaleReviews: true
         statusChecks:
           - DCO
         pushRestrictions:
@@ -1730,7 +1731,7 @@ repositories:
     allowSquashMerge: true
     archived: false
     autoInit: false
-    deleteBranchOnMerge: false
+    deleteBranchOnMerge: true
     hasDownloads: true
     hasIssues: true
     hasProjects: true
@@ -1761,6 +1762,7 @@ repositories:
         requireCodeOwnerReviews: true
         restrictDismissals: true
         requireBranchesUpToDate: false
+        dismissStaleReviews: true
         statusChecks:
           - DCO
         pushRestrictions:

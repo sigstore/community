@@ -996,7 +996,7 @@ repositories:
         allowsForcePushes: false
         requiredLinearHistory: true
         requiredApprovingReviewCount: 1
-        requireCodeOwnerReviews: true
+        requireCodeOwnerReviews: false
         restrictDismissals: true
         requireBranchesUpToDate: false
         dismissStaleReviews: true
@@ -1761,7 +1761,7 @@ repositories:
         allowsForcePushes: false
         requiredLinearHistory: true
         requiredApprovingReviewCount: 1
-        requireCodeOwnerReviews: true
+        requireCodeOwnerReviews: false
         restrictDismissals: true
         requireBranchesUpToDate: false
         dismissStaleReviews: true

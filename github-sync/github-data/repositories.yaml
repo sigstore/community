@@ -802,7 +802,6 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         statusChecks:
-          - Analyze (go)
           - Check Whitespace
           - DCO
           - Do Not Submit

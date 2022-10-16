@@ -223,7 +223,7 @@ users:
       - name: helm
         role: member
       - name: policy-controller-codeowners
-        role: member
+        role: member    
   - username: hepwori
     role: member
     teams:

@@ -1770,3 +1770,48 @@ repositories:
           - timestamp-codeowners
         dismissalRestrictions:
           - timestamp-codeowners
+  - name: protobuf-specs
+    owner: sigstore
+    description: Protocol Buffer specifications
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: znewman01
+        permission: admin
+      - username: haydentherapper
+        permission: admin
+      - username: kommendorkapten
+        permission: maintain
+    teams:
+      - name: Core Team
+        id: 4563391
+        permission: maintain
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        restrictDismissals: true
+        requireBranchesUpToDate: false
+        dismissStaleReviews: true
+        statusChecks:
+          - DCO
+#        pushRestrictions:
+#        dismissalRestrictions:

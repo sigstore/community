@@ -1,0 +1,28 @@
+name: 'Dependency Review'
+on:
+  workflow_call:
+    inputs:
+      fail-on-severity:
+        type: string
+        description: "Configure the severity level for vulnerability alerting. Possible values: critical, high, moderate, low."
+        default: "high"
+      allow-ghsas:
+        type: string
+        description: "A comma separated list of any GitHub Advisory IDs that can be skipped during detection. Example: 'GHSA-abcd-1234-5679, GHSA-efgh-1234-5679'"
+
+permissions:
+  contents: read
+
+jobs:
+  dependency-review:
+    name: Scan dependencies for license compliance and vulnerabilities
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout Repository'
+        uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8 # v3.1.0
+      - name: 'Dependency Review'
+        uses: actions/dependency-review-action@fd675ced9c17f1393071e1a2e685ab527e585a0c # v2.5.0
+        with:
+          fail-on-severity: ${{ inputs.fail-on-severity }}
+          allow-ghsas: ${{ inputs.allow-ghsas }}
+          deny-licenses: GPL-3.0, AGPL-3.0, LGPL-3.0 # these are hardcoded to be compliant with sigstore/community/LICENSING.md

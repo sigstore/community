@@ -154,7 +154,7 @@ repositories:
           - build (macos-latest)
           - build (ubuntu-latest)
           - build (windows-latest)
-          - dependency-review
+          - License and Vulnerability Scan / Scan dependencies for license compliance and vulnerabilities
           - license boilerplate check
           - lint
           - validate-release-job

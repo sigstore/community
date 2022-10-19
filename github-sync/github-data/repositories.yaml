@@ -873,10 +873,10 @@ repositories:
         dismissStaleReviews: true
         statusChecks:
           - DCO
-        pushRestrictions:
-          - protobuf-specs-codeowners
-        dismissalRestrictions:
-          - protobuf-specs-codeowners
+        # pushRestrictions:
+        #   - protobuf-specs-codeowners
+        # dismissalRestrictions:
+        #   - protobuf-specs-codeowners
   - name: public-good-instance
     owner: sigstore
     description: ""

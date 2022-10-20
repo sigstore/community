@@ -809,7 +809,7 @@ repositories:
           - Verify codegen
           - check gofmt
           - check goimports
-          - License and Vulnerability Scan / Scan dependencies for license compliance and vulnerabilities
+          - Dependency Review / dependency-review / Scan dependencies for license compliance and vulnerabilities
           - license boilerplate check
           - lint
           - verify

@@ -857,9 +857,9 @@ repositories:
       - name: Core Team
         id: 4563391
         permission: maintain
-      # - name: protobuf-specs-codeowners
-      #   id:
-      #   permission: maintain
+      - name: protobuf-specs-codeowners
+        id: 6829685
+        permission: maintain
     branchesProtection:
       - pattern: main
         enforceAdmins: true

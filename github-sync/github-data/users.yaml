@@ -276,7 +276,7 @@ users:
         role: member
   - username: kommendorkapten
     role: member
-    teams: []
+    teams:
       - name: protobuf-specs-codeowners
         role: member
   - username: lkatalin

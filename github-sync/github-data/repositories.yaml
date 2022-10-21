@@ -825,6 +825,58 @@ repositories:
           - ClusterImagePolicy e2e tests (v1.24.x, cluster_image_policy)
           - ClusterImagePolicy e2e tests (v1.24.x, cluster_with_scalable)
           - ClusterImagePolicy e2e tests (v1.24.x, cluster_image_policy_with_attestations)
+  - name: protobuf-specs
+    owner: sigstore
+    description: Protocol Buffer specifications
+    homepageUrl: ""
+    allowAutoMerge: false
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: asraa
+        permission: admin
+      - username: haydentherapper
+        permission: admin
+      - username: kommendorkapten
+        permission: maintain
+      - username: znewman01
+        permission: admin
+    teams:
+      - name: Core Team
+        id: 4563391
+        permission: maintain
+      - name: protobuf-specs-codeowners
+        id: 6829685
+        permission: maintain
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        restrictDismissals: true
+        requireBranchesUpToDate: false
+        dismissStaleReviews: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - protobuf-specs-codeowners
+        dismissalRestrictions:
+          - protobuf-specs-codeowners
   - name: public-good-instance
     owner: sigstore
     description: ""

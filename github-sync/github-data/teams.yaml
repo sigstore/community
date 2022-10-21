@@ -50,6 +50,9 @@ teams:
   - name: policy-controller-codeowners
     privacy: closed
     description: Codeowners for sigstore/policy-controller
+  - name: protobuf-specs-codeowners
+    privacy: closed
+    description: "Code owners for protobuf specifications"
   - name: public-good-instance-team
     privacy: secret
     description: those with access to configuration of the public good service

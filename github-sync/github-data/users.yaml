@@ -39,6 +39,8 @@ users:
         role: maintainer
       - name: timestamp-codeowners
         role: member
+      - name: protobuf-specs-codeowners
+        role: member
   - username: bdehamer
     role: member
     teams:
@@ -67,6 +69,8 @@ users:
         role: maintainer
       - name: policy-controller-codeowners
         role: maintainer
+      - name: protobuf-specs-codeowners
+        role: member
       - name: rekor-codeowners
         role: maintainer
       - name: rekor-monitor-codeowners
@@ -215,6 +219,8 @@ users:
         role: maintainer
       - name: timestamp-codeowners
         role: member
+      - name: protobuf-specs-codeowners
+        role: member
   - username: hectorj2f
     role: member
     teams:
@@ -267,6 +273,11 @@ users:
       - name: triage
         role: member
       - name: scaffolding-codeowners
+        role: member
+  - username: kommendorkapten
+    role: member
+    teams:
+      - name: protobuf-specs-codeowners
         role: member
   - username: lkatalin
     role: member
@@ -482,4 +493,6 @@ users:
       - name: architecture-doc-team
         role: member
       - name: cosign-codeowners
+        role: member
+      - name: protobuf-specs-codeowners
         role: member

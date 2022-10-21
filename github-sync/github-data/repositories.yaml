@@ -942,7 +942,7 @@ repositories:
       - username: var-sdk
         permission: maintain
       - username: hectorj2f
-        permission: maintain       
+        permission: maintain
     teams:
       - name: public-good-instance-team
         id: 5623385
@@ -1223,21 +1223,16 @@ repositories:
           - DCO
           - Shellcheck
           - license boilerplate check
-          - e2e tests (v1.22.x, fulcio rekor ctlog e2e, true, 1.19)
-          - e2e tests (v1.22.x, fulcio rekor ctlog e2e, false, 1.19)
           - e2e tests (v1.23.x, fulcio rekor ctlog e2e, false, 1.19)
           - e2e tests (v1.23.x, fulcio rekor ctlog e2e, true, 1.19)
           - e2e tests (v1.24.x, fulcio rekor ctlog e2e, true, 1.19)
           - e2e tests (v1.24.x, fulcio rekor ctlog e2e, false, 1.19)
           - e2e tests (v1.25.x, fulcio rekor ctlog e2e, true, 1.19)
           - e2e tests (v1.25.x, fulcio rekor ctlog e2e, false, 1.19)
-          - e2e tests using release (v1.22.x, fulcio rekor ctlog e2e, 1.19)
           - e2e tests using release (v1.23.x, fulcio rekor ctlog e2e, 1.19)
           - e2e tests using release (v1.24.x, fulcio rekor ctlog e2e, 1.19)
-          - Test github action with TUF (v1.22.x, latest-release, 1.19, test github action with TUF)
           - Test github action with TUF (v1.23.x, latest-release, 1.19, test github action with TUF)
           - Test github action with TUF (v1.24.x, latest-release, 1.19, test github action with TUF)
-          - Test github action with TUF (v1.22.x, v0.4.6, 1.19, test github action with TUF)
           - Test github action with TUF (v1.23.x, v0.4.6, 1.19, test github action with TUF)
           - Test github action with TUF (v1.24.x, v0.4.6, 1.19, test github action with TUF)
         pushRestrictions:

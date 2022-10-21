@@ -158,7 +158,8 @@ repositories:
           - license boilerplate check
           - lint
           - validate-release-job
-          - attest / verify-attestation test (v1.24.x)
+          - attest / verify-attestation test (v1.24.x, remote)
+          - attest / verify-attestation test (v1.24.x, air-gap)
         pushRestrictions:
           - cosign-codeowners
   - name: cosign-gatekeeper-provider

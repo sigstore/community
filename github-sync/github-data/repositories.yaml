@@ -1120,6 +1120,8 @@ repositories:
     collaborators:
       - username: haydentherapper
         permission: maintain
+      - username: kommendorkapten
+        permission: maintain
     teams:
       - name: sigstore-keyholders
         id: 4899309
@@ -1137,6 +1139,10 @@ repositories:
         requiredApprovingReviewCount: 1
         statusChecks:
           - DCO
+          - CI Test / yamllint
+          - CI Test / test
+          - CI Test / lint
+          - Cosign tests / validate
   - name: ruby-sigstore
     owner: sigstore
     description: Rubygems sigstore signing plugin

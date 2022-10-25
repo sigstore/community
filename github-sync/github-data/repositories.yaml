@@ -1143,6 +1143,7 @@ repositories:
           - CI Test / test
           - CI Test / lint
           - Cosign tests / validate
+          - TUF Client tests / client
   - name: ruby-sigstore
     owner: sigstore
     description: Rubygems sigstore signing plugin

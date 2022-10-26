@@ -858,7 +858,7 @@ repositories:
         id: 4563391
         permission: maintain
       - name: protobuf-specs-codeowners
-        id: 6829685
+        id: 6840584
         permission: maintain
     branchesProtection:
       - pattern: main
@@ -1364,6 +1364,39 @@ repositories:
         permission: admin
       - username: cpanato
         permission: admin
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+  - name: sigstore-go
+    owner: sigstore
+    description: The sigstore go library
+    homepageUrl: https://sigstore.dev
+    allowAutoMerge: true
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: false
+    hasWiki: false
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    template:
+      owner: sigstore
+      repository: sigstore-project-template
+    topics:
+      - sigstore
+      - golang
+      - go
+    collaborators: []
+    teams: []
     branchesProtection:
       - pattern: main
         dismissStaleReviews: true

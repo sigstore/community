@@ -858,7 +858,7 @@ repositories:
         id: 4563391
         permission: maintain
       - name: protobuf-specs-codeowners
-        id: 6829685
+        id: 6840584
         permission: maintain
     branchesProtection:
       - pattern: main

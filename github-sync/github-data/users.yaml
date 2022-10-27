@@ -161,6 +161,8 @@ users:
         role: maintainer
       - name: tuf-root-signing-codeowners
         role: maintainer
+      - name: codeowners-sigstore-website
+        role: maintainer
   - username: eddiezane
     role: member
     teams:

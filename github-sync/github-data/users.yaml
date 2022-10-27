@@ -279,6 +279,9 @@ users:
     teams:
       - name: protobuf-specs-codeowners
         role: member
+  - username: kpk47
+    role: member
+    teams: []
   - username: lkatalin
     role: member
     teams:

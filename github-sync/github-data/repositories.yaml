@@ -1015,6 +1015,23 @@ repositories:
           - CodeQL
         pushRestrictions:
           - rekor-codeowners
+      - pattern: release-1.0
+        enforceAdmins: false
+        allowsDeletions: true
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requireConversationResolution: false
+        requireSignedCommits: false
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - build
+          - DCO
+          - e2e
+          - Analyze (go)
+          - CodeQL
+        pushRestrictions:
+          - rekor-codeowners
   - name: rekor-monitor
     owner: sigstore
     description: Purdue's Rekor monitor

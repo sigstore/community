@@ -1252,8 +1252,6 @@ repositories:
           - e2e tests using release (v1.24.x, fulcio rekor ctlog e2e, 1.19)
           - Test github action with TUF (v1.23.x, latest-release, 1.19, test github action with TUF)
           - Test github action with TUF (v1.24.x, latest-release, 1.19, test github action with TUF)
-          - Test github action with TUF (v1.23.x, v0.4.6, 1.19, test github action with TUF)
-          - Test github action with TUF (v1.24.x, v0.4.6, 1.19, test github action with TUF)
         pushRestrictions:
           - scaffolding-codeowners
           - sigstore-oncall

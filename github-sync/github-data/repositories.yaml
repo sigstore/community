@@ -162,6 +162,32 @@ repositories:
           - attest / verify-attestation test (v1.24.x, air-gap)
         pushRestrictions:
           - cosign-codeowners
+      - pattern: release-1.13
+        enforceAdmins: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        statusChecks:
+          - Check Whitespace
+          - DCO
+          - Do Not Submit
+          - Run PowerShell E2E tests
+          - Run e2e tests
+          - Run unit tests (macos-latest)
+          - Run unit tests (ubuntu-latest)
+          - Run unit tests (windows-latest)
+          - Verify Docgen
+          - build (macos-latest)
+          - build (ubuntu-latest)
+          - build (windows-latest)
+          - License and Vulnerability Scan / Scan dependencies for license compliance and vulnerabilities
+          - license boilerplate check
+          - lint
+          - validate-release-job
+          - attest / verify-attestation test (v1.24.x)
+        pushRestrictions:
+          - cosign-codeowners
   - name: cosign-gatekeeper-provider
     owner: sigstore
     description: "\U0001F52E ✈️ to integrate OPA Gatekeeper's new ExternalData feature with cosign to determine whether the images are valid by verifying their signatures"

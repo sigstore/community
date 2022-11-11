@@ -43,7 +43,7 @@ Come on over to our [slack channel](https://sigstore.slack.com)!
 
 ## Membership
 
-We encourage all contributors to become members. We aim to grow an active, healthy community of contributors, reviewers, and code owners. Learn more about requirements and responsibilities of membership in our [Community Membership page](/community-membership.md).
+We encourage all contributors to become members. We aim to grow an active, healthy community of contributors, reviewers, and code owners. Learn more about requirements and responsibilities of membership in our [Community Membership page](/MEMBERSHIP.md).
 
 ## Adding Users/Collaborators, Teams, Repositories to Sigstore GitHub Organization
 

@@ -1061,7 +1061,7 @@ repositories:
           - rekor-codeowners
   - name: rekor-monitor
     owner: sigstore
-    description: Purdue's Rekor monitor
+    description: Log monitor for Rekor to verify immutability and monitor entries
     homepageUrl: ""
     allowAutoMerge: false
     allowMergeCommit: false
@@ -1078,9 +1078,6 @@ repositories:
     visibility: public
     licenseTemplate: ""
     topics: []
-    collaborators:
-      - username: haydentherapper
-        permission: admin
     teams:
       - name: rekor-monitor-codeowners
         id: 4722221

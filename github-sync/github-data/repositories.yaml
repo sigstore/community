@@ -1179,11 +1179,11 @@ repositories:
         requiredApprovingReviewCount: 1
         statusChecks:
           - DCO
-          - CI Test / yamllint
-          - CI Test / test
-          - CI Test / lint
-          - Cosign tests / validate
-          - TUF Client tests / client
+          - yamllint
+          - test
+          - lint
+          - validate
+          - client
   - name: ruby-sigstore
     owner: sigstore
     description: Rubygems sigstore signing plugin

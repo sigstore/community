@@ -77,6 +77,9 @@ teams:
   - name: sigstore-codeowners
     privacy: closed
     description: 'Note: this is for the sigstore repo, not for the entire organization'
+  - name: sigstore-go-codeowners
+    privacy: closed
+    description: "Codeowners for sigstore/sigstore-go"
   - name: sigstore-go-triage
     privacy: closed
     description: ""

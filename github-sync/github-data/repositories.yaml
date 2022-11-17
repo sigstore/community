@@ -124,10 +124,12 @@ repositories:
     collaborators:
       - username: sigstore-bot
         permission: push
+      - username: haydentherapper
+        permission: push
     teams:
       - name: cosign-codeowners
         id: 4722092
-        permission: admin
+        permission: maintain
       - name: sigstore-release-team
         id: 4845328
         permission: maintain

@@ -1421,7 +1421,7 @@ repositories:
     description: The sigstore go library
     homepageUrl: https://sigstore.dev
     allowAutoMerge: true
-    allowMergeCommit: true
+    allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true
     archived: false
@@ -1429,8 +1429,8 @@ repositories:
     deleteBranchOnMerge: true
     hasDownloads: true
     hasIssues: true
-    hasProjects: false
-    hasWiki: false
+    hasProjects: true
+    hasWiki: true
     vulnerabilityAlerts: true
     visibility: public
     licenseTemplate: ""
@@ -1442,13 +1442,27 @@ repositories:
       - golang
       - go
     collaborators: []
-    teams: []
+    teams:
+      - name: sigstore-go-codeowners
+        id: 6980777
+        permission: maintain
     branchesProtection:
       - pattern: main
-        dismissStaleReviews: true
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
         requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        restrictDismissals: true
+        requireBranchesUpToDate: false
+        dismissStaleReviews: true
         statusChecks:
           - DCO
+        pushRestrictions:
+          - sigstore-go-codeowners
+        dismissalRestrictions:
+          - sigstore-go-codeowners
   - name: sigstore-git-verifier
     owner: sigstore
     description: A Github Action to verify that new commits are present in the sigstore transparency log.

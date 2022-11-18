@@ -1502,36 +1502,6 @@ repositories:
           - git-verifier-codeowners
         dismissalRestrictions:
           - git-verifier-codeowners
-  - name: sigstore-helm-operator
-    owner: sigstore
-    description: Helm based operator for the sigstore project
-    homepageUrl: ""
-    allowAutoMerge: false
-    allowMergeCommit: true
-    allowRebaseMerge: true
-    allowSquashMerge: true
-    archived: false
-    autoInit: false
-    deleteBranchOnMerge: false
-    hasDownloads: true
-    hasIssues: true
-    hasProjects: true
-    hasWiki: true
-    vulnerabilityAlerts: false
-    visibility: public
-    licenseTemplate: ""
-    topics: []
-    collaborators:
-      - username: cpanato
-        permission: admin
-      - username: sabre1041
-        permission: admin
-    branchesProtection:
-      - pattern: main
-        dismissStaleReviews: true
-        requiredApprovingReviewCount: 1
-        statusChecks:
-          - DCO
   - name: sigstore-installer
     owner: sigstore
     description: ""

@@ -417,8 +417,6 @@ users:
     teams:
       - name: codeowners-maven-sigstore
         role: member
-      - name: sigstore-oncall
-        role: member
   - username: priyawadhwa
     role: admin
     teams:

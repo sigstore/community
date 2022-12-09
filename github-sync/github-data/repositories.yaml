@@ -1166,6 +1166,8 @@ repositories:
         permission: maintain
       - username: sigstore-bot
         permission: push
+      - username: sigstore-review-bot
+        permission: push
     teams:
       - name: sigstore-keyholders
         id: 4899309

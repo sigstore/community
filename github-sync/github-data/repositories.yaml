@@ -826,6 +826,10 @@ repositories:
         permission: push
       - username: vaikas
         permission: admin
+    teams:
+      - name: policy-controller-codeowners
+        id: 6190689
+        permission: maintain
     branchesProtection:
       - pattern: main
         dismissStaleReviews: true

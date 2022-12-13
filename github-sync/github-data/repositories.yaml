@@ -481,6 +481,22 @@ repositories:
           - fulcio-codeowners
         dismissalRestrictions:
           - fulcio-codeowners
+      - pattern: release-1.0
+        enforceAdmins: true
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        statusChecks:
+          - DCO
+          - build
+          - Analyze (go)
+        pushRestrictions:
+          - fulcio-codeowners
+        dismissalRestrictions:
+          - fulcio-codeowners
   - name: github-sync
     owner: sigstore
     description: Pulumi GitHub Sync for sigstore

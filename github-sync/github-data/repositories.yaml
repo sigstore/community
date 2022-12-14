@@ -1878,10 +1878,6 @@ repositories:
     collaborators:
       - username: codysoyland
         permission: push
-      - username: haydentherapper
-        permission: admin
-      - username: malancas
-        permission: push
     teams:
       - name: timestamp-codeowners
         id: 6735686

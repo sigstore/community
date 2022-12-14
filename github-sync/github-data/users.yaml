@@ -370,6 +370,8 @@ users:
     teams:
       - name: sigstore-oncall
         role: member
+      - name: timestamp-codeowners
+        role: member
   - username: mathieu-benoit
     role: member
     teams:

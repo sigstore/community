@@ -6,8 +6,8 @@ name: Scorecards supply-chain security
 on:
   workflow_call:
 
-# Declare default permissions as read only.
-permissions: read-all
+# Declare default permissions as none
+permissions: {}
 
 jobs:
   analysis:

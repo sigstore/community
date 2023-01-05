@@ -447,6 +447,11 @@ users:
     teams:
       - name: public-good-instance-team
         role: member
+  - username: rchaganti
+    role: member
+    teams:
+      - name: sigstore-blog-maintainers
+        role: member
   - username: sabre1041
     role: member
     teams:

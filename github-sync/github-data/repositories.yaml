@@ -1283,3 +1283,32 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
+  - name: sigstore-blog
+    owner: sigstore
+    description: Codebase for sigstore.dev
+    homepageUrl: https://blog.sigstore.dev
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: rchaganti
+        permission: push
+    teams:
+      - name: sigstore-blog-maintainers
+        id: <TBD>
+        permission: admin
+      - name: triage
+        id: <TBD>
+        permission: triage

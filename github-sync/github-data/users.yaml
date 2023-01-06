@@ -365,6 +365,8 @@ users:
         role: maintainer
       - name: cosign-codeowners
         role: maintainer
+      - name: sigstore-blog-maintainers
+        role: maintainer
   - username: malancas
     role: member
     teams:
@@ -446,6 +448,11 @@ users:
     role: member
     teams:
       - name: public-good-instance-team
+        role: member
+  - username: rchaganti
+    role: member
+    teams:
+      - name: sigstore-blog-maintainers
         role: member
   - username: sabre1041
     role: member

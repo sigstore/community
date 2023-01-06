@@ -365,6 +365,8 @@ users:
         role: maintainer
       - name: cosign-codeowners
         role: maintainer
+      - name: sigstore-blog-maintainers
+        role: maintainer
   - username: malancas
     role: member
     teams:

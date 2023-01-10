@@ -1288,7 +1288,7 @@ repositories:
     owner: sigstore
     description: RFC3161 Timestamp Authority
     homepageUrl: ""
-    allowAutoMerge: false
+    allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true

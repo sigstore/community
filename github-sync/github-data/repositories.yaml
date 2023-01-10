@@ -1164,6 +1164,38 @@ repositories:
     template:
       owner: sigstore
       repository: sigstore-project-template
+  - name: sigstore-probers
+    owner: sigstore
+    description: Probers for sigstore infrastructure
+    homepageUrl: https://blog.sigstore.dev
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: false
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    template:
+      owner: sigstore
+      repository: sigstore-project-template
+    teams:
+      - name: public-good-instance-team
+        id: 5623385
+        permission: triage
+      - name: triage
+        id: 5643322
+        permission: triage
+      - name: sigstore-oncall
+        id: 6693572
+        permission: push
   - name: sigstore-project-template
     owner: sigstore
     description: cookiecutter template for sigstore projects

@@ -5,6 +5,12 @@
 name: Scorecards supply-chain security
 on:
   workflow_call:
+    inputs:
+      publish_results:
+        description: 'Publish results to OpenSSF REST API and allows repository to include the Scorecard badge.'
+        default: true
+        required: false
+        type: boolean
 
 # Declare default permissions as none
 permissions: {}
@@ -46,7 +52,7 @@ jobs:
           # For private repositories:
           #   - `publish_results` will always be set to `false`, regardless
           #     of the value entered here.
-          publish_results: true
+          publish_results: ${{ inputs.publish_results }}
 
       # Upload the results as artifacts (optional). Commenting out will disable uploads of run results in SARIF
       # format to the repository Actions tab.

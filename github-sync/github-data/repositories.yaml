@@ -44,7 +44,7 @@ repositories:
     teams:
       - name: Core Team
         id: 4563391
-        permission: maintain
+        permission: admin
   - name: community
     owner: sigstore
     description: General sigstore community repo
@@ -96,7 +96,7 @@ repositories:
     teams:
       - name: cosign-codeowners
         id: 4722092
-        permission: maintain
+        permission: admin
       - name: sigstore-release-team
         id: 4845328
         permission: maintain
@@ -166,7 +166,7 @@ repositories:
     teams:
       - name: cosign-installer-codeowners
         id: 4728120
-        permission: maintain
+        permission: admin
   - name: dex
     owner: sigstore
     description: ""
@@ -288,7 +288,7 @@ repositories:
     teams:
       - name: fulcio-codeowners
         id: 4721751
-        permission: maintain
+        permission: admin
       - name: sigstore-release-team
         id: 4845328
         permission: push
@@ -574,7 +574,7 @@ repositories:
     teams:
       - name: policy-controller-codeowners
         id: 6190689
-        permission: maintain
+        permission: admin
   - name: protobuf-specs
     owner: sigstore
     description: Protocol Buffer specifications
@@ -717,7 +717,7 @@ repositories:
     teams:
       - name: rekor-codeowners
         id: 4721448
-        permission: maintain
+        permission: admin
       - name: sigstore-release-team
         id: 4845328
         permission: push
@@ -746,7 +746,7 @@ repositories:
     teams:
       - name: rekor-monitor-codeowners
         id: 4722221
-        permission: maintain
+        permission: admin
       - name: triage
         id: 5643322
         permission: triage
@@ -814,7 +814,7 @@ repositories:
         permission: push
       - name: tuf-root-signing-codeowners
         id: 6378909
-        permission: maintain
+        permission: admin
       - name: triage
         id: 5643322
         permission: triage
@@ -841,7 +841,7 @@ repositories:
     teams:
       - name: codeowners-ruby-sigstore
         id: 4728095
-        permission: maintain
+        permission: admin
   - name: scaffolding
     owner: sigstore
     description: Stuff to make standing up sigstore (esp. for testing) easier for e2e/integration testing.
@@ -935,7 +935,7 @@ repositories:
     teams:
       - name: sigstore-codeowners
         id: 4722047
-        permission: maintain
+        permission: admin
       - name: sigstore-release-team
         id: 4845328
         permission: maintain
@@ -1035,7 +1035,7 @@ repositories:
     teams:
       - name: sigstore-go-codeowners
         id: 6980777
-        permission: maintain
+        permission: admin
   - name: sigstore-installer
     owner: sigstore
     description: ""
@@ -1104,7 +1104,7 @@ repositories:
     teams:
       - name: sigstore-java-codeowners
         id: 5754835
-        permission: maintain
+        permission: admin
   - name: sigstore-js
     owner: sigstore
     description: Code-signing for npm packages
@@ -1138,7 +1138,7 @@ repositories:
         permission: push
       - name: codeowners-sigstore-js
         id: 6411558
-        permission: maintain
+        permission: admin
   - name: sigstore-maven
     owner: sigstore
     description: sigstore maven plugin
@@ -1195,7 +1195,7 @@ repositories:
         permission: triage
       - name: sigstore-oncall
         id: 6693572
-        permission: push
+        permission: admin
   - name: sigstore-project-template
     owner: sigstore
     description: cookiecutter template for sigstore projects
@@ -1341,7 +1341,7 @@ repositories:
     teams:
       - name: timestamp-codeowners
         id: 6735686
-        permission: maintain
+        permission: admin
       - name: triage
         id: 5643322
         permission: triage

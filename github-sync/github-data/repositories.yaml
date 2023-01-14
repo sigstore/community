@@ -21,6 +21,10 @@ repositories:
     collaborators:
       - username: mbestavros
         permission: admin
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
   - name: TSC
     owner: sigstore
     description: sigstore Technical Steering Committee
@@ -45,6 +49,20 @@ repositories:
       - name: Core Team
         id: 4563391
         permission: maintain
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - Core Team
+        dismissalRestrictions:
+          - Core Team
   - name: community
     owner: sigstore
     description: General sigstore community repo
@@ -69,6 +87,21 @@ repositories:
       - name: Core Team
         id: 4563391
         permission: admin
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        allowsForcePushes: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - Core Team
+        dismissalRestrictions:
+          - Core Team
   - name: cosign
     owner: sigstore
     description: Container Signing
@@ -103,6 +136,60 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        statusChecks:
+          - Check Whitespace
+          - DCO
+          - Do Not Submit
+          - Run PowerShell E2E tests
+          - Run e2e tests
+          - Run unit tests (macos-latest)
+          - Run unit tests (ubuntu-latest)
+          - Run unit tests (windows-latest)
+          - Verify Docgen
+          - build (macos-latest)
+          - build (ubuntu-latest)
+          - build (windows-latest)
+          - License and Vulnerability Scan / Scan dependencies for license compliance and vulnerabilities
+          - license boilerplate check
+          - lint
+          - validate-release-job
+          - attest / verify-attestation test (v1.24.x, remote)
+          - attest / verify-attestation test (v1.24.x, air-gap)
+        pushRestrictions:
+          - cosign-codeowners
+      - pattern: release-1.13
+        enforceAdmins: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        statusChecks:
+          - Check Whitespace
+          - DCO
+          - Do Not Submit
+          - Run PowerShell E2E tests
+          - Run e2e tests
+          - Run unit tests (macos-latest)
+          - Run unit tests (ubuntu-latest)
+          - Run unit tests (windows-latest)
+          - Verify Docgen
+          - build (macos-latest)
+          - build (ubuntu-latest)
+          - build (windows-latest)
+          - License and Vulnerability Scan / Scan dependencies for license compliance and vulnerabilities
+          - license boilerplate check
+          - lint
+          - validate-release-job
+          - attest / verify-attestation test (v1.24.x)
+        pushRestrictions:
+          - cosign-codeowners
   - name: cosign-gatekeeper-provider
     owner: sigstore
     description: "\U0001F52E ✈️ to integrate OPA Gatekeeper's new ExternalData feature with cosign to determine whether the images are valid by verifying their signatures"
@@ -142,6 +229,12 @@ repositories:
       - name: cosign-codeowners
         id: 4722092
         permission: maintain
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
   - name: cosign-installer
     owner: sigstore
     description: Cosign Github Action
@@ -167,6 +260,20 @@ repositories:
       - name: cosign-installer-codeowners
         id: 4728120
         permission: maintain
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - cosign-installer-codeowners
+        dismissalRestrictions:
+          - cosign-installer-codeowners
   - name: dex
     owner: sigstore
     description: ""
@@ -191,6 +298,13 @@ repositories:
       - name: fulcio-codeowners
         id: 4721751
         permission: maintain
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
   - name: docs
     owner: sigstore
     description: Sigstore documentation
@@ -214,6 +328,15 @@ repositories:
       - username: ltagliaferri
         permission: admin
     teams: []
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        statusChecks:
+          - DCO
   - name: fish-food
     owner: sigstore
     description: ""
@@ -243,6 +366,10 @@ repositories:
       - name: sigstore-release-team
         id: 4845328
         permission: push
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
   - name: friends
     owner: sigstore
     description: Sigstore user stories
@@ -295,6 +422,39 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        statusChecks:
+          - DCO
+          - build
+          - Analyze (go)
+        pushRestrictions:
+          - fulcio-codeowners
+        dismissalRestrictions:
+          - fulcio-codeowners
+      - pattern: release-1.0
+        enforceAdmins: true
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        statusChecks:
+          - DCO
+          - build
+          - Analyze (go)
+        pushRestrictions:
+          - fulcio-codeowners
+        dismissalRestrictions:
+          - fulcio-codeowners
   - name: github-sync
     owner: sigstore
     description: Pulumi GitHub Sync for sigstore
@@ -322,6 +482,14 @@ repositories:
         permission: admin
       - username: cpanato
         permission: admin
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
   - name: gitsign
     owner: sigstore
     description: Keyless Git signing using Sigstore
@@ -362,6 +530,16 @@ repositories:
       - name: gitsign-codeowners
         id: 6463637
         permission: maintain
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+          - e2e
+          - ci
   - name: gh-action-sigstore-python
     owner: sigstore
     description: A GitHub Action for sigstore-python
@@ -393,6 +571,19 @@ repositories:
       - username: woodruffw
         permission: admin
     teams: []
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+          - selftest-glob
+          - selftest
+          - selftest-custom-paths
+          - selftest-staging
+          - selftest-verify-issuer
+          - selftest-identity-token
+          - selftest-upload-artifacts
   - name: helm-charts
     owner: sigstore
     description: Helm charts for sigstore project
@@ -439,6 +630,12 @@ repositories:
       - name: sigstore-oncall
         id: 6693572
         permission: push
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
   - name: helm-sigstore
     owner: sigstore
     description: Plugin for Helm to integrate the sigstore ecosystem
@@ -468,6 +665,20 @@ repositories:
       - name: helm-sigstore-codeowners
         id: 4807653
         permission: maintain
+    branchesProtection:
+      - pattern: main
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        requireBranchesUpToDate: true
+        pushRestrictions:
+          - helm-sigstore-codeowners
+        dismissalRestrictions:
+          - helm-sigstore-codeowners
+        statusChecks:
+          - DCO
   - name: homebrew-tap
     owner: sigstore
     description: Sigstore Homebrew Tap
@@ -496,6 +707,14 @@ repositories:
     collaborators:
       - username: cpanato
         permission: admin
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+          - test-bot (macos-latest)
+          - test-bot (ubuntu-latest)
   - name: k8s-manifest-sigstore
     owner: sigstore
     description: kubectl plugin for signing Kubernetes manifest YAML files with sigstore
@@ -520,6 +739,18 @@ repositories:
       - name: codeowners-k8s-manifest-sigstore
         id: 4910210
         permission: admin
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - codeowners-k8s-manifest-sigstore
   - name: landscape
     owner: sigstore
     description: ""
@@ -575,6 +806,31 @@ repositories:
       - name: policy-controller-codeowners
         id: 6190689
         permission: maintain
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - Check Whitespace
+          - DCO
+          - Do Not Submit
+          - Run unit tests (ubuntu-latest)
+          - Verify codegen
+          - check gofmt
+          - check goimports
+          - dependency-review / Scan dependencies for license compliance and vulnerabilities
+          - license boilerplate check
+          - lint
+          - verify
+          - e2e tests (v1.22.x)
+          - e2e tests (v1.23.x)
+          - e2e tests (v1.24.x)
+          - ClusterImagePolicy e2e tests (v1.23.x, cluster_image_policy)
+          - ClusterImagePolicy e2e tests (v1.23.x, cluster_with_scalable)
+          - ClusterImagePolicy e2e tests (v1.23.x, cluster_image_policy_with_attestations)
+          - ClusterImagePolicy e2e tests (v1.24.x, cluster_image_policy)
+          - ClusterImagePolicy e2e tests (v1.24.x, cluster_with_scalable)
+          - ClusterImagePolicy e2e tests (v1.24.x, cluster_image_policy_with_attestations)
   - name: protobuf-specs
     owner: sigstore
     description: Protocol Buffer specifications
@@ -610,6 +866,23 @@ repositories:
       - name: protobuf-specs-codeowners
         id: 6840584
         permission: maintain
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        restrictDismissals: true
+        requireBranchesUpToDate: false
+        dismissStaleReviews: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - protobuf-specs-codeowners
+        dismissalRestrictions:
+          - protobuf-specs-codeowners
   - name: public-good-instance
     owner: sigstore
     description: ""
@@ -688,6 +961,12 @@ repositories:
       - name: sigstore-oncall
         id: 6693572
         permission: push
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
   - name: rekor
     owner: sigstore
     description: Software Supply Chain Transparency Log
@@ -724,6 +1003,41 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: false
+        allowsDeletions: true
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requireConversationResolution: false
+        requireSignedCommits: false
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - build
+          - DCO
+          - e2e
+          - Analyze (go)
+          - CodeQL
+        pushRestrictions:
+          - rekor-codeowners
+      - pattern: release-1.0
+        enforceAdmins: false
+        allowsDeletions: true
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requireConversationResolution: false
+        requireSignedCommits: false
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - build
+          - DCO
+          - e2e
+          - Analyze (go)
+          - CodeQL
+        pushRestrictions:
+          - rekor-codeowners
   - name: rekor-monitor
     owner: sigstore
     description: Log monitor for Rekor to verify immutability and monitor entries
@@ -750,6 +1064,23 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        restrictDismissals: true
+        requireBranchesUpToDate: false
+        dismissStaleReviews: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - rekor-monitor-codeowners
+        dismissalRestrictions:
+          - rekor-monitor-codeowners
   - name: rekor-operator
     owner: sigstore
     description: K8S Operator for Rekor
@@ -780,6 +1111,15 @@ repositories:
       - name: helm
         id: 5291354
         permission: admin
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+          - lint
+          - build
+          - license boilerplate check
   - name: root-signing
     owner: sigstore
     description: ""
@@ -818,6 +1158,18 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
+    branchesProtection:
+      - pattern: main
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+          - yamllint
+          - test
+          - lint
+          - validate
+          - client
   - name: ruby-sigstore
     owner: sigstore
     description: Rubygems sigstore signing plugin
@@ -842,6 +1194,21 @@ repositories:
       - name: codeowners-ruby-sigstore
         id: 4728095
         permission: maintain
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        allowsForcePushes: true
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        requireBranchesUpToDate: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - codeowners-ruby-sigstore
+        dismissalRestrictions:
+          - codeowners-ruby-sigstore
   - name: scaffolding
     owner: sigstore
     description: Stuff to make standing up sigstore (esp. for testing) easier for e2e/integration testing.
@@ -875,6 +1242,32 @@ repositories:
       - name: sigstore-oncall
         id: 6693572
         permission: push
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        statusChecks:
+          - Analyze (go)
+          - Analyze (go)
+          - CodeQL
+          - DCO
+          - Shellcheck
+          - license boilerplate check
+          - e2e tests (v1.23.x, fulcio rekor ctlog e2e, 1.19)
+          - e2e tests (v1.24.x, fulcio rekor ctlog e2e, 1.19)
+          - e2e tests (v1.25.x, fulcio rekor ctlog e2e, 1.19)
+          - e2e tests using release (v1.23.x, fulcio rekor ctlog e2e, 1.19)
+          - e2e tests using release (v1.24.x, fulcio rekor ctlog e2e, 1.19)
+          - e2e tests using release (v1.25.x, fulcio rekor ctlog e2e, 1.19)
+          - Test github action with TUF (v1.23.x, latest-release, 1.19, test github action with TUF)
+          - Test github action with TUF (v1.24.x, latest-release, 1.19, test github action with TUF)
+          - Test github action with TUF (v1.25.x, latest-release, 1.19, test github action with TUF)
+        pushRestrictions:
+          - scaffolding-codeowners
+          - sigstore-oncall
   - name: sget
     owner: sigstore
     description: ""
@@ -906,6 +1299,13 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+          - Build
   - name: sigstore
     owner: sigstore
     description: Common go library shared across sigstore services and clients
@@ -945,6 +1345,24 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        statusChecks:
+          - DCO
+          - license boilerplate check
+          - Analyze (go)
+          - e2e integration tests
+          - lint checks
+        pushRestrictions:
+          - sigstore-codeowners
+        dismissalRestrictions:
+          - sigstore-codeowners
   - name: sigstore-blog
     owner: sigstore
     description: Codebase for sigstore.dev
@@ -1006,6 +1424,12 @@ repositories:
         permission: admin
       - username: cpanato
         permission: admin
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
   - name: sigstore-go
     owner: sigstore
     description: The sigstore go library
@@ -1036,6 +1460,23 @@ repositories:
       - name: sigstore-go-codeowners
         id: 6980777
         permission: maintain
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        restrictDismissals: true
+        requireBranchesUpToDate: false
+        dismissStaleReviews: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - sigstore-go-codeowners
+        dismissalRestrictions:
+          - sigstore-go-codeowners
   - name: sigstore-installer
     owner: sigstore
     description: ""
@@ -1075,6 +1516,14 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+          - shellcheck
+          - license boilerplate check
   - name: sigstore-java
     owner: sigstore
     description: java clients for sigstore
@@ -1105,6 +1554,18 @@ repositories:
       - name: sigstore-java-codeowners
         id: 5754835
         permission: maintain
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - Validation
+          - DCO
+          - gha-oidc-tests (17)
+          - gha-oidc-tests (11)
+          - build (17)
+          - build (11)
   - name: sigstore-js
     owner: sigstore
     description: Code-signing for npm packages
@@ -1139,6 +1600,15 @@ repositories:
       - name: codeowners-sigstore-js
         id: 6411558
         permission: maintain
+    branchesProtection:
+      - pattern: main
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        requireBranchesUpToDate: true
+        statusChecks:
+          - DCO
   - name: sigstore-maven
     owner: sigstore
     description: sigstore maven plugin
@@ -1164,6 +1634,12 @@ repositories:
     template:
       owner: sigstore
       repository: sigstore-project-template
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
   - name: sigstore-probers
     owner: sigstore
     description: Probers for sigstore infrastructure
@@ -1196,6 +1672,17 @@ repositories:
       - name: sigstore-oncall
         id: 6693572
         permission: push
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        requireConversationResolution: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        statusChecks:
+          - DCO
+          - verify-build-tools
   - name: sigstore-project-template
     owner: sigstore
     description: cookiecutter template for sigstore projects
@@ -1217,6 +1704,16 @@ repositories:
     licenseTemplate: ""
     topics: []
     collaborators: []
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        requireConversationResolution: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        statusChecks:
+          - DCO
   - name: sigstore-python
     owner: sigstore
     description: A codesigning tool for Python packages
@@ -1253,6 +1750,24 @@ repositories:
       - name: Core Team
         id: 4563391
         permission: pull
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        requireBranchesUpToDate: true
+        statusChecks:
+          - DCO
+          - lint
+          - DCO
+          - test (3.7)
+          - test (3.10)
+          - test (3.8)
+          - test (3.9)
+          - licenses
+          - check-readme
   - name: sigstore-rs
     owner: sigstore
     description: An experimental Rust crate for sigstore
@@ -1287,6 +1802,22 @@ repositories:
       - name: sigstore-rs-codeowners
         id: 5274103
         permission: maintain
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requireSignedCommits: false
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        statusChecks:
+          - DCO
+          - Test Suite
+          - Rustfmt
+        pushRestrictions:
+          - sigstore-rs-codeowners
+        dismissalRestrictions:
+          - sigstore-rs-codeowners
   - name: sigstore-website
     owner: sigstore
     description: Codebase for sigstore.dev
@@ -1316,6 +1847,17 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
+    branchesProtection:
+      - pattern: main
+        allowsDeletions: true
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - codeowners-sigstore-website
   - name: timestamp-authority
     owner: sigstore
     description: RFC3161 Timestamp Authority
@@ -1345,3 +1887,24 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: false
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        restrictDismissals: true
+        requireBranchesUpToDate: false
+        dismissStaleReviews: true
+        statusChecks:
+          - DCO
+          - lint
+          - license boilerplate check
+          - Run unit tests
+          - DCO
+          - dependency-review
+          - Analyze (go)
+        dismissalRestrictions:
+          - timestamp-codeowners

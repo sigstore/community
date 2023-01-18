@@ -25,8 +25,6 @@ users:
         role: member
       - name: architecture-doc-team
         role: member
-      - name: cosign-codeowners
-        role: member
       - name: rekor-codeowners
         role: member
       - name: sget-codeowners
@@ -139,8 +137,6 @@ users:
   - username: dlorenc
     role: member
     teams:
-      - name: cosign-codeowners
-        role: maintainer
       - name: cosign-installer-codeowners
         role: maintainer
       - name: fulcio-codeowners
@@ -200,8 +196,6 @@ users:
   - username: font
     role: member
     teams:
-      - name: cosign-codeowners
-        role: member
       - name: rekor-operator-team
         role: member
   - username: haydentherapper
@@ -304,8 +298,6 @@ users:
     teams:
       - name: codeowners-maven-sigstore
         role: member
-      - name: cosign-codeowners
-        role: member
       - name: sigstore-java-codeowners
         role: maintainer
   - username: ltagliaferri
@@ -316,8 +308,6 @@ users:
   - username: luhring
     role: member
     teams:
-      - name: cosign-codeowners
-        role: member
   - username: lukehinds
     role: admin
     teams:
@@ -362,8 +352,6 @@ users:
       - name: codeowners-sigstore-website
         role: maintainer
       - name: Core Team
-        role: maintainer
-      - name: cosign-codeowners
         role: maintainer
       - name: sigstore-blog-maintainers
         role: maintainer
@@ -411,8 +399,6 @@ users:
   - username: n3wscott
     role: member
     teams:
-      - name: cosign-codeowners
-        role: member
   - username: naveensrinivasan
     role: member
     teams:
@@ -477,8 +463,6 @@ users:
       - name: policy-controller-codeowners
         role: maintainer
       - name: scaffolding-codeowners
-        role: member
-      - name: cosign-codeowners
         role: member
       - name: sigstore-oncall
         role: member

@@ -1077,6 +1077,11 @@ repositories:
         dismissStaleReviews: true
         statusChecks:
           - DCO
+          - lint
+          - license boilerplate check
+          - Run unit tests
+          - dependency-review
+          - Analyze (go)
         pushRestrictions:
           - rekor-monitor-codeowners
         dismissalRestrictions:
@@ -1903,7 +1908,6 @@ repositories:
           - lint
           - license boilerplate check
           - Run unit tests
-          - DCO
           - dependency-review
           - Analyze (go)
         dismissalRestrictions:

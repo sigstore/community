@@ -23,6 +23,9 @@ repositories:
         permission: admin
     branchesProtection:
       - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
   - name: TSC
@@ -51,7 +54,9 @@ repositories:
         permission: maintain
     branchesProtection:
       - pattern: main
-        allowsDeletions: true
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -89,8 +94,9 @@ repositories:
         permission: admin
     branchesProtection:
       - pattern: main
-        allowsDeletions: true
-        allowsForcePushes: true
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -139,6 +145,8 @@ repositories:
     branchesProtection:
       - pattern: main
         enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -166,6 +174,8 @@ repositories:
           - cosign-codeowners
       - pattern: release-1.13
         enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -262,7 +272,9 @@ repositories:
         permission: maintain
     branchesProtection:
       - pattern: main
-        allowsDeletions: true
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -330,7 +342,9 @@ repositories:
     teams: []
     branchesProtection:
       - pattern: main
-        allowsDeletions: true
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -425,7 +439,8 @@ repositories:
     branchesProtection:
       - pattern: main
         enforceAdmins: true
-        allowsDeletions: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -441,7 +456,8 @@ repositories:
           - fulcio-codeowners
       - pattern: release-1.0
         enforceAdmins: true
-        allowsDeletions: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -485,6 +501,8 @@ repositories:
     branchesProtection:
       - pattern: main
         enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -533,6 +551,8 @@ repositories:
     branchesProtection:
       - pattern: main
         enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -573,6 +593,9 @@ repositories:
     teams: []
     branchesProtection:
       - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         statusChecks:
@@ -632,6 +655,9 @@ repositories:
         permission: push
     branchesProtection:
       - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         statusChecks:
@@ -667,6 +693,9 @@ repositories:
         permission: maintain
     branchesProtection:
       - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -741,7 +770,9 @@ repositories:
         permission: admin
     branchesProtection:
       - pattern: main
-        allowsDeletions: true
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -808,6 +839,9 @@ repositories:
         permission: maintain
     branchesProtection:
       - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         statusChecks:
@@ -963,6 +997,9 @@ repositories:
         permission: push
     branchesProtection:
       - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         statusChecks:
@@ -1005,8 +1042,8 @@ repositories:
         permission: triage
     branchesProtection:
       - pattern: main
-        enforceAdmins: false
-        allowsDeletions: true
+        enforceAdmins: true
+        allowsDeletions: false
         allowsForcePushes: false
         requiredLinearHistory: true
         requireConversationResolution: false
@@ -1042,7 +1079,7 @@ repositories:
     owner: sigstore
     description: Log monitor for Rekor to verify immutability and monitor entries
     homepageUrl: ""
-    allowAutoMerge: false
+    allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true
@@ -1165,6 +1202,9 @@ repositories:
         permission: triage
     branchesProtection:
       - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -1201,8 +1241,9 @@ repositories:
         permission: maintain
     branchesProtection:
       - pattern: main
-        allowsDeletions: true
-        allowsForcePushes: true
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
@@ -1250,6 +1291,8 @@ repositories:
     branchesProtection:
       - pattern: main
         enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -1352,7 +1395,9 @@ repositories:
         permission: triage
     branchesProtection:
       - pattern: main
-        allowsDeletions: true
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -1562,6 +1607,8 @@ repositories:
     branchesProtection:
       - pattern: main
         enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         statusChecks:
@@ -1607,6 +1654,9 @@ repositories:
         permission: maintain
     branchesProtection:
       - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -1679,7 +1729,9 @@ repositories:
         permission: push
     branchesProtection:
       - pattern: main
-        allowsDeletions: true
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         requireConversationResolution: true
         dismissStaleReviews: true
@@ -1711,7 +1763,9 @@ repositories:
     collaborators: []
     branchesProtection:
       - pattern: main
-        allowsDeletions: true
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         requireConversationResolution: true
         dismissStaleReviews: true
@@ -1757,7 +1811,9 @@ repositories:
         permission: pull
     branchesProtection:
       - pattern: main
-        allowsDeletions: true
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -1809,7 +1865,9 @@ repositories:
         permission: maintain
     branchesProtection:
       - pattern: main
-        allowsDeletions: true
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requireSignedCommits: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -1854,7 +1912,9 @@ repositories:
         permission: triage
     branchesProtection:
       - pattern: main
-        allowsDeletions: true
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
@@ -1894,7 +1954,7 @@ repositories:
         permission: triage
     branchesProtection:
       - pattern: main
-        enforceAdmins: false
+        enforceAdmins: true
         allowsDeletions: false
         allowsForcePushes: false
         requiredLinearHistory: true

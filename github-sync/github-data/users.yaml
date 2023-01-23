@@ -13,11 +13,6 @@ users:
         role: member
       - name: Core Team
         role: maintainer
-  - username: ariel-kirson
-    role: member
-    teams:
-      - name: public-good-instance-team
-        role: member
   - username: asraa
     role: member
     teams:

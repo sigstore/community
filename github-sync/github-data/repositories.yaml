@@ -113,7 +113,7 @@ repositories:
     description: Container Signing
     homepageUrl: ""
     allowAutoMerge: true
-    allowMergeCommit: true
+    allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true
     archived: false
@@ -408,7 +408,7 @@ repositories:
     owner: sigstore
     description: Sigstore OIDC PKI
     homepageUrl: ""
-    allowAutoMerge: false
+    allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true
@@ -921,7 +921,7 @@ repositories:
     owner: sigstore
     description: ""
     homepageUrl: ""
-    allowAutoMerge: false
+    allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true
@@ -1008,8 +1008,8 @@ repositories:
     owner: sigstore
     description: Software Supply Chain Transparency Log
     homepageUrl: https://sigstore.dev
-    allowAutoMerge: false
-    allowMergeCommit: true
+    allowAutoMerge: true
+    allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true
     archived: false
@@ -1166,8 +1166,8 @@ repositories:
     owner: sigstore
     description: ""
     homepageUrl: ""
-    allowAutoMerge: false
-    allowMergeCommit: true
+    allowAutoMerge: true
+    allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true
     archived: false
@@ -1699,8 +1699,8 @@ repositories:
     owner: sigstore
     description: Probers for sigstore infrastructure
     homepageUrl: https://blog.sigstore.dev
-    allowAutoMerge: false
-    allowMergeCommit: true
+    allowAutoMerge: true
+    allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true
     archived: false

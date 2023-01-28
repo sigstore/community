@@ -1443,6 +1443,51 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
+  - name: sigstore-conformance
+    owner: sigstore
+    description: Conformance testing for Sigstore clients
+    homepageUrl: https://sigstore.dev
+    allowAutoMerge: true
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: false
+    hasWiki: false
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - sigstore
+      - conformance
+      - tests
+    collaborators:
+      - username: apstickler
+        permission: admin
+      - username: asraa
+        permission: push
+      - username: bobcallaway
+        permission: admin
+      - username: di
+        permission: push
+      - username: haydentherapper
+        permission: push
+      - username: loosebazooka
+        permission: push
+      - username: tetsuo-cpp
+        permission: admin
+    teams: []
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireConversationResolution: true
+        statusChecks:
+          - DCO
   - name: sigstore-devops-tools
     owner: sigstore
     description: Tools & services used to help in the development flow of sigstore

@@ -1480,7 +1480,10 @@ repositories:
         permission: push
       - username: tetsuo-cpp
         permission: admin
-    teams: []
+    teams:
+      - name: sigstore-conformance-codeowners
+        id: 7295162
+        permission: mantain
     branchesProtection:
       - pattern: main
         dismissStaleReviews: true

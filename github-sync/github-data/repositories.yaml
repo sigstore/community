@@ -1486,7 +1486,7 @@ repositories:
     teams:
       - name: sigstore-conformance-codeowners
         id: 7295162
-        permission: mantain
+        permission: maintain
     branchesProtection:
       - pattern: main
         dismissStaleReviews: true

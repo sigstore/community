@@ -72,13 +72,13 @@ repositories:
     owner: sigstore
     description: General sigstore community repo
     homepageUrl: ""
-    allowAutoMerge: false
-    allowMergeCommit: true
+    allowAutoMerge: true
+    allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true
     archived: false
     autoInit: false
-    deleteBranchOnMerge: false
+    deleteBranchOnMerge: true
     hasDownloads: true
     hasIssues: true
     hasProjects: true

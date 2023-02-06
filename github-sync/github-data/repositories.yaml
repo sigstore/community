@@ -512,8 +512,8 @@ repositories:
     owner: sigstore
     description: Keyless Git signing using Sigstore
     homepageUrl: ""
-    allowAutoMerge: false
-    allowMergeCommit: true
+    allowAutoMerge: true
+    allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true
     archived: false
@@ -560,6 +560,10 @@ repositories:
           - DCO
           - e2e
           - ci
+          - generate-docs
+          - license boilerplate check
+          - lint
+          - validate-release
   - name: gh-action-sigstore-python
     owner: sigstore
     description: A GitHub Action for sigstore-python

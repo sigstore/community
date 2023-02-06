@@ -305,6 +305,8 @@ users:
         role: member
       - name: sigstore-rs-codeowners
         role: member
+      - name: sigstore-oncall
+        role: member
   - username: loosebazooka
     role: member
     teams:

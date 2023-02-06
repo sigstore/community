@@ -1420,13 +1420,13 @@ repositories:
     owner: sigstore
     description: Codebase for sigstore.dev
     homepageUrl: https://blog.sigstore.dev
-    allowAutoMerge: false
-    allowMergeCommit: true
+    allowAutoMerge: true
+    allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true
     archived: false
     autoInit: false
-    deleteBranchOnMerge: false
+    deleteBranchOnMerge: true
     hasDownloads: true
     hasIssues: true
     hasProjects: false
@@ -1440,12 +1440,22 @@ repositories:
       repository: sigstore-project-template
     collaborators: []
     teams:
+      - name: Core Team
+        id: 4563391
+        permission: admin
       - name: sigstore-blog-maintainers
         id: 7197129
         permission: admin
       - name: triage
         id: 5643322
         permission: triage
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 3
+        requireConversationResolution: true
+        statusChecks:
+          - DCO
   - name: sigstore-conformance
     owner: sigstore
     description: Conformance testing for Sigstore clients

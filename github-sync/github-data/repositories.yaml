@@ -1442,6 +1442,10 @@ repositories:
     template:
       owner: sigstore
       repository: sigstore-project-template
+    pages:
+      branch: main
+      path: /
+      cname: blog.sigstore.dev
     collaborators: []
     teams:
       - name: Core Team

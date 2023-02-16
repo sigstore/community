@@ -1222,6 +1222,24 @@ repositories:
           - lint
           - validate
           - client
+      - pattern: test-ceremony/*
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+      - pattern: ceremony/*
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
   - name: ruby-sigstore
     owner: sigstore
     description: Rubygems sigstore signing plugin

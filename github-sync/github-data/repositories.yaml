@@ -1034,6 +1034,8 @@ repositories:
     collaborators:
       - username: sigstore-bot
         permission: push
+      - username: haydentherapper
+        permission: push
     teams:
       - name: rekor-codeowners
         id: 4721448

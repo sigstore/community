@@ -450,6 +450,16 @@ repositories:
           - DCO
           - build
           - Analyze (go)
+          - check-signature
+          - license boilerplate check
+          - k8s manifest check
+          - validate-release-job
+          - License and Vulnerability Scan / Scan dependencies for license compliance and vulnerabilities
+          - golangci-lint
+          - verify-k8s-deployment (OIDC Issuer)
+          - verify-k8s-deployment (Meta Issuer)
+          - oidc-config
+          - CodeQL
         pushRestrictions:
           - fulcio-codeowners
         dismissalRestrictions:

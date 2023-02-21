@@ -239,6 +239,8 @@ users:
         role: member
       - name: policy-controller-codeowners
         role: member
+      - name: sigstore-oncall
+        role: member
   - username: hepwori
     role: member
     teams:

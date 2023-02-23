@@ -65,9 +65,6 @@ teams:
   - name: rekor-monitor-codeowners
     privacy: closed
     description: ""
-  - name: rekor-operator-team
-    privacy: closed
-    description: ""
   - name: scaffolding-codeowners
     privacy: closed
     description: maintainers on sigstore/scaffolding

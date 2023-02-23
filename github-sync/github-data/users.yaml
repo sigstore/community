@@ -202,9 +202,6 @@ users:
         role: member
   - username: font
     role: member
-    teams:
-      - name: rekor-operator-team
-        role: member
   - username: haydentherapper
     role: member
     teams:
@@ -340,8 +337,6 @@ users:
       - name: rekor-codeowners
         role: maintainer
       - name: rekor-monitor-codeowners
-        role: maintainer
-      - name: rekor-operator-team
         role: maintainer
       - name: security-response-team
         role: maintainer

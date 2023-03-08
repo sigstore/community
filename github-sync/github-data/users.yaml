@@ -466,6 +466,11 @@ users:
   - username: thelinuxfoundation
     role: admin
     teams: []
+  - username: tnytown
+    role: member
+    teams:
+      - name: triage
+        role: member
   - username: trevrosen
     role: admin
     teams:

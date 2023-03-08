@@ -468,9 +468,7 @@ users:
     teams: []
   - username: tnytown
     role: member
-    teams:
-      - name: triage
-        role: member
+    teams: []
   - username: trevrosen
     role: admin
     teams:

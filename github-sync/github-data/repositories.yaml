@@ -604,6 +604,8 @@ repositories:
         permission: admin
       - username: woodruffw
         permission: admin
+      - username: tnytown
+        permission: triage
     teams: []
     branchesProtection:
       - pattern: main
@@ -1531,6 +1533,8 @@ repositories:
         permission: push
       - username: tetsuo-cpp
         permission: admin
+      - username: tnytown
+        permission: triage
     teams:
       - name: sigstore-conformance-codeowners
         id: 7295162
@@ -1904,6 +1908,8 @@ repositories:
         permission: maintain
       - username: woodruffw
         permission: maintain
+      - username: tnytown
+        permission: triage
     teams:
       - name: Core Team
         id: 4563391

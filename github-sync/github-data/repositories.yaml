@@ -1159,9 +1159,6 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
-    collaborators:
-      - username: znewman01
-        permission: push
     branchesProtection:
       - pattern: main
         enforceAdmins: true

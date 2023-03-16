@@ -130,8 +130,6 @@ repositories:
     collaborators:
       - username: sigstore-bot
         permission: push
-      - username: haydentherapper
-        permission: push
     teams:
       - name: cosign-codeowners
         id: 4722092

@@ -209,6 +209,8 @@ users:
         role: member
       - name: architecture-doc-team
         role: member
+      - name: cosign-codeowners
+        role: member
       - name: fulcio-codeowners
         role: member
       - name: rekor-monitor-codeowners

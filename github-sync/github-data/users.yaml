@@ -516,5 +516,7 @@ users:
         role: member
       - name: protobuf-specs-codeowners
         role: member
+      - name: rekor-monitor-codeowners
+        role: member
       - name: sigstore-go-codeowners
         role: member

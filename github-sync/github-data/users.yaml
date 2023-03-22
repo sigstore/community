@@ -32,8 +32,6 @@ users:
         role: member
       - name: rekor-codeowners
         role: member
-      - name: sget-codeowners
-        role: member
       - name: rekor-monitor-codeowners
         role: member
       - name: tuf-root-signing-codeowners
@@ -278,8 +276,6 @@ users:
   - username: jyotsna-penumaka
     role: member
     teams:
-      - name: sget-codeowners
-        role: member
       - name: sigstore-rs-codeowners
         role: member
   - username: k4leung4
@@ -300,8 +296,6 @@ users:
   - username: lkatalin
     role: member
     teams:
-      - name: sget-codeowners
-        role: member
       - name: sigstore-rs-codeowners
         role: member
       - name: sigstore-oncall
@@ -339,8 +333,6 @@ users:
       - name: rekor-monitor-codeowners
         role: maintainer
       - name: security-response-team
-        role: maintainer
-      - name: sget-codeowners
         role: maintainer
       - name: sigstore-codeowners
         role: maintainer

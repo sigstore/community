@@ -71,9 +71,6 @@ teams:
   - name: security-response-team
     privacy: closed
     description: ""
-  - name: sget-codeowners
-    privacy: closed
-    description: ""
   - name: sigstore-codeowners
     privacy: closed
     description: 'Note: this is for the sigstore repo, not for the entire organization'

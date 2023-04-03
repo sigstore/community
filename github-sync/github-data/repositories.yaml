@@ -337,7 +337,10 @@ repositories:
     collaborators:
       - username: ltagliaferri
         permission: admin
-    teams: []
+    teams:
+      - name: triage
+        id: 5643322
+        permission: triage
     branchesProtection:
       - pattern: main
         enforceAdmins: true

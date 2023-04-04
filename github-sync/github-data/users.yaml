@@ -437,6 +437,8 @@ users:
   - username: pwelch
     role: member
     teams:
+      - name: sigstore-sig-public-good-operations
+        role: maintainer
       - name: sigstore-oncall
         role: member
   - username: rawlingsj
@@ -506,6 +508,8 @@ users:
   - username: znewman01
     role: member
     teams:
+      - name: sigstore-sig-clients
+        role: maintainer
       - name: triage
         role: member
       - name: architecture-doc-team

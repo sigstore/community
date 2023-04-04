@@ -74,6 +74,12 @@ teams:
   - name: security-response-team
     privacy: closed
     description: ""
+  - name: sigstore-sig-clients
+    privacy: closed
+    description: "Home of the SIG for client libraries and CLIs"
+  - name: sigstore-sig-public-good-operations
+    privacy: closed
+    description: "Home of the SIG for public good operations"
   - name: sigstore-codeowners
     privacy: closed
     description: 'Note: this is for the sigstore repo, not for the entire organization'

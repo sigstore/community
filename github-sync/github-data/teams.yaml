@@ -20,6 +20,9 @@ teams:
   - name: codeowners-sigstore-js
     privacy: closed
     description: sigstore-js maintainers
+  - name: codeowners-rekor-search-ui
+    privacy: closed
+    description: rekor-search-ui maintainers
   - name: codeowners-sigstore-python
     privacy: closed
     description: sigstore-python maintainers

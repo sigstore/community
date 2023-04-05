@@ -1182,6 +1182,56 @@ repositories:
           - rekor-monitor-codeowners
         dismissalRestrictions:
           - rekor-monitor-codeowners
+  - name: rekor-search-ui
+    owner: sigstore
+    description: Search Rekor for entries
+    homepageUrl: "https://search.sigstore.dev"
+    allowAutoMerge: true
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    teams:
+      - name: codeowners-rekor-search-ui
+        id: 7667762
+        permission: maintain
+      - name: triage
+        id: 5643322
+        permission: triage
+    pages:
+      branch: main
+      path: /
+      cname: search.sigstore.dev
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        restrictDismissals: true
+        requireBranchesUpToDate: false
+        dismissStaleReviews: true
+        statusChecks:
+          - Prettier
+          - Spacing
+          - DCO
+          - ESLint
+          - Action lint
+          - Do not submit
+        dismissalRestrictions:
+          - codeowners-rekor-search-ui
   - name: root-signing
     owner: sigstore
     description: ""
@@ -2037,50 +2087,3 @@ repositories:
           - Analyze (go)
         dismissalRestrictions:
           - timestamp-codeowners
-
-  - name: rekor-search-ui
-    owner: sigstore
-    description: Search Rekor for entries
-    homepageUrl: ""
-    allowAutoMerge: true
-    allowMergeCommit: false
-    allowRebaseMerge: true
-    allowSquashMerge: true
-    archived: false
-    autoInit: false
-    deleteBranchOnMerge: true
-    hasDownloads: true
-    hasIssues: true
-    hasProjects: true
-    hasWiki: true
-    vulnerabilityAlerts: true
-    visibility: public
-    licenseTemplate: ""
-    topics: []
-    teams:
-      - name: codeowners-rekor-search-ui
-        id: 7667762
-        permission: maintain
-      - name: triage
-        id: 5643322
-        permission: triage
-    branchesProtection:
-      - pattern: main
-        enforceAdmins: true
-        allowsDeletions: false
-        allowsForcePushes: false
-        requiredLinearHistory: true
-        requiredApprovingReviewCount: 1
-        requireCodeOwnerReviews: false
-        restrictDismissals: true
-        requireBranchesUpToDate: false
-        dismissStaleReviews: true
-        statusChecks:
-          - Prettier
-          - Spacing
-          - DCO
-          - ESLint
-          - Action lint
-          - license boilerplate check
-        dismissalRestrictions:
-          - codeowners-rekor-search-ui

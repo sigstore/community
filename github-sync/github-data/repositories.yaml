@@ -1996,6 +1996,79 @@ repositories:
           - sigstore-rs-codeowners
         dismissalRestrictions:
           - sigstore-rs-codeowners
+
+  - name: sig-clients
+    owner: sigstore
+    description: Home of the clients SIG
+    homepageUrl: ""
+    allowAutoMerge: true
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    teams:
+      - name: sigstore-sig-clients
+        id: 7674694
+        permission: maintain
+      - name: triage
+        id: 5643322
+        permission: triage
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        restrictDismissals: true
+        requireBranchesUpToDate: false
+
+  - name: sig-public-good-operations
+    owner: sigstore
+    description: Home of the public good operations SIG
+    homepageUrl: ""
+    allowAutoMerge: true
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    teams:
+      - name: sigstore-sig-public-good-operations
+        id: 7674695
+        permission: maintain
+      - name: triage
+        id: 5643322
+        permission: triage
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        restrictDismissals: true
+        requireBranchesUpToDate: false
+
   - name: sigstore-website
     owner: sigstore
     description: Codebase for sigstore.dev

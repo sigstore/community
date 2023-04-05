@@ -2041,7 +2041,7 @@ repositories:
   - name: rekor-search-ui
     owner: sigstore
     description: Search Rekor for entries
-    homepageUrl: ""
+    homepageUrl: "https://search.sigstore.dev"
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true

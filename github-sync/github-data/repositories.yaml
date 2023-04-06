@@ -2014,6 +2014,9 @@ repositories:
     visibility: public
     licenseTemplate: ""
     topics: []
+    template:
+      owner: sigstore
+      repository: sigstore-project-template
     teams:
       - name: sigstore-sig-clients
         id: 7674694
@@ -2031,6 +2034,8 @@ repositories:
         requireCodeOwnerReviews: false
         restrictDismissals: true
         requireBranchesUpToDate: false
+        statusChecks:
+          - DCO
   - name: sig-public-good-operations
     owner: sigstore
     description: Home of the public good operations SIG
@@ -2049,6 +2054,9 @@ repositories:
     visibility: public
     licenseTemplate: ""
     topics: []
+    template:
+      owner: sigstore
+      repository: sigstore-project-template
     teams:
       - name: sigstore-sig-public-good-operations
         id: 7674695
@@ -2066,6 +2074,8 @@ repositories:
         requireCodeOwnerReviews: false
         restrictDismissals: true
         requireBranchesUpToDate: false
+        statusChecks:
+          - DCO
   - name: sigstore-website
     owner: sigstore
     description: Codebase for sigstore.dev

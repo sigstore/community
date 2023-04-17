@@ -2034,6 +2034,7 @@ repositories:
         requireCodeOwnerReviews: false
         restrictDismissals: true
         requireBranchesUpToDate: false
+        dismissStaleReviews: true
         statusChecks:
           - DCO
   - name: sig-public-good-operations
@@ -2074,6 +2075,7 @@ repositories:
         requireCodeOwnerReviews: false
         restrictDismissals: true
         requireBranchesUpToDate: false
+        dismissStaleReviews: true
         statusChecks:
           - DCO
   - name: sigstore-website

@@ -1036,8 +1036,6 @@ repositories:
         permission: triage
       - username: vaikas
         permission: maintain
-      - username: var-sdk
-        permission: maintain
       - username: hectorj2f
         permission: maintain
       - username: kkooi

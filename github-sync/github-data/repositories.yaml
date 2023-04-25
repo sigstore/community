@@ -27,6 +27,7 @@ repositories:
         allowsDeletions: false
         allowsForcePushes: false
         dismissStaleReviews: true
+        requireLastPushApproval: true
         requiredApprovingReviewCount: 1
   - name: TSC
     owner: sigstore
@@ -62,6 +63,7 @@ repositories:
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
         restrictDismissals: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
         pushRestrictions:
@@ -102,6 +104,7 @@ repositories:
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
         restrictDismissals: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
         pushRestrictions:
@@ -149,6 +152,7 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
+        requireLastPushApproval: true
         statusChecks:
           - Check Whitespace
           - DCO
@@ -178,6 +182,7 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
+        requireLastPushApproval: true
         statusChecks:
           - Check Whitespace
           - DCO
@@ -241,6 +246,7 @@ repositories:
       - pattern: main
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
         statusChecks:
           - DCO
   - name: cosign-installer
@@ -278,6 +284,7 @@ repositories:
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
         restrictDismissals: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
         pushRestrictions:
@@ -313,6 +320,7 @@ repositories:
         enforceAdmins: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
         statusChecks:
           - DCO
   - name: docs
@@ -350,6 +358,7 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: false
+        requireLastPushApproval: true
         statusChecks:
           - DCO
   - name: fish-food
@@ -385,6 +394,7 @@ repositories:
       - pattern: main
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
   - name: friends
     owner: sigstore
     description: Sigstore user stories
@@ -447,6 +457,7 @@ repositories:
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
         restrictDismissals: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
           - build
@@ -474,6 +485,7 @@ repositories:
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
         restrictDismissals: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
           - build
@@ -517,6 +529,7 @@ repositories:
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
         statusChecks:
           - DCO
   - name: gitsign
@@ -567,6 +580,7 @@ repositories:
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
         statusChecks:
           - DCO
           - e2e
@@ -615,6 +629,7 @@ repositories:
         allowsForcePushes: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
         statusChecks:
           - DCO
           - selftest-glob
@@ -677,6 +692,7 @@ repositories:
         allowsForcePushes: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
         statusChecks:
           - DCO
   - name: helm-sigstore
@@ -719,6 +735,7 @@ repositories:
         requireCodeOwnerReviews: true
         restrictDismissals: true
         requireBranchesUpToDate: true
+        requireLastPushApproval: true
         pushRestrictions:
           - helm-sigstore-codeowners
         dismissalRestrictions:
@@ -757,6 +774,7 @@ repositories:
       - pattern: main
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
         statusChecks:
           - DCO
           - test-bot (macos-latest)
@@ -795,6 +813,7 @@ repositories:
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
         restrictDismissals: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
         pushRestrictions:
@@ -861,6 +880,7 @@ repositories:
         allowsForcePushes: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
         statusChecks:
           - Check Whitespace
           - DCO
@@ -968,6 +988,7 @@ repositories:
         restrictDismissals: true
         requireBranchesUpToDate: false
         dismissStaleReviews: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
         pushRestrictions:
@@ -1057,6 +1078,7 @@ repositories:
         allowsForcePushes: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
         statusChecks:
           - DCO
   - name: rekor
@@ -1107,6 +1129,7 @@ repositories:
         requireSignedCommits: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
         statusChecks:
           - build
           - DCO
@@ -1169,6 +1192,7 @@ repositories:
         restrictDismissals: true
         requireBranchesUpToDate: false
         dismissStaleReviews: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
           - lint
@@ -1221,6 +1245,7 @@ repositories:
         restrictDismissals: true
         requireBranchesUpToDate: false
         dismissStaleReviews: true
+        requireLastPushApproval: true
         statusChecks:
           - Prettier
           - Spacing
@@ -1276,6 +1301,7 @@ repositories:
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
         statusChecks:
           - DCO
           - yamllint
@@ -1290,6 +1316,7 @@ repositories:
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
         statusChecks:
           - DCO
       - pattern: ceremony/*
@@ -1299,6 +1326,7 @@ repositories:
         requiredLinearHistory: true
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
         statusChecks:
           - DCO
   - name: ruby-sigstore
@@ -1335,6 +1363,7 @@ repositories:
         requireCodeOwnerReviews: true
         restrictDismissals: true
         requireBranchesUpToDate: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
         pushRestrictions:
@@ -1383,6 +1412,7 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
+        requireLastPushApproval: true
         statusChecks:
           - Analyze (go)
           - CodeQL
@@ -1450,6 +1480,7 @@ repositories:
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
         restrictDismissals: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
           - license boilerplate check
@@ -1552,6 +1583,7 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireConversationResolution: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
   - name: sigstore-devops-tools
@@ -1632,6 +1664,7 @@ repositories:
         restrictDismissals: true
         requireBranchesUpToDate: false
         dismissStaleReviews: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
         pushRestrictions:
@@ -1681,6 +1714,7 @@ repositories:
       - pattern: main
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
         statusChecks:
           - DCO
           - shellcheck
@@ -1722,6 +1756,7 @@ repositories:
         allowsForcePushes: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
         statusChecks:
           - Validation
           - DCO
@@ -1773,6 +1808,7 @@ repositories:
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
         requireBranchesUpToDate: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
   - name: sigstore-maven
@@ -1804,6 +1840,7 @@ repositories:
       - pattern: main
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
         statusChecks:
           - DCO
   - name: sigstore-probers
@@ -1848,6 +1885,7 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
           - verify-build-tools
@@ -1882,6 +1920,7 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
   - name: sigstore-python
@@ -1932,6 +1971,7 @@ repositories:
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
         requireBranchesUpToDate: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
           - lint
@@ -1986,6 +2026,7 @@ repositories:
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
         restrictDismissals: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
           - Test Suite
@@ -2033,6 +2074,7 @@ repositories:
         restrictDismissals: true
         requireBranchesUpToDate: false
         dismissStaleReviews: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
   - name: sig-public-good-operations
@@ -2074,6 +2116,7 @@ repositories:
         restrictDismissals: true
         requireBranchesUpToDate: false
         dismissStaleReviews: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
   - name: sigstore-website
@@ -2114,6 +2157,7 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
         pushRestrictions:
@@ -2158,6 +2202,7 @@ repositories:
         restrictDismissals: true
         requireBranchesUpToDate: false
         dismissStaleReviews: true
+        requireLastPushApproval: true
         statusChecks:
           - DCO
           - lint

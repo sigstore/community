@@ -1113,6 +1113,12 @@ repositories:
           - e2e
           - Analyze (go)
           - CodeQL
+          - harness
+          - issue-872-e2e
+          - sharding-e2e
+          - validate-release-job
+          - container-build
+          - license boilerplate check
         pushRestrictions:
           - rekor-codeowners
       - pattern: release-1.0

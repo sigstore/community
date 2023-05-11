@@ -522,3 +522,8 @@ users:
         role: member
       - name: sigstore-go-codeowners
         role: member
+  - username: sallyom
+    role: member
+    teams:
+      - name: sigstore-oncall
+        role: member

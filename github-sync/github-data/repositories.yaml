@@ -81,6 +81,7 @@ repositories:
     archived: false
     autoInit: false
     deleteBranchOnMerge: true
+    hasDiscussions: true
     hasDownloads: true
     hasIssues: true
     hasProjects: true
@@ -122,6 +123,7 @@ repositories:
     archived: false
     autoInit: false
     deleteBranchOnMerge: false
+    hasDiscussions: true
     hasDownloads: true
     hasIssues: true
     hasProjects: true
@@ -426,6 +428,7 @@ repositories:
     archived: false
     autoInit: false
     deleteBranchOnMerge: true
+    hasDiscussions: true
     hasDownloads: true
     hasIssues: true
     hasProjects: true
@@ -543,6 +546,7 @@ repositories:
     archived: false
     autoInit: false
     deleteBranchOnMerge: true
+    hasDiscussions: true
     hasDownloads: true
     hasIssues: true
     hasProjects: true
@@ -851,6 +855,7 @@ repositories:
     archived: false
     autoInit: false
     deleteBranchOnMerge: true
+    hasDiscussions: true
     hasDownloads: true
     hasIssues: true
     hasProjects: true
@@ -953,6 +958,7 @@ repositories:
     archived: false
     autoInit: false
     deleteBranchOnMerge: true
+    hasDiscussions: true
     hasDownloads: true
     hasIssues: true
     hasProjects: true
@@ -1092,6 +1098,7 @@ repositories:
     archived: false
     autoInit: false
     deleteBranchOnMerge: true
+    hasDiscussions: true
     hasDownloads: true
     hasIssues: true
     hasProjects: true
@@ -1448,6 +1455,7 @@ repositories:
     archived: false
     autoInit: false
     deleteBranchOnMerge: true
+    hasDiscussions: true
     hasDownloads: true
     hasIssues: true
     hasProjects: true

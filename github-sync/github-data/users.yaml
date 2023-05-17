@@ -213,6 +213,8 @@ users:
         role: member
       - name: cosign-codeowners
         role: member
+      - name: cosign-installer-codeowners
+        role: member
       - name: fulcio-codeowners
         role: member
       - name: rekor-monitor-codeowners
@@ -515,6 +517,8 @@ users:
       - name: architecture-doc-team
         role: member
       - name: cosign-codeowners
+        role: member
+      - name: cosign-installer-codeowners
         role: member
       - name: protobuf-specs-codeowners
         role: member

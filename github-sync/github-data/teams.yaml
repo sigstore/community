@@ -41,9 +41,6 @@ teams:
   - name: gitsign-codeowners
     privacy: closed
     description: ""
-  - name: git-verifier-codeowners
-    privacy: closed
-    description: ""
   - name: helm
     privacy: closed
     description: Helm Maintenance

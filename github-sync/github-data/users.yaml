@@ -335,8 +335,6 @@ users:
         role: maintainer
       - name: fulcio-codeowners
         role: maintainer
-      - name: git-verifier-codeowners
-        role: maintainer
       - name: helm-sigstore-codeowners
         role: maintainer
       - name: policy-controller-codeowners
@@ -384,13 +382,6 @@ users:
       - name: fulcio-codeowners
         role: member
       - name: cosign-codeowners
-        role: member
-  - username: mbestavros
-    role: member
-    teams:
-      - name: cosign-installer-codeowners
-        role: member
-      - name: git-verifier-codeowners
         role: member
   - username: mdunbavan
     role: member

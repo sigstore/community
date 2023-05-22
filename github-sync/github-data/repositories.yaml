@@ -1988,14 +1988,12 @@ repositories:
         requireLastPushApproval: true
         statusChecks:
           - DCO
-          - lint
-          - DCO
-          - test (3.7)
-          - test (3.10)
-          - test (3.8)
-          - test (3.9)
           - licenses
           - check-readme
+          - all-lints-pass
+          - coverage
+          - all-tests-pass
+          - conformance
   - name: sigstore-rs
     owner: sigstore
     description: An experimental Rust crate for sigstore

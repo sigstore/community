@@ -2114,6 +2114,9 @@ repositories:
       - name: sigstore-sig-public-good-operations
         id: 7674695
         permission: maintain
+      - name: sigstore-oncall
+        id: 6693572
+        permission: maintain
       - name: triage
         id: 5643322
         permission: triage

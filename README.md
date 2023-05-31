@@ -16,7 +16,8 @@ sigstore's umbrella roadmap is [available here](./ROADMAP.md)
 
 ## Community Meetings
 
-We now have a community calendar [available here](https://calendar.google.com/calendar/u/0?cid=ZnE0a2dvbTJjZTQzaG5jbmJjZmphMmNrMjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ).
+We now have a community calendar [available here](https://calendar.google.com/calendar/u/0?cid=ZnE0a2dvbTJjZTQzaG5jbmJjZmphMmNrMjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ) (and [in .ics format](https://calendar.google.com/calendar/ical/fq4kgom2ce43hncnbcfja2ck20%40group.calendar.google.com/public/basic.ics
+)).
 All recurring and one-off meetings will be shared here.
 
 We typically meet for a community wide meeting every [Tuesday @ 16:30 UTC

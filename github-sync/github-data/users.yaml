@@ -456,6 +456,11 @@ users:
         role: maintainer
       - name: helm-sigstore-codeowners
         role: member
+  - username: sallyom
+    role: member
+    teams:
+      - name: sigstore-oncall
+        role: member
   - username: tetsuo-cpp
     role: member
     teams:
@@ -493,6 +498,9 @@ users:
     teams:
       - name: sigstore-conformance-codeowners
         role: member
+  - username: yrobla
+    role: member
+    teams: []
   - username: yuji-watanabe-jp
     role: member
     teams:
@@ -516,9 +524,4 @@ users:
       - name: rekor-monitor-codeowners
         role: member
       - name: sigstore-go-codeowners
-        role: member
-  - username: sallyom
-    role: member
-    teams:
-      - name: sigstore-oncall
         role: member

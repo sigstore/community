@@ -180,6 +180,11 @@ users:
     teams:
       - name: codeowners-sigstore-js
         role: maintainer
+  - username: ejahnGithub
+    role: member
+    teams:
+      - name: codeowners-sigstore-js
+        role: maintainer
   - username: endorama
     role: member
     teams:

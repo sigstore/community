@@ -51,6 +51,8 @@ users:
         role: maintainer
       - name: codeowners-sigstore-js
         role: maintainer
+      - name: sigstore-sig-clients
+        role: maintainer
   - username: bobcallaway
     role: admin
     teams:
@@ -503,6 +505,8 @@ users:
     teams:
       - name: sigstore-conformance-codeowners
         role: member
+      - name: sigstore-sig-clients
+        role: maintainer
   - username: yrobla
     role: member
     teams: []

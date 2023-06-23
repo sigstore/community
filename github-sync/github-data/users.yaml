@@ -197,6 +197,9 @@ users:
     teams:
       - name: codeowners-sigstore-website
         role: member
+  - username: evankanderson
+    role: member
+    teams: []
   - username: feelepxyz
     role: member
     teams:
@@ -276,6 +279,9 @@ users:
       - name: sigstore-go-codeowners
         role: member
   - username: inferno-chromium
+    role: member
+    teams: []
+  - username: JAORMX
     role: member
     teams: []
   - username: jiggoha

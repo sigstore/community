@@ -2,7 +2,6 @@
 sequenceDiagram
     actor ${TSA}
     actor Log Operator
-    actor None
     actor Software Installer
     actor Witness
     actor Witness Quorum
@@ -14,9 +13,5 @@ sequenceDiagram
     loop Periodic append-only Verification
         Witness->>Log Operator: Fetch merkle data
         Witness->>Witness: Verify append-only
-    end
-    loop Periodic Signed ${Timestamp} over Statement<sup>Rekor<sup>Identity</sup></sup> Verification
-        None->>Log Operator: Get all entries
-        None->>None: Verify: Claim<sup>Rekor<sup>Identity</sup></sup> occurs at ${Timestamp}
     end
 ```

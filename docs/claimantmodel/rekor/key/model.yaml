@@ -1,0 +1,8 @@
+System:    "Rekor"
+Claim:
+    Claim: "${Key} signs ${Hash}, verifiable with ${PubKey}"
+    Verifier: "${KeyOwner}"
+Statement: "${Hash}, public key ${PubKey}, and signature over ${Hash}"
+Claimant:  "${Key}"
+Believer:  "Software Installer"
+Arbiter:   "Community, key-artifact mapping"

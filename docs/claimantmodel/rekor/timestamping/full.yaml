@@ -1,0 +1,25 @@
+Domain:
+  System: Rekor
+  Claimant: ${TSA}
+  Statement: Signed ${Timestamp} over Statement<sup>Rekor<sup>Identity</sup></sup>
+  Believer: Software Installer
+  Claim:
+    Claim: Claim<sup>Rekor<sup>Identity</sup></sup> occurs at ${Timestamp}
+    Verifier: None
+  Arbiter: Community
+Log:
+  System: LOG_Rekor
+  Claimant: Log Operator
+  Statement: Log Checkpoint
+  Believers:
+  - Software Installer
+  - None
+  Claims:
+  - Claim: This data structure is append-only from any previous version
+    Verifier: Witness
+  - Claim: This data structure is globally consistent
+    Verifier: Witness Quorum
+  - Claim: This data structure contains only leaves of type `Signed ${Timestamp} over
+      Statement<sup>Rekor<sup>Identity</sup></sup>`
+    Verifier: None
+  Arbiter: Community

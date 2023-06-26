@@ -1,0 +1,25 @@
+Domain:
+  System: TSA
+  Claimant: ${TimestampAuthority}
+  Statement: Signed timestamp containing ${Time}
+  Believer: Software Installer, entity consuming short-lived code-signing certificate
+  Claim:
+    Claim: ${TimestampAuthority} claims a monotonically increasing ${Time}
+    Verifier: ${TimestampMonotonicVerifier}
+  Arbiter: Community
+Log:
+  System: LOG_TSA
+  Claimant: Log Operator
+  Statement: Log Checkpoint
+  Believers:
+  - Software Installer, entity consuming short-lived code-signing certificate
+  - ${TimestampMonotonicVerifier}
+  Claims:
+  - Claim: This data structure is append-only from any previous version
+    Verifier: Witness
+  - Claim: This data structure is globally consistent
+    Verifier: Witness Quorum
+  - Claim: This data structure contains only leaves of type `Signed timestamp containing
+      ${Time}`
+    Verifier: ${TimestampMonotonicVerifier}
+  Arbiter: Community

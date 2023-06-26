@@ -1,0 +1,8 @@
+System:    "Fulcio"
+Claim:
+    Claim: "${OIDCIDOwner} authorizes ${CA} to bind ${PubKey} to ${OIDCIdentity}"
+    Verifier: "${OIDCIDOwner}"
+Statement: "X.509 certificate containing ${PubKey} and ${OIDCIdentity}, signed by ${CA}"
+Claimant:  "${CA}"
+Believer:  "Software Installer"
+Arbiter:   "Community"

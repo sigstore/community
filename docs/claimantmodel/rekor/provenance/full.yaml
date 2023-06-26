@@ -1,0 +1,28 @@
+Domain:
+  System: Rekor
+  Claimant: ${OIDCIdentity}
+  Statement: ${Provenance} with ${Hash}, X.509 certificate ${Certificate} containing
+    ${OIDCIdentity}, signature over ${Subject}
+  Believer: Software Installer
+  Claim:
+    Claim: ${OIDCIdentity} signs ${Provenance} containing ${Subject}, using the key
+      bound by ${Certificate}
+    Verifier: ${OIDCIDOwner}/Artifact Builder
+  Arbiter: Community, identity-artifact mapping
+Log:
+  System: LOG_Rekor
+  Claimant: Log Operator
+  Statement: Log Checkpoint
+  Believers:
+  - Software Installer
+  - ${OIDCIDOwner}/Artifact Builder
+  Claims:
+  - Claim: This data structure is append-only from any previous version
+    Verifier: Witness
+  - Claim: This data structure is globally consistent
+    Verifier: Witness Quorum
+  - Claim: This data structure contains only leaves of type `${Provenance} with ${Hash},
+      X.509 certificate ${Certificate} containing ${OIDCIdentity}, signature over
+      ${Subject}`
+    Verifier: ${OIDCIDOwner}/Artifact Builder
+  Arbiter: 'Community, identity-artifact mapping'

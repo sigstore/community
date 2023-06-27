@@ -209,6 +209,11 @@ users:
     teams:
       - name: sigstore-rs-codeowners
         role: member
+  - username: flxw
+    role: member
+    teams:
+      - name: helm
+        role: member
   - username: font
     role: member
   - username: haydentherapper

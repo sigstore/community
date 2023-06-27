@@ -685,7 +685,7 @@ repositories:
         permission: pull
       - name: helm
         id: 5291354
-        permission: admin
+        permission: push
       - name: sigstore-oncall
         id: 6693572
         permission: push

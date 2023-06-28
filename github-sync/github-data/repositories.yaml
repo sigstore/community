@@ -1069,6 +1069,10 @@ repositories:
         permission: pull
       - username: yrobla
         permission: triage
+      - username: evankanderson
+        permission: triage
+      - username: JAORMX
+        permission: triage
     teams:
       - name: public-good-instance-team
         id: 5623385

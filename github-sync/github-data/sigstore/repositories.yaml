@@ -989,12 +989,8 @@ repositories:
     licenseTemplate: ""
     topics: []
     collaborators:
-      - username: asraa
-        permission: admin
       - username: haydentherapper
         permission: admin
-      - username: kommendorkapten
-        permission: maintain
       - username: znewman01
         permission: admin
     teams:

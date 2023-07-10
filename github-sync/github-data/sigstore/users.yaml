@@ -514,6 +514,8 @@ users:
   - username: woodruffw
     role: member
     teams:
+      - name: protobuf-specs-codeowners
+        role: member
       - name: sigstore-conformance-codeowners
         role: member
       - name: sigstore-sig-clients

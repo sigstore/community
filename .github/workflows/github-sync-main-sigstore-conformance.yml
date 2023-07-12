@@ -1,20 +1,20 @@
-name: GitHub Sync Update
+name: GitHub Sync Update for sigstore org
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'github-sync/github-data/*.yaml'
-      - 'github-sync/Pulumi*.yaml'
+      - 'github-sync/github-data/sigstore/*.yaml'
+      - 'github-sync/Pulumi.github-prod.yaml'
 
 env:
  PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
- GITHUB_OWNER: sigstore
+ GITHUB_OWNER: sigstore-conformance
 
 jobs:
   Update:
-    name: Update
+    name: Update sigstore org
     runs-on: ubuntu-latest
 
     steps:
@@ -23,7 +23,7 @@ jobs:
       with:
         work_dir: ./github-sync
         config_directory: ./github-sync/github-data
-        stack_name: sigstore/github-prod
+        stack_name: sigstore/github-sigstore-conformance
         pulumi_access_token: ${{ secrets.PULUMI_ACCESS_TOKEN }}
         pulumi_command: up
         gh_token: ${{ secrets.GITHUB_TOKEN }}

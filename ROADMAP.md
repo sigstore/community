@@ -19,4 +19,7 @@
 - [ ] Root CA rotation plan draft published
 - [ ] Generic signing sigstore client release published (and self-signed!)
 
+## Special Interest Groups
+- [Roadmap for Clients SIG](https://github.com/sigstore/sig-clients)
+
 * Last Updated: 11/05/2021

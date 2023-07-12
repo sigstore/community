@@ -1,0 +1,16 @@
+users:
+  - username: bobcallaway
+    role: admin
+    teams: []
+  - username: cpanato
+    role: admin
+    teams: []
+  - username: trevrosen
+    role: admin
+    teams: []
+  - username: SantiagoTorres
+    role: admin
+    teams: []
+  - username: priyawadhwa
+    role: admin
+    teams: []

@@ -126,7 +126,7 @@ repositories:
     allowSquashMerge: true
     archived: false
     autoInit: false
-    deleteBranchOnMerge: false
+    deleteBranchOnMerge: true
     hasDiscussions: true
     hasDownloads: true
     hasIssues: true

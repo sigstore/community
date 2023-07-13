@@ -3,6 +3,7 @@ repositories:
     owner: sigstore
     description: Default community health files for the Sigstore organization.
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -33,6 +34,7 @@ repositories:
     owner: sigstore
     description: sigstore Technical Steering Committee
     homepageUrl: https://sigstore.dev
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -73,6 +75,7 @@ repositories:
   - name: community
     owner: sigstore
     description: General sigstore community repo
+    defaultBranch: main
     homepageUrl: ""
     allowAutoMerge: true
     allowMergeCommit: false
@@ -115,6 +118,7 @@ repositories:
   - name: cosign
     owner: sigstore
     description: Container Signing
+    defaultBranch: main
     homepageUrl: ""
     allowAutoMerge: true
     allowMergeCommit: false
@@ -209,6 +213,7 @@ repositories:
     owner: sigstore
     description: "\U0001F52E ✈️ to integrate OPA Gatekeeper's new ExternalData feature with cosign to determine whether the images are valid by verifying their signatures"
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -255,6 +260,7 @@ repositories:
     owner: sigstore
     description: Cosign Github Action
     homepageUrl: https://sigstore.dev
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -297,6 +303,7 @@ repositories:
     owner: sigstore
     description: ""
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -329,6 +336,7 @@ repositories:
     owner: sigstore
     description: Sigstore documentation
     homepageUrl: https://sigstore.dev
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -367,6 +375,7 @@ repositories:
     owner: sigstore
     description: ""
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -401,6 +410,7 @@ repositories:
     owner: sigstore
     description: Sigstore user stories
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -421,6 +431,7 @@ repositories:
     owner: sigstore
     description: Sigstore OIDC PKI
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -501,6 +512,7 @@ repositories:
     owner: sigstore
     description: Pulumi GitHub Sync for sigstore
     homepageUrl: https://sigstore.dev
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -539,6 +551,7 @@ repositories:
     owner: sigstore
     description: Keyless Git signing using Sigstore
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -597,6 +610,7 @@ repositories:
     owner: sigstore
     description: A GitHub Action for sigstore-python
     homepageUrl: https://github.com/marketplace/actions/gh-action-sigstore-python
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -647,6 +661,7 @@ repositories:
     owner: sigstore
     description: Helm charts for sigstore project
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -703,6 +718,7 @@ repositories:
     owner: sigstore
     description: Plugin for Helm to integrate the sigstore ecosystem
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -750,6 +766,7 @@ repositories:
     owner: sigstore
     description: Sigstore Homebrew Tap
     homepageUrl: https://sigstore.dev
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -787,6 +804,7 @@ repositories:
     owner: sigstore
     description: kubectl plugin for signing Kubernetes manifest YAML files with sigstore
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -826,6 +844,7 @@ repositories:
     owner: sigstore
     description: ""
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -848,6 +867,7 @@ repositories:
     owner: sigstore
     description: ""
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -951,6 +971,7 @@ repositories:
     owner: sigstore
     description: Protocol Buffer specifications
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -1005,6 +1026,7 @@ repositories:
     owner: sigstore
     description: ""
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -1097,6 +1119,7 @@ repositories:
     owner: sigstore
     description: Software Supply Chain Transparency Log
     homepageUrl: https://sigstore.dev
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -1178,6 +1201,7 @@ repositories:
     owner: sigstore
     description: Log monitor for Rekor to verify immutability and monitor entries
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -1227,6 +1251,7 @@ repositories:
     owner: sigstore
     description: Search Rekor for entries
     homepageUrl: "https://search.sigstore.dev"
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -1278,6 +1303,7 @@ repositories:
     owner: sigstore
     description: ""
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -1352,6 +1378,7 @@ repositories:
     owner: sigstore
     description: Rubygems sigstore signing plugin
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -1393,6 +1420,7 @@ repositories:
     owner: sigstore
     description: Stuff to make standing up sigstore (esp. for testing) easier for e2e/integration testing.
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -1454,6 +1482,7 @@ repositories:
     owner: sigstore
     description: Common go library shared across sigstore services and clients
     homepageUrl: https://sigstore.dev
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -1515,6 +1544,7 @@ repositories:
     owner: sigstore
     description: Codebase for sigstore.dev
     homepageUrl: https://blog.sigstore.dev
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -1559,6 +1589,7 @@ repositories:
     owner: sigstore
     description: Conformance testing for Sigstore clients
     homepageUrl: https://sigstore.dev
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -1610,6 +1641,7 @@ repositories:
     owner: sigstore
     description: Tools & services used to help in the development flow of sigstore
     homepageUrl: https://sigstore.dev
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -1647,6 +1679,7 @@ repositories:
     owner: sigstore
     description: The sigstore go library
     homepageUrl: https://sigstore.dev
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -1695,6 +1728,7 @@ repositories:
     owner: sigstore
     description: ""
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -1743,6 +1777,7 @@ repositories:
     owner: sigstore
     description: java clients for sigstore
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -1788,6 +1823,7 @@ repositories:
     owner: sigstore
     description: Code-signing for npm packages
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -1835,6 +1871,7 @@ repositories:
     owner: sigstore
     description: sigstore maven plugin
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -1867,6 +1904,7 @@ repositories:
     owner: sigstore
     description: Probers for sigstore infrastructure
     homepageUrl: https://blog.sigstore.dev
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -1912,6 +1950,7 @@ repositories:
   - name: sigstore-project-template
     owner: sigstore
     description: cookiecutter template for sigstore projects
+    defaultBranch: main
     isTemplate: true
     homepageUrl: ""
     allowAutoMerge: false
@@ -1947,6 +1986,7 @@ repositories:
     owner: sigstore
     description: A codesigning tool for Python packages
     homepageUrl: https://pypi.org/p/sigstore
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: false
@@ -2004,6 +2044,7 @@ repositories:
     owner: sigstore
     description: An experimental Rust crate for sigstore
     homepageUrl: https://sigstore.github.io/sigstore-rs/sigstore/
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -2057,6 +2098,7 @@ repositories:
     owner: sigstore
     description: Home of the clients SIG
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -2099,6 +2141,7 @@ repositories:
     owner: sigstore
     description: Home of the public good operations SIG
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
@@ -2144,6 +2187,7 @@ repositories:
     owner: sigstore
     description: Codebase for sigstore.dev
     homepageUrl: https://sigstore.dev
+    defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: true
@@ -2187,6 +2231,7 @@ repositories:
     owner: sigstore
     description: RFC3161 Timestamp Authority
     homepageUrl: ""
+    defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true

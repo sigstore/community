@@ -1,0 +1,36 @@
+name: Preview Pulimi changes for sigstore org on Pull Request
+
+on:
+  pull_request_target:
+    branches:
+      - main
+    paths:
+      - 'github-sync/github-data/sigstore-conformance/*.yaml'
+      - 'github-sync/Pulumi.github-sigstore-conformance.yaml'
+
+env:
+ PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+ GITHUB_OWNER: sigstore-conformance
+
+jobs:
+  preview:
+    name: Preview Pulimi changes for sigstore org
+    runs-on: ubuntu-latest
+
+    permissions:
+      pull-requests: write
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        ref: ${{ github.event.pull_request.head.sha }}
+
+    - uses: sigstore/github-sync@main
+      with:
+        work_dir: ./github-sync
+        config_directory: ./github-sync/github-data
+        stack_name: sigstore/github-sigstore-conformance
+        pulumi_access_token: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+        pulumi_command: preview
+        gh_token: ${{ secrets.GITHUB_TOKEN }}
+        comment_on_pr: true

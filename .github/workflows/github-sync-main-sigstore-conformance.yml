@@ -1,4 +1,4 @@
-name: GitHub Sync Update for sigstore org
+name: sync-changes
 
 on:
   push:
@@ -14,7 +14,7 @@ env:
 
 jobs:
   Update:
-    name: Update sigstore org
+    name: sync-changes-sigstore-conformance
     runs-on: ubuntu-latest
 
     steps:

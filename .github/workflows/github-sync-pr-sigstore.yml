@@ -1,4 +1,4 @@
-name: Preview Pulimi changes for sigstore org on Pull Request
+name: preview-changes
 
 on:
   pull_request_target:
@@ -14,7 +14,7 @@ env:
 
 jobs:
   preview:
-    name: Preview Pulimi changes for sigstore org
+    name: changes-sigstore
     runs-on: ubuntu-latest
 
     permissions:

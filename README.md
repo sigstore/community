@@ -23,8 +23,6 @@ We now have a community calendar [available here](https://calendar.google.com/ca
 )).
 All recurring and one-off meetings will be shared here.
 
-<iframe src="https://calendar.google.com/calendar/embed?src=fq4kgom2ce43hncnbcfja2ck20%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
 ### Meetings
 
 We typically meet for a community wide meeting every [Tuesday @ 16:30 UTC

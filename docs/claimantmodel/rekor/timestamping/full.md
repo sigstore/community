@@ -1,3 +1,6 @@
+<!--- This content generated with:
+go run github.com/google/trillian/docs/claimantmodel/experimental/cmd/render@master --full_model_file ./docs/claimantmodel/rekor/timestamping/full.yaml 
+-->
 <dl>
 <dt>Claim<sup>Rekor</sup></dt>
 <dd><i>Claim<sup>Rekor<sup>Identity</sup></sup> occurs at ${Timestamp}</i></dd>

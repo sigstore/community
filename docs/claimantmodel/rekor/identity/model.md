@@ -1,3 +1,6 @@
+<!--- This content generated with:
+go run github.com/google/trillian/docs/claimantmodel/experimental/cmd/render@master --domain_model_file ./docs/claimantmodel/rekor/identity/model.yaml 
+-->
 <dl>
 <dt>Claim<sup>Rekor</sup></dt>
 <dd><i>${OIDCIdentity} signs ${Hash} using the key bound by ${Certificate}</i></dd>

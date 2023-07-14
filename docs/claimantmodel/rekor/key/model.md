@@ -1,3 +1,6 @@
+<!--- This content generated with:
+go run github.com/google/trillian/docs/claimantmodel/experimental/cmd/render@master --domain_model_file ./docs/claimantmodel/rekor/key/model.yaml 
+-->
 <dl>
 <dt>Claim<sup>Rekor</sup></dt>
 <dd><i>${Key} signs ${Hash}, verifiable with ${PubKey} </i></dd>

@@ -1,3 +1,6 @@
+<!--- This content generated with:
+go run github.com/google/trillian/docs/claimantmodel/experimental/cmd/render@master --domain_model_file ./docs/claimantmodel/tsa/model.yaml 
+-->
 <dl>
 <dt>Claim<sup>TSA</sup></dt>
 <dd><i>${TimestampAuthority} claims a monotonically increasing ${Time}</i></dd>

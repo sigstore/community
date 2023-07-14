@@ -1,3 +1,6 @@
+<!--- This content generated with:
+go run github.com/google/trillian/docs/claimantmodel/experimental/cmd/render@master --full_model_file ./docs/claimantmodel/tsa/full.yaml 
+-->
 ```mermaid
 sequenceDiagram
     actor ${TimestampAuthority}

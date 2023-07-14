@@ -20,7 +20,7 @@ All claims are also provided in this readme.
 <dt>Believer<sup>Fulcio</sup></dt>
 <dd>Software Installer</dd>
 <dt>Verifier<sup>Fulcio</sup></dt>
-<dd>${OIDCIDOwner}: <i>${OIDCIDOwner} authorizes Fulcio to bind ${PubKey} to ${OIDCIdentity}</i></dd>
+<dd>${OIDCIDOwner}: <i>${OIDCIDOwner} authorizes Fulcio to bind ${PubKey} to ${OIDCIdentity}. ${OIDCIDOwner} must actively look for Claims made on their behalf that they didn't knowingly authorize.</i></dd>
 <dt>Arbiter<sup>Fulcio</sup></dt>
 <dd>Community</dd>
 </dl>
@@ -37,7 +37,7 @@ All claims are also provided in this readme.
 <dt>Believer<sup>Rekor</sup></dt>
 <dd>Software Installer</dd>
 <dt>Verifier<sup>Rekor</sup></dt>
-<dd>${OIDCIDOwner}: <i>${OIDCIdentity} signs ${Hash} using the key bound by ${Certificate}</i></dd>
+<dd>${OIDCIDOwner}: <i>${OIDCIdentity} signs ${Hash} using the key bound by ${Certificate}. ${OIDCIDOwner} must actively look for Claims made on their behalf that they didn't knowingly authorize.</i></dd>
 <dt>Arbiter<sup>Rekor</sup></dt>
 <dd>Community, identity-artifact mapping</dd>
 </dl>
@@ -54,7 +54,7 @@ All claims are also provided in this readme.
 <dt>Believer<sup>Rekor</sup></dt>
 <dd>Software Installer</dd>
 <dt>Verifier<sup>Rekor</sup></dt>
-<dd>${KeyOwner}: <i>${Key} signs ${Hash}, verifiable with ${PubKey}</i></dd>
+<dd>${KeyOwner}: <i>${Key} signs ${Hash}, verifiable with ${PubKey}. ${KeyOwner} must actively look for Claims made on their behalf that they didn't knowingly authorize.</i></dd>
 <dt>Arbiter<sup>Rekor</sup></dt>
 <dd>Community, key-artifact mapping</dd>
 </dl>
@@ -71,7 +71,7 @@ All claims are also provided in this readme.
 <dt>Believer<sup>Rekor</sup></dt>
 <dd>Software Installer</dd>
 <dt>Verifier<sup>Rekor</sup></dt>
-<dd>${OIDCIDOwner}/Artifact Builder: <i>${OIDCIdentity} signs ${Provenance} containing ${Subject}, using the key bound by ${Certificate}</i></dd>
+<dd>${OIDCIDOwner}/Artifact Builder: <i>${OIDCIdentity} signs ${Provenance} containing ${Subject}, using the key bound by ${Certificate}. ${OIDCIDOwner} or Artifact Builder must actively look for Claims made on their behalf that they didn't knowingly authorize.</i></dd>
 <dt>Arbiter<sup>Rekor</sup></dt>
 <dd>Community, identity-artifact mapping</dd>
 </dl>

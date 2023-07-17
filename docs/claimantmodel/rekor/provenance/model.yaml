@@ -3,6 +3,6 @@ Claim:
     Claim: "${OIDCIdentity} signs ${Provenance} containing ${Subject}, using the key bound by ${Certificate}"
     Verifier: "${OIDCIDOwner}/Artifact Builder"
 Statement: "${Provenance} with ${Hash}, X.509 certificate ${Certificate} containing ${OIDCIdentity}, signature over ${Subject}"
-Claimant:  "${OIDCIdentity}"
+Claimant:  "${OIDCIDOwner}"
 Believer:  "Software Installer"
 Arbiter:   "Community, identity-artifact mapping"

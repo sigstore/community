@@ -1,6 +1,6 @@
 Domain:
   System: Rekor
-  Claimant: ${Key}
+  Claimant: ${KeyOwner}
   Statement: ${Hash}, public key ${PubKey}, and signature over ${Hash}
   Believer: Software Installer
   Claim:

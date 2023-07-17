@@ -7,7 +7,7 @@ go run github.com/google/trillian/docs/claimantmodel/experimental/cmd/render@mas
 <dt>Statement<sup>Rekor</sup></dt>
 <dd>${Provenance} with ${Hash}, X.509 certificate ${Certificate} containing ${OIDCIdentity}, signature over ${Subject}</dd>
 <dt>Claimant<sup>Rekor</sup></dt>
-<dd>${OIDCIdentity}</dd>
+<dd>${OIDCIDOwner}</dd>
 <dt>Believer<sup>Rekor</sup></dt>
 <dd>Software Installer</dd>
 <dt>Verifier<sup>Rekor</sup></dt>

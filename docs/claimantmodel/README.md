@@ -33,7 +33,7 @@ All claims are also provided in this readme.
 <dt>Statement<sup>Rekor</sup></dt>
 <dd>${Hash}, X.509 certificate ${Certificate} containing ${OIDCIdentity}, and signature over ${Hash}</dd>
 <dt>Claimant<sup>Rekor</sup></dt>
-<dd>${OIDCIdentity}</dd>
+<dd>${OIDCIDOwner}</dd>
 <dt>Believer<sup>Rekor</sup></dt>
 <dd>Software Installer</dd>
 <dt>Verifier<sup>Rekor</sup></dt>
@@ -50,7 +50,7 @@ All claims are also provided in this readme.
 <dt>Statement<sup>Rekor</sup></dt>
 <dd>${Hash}, public key ${PubKey}, and signature over ${Hash}</dd>
 <dt>Claimant<sup>Rekor</sup></dt>
-<dd>${Key}</dd>
+<dd>${KeyOwner}</dd>
 <dt>Believer<sup>Rekor</sup></dt>
 <dd>Software Installer</dd>
 <dt>Verifier<sup>Rekor</sup></dt>
@@ -67,7 +67,7 @@ All claims are also provided in this readme.
 <dt>Statement<sup>Rekor</sup></dt>
 <dd>${Provenance} with ${Hash}, X.509 certificate ${Certificate} containing ${OIDCIdentity}, signature over ${Subject}</dd>
 <dt>Claimant<sup>Rekor</sup></dt>
-<dd>${OIDCIdentity}</dd>
+<dd>${OIDCIDOwner}</dd>
 <dt>Believer<sup>Rekor</sup></dt>
 <dd>Software Installer</dd>
 <dt>Verifier<sup>Rekor</sup></dt>

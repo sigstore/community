@@ -1,6 +1,6 @@
 Domain:
   System: Rekor
-  Claimant: ${OIDCIdentity}
+  Claimant: ${OIDCIDOwner}
   Statement: ${Hash}, X.509 certificate ${Certificate} containing ${OIDCIdentity},
     and signature over ${Hash}
   Believer: Software Installer

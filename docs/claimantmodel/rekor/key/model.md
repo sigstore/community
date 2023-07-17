@@ -7,7 +7,7 @@ go run github.com/google/trillian/docs/claimantmodel/experimental/cmd/render@mas
 <dt>Statement<sup>Rekor</sup></dt>
 <dd>${Hash}, public key ${PubKey}, and signature over ${Hash}</dd>
 <dt>Claimant<sup>Rekor</sup></dt>
-<dd>${Key}</dd>
+<dd>${KeyOwner}</dd>
 <dt>Believer<sup>Rekor</sup></dt>
 <dd>Software Installer</dd>
 <dt>Verifier<sup>Rekor</sup></dt>

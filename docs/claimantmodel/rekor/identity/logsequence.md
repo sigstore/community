@@ -4,15 +4,14 @@ go run github.com/google/trillian/docs/claimantmodel/experimental/cmd/render@mas
 ```mermaid
 sequenceDiagram
     actor ${OIDCIDOwner}
-    actor ${OIDCIdentity}
     actor Log Operator
     actor Software Installer
     actor Witness
     actor Witness Quorum
-    ${OIDCIdentity}->>Log Operator: Add new ${Hash}, X.509 certificate ${Certificate} containing ${OIDCIdentity}, and signature over ${Hash}
+    ${OIDCIDOwner}->>Log Operator: Add new ${Hash}, X.509 certificate ${Certificate} containing ${OIDCIdentity}, and signature over ${Hash}
     Log Operator->>Log Operator: Integrate ${Hash}, X.509 certificate ${Certificate} containing ${OIDCIdentity}, and signature over ${Hash}s and issue Log Checkpoint
-    Log Operator->>${OIDCIdentity}: Log Checkpoint and inclusion proof
-    ${OIDCIdentity}->>Software Installer: ${Hash}, X.509 certificate ${Certificate} containing ${OIDCIdentity}, and signature over ${Hash} with proof bundle
+    Log Operator->>${OIDCIDOwner}: Log Checkpoint and inclusion proof
+    ${OIDCIDOwner}->>Software Installer: ${Hash}, X.509 certificate ${Certificate} containing ${OIDCIdentity}, and signature over ${Hash} with proof bundle
     Software Installer->>Software Installer: Verify bundle and install software
     loop Periodic append-only Verification
         Witness->>Log Operator: Fetch merkle data

@@ -1,0 +1,26 @@
+Domain:
+  System: Fulcio
+  Claimant: Fulcio
+  Statement: X.509 certificate containing ${PubKey} and ${OIDCIdentity}, signed by
+    Fulcio
+  Believer: Software Installer
+  Claim:
+    Claim: ${OIDCIDOwner} authorizes Fulcio to bind ${PubKey} to ${OIDCIdentity}
+    Verifier: ${OIDCIDOwner}
+  Arbiter: Community
+Log:
+  System: LOG_Fulcio
+  Claimant: Log Operator
+  Statement: Log Checkpoint
+  Believers:
+  - Software Installer
+  - ${OIDCIDOwner}
+  Claims:
+  - Claim: This data structure is append-only from any previous version
+    Verifier: Witness
+  - Claim: This data structure is globally consistent
+    Verifier: Witness Quorum
+  - Claim: This data structure contains only leaves of type `X.509 certificate containing
+      ${PubKey} and ${OIDCIdentity}, signed by Fulcio`
+    Verifier: ${OIDCIDOwner}
+  Arbiter: Community

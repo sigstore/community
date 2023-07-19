@@ -1,0 +1,8 @@
+System:    "Rekor"
+Claim:
+    Claim: "${OIDCIdentity} signs ${Hash} using the key bound by ${Certificate}"
+    Verifier: "${OIDCIDOwner}"
+Statement: "${Hash}, X.509 certificate ${Certificate} containing ${OIDCIdentity}, and signature over ${Hash}"
+Claimant:  "${OIDCIDOwner}"
+Believer:  "Software Installer"
+Arbiter:   "Community, identity-artifact mapping"

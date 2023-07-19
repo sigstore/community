@@ -1,0 +1,8 @@
+System:    "TSA"
+Claim:
+    Claim: "${TimestampAuthority} claims a monotonically increasing ${Time}"
+    Verifier: "${TimestampMonotonicVerifier}"
+Statement: "Signed timestamp containing ${Time}"
+Claimant:  "${TimestampAuthority}"
+Believer:  "Software Installer, entity consuming short-lived code-signing certificate"
+Arbiter:   "Community"

@@ -1,0 +1,26 @@
+Domain:
+  System: Rekor
+  Claimant: ${OIDCIDOwner}
+  Statement: ${Hash}, X.509 certificate ${Certificate} containing ${OIDCIdentity},
+    and signature over ${Hash}
+  Believer: Software Installer
+  Claim:
+    Claim: ${OIDCIdentity} signs ${Hash} using the key bound by ${Certificate}
+    Verifier: ${OIDCIDOwner}
+  Arbiter: Community, identity-artifact mapping
+Log:
+  System: LOG_Rekor
+  Claimant: Log Operator
+  Statement: Log Checkpoint
+  Believers:
+  - Software Installer
+  - ${OIDCIDOwner}
+  Claims:
+  - Claim: This data structure is append-only from any previous version
+    Verifier: Witness
+  - Claim: This data structure is globally consistent
+    Verifier: Witness Quorum
+  - Claim: This data structure contains only leaves of type `${Hash}, X.509 certificate
+      ${Certificate} containing ${OIDCIdentity}, and signature over ${Hash}`
+    Verifier: ${OIDCIDOwner}
+  Arbiter: 'Community, identity-artifact mapping'

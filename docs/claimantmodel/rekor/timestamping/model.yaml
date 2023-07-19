@@ -1,0 +1,8 @@
+System:    "Rekor"
+Claim:
+    Claim: "Claim<sup>Rekor<sup>Identity</sup></sup> occurs at ${Timestamp}"
+    Verifier: "None"
+Statement: "Signed ${Timestamp} over Statement<sup>Rekor<sup>Identity</sup></sup>"
+Claimant:  "${TSA}"
+Believer:  "Software Installer"
+Arbiter:   "Community"

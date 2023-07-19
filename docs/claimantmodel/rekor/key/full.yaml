@@ -1,0 +1,25 @@
+Domain:
+  System: Rekor
+  Claimant: ${KeyOwner}
+  Statement: ${Hash}, public key ${PubKey}, and signature over ${Hash}
+  Believer: Software Installer
+  Claim:
+    Claim: '${Key} signs ${Hash}, verifiable with ${PubKey}'
+    Verifier: ${KeyOwner}
+  Arbiter: Community, key-artifact mapping
+Log:
+  System: LOG_Rekor
+  Claimant: Log Operator
+  Statement: Log Checkpoint
+  Believers:
+  - Software Installer
+  - ${KeyOwner}
+  Claims:
+  - Claim: This data structure is append-only from any previous version
+    Verifier: Witness
+  - Claim: This data structure is globally consistent
+    Verifier: Witness Quorum
+  - Claim: This data structure contains only leaves of type `${Hash}, public key ${PubKey},
+      and signature over ${Hash}`
+    Verifier: ${KeyOwner}
+  Arbiter: 'Community, key-artifact mapping'

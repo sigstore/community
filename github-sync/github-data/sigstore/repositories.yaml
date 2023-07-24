@@ -1334,6 +1334,9 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
+      - name: sigstore-oncall
+        id: 6693572
+        permission: push
     branchesProtection:
       - pattern: main
         enforceAdmins: true

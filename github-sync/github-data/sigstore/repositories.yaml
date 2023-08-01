@@ -355,6 +355,10 @@ repositories:
     collaborators:
       - username: ltagliaferri
         permission: admin
+      - username: smythp
+        permission: maintain
+      - username: jonvnadelberg
+        permission: triage
     teams:
       - name: triage
         id: 5643322

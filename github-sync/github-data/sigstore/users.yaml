@@ -95,13 +95,6 @@ users:
   - username: caniszczyk
     role: member
     teams: []
-  - username: cdris
-    role: member
-    teams:
-      - name: public-good-instance-team
-        role: member
-      - name: sigstore-oncall
-        role: member
   - username: codysoyland
     role: member
     teams:

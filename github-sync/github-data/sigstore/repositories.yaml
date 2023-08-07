@@ -1316,10 +1316,6 @@ repositories:
     licenseTemplate: ""
     topics: []
     collaborators:
-      - username: haydentherapper
-        permission: maintain
-      - username: kommendorkapten
-        permission: maintain
       - username: sigstore-bot
         permission: push
       - username: sigstore-review-bot
@@ -1346,6 +1342,7 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireLastPushApproval: true
+        restrictDismissals: true
         statusChecks:
           - DCO
           - yamllint
@@ -1353,6 +1350,12 @@ repositories:
           - lint
           - validate
           - client
+        pushRestrictions:
+          - tuf-root-signing-codeowners
+          - sigstore-keyholders
+        dismissalRestrictions:
+          - tuf-root-signing-codeowners
+          - sigstore-keyholders
       - pattern: test-ceremony/*
         enforceAdmins: true
         allowsDeletions: false
@@ -1361,8 +1364,15 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireLastPushApproval: true
+        restrictDismissals: true
         statusChecks:
           - DCO
+        pushRestrictions:
+          - tuf-root-signing-codeowners
+          - sigstore-keyholders
+        dismissalRestrictions:
+          - tuf-root-signing-codeowners
+          - sigstore-keyholders
       - pattern: ceremony/*
         enforceAdmins: true
         allowsDeletions: false
@@ -1371,8 +1381,15 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireLastPushApproval: true
+        restrictDismissals: true
         statusChecks:
           - DCO
+        pushRestrictions:
+          - tuf-root-signing-codeowners
+          - sigstore-keyholders
+        dismissalRestrictions:
+          - tuf-root-signing-codeowners
+          - sigstore-keyholders
   - name: ruby-sigstore
     owner: sigstore
     description: Rubygems sigstore signing plugin

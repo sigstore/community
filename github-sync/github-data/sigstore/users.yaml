@@ -156,13 +156,13 @@ users:
       - name: sigstore-java-codeowners
         role: maintainer
       - name: sigstore-keyholders
-        role: maintainer
+        role: member
       - name: sigstore-go-triage
         role: maintainer
       - name: triage
         role: maintainer
       - name: tuf-root-signing-codeowners
-        role: maintainer
+        role: member
       - name: codeowners-sigstore-website
         role: maintainer
   - username: eddiezane
@@ -313,6 +313,8 @@ users:
     role: member
     teams:
       - name: protobuf-specs-codeowners
+        role: member
+      - name: tuf-root-signing-codeowners
         role: member
   - username: kpk47
     role: member

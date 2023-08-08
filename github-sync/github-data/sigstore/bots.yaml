@@ -1,7 +1,11 @@
 users:
   - username: sigstore-bot
     role: member
-    teams: []
+    teams:
+      - name: tuf-root-signing-codeowners
+      - role: member
   - username: sigstore-review-bot
     role: member
-    teams: []
+    teams:
+      - name: tuf-root-signing-codeowners
+      - role: member

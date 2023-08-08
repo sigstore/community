@@ -1353,6 +1353,8 @@ repositories:
         pushRestrictions:
           - tuf-root-signing-codeowners
           - sigstore-keyholders
+          - sigstore-bot
+          - sigstore-review-bot
         dismissalRestrictions:
           - tuf-root-signing-codeowners
           - sigstore-keyholders
@@ -1370,6 +1372,8 @@ repositories:
         pushRestrictions:
           - tuf-root-signing-codeowners
           - sigstore-keyholders
+          - sigstore-bot
+          - sigstore-review-bot
         dismissalRestrictions:
           - tuf-root-signing-codeowners
           - sigstore-keyholders
@@ -1387,6 +1391,8 @@ repositories:
         pushRestrictions:
           - tuf-root-signing-codeowners
           - sigstore-keyholders
+          - sigstore-bot
+          - sigstore-review-bot
         dismissalRestrictions:
           - tuf-root-signing-codeowners
           - sigstore-keyholders

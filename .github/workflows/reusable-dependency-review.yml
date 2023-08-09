@@ -9,6 +9,9 @@ on:
       allow-ghsas:
         type: string
         description: "A comma separated list of any GitHub Advisory IDs that can be skipped during detection. Example: 'GHSA-abcd-1234-5679, GHSA-efgh-1234-5679'"
+      allow-deps:
+        type: string
+        description: "A comma separated list of packages to exclude from the check, specified in purl format"
 
 permissions:
   contents: read
@@ -25,4 +28,5 @@ jobs:
         with:
           fail-on-severity: ${{ inputs.fail-on-severity }}
           allow-ghsas: ${{ inputs.allow-ghsas }}
+          allow-dependencies-licenses: ${{ inputs.allow-deps }}
           deny-licenses: GPL-3.0, AGPL-3.0, LGPL-3.0 # these are hardcoded to be compliant with sigstore/community/LICENSING.md

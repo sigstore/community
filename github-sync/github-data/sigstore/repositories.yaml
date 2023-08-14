@@ -1000,6 +1000,9 @@ repositories:
       - name: protobuf-specs-codeowners
         id: 6840584
         permission: maintain
+      - name: triage
+        id: 5643322
+        permission: triage
     branchesProtection:
       - pattern: main
         enforceAdmins: true

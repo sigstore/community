@@ -1046,52 +1046,24 @@ repositories:
     licenseTemplate: ""
     topics: []
     collaborators:
-      - username: afeddersen
-        permission: triage
-      - username: asraa
-        permission: triage
       - username: bobcallaway
         permission: admin
-      - username: chainguardian
-        permission: pull
-      - username: codysoyland
-        permission: triage
       - username: cpanato
         permission: admin
-      - username: dekkagaijin
-        permission: pull
       - username: haydentherapper
         permission: maintain
       - username: k4leung4
         permission: maintain
       - username: loosebazooka
         permission: pull
-      - username: malancas
-        permission: triage
-      - username: mattmoor
-        permission: pull
       - username: priyawadhwa
         permission: maintain
-      - username: puerco
-        permission: triage
-      - username: pwelch
-        permission: triage
-      - username: sabre1041
-        permission: pull
-      - username: strongjz
-        permission: triage
-      - username: tstromberg
-        permission: triage
       - username: trevrosen
         permission: pull
-      - username: trixor
-        permission: triage
       - username: vaikas
         permission: maintain
       - username: hectorj2f
         permission: maintain
-      - username: kkooi
-        permission: pull
       - username: yrobla
         permission: triage
       - username: evankanderson

@@ -1921,9 +1921,6 @@ repositories:
       - name: sigstore-java-codeowners
         id: 5754835
         permission: maintain
-    template:
-      owner: sigstore
-      repository: sigstore-project-template
     branchesProtection:
       - pattern: main
         dismissStaleReviews: true

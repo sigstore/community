@@ -1786,7 +1786,7 @@ repositories:
     licenseTemplate: ""
     topics: []
     collaborators:
-      - username: jvanzyl
+      - username: vlsi
         permission: push
       - username: loosebazooka
         permission: admin
@@ -1882,6 +1882,45 @@ repositories:
     collaborators:
       - username: jvanzyl
         permission: admin
+    template:
+      owner: sigstore
+      repository: sigstore-project-template
+    branchesProtection:
+      - pattern: main
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
+        statusChecks:
+          - DCO
+  - name: sigstore-maven-plugin
+    owner: sigstore
+    description: sigstore maven plugin
+    homepageUrl: ""
+    defaultBranch: main
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: false
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: hboutemy
+        permission: maintain
+      - username: loosebazooka
+        permission: admin
+    teams:
+      - name: sigstore-java-codeowners
+        id: 5754835
+        permission: maintain
     template:
       owner: sigstore
       repository: sigstore-project-template

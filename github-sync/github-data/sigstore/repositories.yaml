@@ -1895,7 +1895,7 @@ repositories:
   - name: sigstore-maven-plugin
     owner: sigstore
     description: sigstore maven plugin
-    homepageUrl: ""
+    homepageUrl: "https://sigstore.github.io/sigstore-maven-plugin/"
     defaultBranch: main
     allowAutoMerge: false
     allowMergeCommit: true
@@ -1912,6 +1912,9 @@ repositories:
     visibility: public
     licenseTemplate: ""
     topics: []
+    pages:
+      branch: gh-pages
+      path: /
     collaborators:
       - username: hboutemy
         permission: maintain

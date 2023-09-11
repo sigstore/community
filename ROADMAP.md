@@ -43,12 +43,12 @@ Sigstore has several implementations of its core signing and verification workfl
 
 | Programming Language | Repository               |       Status      |
 |:--------------------:|--------------------------|:-----------------:|
-|        Golang        | [sigstore/cosign](https://github.com/sigstore/cosign)          |         GA        |
+|        Go            | [sigstore/cosign](https://github.com/sigstore/cosign)          |         GA        |
 |        Python        | [sigstore/sigstore-python](https://github.com/sigstore/sigstore-python) |         GA        |
 |      Javascript      | [sigstore/sigstore-js](https://github.com/sigstore/sigstore-js)     |         GA        |
 |         Java         | [sigstore/sigstore-java](https://github.com/sigstore/sigstore-java)   |        Beta       |
 |         Rust         | [sigstore/sigstore-rs](https://github.com/sigstore/sigstore-rs)     |        Beta       |
-|        Golang        | [sigstore/sigstore-go](https://github.com/sigstore/sigstore-go)     | Under development |
+|        Go            | [sigstore/sigstore-go](https://github.com/sigstore/sigstore-go)     | Under development |
 |         Ruby         | [sigstore/ruby-sigstore](https://github.com/sigstore/ruby-sigstore)   |     pre-Alpha     |
 
 ## Adoption Patterns for Sigstore
@@ -242,6 +242,7 @@ Inclusive of the projects, public-good services, and standardized interfaces, Si
 * Adding additional conformance tests to verify consistent behavior across clients, including negative tests
 * Bundle format includes attestation support that interops with SLSA
 * Reference implementation of how to use signature verification across various points in the software development lifecycle, leveraging policy-controller as one example
+* Tooling to support client revocation policies
 
 ## Signature Transparency Log (Rekor)
 
@@ -257,7 +258,7 @@ Inclusive of the projects, public-good services, and standardized interfaces, Si
     * Timestamp should be provided by TSA
     * Timestamp becomes immutable and verifiable
 * Complete architecture document
-* Publish inclusion events to pub/sub queueo
+* Publish inclusion events to pub/sub queue
 
 ### Medium Term (6-12 mo)
 
@@ -286,6 +287,37 @@ Inclusive of the projects, public-good services, and standardized interfaces, Si
 * Privacy-preserving log queries, where the log is not aware of client's artifact of interest
 * Roughtime for distributed trusted timestamps
 * Continued fuzzing of large API surface
+
+## Transparency Log Monitor
+
+### Short Term (< 6 mo)
+
+* Initial launch of Sigstore's [log monitor on GitHub Actions](https://github.com/sigstore/rekor-monitor)
+   * Monitor acts as both a witness (co-signing checkpoints) and Verifier (monitoring given identities)
+   * Co-signed checkpoints are published to GitHub
+   * Verifier monitors for OIDC identities and key fingerprints
+   * Alerts are filed as GitHub issues
+   * Supports sharded log
+* At least 2 independent instances of GitHub Actions-based log monitor running and publicly documented
+* Publish blog posts on monitoring requirements as an artifact producer
+* Create log cloning tool to support offline log monitoring and analysis
+   * Can also be used to transform an existing log into a serverless layout
+
+### Medium Term (6-12 mo)
+
+* V1 launch of Sigstore's [log monitor on GitHub Actions](https://github.com/sigstore/rekor-monitor)
+   * Witnessed checkpoints are published to distributors, operated by Sigstore and/or community members. Distributor may be GitHub Actions-based
+   * Support monitoring Fulcio's certificate transparency log
+   * Alerts are sent in a variety of ways (e.g. email, page)
+   * Productionized and resilient against intermittent failures
+* Publish select monitors to status.sigstore.dev
+
+### Long Term (12+ mo)
+
+* Optionality around running witnesses in different environments, e.g. hardware or cloud
+* Integration with other efforts in transparency ecosystems
+   * Publishing checkpoints to external community-operated distributors
+* Collaborate with CT log monitors (e.g. [sslmate](https://sslmate.com/certspotter/)) to improve identity monitoring
 
 ## Certificate Authority (Fulcio)
 
@@ -331,6 +363,8 @@ Inclusive of the projects, public-good services, and standardized interfaces, Si
 ### Short Term (< 6 mo)
 
 * Documentation restructured around user journeys
+* Document workload identity/automated signing in addition to developer-driven signing
+* Terminology page
 
 ### Medium Term (6-12 mo)
 
@@ -354,6 +388,7 @@ Inclusive of the projects, public-good services, and standardized interfaces, Si
     * Periodic DiRT testing
 * Perform 1 log sharding and log key rotation
 * Complete architecture document, get commitment on operational transfer
+* Migrate TUF root repository over to TUF-on-CI
 
 ### Medium Term (6-12 mo)
 
@@ -366,6 +401,7 @@ Inclusive of the projects, public-good services, and standardized interfaces, Si
 * Availability improvements
     * Regionalization of components
     * Read replicas of log
+* Improve automated issue filing for alerts
 
 ### Long Term (12+ mo)
 
@@ -387,3 +423,7 @@ Inclusive of the projects, public-good services, and standardized interfaces, Si
 ### Long Term (12+ mo)
 
 * Sigstore API specified in IETF RFC
+
+## Timestamp Authority
+
+Feature complete. Future improvements include integrating timestamps into Rekor entries and exploring Roughtime as an alternative for distributed trusted timestamping.

@@ -69,7 +69,7 @@ A package manager looking to adopt Sigstore as part of its artifact signing and 
 
 ## Current Ecosystem Adoption Status
 
-The npm registry, the world's largest open source package manager for the Node.js ecosystem, [recently announced built-in support for Sigstore-signed SLSA build provenance](https://github.blog/2023-04-19-introducing-npm-package-provenance/) to users. This allows consumers of packages from npm to independently verify the link between a package fetched from the npm registry to the source code from which it was built. The build provenance attestation is cryptographically signed using Sigstore.
+The npm registry, the world's largest open source package manager for the JavaScript ecosystem, [recently announced built-in support for Sigstore-signed SLSA build provenance](https://github.blog/2023-04-19-introducing-npm-package-provenance/) to users. This allows consumers of packages from npm to independently verify the link between a package fetched from the npm registry to the source code from which it was built. The build provenance attestation is cryptographically signed using Sigstore. Other package managers may find the [documentation of npm's Sigstore adoption and resulting design decisions](https://repos.openssf.org/build-provenance-for-all-package-registries) useful.
 
 The Python ecosystem (and its official third party package repository PyPI) are also [working on integrating Sigstore](https://yossarian.net/res/pub/pycon-2023.pdf) into their package publishing and verification workflow via PEPs 458, 480, 691 & 694 based on the recent sigstore-python GA release. 
 

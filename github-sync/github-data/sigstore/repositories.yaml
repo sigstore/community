@@ -1463,7 +1463,6 @@ repositories:
         requireLastPushApproval: true
         statusChecks:
           - Analyze (go)
-          - CodeQL
           - DCO
           - Shellcheck
           - license boilerplate check

@@ -83,9 +83,6 @@ teams:
   - name: sigstore-go-codeowners
     privacy: closed
     description: "Codeowners for sigstore/sigstore-go"
-  - name: sigstore-go-triage
-    privacy: closed
-    description: ""
   - name: sigstore-java-codeowners
     privacy: closed
     description: ""

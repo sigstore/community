@@ -100,10 +100,6 @@ users:
         role: member
       - name: sigstore-go-codeowners
         role: member
-  - username: coyote240
-    role: member
-    teams: []
->>>>>>> d1e0bf4 (Update sigstore-go maintainers)
   - username: cpanato
     role: admin
     teams:

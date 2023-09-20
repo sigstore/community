@@ -36,8 +36,6 @@ users:
         role: member
       - name: tuf-root-signing-codeowners
         role: member
-      - name: security-response-team
-        role: maintainer
       - name: sigstore-go-codeowners
         role: member
       - name: timestamp-codeowners
@@ -98,11 +96,10 @@ users:
   - username: codysoyland
     role: member
     teams:
+      - name: security-response-team
+        role: member
       - name: sigstore-oncall
         role: member
-  - username: coyote240
-    role: member
-    teams: []
   - username: cpanato
     role: admin
     teams:
@@ -148,8 +145,6 @@ users:
       - name: policy-controller-codeowners
         role: maintainer
       - name: rekor-codeowners
-        role: maintainer
-      - name: security-response-team
         role: maintainer
       - name: sigstore-codeowners
         role: maintainer
@@ -236,7 +231,7 @@ users:
       - name: sigstore-oncall
         role: member
       - name: security-response-team
-        role: maintainer
+        role: member
       - name: timestamp-codeowners
         role: member
       - name: protobuf-specs-codeowners
@@ -316,9 +311,6 @@ users:
         role: member
       - name: tuf-root-signing-codeowners
         role: member
-  - username: kpk47
-    role: member
-    teams: []
   - username: lkatalin
     role: member
     teams:
@@ -330,6 +322,8 @@ users:
     role: member
     teams:
       - name: codeowners-maven-sigstore
+        role: member
+      - name: rekor-monitor-codeowners
         role: member
       - name: sigstore-java-codeowners
         role: maintainer
@@ -418,9 +412,6 @@ users:
     teams:
       - name: sigstore-keyholders
         role: member
-  - username: n3wscott
-    role: member
-    teams:
   - username: naveensrinivasan
     role: member
     teams:

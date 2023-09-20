@@ -36,8 +36,6 @@ users:
         role: member
       - name: tuf-root-signing-codeowners
         role: member
-      - name: sigstore-go-codeowners
-        role: member
       - name: timestamp-codeowners
         role: member
       - name: protobuf-specs-codeowners
@@ -100,6 +98,12 @@ users:
         role: member
       - name: sigstore-oncall
         role: member
+      - name: sigstore-go-codeowners
+        role: member
+  - username: coyote240
+    role: member
+    teams: []
+>>>>>>> d1e0bf4 (Update sigstore-go maintainers)
   - username: cpanato
     role: admin
     teams:
@@ -152,8 +156,6 @@ users:
         role: maintainer
       - name: sigstore-keyholders
         role: member
-      - name: sigstore-go-triage
-        role: maintainer
       - name: triage
         role: maintainer
       - name: tuf-root-signing-codeowners
@@ -264,8 +266,6 @@ users:
         role: member
       - name: gitsign-codeowners
         role: member
-      - name: sigstore-go-codeowners
-        role: member
   - username: inferno-chromium
     role: member
     teams: []
@@ -356,8 +356,6 @@ users:
         role: maintainer
       - name: sigstore-codeowners
         role: maintainer
-      - name: sigstore-go-codeowners
-        role: member
       - name: sigstore-keyholders
         role: maintainer
       - name: sigstore-release-team
@@ -412,11 +410,6 @@ users:
     teams:
       - name: sigstore-keyholders
         role: member
-  - username: naveensrinivasan
-    role: member
-    teams:
-      - name: sigstore-go-triage
-        role: member
   - username: patflynn
     role: member
     teams:
@@ -466,6 +459,11 @@ users:
     role: member
     teams:
       - name: sigstore-oncall
+        role: member
+  - username: steiza
+    role: member
+    teams:
+      - name: sigstore-go-codeowners
         role: member
   - username: tetsuo-cpp
     role: member

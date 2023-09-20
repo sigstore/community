@@ -1504,9 +1504,6 @@ repositories:
       - name: sigstore-release-team
         id: 4845328
         permission: maintain
-      - name: sigstore-go-triage
-        id: 6379072
-        permission: triage
       - name: triage
         id: 5643322
         permission: triage
@@ -1668,8 +1665,8 @@ repositories:
           - DCO
   - name: sigstore-go
     owner: sigstore
-    description: The sigstore go library
-    homepageUrl: https://sigstore.dev
+    description: Go library for Sigstore signing and verification
+    homepageUrl: ""
     defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
@@ -1678,6 +1675,7 @@ repositories:
     archived: false
     autoInit: false
     deleteBranchOnMerge: true
+    hasDiscussions: true
     hasDownloads: true
     hasIssues: true
     hasProjects: true
@@ -1697,6 +1695,9 @@ repositories:
       - name: sigstore-go-codeowners
         id: 6980777
         permission: maintain
+      - name: triage
+        id: 5643322
+        permission: triage
     branchesProtection:
       - pattern: main
         enforceAdmins: true

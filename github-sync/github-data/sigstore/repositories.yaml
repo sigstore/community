@@ -1807,8 +1807,8 @@ repositories:
         statusChecks:
           - Validation
           - DCO
-          - gha-oidc-tests (17)
-          - gha-oidc-tests (11)
+          - conformance (17)
+          - conformance (11)
           - build (17)
           - build (11)
   - name: sigstore-js

@@ -1,48 +1,66 @@
-# Sigstore Community
+# Contributing to Cosign
 
-General sigstore community repository
+Thank you for considering contributing to Cosign! We welcome any contributions, whether it's bug fixes, new features, or improvements to the existing codebase.
 
-## Slack
+## Your First Pull Request
 
-The majority of our community conversations happen in our community [Slack instance](https://sigstore.slack.com) - please join us!
-[Invite link](https://join.slack.com/t/sigstore/shared_invite/zt-1z7jzpemb-xEKSUtpgDFXpIEMwMYZQKQ)
+Working on your first Pull Request? Start with [Sigstore's contribution guidelines](https://github.com/sigstore/community/blob/main/CONTRIBUTING.md) which includes some high level information on how to contribute to Sigstore projects.
 
-## Mailing List
+To help you get familiar with our contribution process, we have a list of [good first issues](https://github.com/sigstore/cosign/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) which are relatively limited scope. This is a great place to get started!
 
-We use https://groups.google.com/g/sigstore-dev for infrequent communications (e.g. release announcements). The group is public and anyone can join.
+Before working on an issue, please:
 
-Shared docs may be shared directly with this group, so please join this before requesting access to anything that appears private.
+1. Check the comments to see if someone is already working on it.
+1. If it's unassigned, comment that you're working on it to avoid duplication.
 
-## Roadmap
+## Contribution Prerequisites
 
-sigstore's umbrella roadmap is [available here](./ROADMAP.md)
+Before running Cosign, ensure that you have [Go](https://go.dev/doc/install) installed.
 
-## Community Calendar
+## Sending a Pull Request
 
-We now have a community calendar [available here](https://calendar.google.com/calendar/embed?src=fq4kgom2ce43hncnbcfja2ck20%40group.calendar.google.com&ctz=America%2FNew_York) (and [in .ics format](https://calendar.google.com/calendar/ical/fq4kgom2ce43hncnbcfja2ck20%40group.calendar.google.com/public/basic.ics
-)).
-All recurring and one-off meetings will be shared here.
+You can find a step by step guide to submit your contribution on [Sigstore's contribution guidelines](https://github.com/sigstore/community/blob/main/CONTRIBUTING.md#pull-request-process).
 
-### Meetings
+The next instructions will usher you through the build, unit testing, linting, and documentation processes:
 
-We typically meet for a community wide meeting every [Tuesday @ 16:30 UTC
-time](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NGVydDFqNXVsa3ExY2ZraWR0aGFmdm4yY2JfMjAyMzA3MTFUMTYzMDAwWiBmcTRrZ29tMmNlNDNobmNuYmNmamEyY2syMEBn&tmsrc=fq4kgom2ce43hncnbcfja2ck20%40group.calendar.google.com&scp=ALL).
-This is available via the shared calendar above.
+### Building Cosign
 
-Recordings for all of the above meetings should be on our [YouTube channel](https://www.youtube.com/channel/UCWPVc8glVGOODxsA_ep0VVw)
+To build cosign locally, run this command:
 
-## Membership
+```shell
+make cosign
+```
 
-We encourage all contributors to become members. We aim to grow an active, healthy community of contributors, reviewers, and code owners. Learn more about requirements and responsibilities of membership in our [Community Membership page](/MEMBERSHIP.md).
+### Running Unit Tests
 
-### Adding Users/Collaborators, Teams, Repositories to Sigstore GitHub Organization
+To run the unit tests, execute the following command:
 
-To add or change to add/change an Org Member, team, collaborator or repository please [follow these steps](github-sync/README.md)
+```shell
+make test
+```
 
-## Support Tools
+**Make sure all tests pass** without any failures or errors.
 
-We would like to thank the following companies who provide us with an OpenSource plan to support Sigstore development.
+### Running Lint
 
-<a target="_blank" href="https://pulumi.com/"><img style="width: 130px; height: 52px;" alt="Universal Infrastructure as Code" src="https://www.pulumi.com/images/logo/logo-on-white.svg" /></a>
+To run the linting checks, use the following command:
 
-<a target="_blank" href="https://betteruptime.com/"><img style="width: 130px; height: 52px;" alt="Better Uptime Website Monitoring" src="https://betteruptime.com/assets/static_assets/badges/dark.png" /></a>
+```shell
+make lint
+```
+Address any linting warnings or errors before submitting your PR.
+
+## Document Generation
+
+If your changes require updates to project documentation, generate or update the documentation by running:
+
+```shell
+make docgen
+```
+
+Ensure that the documentation is up-to-date and reflects your changes accurately.
+
+
+**Now you are ready!** When you send the PR make sure to sign the [Developer Certificate of Origin](https://github.com/src-d/guide/blob/master/developer-community/fix-DCO.md) and that all the build checks are green.
+
+We are looking forward for your PRs and working together!

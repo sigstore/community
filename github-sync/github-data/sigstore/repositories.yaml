@@ -654,13 +654,8 @@ repositories:
         requireLastPushApproval: true
         statusChecks:
           - DCO
-          - selftest-glob
-          - selftest
-          - selftest-custom-paths
-          - selftest-staging
-          - selftest-verify-issuer
-          - selftest-identity-token
-          - selftest-upload-artifacts
+          - lint
+          - all-selftests-pass
   - name: helm-charts
     owner: sigstore
     description: Helm charts for sigstore project

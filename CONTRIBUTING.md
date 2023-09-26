@@ -1,24 +1,24 @@
 # Contributing
 
-When contributing to this repository, please first discuss the change you wish
-to make via an [issue](https://github.com/sigstore/rekor/issues).
+When contributing to a repository in the Sigstore organization, please first discuss the change you wish
+to make via an issue in the repository.
 
 ## Pull Request Process
 
-1. Create an [issue](https://github.com/sigstore/community/issues)
-   outlining the fix or feature.
-2. Fork the rekor repository to your own github account and clone it locally.
-3. Hack on your changes.
-4. Update the README.md with details of changes to any interface, this includes new environment
+1. Create an issue in the repository outlining the fix or feature.
+2. Fork the repository to your own GitHub account and clone it locally.
+3. Complete and test the change.
+4. If relevant, update documentation with details of the change. This includes updates to an API, new environment
    variables, exposed ports, useful file locations, CLI parameters and
    new or changed configuration values.
-5. Correctly format your commit message see [Commit Messages](#Commit Message Guidelines)
+5. Correctly format your commit message - See [Commit Messages](#Commit Message Guidelines)
    below.
-6. Sign off your commit
-7. Ensure that CI passes, if it fails, fix the failures.
-8. Every pull request requires a review from the sigstore subprojects MAINTAINERS.
+6. Sign off your commit.
+7. Ensure that CI passes. If it fails, fix the failures.
+8. Every pull request requires a review from the Sigstore subprojects MAINTAINERS.
 9. If your pull request consists of more than one commit, please squash your
-   commits as described in [Squash Commits](#Squash Commits)
+   commits as described in [Squash Commits](#Squash Commits), or the commits
+   will be squashed on merge.
 
 ## Commit Message Guidelines
 
@@ -109,8 +109,9 @@ to github):
     git push origin your-branch --force
 
 Alternatively, a core member can squash your commits within Github.
+
 ## Code of Conduct
 
-Rekor adheres to and enforces the [Contributor Covenant](http://contributor-covenant.org/version/1/4/) Code of Conduct.
-Please take a moment to read the [CODE_OF_CONDUCT.md](https://github.com/sigstore/rekor/blob/master/CODE_OF_CONDUCT.md) document.
+Sigstore adheres to and enforces the [Contributor Covenant](http://contributor-covenant.org/version/1/4/) Code of Conduct.
+Please take a moment to read the [CODE_OF_CONDUCT.md](https://github.com/sigstore/community/blob/main/CODE_OF_CONDUCT.md) document.
 

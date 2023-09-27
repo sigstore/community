@@ -55,6 +55,8 @@ repositories:
         permission: maintain
       - username: woodruffw
         permission: maintain
+      - username: jku
+        permission: maintain
     teams: []
     branchesProtection:
       - pattern: main

@@ -418,6 +418,8 @@ users:
         role: member
       - name: rekor-codeowners
         role: member
+      - name: sigstore-oncall
+        role: member
       - name: triage
         role: member
       - name: Core Team

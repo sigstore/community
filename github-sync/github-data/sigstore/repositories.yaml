@@ -683,13 +683,9 @@ repositories:
       branch: gh-pages
       path: /
     collaborators:
-      - username: SantiagoTorres
-        permission: admin
       - username: cpanato
         permission: admin
       - username: k4leung4
-        permission: maintain
-      - username: priyawadhwa
         permission: maintain
       - username: sabre1041
         permission: admin
@@ -1047,12 +1043,6 @@ repositories:
         permission: maintain
       - username: k4leung4
         permission: maintain
-      - username: loosebazooka
-        permission: pull
-      - username: priyawadhwa
-        permission: maintain
-      - username: trevrosen
-        permission: pull
       - username: vaikas
         permission: maintain
       - username: hectorj2f
@@ -1596,8 +1586,6 @@ repositories:
         permission: push
       - username: bobcallaway
         permission: admin
-      - username: di
-        permission: push
       - username: haydentherapper
         permission: push
       - username: loosebazooka

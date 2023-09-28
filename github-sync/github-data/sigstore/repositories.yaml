@@ -94,7 +94,7 @@ repositories:
     licenseTemplate: ""
     topics: []
     teams:
-      - name: architecture-docs-team
+      - name: architecture-doc-team
         id: 6189278
         permission: maintain
       - name: triage
@@ -113,9 +113,9 @@ repositories:
         dismissStaleReviews: true
         requireLastPushApproval: true
         pushRestrictions:
-          - architecture-docs-team
+          - architecture-doc-team
         dismissalRestrictions:
-          - architecture-docs-team
+          - architecture-doc-team
   - name: community
     owner: sigstore
     description: General sigstore community repo

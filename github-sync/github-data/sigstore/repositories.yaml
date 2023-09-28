@@ -1660,7 +1660,7 @@ repositories:
           - DCO
   - name: sigstore-go-archived
     owner: sigstore
-    description: Archived: Go library for Sigstore signing and verification
+    description: "Archived: Go library for Sigstore signing and verification"
     homepageUrl: ""
     defaultBranch: main
     allowAutoMerge: true

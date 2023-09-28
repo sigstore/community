@@ -72,6 +72,50 @@ repositories:
           - Core Team
         dismissalRestrictions:
           - Core Team
+  - name: architecture-docs
+    owner: sigstore
+    description: "Specification of sigstore's architecture in an IETF internet-draft format"
+    homepageUrl: ""
+    defaultBranch: main
+    allowAutoMerge: true
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDiscussions: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    teams:
+      - name: architecture-docs-team
+        id: 6189278
+        permission: maintain
+      - name: triage
+        id: 5643322
+        permission: triage
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        restrictDismissals: true
+        requireBranchesUpToDate: false
+        dismissStaleReviews: true
+        requireLastPushApproval: true
+        pushRestrictions:
+          - architecture-docs-team
+        dismissalRestrictions:
+          - architecture-docs-team
   - name: community
     owner: sigstore
     description: General sigstore community repo

@@ -305,6 +305,8 @@ users:
     teams:
       - name: protobuf-specs-codeowners
         role: member
+      - name: sigstore-go-codeowners
+        role: member
       - name: tuf-root-signing-codeowners
         role: member
   - username: lkatalin

@@ -1685,7 +1685,15 @@ repositories:
       - sigstore
       - golang
       - go
-    collaborators: []
+    collaborators:
+      - username: malancas
+        permission: push
+      - username: bdehamer
+        permission: push
+      - username: ejahnGithub
+        permission: push
+      - username: feelepxyz
+        permission: push
     teams:
       - name: sigstore-go-codeowners
         id: 6980777

@@ -1658,16 +1658,16 @@ repositories:
         requiredApprovingReviewCount: 1
         statusChecks:
           - DCO
-  - name: sigstore-go
+  - name: sigstore-go-archived
     owner: sigstore
-    description: Go library for Sigstore signing and verification
+    description: Archived: Go library for Sigstore signing and verification
     homepageUrl: ""
     defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true
-    archived: false
+    archived: true
     autoInit: false
     deleteBranchOnMerge: true
     hasDiscussions: true

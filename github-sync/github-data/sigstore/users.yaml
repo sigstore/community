@@ -411,6 +411,11 @@ users:
     teams:
       - name: codeowners-maven-sigstore
         role: member
+  - username: phillmv
+    role: member
+    teams:
+      - name: sigstore-go-codeowners
+        role: member
   - username: priyawadhwa
     role: admin
     teams:

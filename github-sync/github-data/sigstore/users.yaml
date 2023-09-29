@@ -305,6 +305,8 @@ users:
     teams:
       - name: protobuf-specs-codeowners
         role: member
+      - name: sigstore-go-codeowners
+        role: member
       - name: tuf-root-signing-codeowners
         role: member
   - username: lkatalin
@@ -410,6 +412,11 @@ users:
     role: member
     teams:
       - name: codeowners-maven-sigstore
+        role: member
+  - username: phillmv
+    role: member
+    teams:
+      - name: sigstore-go-codeowners
         role: member
   - username: priyawadhwa
     role: admin

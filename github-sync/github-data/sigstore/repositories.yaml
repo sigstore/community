@@ -990,8 +990,6 @@ repositories:
     collaborators:
       - username: haydentherapper
         permission: admin
-      - username: znewman01
-        permission: admin
     teams:
       - name: Core Team
         id: 4563391

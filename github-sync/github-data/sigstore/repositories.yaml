@@ -1664,9 +1664,6 @@ repositories:
     vulnerabilityAlerts: true
     visibility: public
     licenseTemplate: ""
-    template:
-      owner: sigstore
-      repository: sigstore-project-template
     topics:
       - sigstore
       - golang
@@ -1701,6 +1698,9 @@ repositories:
         requireLastPushApproval: true
         statusChecks:
           - DCO
+          - build
+          - lint
+          - conformance
         pushRestrictions:
           - sigstore-go-codeowners
         dismissalRestrictions:
@@ -2044,6 +2044,9 @@ repositories:
       - name: Core Team
         id: 4563391
         permission: pull
+    pages:
+      branch: gh-pages
+      path: /
     branchesProtection:
       - pattern: main
         enforceAdmins: true

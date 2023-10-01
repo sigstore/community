@@ -30,6 +30,58 @@ repositories:
         dismissStaleReviews: true
         requireLastPushApproval: true
         requiredApprovingReviewCount: 1
+  - name: architecture-docs
+    owner: sigstore
+    description: "Specification of sigstore's architecture in an IETF internet-draft format"
+    homepageUrl: ""
+    defaultBranch: main
+    allowAutoMerge: true
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDiscussions: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    pages:
+      branch: gh-pages
+      path: /
+    teams:
+      - name: architecture-doc-team
+        id: 6189278
+        permission: maintain
+      - name: triage
+        id: 5643322
+        permission: triage
+      - name: Core Team
+        id: 4563391
+        permission: maintain
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        restrictDismissals: true
+        requireBranchesUpToDate: false
+        dismissStaleReviews: true
+        requireLastPushApproval: true
+        pushRestrictions:
+          - architecture-doc-team
+        dismissalRestrictions:
+          - architecture-doc-team
+        statusChecks:
+          - DCO
   - name: TSC
     owner: sigstore
     description: sigstore Technical Steering Committee
@@ -1664,9 +1716,6 @@ repositories:
     vulnerabilityAlerts: true
     visibility: public
     licenseTemplate: ""
-    template:
-      owner: sigstore
-      repository: sigstore-project-template
     topics:
       - sigstore
       - golang
@@ -1701,6 +1750,9 @@ repositories:
         requireLastPushApproval: true
         statusChecks:
           - DCO
+          - build
+          - lint
+          - conformance
         pushRestrictions:
           - sigstore-go-codeowners
         dismissalRestrictions:
@@ -2044,6 +2096,9 @@ repositories:
       - name: Core Team
         id: 4563391
         permission: pull
+    pages:
+      branch: gh-pages
+      path: /
     branchesProtection:
       - pattern: main
         enforceAdmins: true

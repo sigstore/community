@@ -1753,6 +1753,8 @@ repositories:
           - build
           - lint
           - conformance
+          - CodeQL
+          - License and Vulnerability Scan / Scan dependencies for license compliance and vulnerabilities
         pushRestrictions:
           - sigstore-go-codeowners
         dismissalRestrictions:

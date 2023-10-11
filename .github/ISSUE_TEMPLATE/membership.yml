@@ -24,7 +24,7 @@ body:
   attributes:
     label: Requirements
     options:
-    - label: I have reviewed the [community membership guidelines](https://github.com/sigstore/community/community-membership.md)
+    - label: I have reviewed the [community membership guidelines](https://github.com/sigstore/community/blob/main/MEMBERSHIP.md)
       required: true
     - label: I have [enabled 2FA on my GitHub account](https://github.com/settings/security)
       required: true

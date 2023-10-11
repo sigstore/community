@@ -226,6 +226,8 @@ users:
         role: member
       - name: tuf-root-signing-codeowners
         role: member
+      - name: tuf-root-signing-staging-codeowners
+        role: member
       - name: sigstore-oncall
         role: member
       - name: security-response-team
@@ -273,6 +275,11 @@ users:
     teams:
       - name: public-good-instance-team
         role: member
+  - username: jku
+    role: member
+    teams:
+      - name: tuf-root-signing-staging-codeowners
+        role: member
   - username: jleightcap
     role: member
     teams:
@@ -308,6 +315,8 @@ users:
       - name: sigstore-go-codeowners
         role: member
       - name: tuf-root-signing-codeowners
+        role: member
+      - name: tuf-root-signing-staging-codeowners
         role: member
   - username: lkatalin
     role: member

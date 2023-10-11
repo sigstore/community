@@ -107,6 +107,9 @@ teams:
   - name: tuf-root-signing-codeowners
     privacy: closed
     description: ""
+  - name: tuf-root-signing-staging-codeowners
+    privacy: closed
+    description: ""
   - name: sigstore-conformance-codeowners
     privacy: closed
     description: "Codeowners for sigstore/sigstore-conformance"

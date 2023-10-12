@@ -1410,6 +1410,67 @@ repositories:
         dismissalRestrictions:
           - tuf-root-signing-codeowners
           - sigstore-keyholders
+  - name: root-signing-staging
+    owner: sigstore
+    description: "Staging TUF repository for Sigstore trust root"
+    homepageUrl: ""
+    defaultBranch: main
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: false
+    allowSquashMerge: false
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: false
+    hasDownloads: false
+    hasIssues: true
+    hasProjects: false
+    hasWiki: false
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: sigstore-bot
+        permission: push
+      - username: sigstore-review-bot
+        permission: push
+    teams:
+      - name: tuf-root-signing-staging-codeowners
+        id: 8790813
+        permission: maintain
+      - name: triage
+        id: 5643322
+        permission: triage
+      - name: sigstore-oncall
+        id: 6693572
+        permission: push
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
+        restrictDismissals: true
+        pushRestrictions:
+          - tuf-root-signing-staging-codeowners
+          - sigstore-bot
+        dismissalRestrictions:
+          - tuf-root-signing-staging-codeowners
+      - pattern: publish
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
+        restrictDismissals: true
+        pushRestrictions:
+          - sigstore-bot
   - name: ruby-sigstore
     owner: sigstore
     description: Rubygems sigstore signing plugin

@@ -1632,13 +1632,13 @@ repositories:
       - conformance
       - tests
     collaborators:
-      - username: apstickler
-        permission: admin
       - username: asraa
         permission: push
       - username: bobcallaway
         permission: admin
       - username: haydentherapper
+        permission: push
+      - username: jku
         permission: push
       - username: loosebazooka
         permission: push

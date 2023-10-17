@@ -1341,6 +1341,9 @@ repositories:
       - name: tuf-root-signing-codeowners
         id: 6378909
         permission: maintain
+      - name: tuf-root-signing-staging
+        id: 8790813
+        permission: maintain
       - name: triage
         id: 5643322
         permission: triage

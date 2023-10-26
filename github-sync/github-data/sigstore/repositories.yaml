@@ -1421,7 +1421,7 @@ repositories:
     allowSquashMerge: false
     archived: false
     autoInit: false
-    deleteBranchOnMerge: false
+    deleteBranchOnMerge: true
     hasDownloads: false
     hasIssues: true
     hasProjects: false
@@ -1450,7 +1450,7 @@ repositories:
         enforceAdmins: true
         allowsDeletions: false
         allowsForcePushes: false
-        requiredLinearHistory: true
+        requiredLinearHistory: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireLastPushApproval: true
@@ -1464,7 +1464,7 @@ repositories:
         enforceAdmins: true
         allowsDeletions: false
         allowsForcePushes: false
-        requiredLinearHistory: true
+        requiredLinearHistory: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireLastPushApproval: true

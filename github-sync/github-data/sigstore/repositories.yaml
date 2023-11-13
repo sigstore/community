@@ -1431,6 +1431,8 @@ repositories:
     licenseTemplate: ""
     topics: []
     collaborators:
+      - username: jku
+        permission: admin
       - username: sigstore-bot
         permission: push
       - username: sigstore-review-bot

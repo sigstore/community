@@ -11,18 +11,18 @@ to make via an issue in the repository.
 4. If relevant, update documentation with details of the change. This includes updates to an API, new environment
    variables, exposed ports, useful file locations, CLI parameters and
    new or changed configuration values.
-5. Correctly format your commit message - See [Commit Messages](#Commit Message Guidelines)
+5. Correctly format your commit message - See [Commit Messages](#commit-message-guidelines)
    below.
 6. Sign off your commit.
 7. Ensure that CI passes. If it fails, fix the failures.
 8. Every pull request requires a review from the Sigstore subprojects MAINTAINERS.
 9. If your pull request consists of more than one commit, please squash your
-   commits as described in [Squash Commits](#Squash Commits), or the commits
+   commits as described in [Squash Commits](#squash-commits), or the commits
    will be squashed on merge.
 
 ## Commit Message Guidelines
 
-We follow the commit formatting recommendations found on [Chris Beams' How to Write a Git Commit Message article]((https://chris.beams.io/posts/git-commit/).
+We follow the commit formatting recommendations found on [Chris Beams' How to Write a Git Commit Message article](https://chris.beams.io/posts/git-commit/).
 
 Well formed commit messages not only help reviewers understand the nature of
 the Pull Request, but also assists the release process where commit messages

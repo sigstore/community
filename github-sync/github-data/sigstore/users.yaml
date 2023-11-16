@@ -91,6 +91,9 @@ users:
   - username: caniszczyk
     role: member
     teams: []
+  - username: cmurphy
+    role: member
+    teams: []
   - username: codysoyland
     role: member
     teams:

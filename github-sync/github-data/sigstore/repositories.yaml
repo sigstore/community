@@ -1105,6 +1105,8 @@ repositories:
         permission: triage
       - username: JAORMX
         permission: triage
+      - username: cmurphy
+        permission: triage
       - username: sigstore-bot
         permission: pull
     teams:

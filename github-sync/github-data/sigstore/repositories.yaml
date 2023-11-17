@@ -1107,6 +1107,8 @@ repositories:
         permission: triage
       - username: cmurphy
         permission: triage
+      - username: sigstore-bot
+        permission: pull
     teams:
       - name: public-good-instance-team
         id: 5623385

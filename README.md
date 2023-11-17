@@ -19,8 +19,8 @@ sigstore's umbrella roadmap is [available here](./ROADMAP.md)
 
 ## Community Calendar
 
-We now have a community calendar [available here](https://calendar.google.com/calendar/embed?src=fq4kgom2ce43hncnbcfja2ck20%40group.calendar.google.com&ctz=America%2FNew_York) (and [in .ics format](https://calendar.google.com/calendar/ical/fq4kgom2ce43hncnbcfja2ck20%40group.calendar.google.com/public/basic.ics
-)).
+We now have a community calendar [available here](https://calendar.google.com/calendar/embed?src=fq4kgom2ce43hncnbcfja2ck20%40group.calendar.google.com&ctz=America%2FNew_York) ([in .ics format](https://calendar.google.com/calendar/ical/fq4kgom2ce43hncnbcfja2ck20%40group.calendar.google.com/public/basic.ics)
+and [shared Google calendar](https://calendar.google.com/calendar/u/0?cid=ZnE0a2dvbTJjZTQzaG5jbmJjZmphMmNrMjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)).
 All recurring and one-off meetings will be shared here.
 
 ### Meetings

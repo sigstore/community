@@ -637,8 +637,6 @@ repositories:
         permission: maintain
       - username: lkatalin
         permission: maintain
-      - username: nsmith5
-        permission: maintain
       - username: wlynch
         permission: admin
     teams:
@@ -1542,8 +1540,6 @@ repositories:
     collaborators:
       - username: cpanato
         permission: admin
-      - username: nsmith5
-        permission: push
       - username: priyawadhwa
         permission: admin
     teams:

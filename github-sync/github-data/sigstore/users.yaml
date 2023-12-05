@@ -188,7 +188,9 @@ users:
         role: member
   - username: evankanderson
     role: member
-    teams: []
+    teams:
+      - name: sigstore-oncall
+        role: member
   - username: feelepxyz
     role: member
     teams:
@@ -273,11 +275,6 @@ users:
   - username: JAORMX
     role: member
     teams: []
-  - username: jiggoha
-    role: member
-    teams:
-      - name: public-good-instance-team
-        role: member
   - username: jku
     role: member
     teams:
@@ -405,11 +402,6 @@ users:
     teams:
       - name: codeowners-sigstore-website
         role: member
-  - username: mhutchinson
-    role: member
-    teams:
-      - name: public-good-instance-team
-        role: member
   - username: michael-o
     role: member
     teams:
@@ -454,16 +446,6 @@ users:
       - name: sigstore-sig-public-good-operations
         role: maintainer
       - name: sigstore-oncall
-        role: member
-  - username: rawlingsj
-    role: member
-    teams:
-      - name: public-good-instance-team
-        role: member
-  - username: rchaganti
-    role: member
-    teams:
-      - name: sigstore-blog-maintainers
         role: member
   - username: sabre1041
     role: member

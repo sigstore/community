@@ -1097,12 +1097,6 @@ repositories:
         permission: maintain
       - username: hectorj2f
         permission: maintain
-      - username: yrobla
-        permission: triage
-      - username: evankanderson
-        permission: triage
-      - username: JAORMX
-        permission: triage
       - username: cmurphy
         permission: triage
       - username: sigstore-bot

@@ -30,10 +30,6 @@ users:
         role: member
       - name: architecture-doc-team
         role: member
-      - name: rekor-codeowners
-        role: member
-      - name: rekor-monitor-codeowners
-        role: member
       - name: tuf-root-signing-codeowners
         role: member
       - name: timestamp-codeowners
@@ -222,6 +218,8 @@ users:
       - name: cosign-installer-codeowners
         role: member
       - name: fulcio-codeowners
+        role: member
+      - name: rekor-codeowners
         role: member
       - name: rekor-monitor-codeowners
         role: member

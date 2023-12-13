@@ -693,6 +693,8 @@ repositories:
         permission: admin
       - username: tnytown
         permission: triage
+      - username: jku
+        permission: maintain
     teams: []
     branchesProtection:
       - pattern: main

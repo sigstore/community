@@ -1099,6 +1099,8 @@ repositories:
         permission: maintain
       - username: cmurphy
         permission: triage
+      - username: TomHennen
+        permission: triage
       - username: sigstore-bot
         permission: pull
     teams:

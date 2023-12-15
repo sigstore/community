@@ -467,9 +467,6 @@ users:
     teams:
       - name: sigstore-conformance-codeowners
         role: member
-  - username: thelinuxfoundation
-    role: admin
-    teams: []
   - username: tnytown
     role: member
     teams: []

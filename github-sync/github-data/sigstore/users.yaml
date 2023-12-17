@@ -470,6 +470,9 @@ users:
   - username: thelinuxfoundation
     role: admin
     teams: []
+  - username: TomHennen
+    role: member
+    teams: []
   - username: tnytown
     role: member
     teams: []

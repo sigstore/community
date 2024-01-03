@@ -1101,6 +1101,10 @@ repositories:
         permission: maintain
       - username: cmurphy
         permission: triage
+      - username: jku
+        permission: triage
+      - username: loosebazooka
+        permission: triage
       - username: TomHennen
         permission: triage
       - username: sigstore-bot

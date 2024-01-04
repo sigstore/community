@@ -467,6 +467,9 @@ users:
     teams:
       - name: sigstore-conformance-codeowners
         role: member
+  - username: TomHennen
+    role: member
+    teams: []
   - username: tnytown
     role: member
     teams: []

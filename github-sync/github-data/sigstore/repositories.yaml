@@ -693,6 +693,8 @@ repositories:
         permission: admin
       - username: tnytown
         permission: triage
+      - username: jku
+        permission: maintain
     teams: []
     branchesProtection:
       - pattern: main
@@ -1098,6 +1100,12 @@ repositories:
       - username: hectorj2f
         permission: maintain
       - username: cmurphy
+        permission: triage
+      - username: jku
+        permission: triage
+      - username: loosebazooka
+        permission: triage
+      - username: TomHennen
         permission: triage
       - username: sigstore-bot
         permission: pull

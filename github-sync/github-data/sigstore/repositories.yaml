@@ -1699,8 +1699,6 @@ repositories:
         permission: push
       - username: bobcallaway
         permission: admin
-      - username: haydentherapper
-        permission: push
       - username: jku
         permission: push
       - username: loosebazooka

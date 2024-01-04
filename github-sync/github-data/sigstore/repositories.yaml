@@ -1108,7 +1108,7 @@ repositories:
       - username: TomHennen
         permission: triage
       - username: sigstore-bot
-        permission: pull
+        permission: triage
     teams:
       - name: public-good-instance-team
         id: 5623385

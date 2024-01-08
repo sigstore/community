@@ -89,7 +89,9 @@ users:
     teams: []
   - username: cmurphy
     role: member
-    teams: []
+    teams:
+      - name: triage
+        role: member
   - username: codysoyland
     role: member
     teams:

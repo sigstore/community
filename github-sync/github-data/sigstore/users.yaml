@@ -489,8 +489,6 @@ users:
         role: maintainer
       - name: scaffolding-codeowners
         role: member
-      - name: sigstore-oncall
-        role: member
   - username: wlynch
     role: member
     teams:

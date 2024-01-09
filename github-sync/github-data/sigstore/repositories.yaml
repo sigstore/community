@@ -1094,9 +1094,9 @@ repositories:
       - username: haydentherapper
         permission: maintain
       - username: k4leung4
-        permission: maintain
+        permission: push
       - username: vaikas
-        permission: maintain
+        permission: push
       - username: hectorj2f
         permission: maintain
       - username: cmurphy

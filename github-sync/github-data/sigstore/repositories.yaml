@@ -2079,7 +2079,7 @@ repositories:
         allowsDeletions: false
         allowsForcePushes: false
         requiredLinearHistory: true
-        requireConversationResolution: true
+        requireConversationResolution: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
@@ -2115,7 +2115,7 @@ repositories:
         allowsDeletions: false
         allowsForcePushes: false
         requiredLinearHistory: true
-        requireConversationResolution: true
+        requireConversationResolution: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true

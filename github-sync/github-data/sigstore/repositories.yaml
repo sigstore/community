@@ -169,7 +169,7 @@ repositories:
           - Core Team
   - name: cosign
     owner: sigstore
-    description: Container Signing
+    description: Code signing and transparency for containers and binaries
     defaultBranch: main
     homepageUrl: ""
     allowAutoMerge: true

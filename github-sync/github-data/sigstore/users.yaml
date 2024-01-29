@@ -28,14 +28,6 @@ users:
     teams:
       - name: sigstore-rs-codeowners
         role: member
-      - name: architecture-doc-team
-        role: member
-      - name: tuf-root-signing-codeowners
-        role: member
-      - name: timestamp-codeowners
-        role: member
-      - name: protobuf-specs-codeowners
-        role: member
   - username: bdehamer
     role: member
     teams:
@@ -279,6 +271,8 @@ users:
     role: member
     teams:
       - name: tuf-root-signing-staging-codeowners
+        role: member
+      - name: tuf-root-signing-codeowners
         role: member
   - username: jleightcap
     role: member

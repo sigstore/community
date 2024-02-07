@@ -1459,6 +1459,8 @@ repositories:
     hasIssues: true
     hasProjects: false
     hasWiki: false
+    pages:
+      buildType: workflow
     vulnerabilityAlerts: true
     visibility: public
     licenseTemplate: ""

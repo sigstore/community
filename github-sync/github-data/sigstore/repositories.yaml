@@ -1467,7 +1467,9 @@ repositories:
       - username: jku
         permission: admin
       - username: sigstore-bot
-        permission: write-with-bypass
+        permission: push
+      - username: sigstore-review-bot
+        permission: push
     teams:
       - name: tuf-root-signing-staging-codeowners
         id: 8790813

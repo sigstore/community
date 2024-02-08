@@ -35,8 +35,6 @@ users:
         role: maintainer
       - name: codeowners-sigstore-js
         role: maintainer
-      - name: sigstore-sig-clients
-        role: maintainer
   - username: bobcallaway
     role: admin
     teams:
@@ -308,6 +306,8 @@ users:
         role: member
       - name: sigstore-go-codeowners
         role: member
+      - name: sigstore-sig-clients
+        role: member
       - name: tuf-root-signing-codeowners
         role: member
       - name: tuf-root-signing-staging-codeowners
@@ -328,6 +328,8 @@ users:
         role: member
       - name: sigstore-java-codeowners
         role: maintainer
+      - name: sigstore-sig-clients
+        role: member
       - name: triage
         role: member
   - username: ltagliaferri
@@ -495,8 +497,6 @@ users:
         role: member
       - name: sigstore-conformance-codeowners
         role: member
-      - name: sigstore-sig-clients
-        role: maintainer
   - username: yrobla
     role: member
     teams: []

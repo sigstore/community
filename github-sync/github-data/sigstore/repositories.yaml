@@ -1470,8 +1470,6 @@ repositories:
         permission: admin
       - username: sigstore-bot
         permission: push
-      - username: sigstore-review-bot
-        permission: push
     teams:
       - name: tuf-root-signing-staging-codeowners
         id: 8790813
@@ -1497,6 +1495,8 @@ repositories:
           - sigstore-bot
         dismissalRestrictions:
           - tuf-root-signing-staging-codeowners
+        pullRequestBypassers:
+          - sigstore-bot
       - pattern: publish
         enforceAdmins: true
         allowsDeletions: false

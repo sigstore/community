@@ -1,5 +1,0 @@
-customRoles:
-  - name: write-with-bypass
-    baseRole: write
-    description: write role with an additional permission to bypass branch protection
-    permissions: [bypass_branch_protection]

@@ -1857,7 +1857,9 @@ repositories:
         requireLastPushApproval: true
         statusChecks:
           - DCO
-          - build
+          - build (macos-latest)
+          - build (ubuntu-latest)
+          - build (windows-latest)
           - lint
           - conformance
           - CodeQL

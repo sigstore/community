@@ -37,7 +37,7 @@ If we need to add a new Bot user add the similar but in the file `github-data/bo
 
 ## Add a new team
 
-To add a new team you should edit the file `github-data/users.yaml`
+To add a new team you should edit the file `github-data/teams.yaml`
 and add a new entry following the example
 
 ```yaml

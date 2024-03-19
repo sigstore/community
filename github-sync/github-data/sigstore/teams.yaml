@@ -50,6 +50,9 @@ teams:
   - name: maven-plugin-codeowners
     privacy: closed
     description: ""
+  - name: model-transparency-codeowners
+    privacy: closed
+    description: "Code owners for ML model transparency"
   - name: policy-controller-codeowners
     privacy: closed
     description: Codeowners for sigstore/policy-controller

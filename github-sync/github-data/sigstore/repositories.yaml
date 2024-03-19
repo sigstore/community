@@ -934,6 +934,54 @@ repositories:
       - username: AndreyKozlov1984
         permission: maintain
     webCommitSignoffRequired: true
+  - name: model-transparency
+    owner: sigstore
+    description: Supply chain security for ML
+    homepageUrl: ""
+    defaultBranch: main
+    allowAutoMerge: false
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDiscussions: false
+    hasDownloads: false
+    hasIssues: true
+    hasProjects: false
+    hasWiki: false
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - machine-learning
+      - security
+      - supply-chain
+      - sigstore
+    collaborators: []
+    teams:
+      - name: model-transparency-codeowners
+        id: 4722047
+        permission: admin
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        requireLastPushApproval: true
+        statusChecks:
+          - DCO # TODO: probably need to add more to match with all the other checks we enforce
+        pushRestrictions:
+          - model-transparency-codeowners
+        dismissalRestrictions:
+          - model-transparency-codeowners
+    webCommitSignoffRequired: true
   - name: policy-controller
     owner: sigstore
     description: ""

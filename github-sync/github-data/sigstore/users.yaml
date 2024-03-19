@@ -211,6 +211,8 @@ users:
         role: member
       - name: fulcio-codeowners
         role: member
+      - name: model-transparency-codeowners
+        role: member
       - name: rekor-codeowners
         role: member
       - name: rekor-monitor-codeowners
@@ -312,6 +314,11 @@ users:
         role: member
       - name: tuf-root-signing-staging-codeowners
         role: member
+  - username: laurentsimon
+    role: member
+    teams:
+      - name: model-transparency-codeowners
+        role: member
   - username: lkatalin
     role: member
     teams:
@@ -403,6 +410,11 @@ users:
     teams:
       - name: codeowners-maven-sigstore
         role: member
+  - username: mihaimaruseac
+    role: member
+    teams:
+      - name: model-transparency-codeowners
+        role: member
   - username: mnm678
     role: member
     teams:
@@ -454,6 +466,11 @@ users:
     role: member
     teams:
       - name: sigstore-oncall
+        role: member
+  - username: smeiklej
+    role: member
+    teams:
+      - name: model-transparency-codeowners
         role: member
   - username: steiza
     role: member

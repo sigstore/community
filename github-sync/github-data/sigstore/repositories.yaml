@@ -962,7 +962,7 @@ repositories:
     collaborators: []
     teams:
       - name: model-transparency-codeowners
-        id: 4722047
+        id: 9730895
         permission: admin
     branchesProtection:
       - pattern: main

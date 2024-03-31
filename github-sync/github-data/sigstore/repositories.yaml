@@ -225,9 +225,6 @@ repositories:
           - Run unit tests (ubuntu-latest)
           - Run unit tests (windows-latest)
           - Verify Docgen
-          - build (macos-latest)
-          - build (ubuntu-latest)
-          - build (windows-latest)
           - License and Vulnerability Scan / Scan dependencies for license compliance and vulnerabilities
           - license boilerplate check
           - lint

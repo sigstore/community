@@ -267,6 +267,9 @@ users:
   - username: JAORMX
     role: member
     teams: []
+  - username: javanlacerda
+    role: member
+    teams: []
   - username: jku
     role: member
     teams:

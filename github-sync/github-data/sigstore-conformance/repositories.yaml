@@ -69,3 +69,4 @@ repositories:
         requireCodeOwnerReviews: true
         restrictDismissals: true
         requireLastPushApproval: true
+

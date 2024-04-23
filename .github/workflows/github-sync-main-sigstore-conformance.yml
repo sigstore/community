@@ -1,6 +1,13 @@
 name: sync-changes
 
 on:
+  workflow_call:
+    inputs:
+      preview:
+        description: "Dry run of the Pulumi changes"
+        required: false
+        default: false
+        type: boolean
   push:
     branches:
       - main
@@ -20,6 +27,16 @@ jobs:
     steps:
     - uses: actions/checkout@1d96c772d19495a3b5c517cd2bc0cb401ea0529f # v4.1.3
     - uses: sigstore/github-sync@main
+      if: ${{ inputs.preview }}
+      with:
+        work_dir: ./github-sync
+        config_directory: ./github-sync/github-data
+        stack_name: sigstore/github-sigstore-conformance
+        pulumi_access_token: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+        pulumi_command: preview
+        gh_token: ${{ secrets.GITHUB_TOKEN }}
+    - uses: sigstore/github-sync@main
+      if: ${{ !inputs.preview }}
       with:
         work_dir: ./github-sync
         config_directory: ./github-sync/github-data

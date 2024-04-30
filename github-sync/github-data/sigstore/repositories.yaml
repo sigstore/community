@@ -20,8 +20,8 @@ repositories:
     licenseTemplate: ""
     topics: []
     collaborators:
-      - username: mbestavros
-        permission: admin
+      - username: haydentherapper
+        permission: maintain
     branchesProtection:
       - pattern: main
         enforceAdmins: true

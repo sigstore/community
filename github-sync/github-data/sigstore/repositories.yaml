@@ -1595,7 +1595,7 @@ repositories:
     allowMergeCommit: true
     allowRebaseMerge: true
     allowSquashMerge: true
-    archived: false
+    archived: true
     autoInit: false
     deleteBranchOnMerge: false
     hasDownloads: true
@@ -2367,6 +2367,53 @@ repositories:
           - sigstore-rs-codeowners
         dismissalRestrictions:
           - sigstore-rs-codeowners
+    webCommitSignoffRequired: true
+  - name: sigstore-ruby
+    owner: sigstore
+    description: Pure-ruby implementation of sigstore verification
+    homepageUrl: ""
+    defaultBranch: main
+    allowAutoMerge: true
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators: []
+    teams:
+      - name: codeowners-ruby-sigstore
+        id: 4728095
+        permission: maintain
+      - name: triage
+        id: 5643322
+        permission: triage
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        restrictDismissals: true
+        requireBranchesUpToDate: true
+        dismissStaleReviews: true
+        requireLastPushApproval: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - codeowners-ruby-sigstore
+        dismissalRestrictions:
+          - codeowners-ruby-sigstore
     webCommitSignoffRequired: true
   - name: sig-clients
     owner: sigstore

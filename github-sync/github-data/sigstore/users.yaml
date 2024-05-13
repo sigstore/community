@@ -166,11 +166,6 @@ users:
     teams:
       - name: codeowners-sigstore-js
         role: maintainer
-  - username: endorama
-    role: member
-    teams:
-      - name: codeowners-ruby-sigstore
-        role: member
   - username: erikaheidi
     role: member
     teams:
@@ -383,8 +378,6 @@ users:
         role: maintainer
       - name: codeowners-k8s-manifest-sigstore
         role: maintainer
-      - name: codeowners-ruby-sigstore
-        role: maintainer
       - name: codeowners-sigstore-python
         role: maintainer
       - name: codeowners-sigstore-website
@@ -476,6 +469,11 @@ users:
     teams:
       - name: sigstore-oncall
         role: member
+  - username: segiddins
+    role: member
+    teams:
+      - name: codeowners-ruby-sigstore
+        role: member
   - username: smeiklej
     role: member
     teams:
@@ -524,6 +522,8 @@ users:
   - username: woodruffw
     role: member
     teams:
+      - name: codeowners-ruby-sigstore
+        role: member
       - name: protobuf-specs-codeowners
         role: member
       - name: sigstore-conformance-codeowners

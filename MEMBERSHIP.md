@@ -1,44 +1,41 @@
 # Community membership
 
-**Note:** This document is a work in progress
-
-This doc outlines the various responsibilities of contributor roles in
-Sigstore Organization.
-Responsibilities for most roles are scoped to these subprojects.
+This document outlines the various responsibilities of contributor roles in
+the Sigstore organization.
+Responsibilities for roles are scoped to projects, aka repositories, within the Sigstore organization.
 
 | Role | Responsibilities | Requirements | Defined by |
 | -----| ---------------- | ------------ | -------|
-| Member | Active contributor in the community | Sponsored by 2 reviewers and multiple contributions to the project | Sigstore GitHub org member|
-| Triage | Triage issues/pull requests | History of review and authorship in a subproject | GitHub Team membership |
-| Codeowners | Contributions acceptance approval| Highly experienced active reviewer and contributor to a subproject | GitHub Team membership |
+| Member | Active contributor in the community | Sponsored by 2 reviewers and multiple contributions to Sigstore projects | Sigstore GitHub org member|
+| Reviewer | Review pull requests, triage issues | History of review and authorship in a project | GitHub "Write" Team membership |
+| Codeowner | Approve and merge contributions, set project direction | Highly experienced subject matter expert, active reviewer and contributor to a project | GitHub "Maintain" Team membership |
 
 ## New contributors
 
-[New contributors] should be welcomed to the community by existing members,
-helped with PR workflow, and directed to relevant documentation and
-communication channels.
+New contributors are welcomed to the community by existing members,
+and directed to [relevant documentation](https://docs.sigstore.dev)
+and [communication channels](https://join.slack.com/t/sigstore/shared_invite/zt-1z7jzpemb-xEKSUtpgDFXpIEMwMYZQKQ).
 
 ## Established community members
 
 Established community members are expected to demonstrate their adherence to the
-principles in this document, familiarity with project organization, roles,
-policies, procedures, conventions, etc., and technical and/or writing ability.
-Role-specific expectations, responsibilities, and requirements are enumerated
+principles in this document, demonstrating familiarity with project organization,
+roles, policies, procedures, conventions, and technical and/or writing ability.
+Role-specific expectations, responsibilities, and requirements are provided
 below.
 
 ## Member
 
 Members are continuously active contributors in the community. They can have
-issues and PRs assigned to them, participate through GitHub teams, and
-pre-submit tests are automatically run for their PRs. Members are expected to
-remain active contributors to the community.
+issues and PRs assigned to them and participate on GitHub and Slack. Members are
+expected to remain active contributors to the community.
 
 **Defined by:** Member of the Sigstore GitHub organization
 
 ### Requirements
 
-- Enabled [two-factor authentication] on their GitHub account
-- Have made multiple contributions to the project or community.  Contribution may include, but is not limited to:
+- Enabled [two-factor authentication](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication) on their GitHub account
+- Have made multiple contributions to the project or community.  Contributions may include, but are not limited to:
     - Authoring or reviewing PRs on GitHub. At least one PR must be **merged**.
     - Filing or commenting on issues on GitHub
     - Contributing to a project, or community discussions (e.g. meetings, Slack, email discussion
@@ -48,11 +45,11 @@ remain active contributors to the community.
 - Sponsored by 2 reviewers. **Note the following requirements for sponsors**:
     - Sponsors must have close interactions with the prospective member - e.g. code/design/proposal review, coordinating
       on issues, etc.
-    - Sponsors must be reviewers or approvers in at least one CODEOWNERS file.
-    - Sponsors must be from multiple member companies to demonstrate integration across community.
+    - Sponsors must be reviewers or codeowners in at least one GitHub team.
+    - Sponsors must be from multiple member companies to demonstrate community engagement.
 - **[Open an issue][membership request] against the sigstore/community repo**
    - Ensure your sponsors are @mentioned on the issue
-   - Complete every item on the checklist ([preview the current version of the template][membership template])
+   - Complete every item on the checklist ([membership template](https://github.com/sigstore/community/issues/new?assignees=&labels=area%2Fgithub-membership&projects=&template=membership.yml&title=REQUEST%3A+New+membership+for+%3Cyour-GH-handle%3E))
    - Make sure that the list of contributions included is representative of your work on the project.
 - Have your sponsoring reviewers reply confirmation of sponsorship: `+1`
 
@@ -67,77 +64,85 @@ remain active contributors to the community.
 - They can be assigned to issues and PRs, and people can ask members for reviews with a `/cc @username`.
 - Tests can be run against their PRs automatically.
 
-**Note:** members who frequently contribute code are expected to proactively
+**Note:** Members who frequently contribute code are expected to proactively
 perform code reviews and work towards becoming a primary *reviewer* for the
-subproject that they are active in.
+project that they are active in.
 
-## Triage
+## Reviewer
 
-Triage role are able to review code for quality and correctness on some part of a
-subproject. They are knowledgeable about both the codebase and software
-engineering principles.
+The Reviewer role is able to review code for quality and correctness on the majority of a
+project. They are knowledgeable about both the codebase and software
+engineering principles. A reviewer can approve, but not merge, a PR.
 
-**Defined by:** *triage* team membership in the subproject
+**Defined by:** Team membership with *Write* permissions for the project. The project
+will also have a push restriction branch protection rule to allow only Codeowners
+to push to branches (merge PRs).
 
-Reviewer status is scoped to a part of the codebase.
+Reviewer status may be scoped to a part of the codebase. Ideally reviewers are familiar
+with the entire codebase. Reviewers should use judgment when reviewing code they are not
+familiar with, and delegate reviews to other reviewers or codeowners that are familiar.
 
-**Note:** Acceptance of code contributions requires at least one approver in
+**Note:** Acceptance of code contributions requires at least one Codeowner in
 addition to the assigned reviewers.
 
 ### Requirements
 
-- member for at least 3 months
-- Helped to triage issues and Pull requests
+- Active community member for at least 3 months
+- Active in issue triage and pull request reviews
 - Knowledgeable about the codebase
-- Sponsored by a project approver
-  - With no objections from other approvers
-  - Done through PR to update the CODEOWNERS file
-- May either self-nominate, be nominated by an approver in this subproject.
+- Sponsored by a project Codeowner
+  - With no objections from other Codeowners
+  - Done through PR in the Community repository, either:
+    - Updating the Write Team membership
+    - Granting the user the `push` permission
+- May either self-nominate or be nominated by a Codeowner in the project
 
 ### Responsibilities and privileges
 
-- Tests are automatically run for PullRequests from members of the Sigstore GitHub organization
-- Code reviewer status may be a precondition to accepting large code contributions
-- Responsible for project quality control via [code reviews]
-  - Focus on code quality and correctness, including testing and factoring
-  - May also review for more holistic issues, but not a requirement
-- Expected to be responsive to review requests as per [community expectations]
-- Assigned PRs to review related to the project of expertise
-- Assigned test bugs related to the project of expertise
+- Responsible for project quality control through code reviews
+  - *Must* focus on code quality and correctness, including testing and factoring
+  - *Must* be familiar with code content. If not, *must* delegate review to other reviewers
+  - *May* also review for more holistic issues, but not a requirement
+- Expected to be responsive to review requests as per community expectations
+- Assigned PRs to review in the project
+- Assigned issues to investigate in the project
 
 ## Codeowners
 
-Codeowners are able to both review and approve code contributions.  While
-code review is focused on code quality and correctness, approval is focused on
-holistic acceptance of a contribution including: backwards / forwards
-compatibility, adhering to API and flag conventions, subtle performance and
+Codeowners are able to both approve and merge code contributions. While
+code review is focused on code quality and correctness, approval for merge is focused on
+holistic acceptance of a contribution including: backward compatibility,
+adhering to API and flag conventions, security and threat modeling, subtle performance and
 correctness issues, interactions with other parts of the system, etc.
 
-**Defined by:** *Team membership* in the Codeowners team for a subproject and update the
-entry in an CODEOWNERS file in a repo owned by the Sigstore project.
+**Defined by:** Team membership with *Maintain* permission for the project. The project will
+also have a push restriction branch protection rule to allow only these Codeowners
+to push to branches (merge PRs).
 
-Codeowners status is scoped to a part of the codebase.
+Codeowners status is for the entire project.
 
 ### Requirements
 
 - Reviewer of the codebase for at least 3 months
 - Primary reviewer for at least 10 substantial PRs to the codebase
-- Reviewed or merged at least 30 PRs to the codebase
-- Being a Subject Matter Expert in the area of the code that they're responsible for, i.e PKI, transparency logs, OCI, etc.
-- Nominated by a subproject owner
-  - With no objections from other subproject owners
-  - Done through PR to update the team membership and the top-level CODEOWNERS file
+- Reviewed a significant number of PRs in the codebase. For a large codebase, at least 30 PRs
+- Be a Subject Matter Expert in the project that they're responsible for, e.g. PKI, transparency logs, OCI, etc.
+- Sponsored by another Codeowner
+  - With no objections from other Codeowners
+  - Done through PR in the Community repository, updating the Maintain or Codeowners Team membership
+- May either self-nominate or be nominated by a Codeowner in the project
 
 ### Responsibilities and privileges
 
-- Approver status may be a precondition to accepting large code contributions
-- Demonstrate sound technical judgement
-- Responsible for project quality control via [code reviews]
-  - Focus on holistic acceptance of contribution such as dependencies with other features, backwards / forwards
-    compatibility, API and flag definitions, etc
-- Expected to be responsive to review requests as per [community expectations]
+- Demonstrate sound technical judgment
+- Responsible for project quality control via code reviews
+  - *Must* focus on holistic acceptance of contributions such as dependencies with other features, backward
+    compatibility, API and flag definitions, security risks, etc.
+  - *Must* be familiar with code content. If not, *must* delegate review to other codeowners
+  - *Must* verify code changes are well-tested
+- Expected to be responsive to review requests as per community expectations
 - Mentor contributors and reviewers
-- May approve code contributions for acceptance
+- Set direction for project with input from the community
 
 ## Inactive members
 
@@ -147,12 +152,12 @@ A core principle in maintaining a healthy community is encouraging active
 participation. It is inevitable that people's focuses will change over time and
 they are not expected to be actively contributing forever.
 
-- Lack of significant contribution to the repository
+Signs of inactivity include:
+
+- Lack of significant contributions to the repository
 - Not assisting with reviews or triaging issues
-- Not replying when get mention either in GitHub or in the Sigstore Collaboration tool (today we are using Slack)
+- Not replying when mentioned either in GitHub or Slack 
 
-The LFX Dashboard can help to extract metrics.
+The LFX Dashboard and GitHub per-repo contribution insights can be used to determine activity.
 
-[New contributors]: /CONTRIBUTING.md
-[two-factor authentication]: https://help.github.com/articles/about-two-factor-authentication
-[membership request]: https://github.com/sigstore/community/issues/new?assignees=&labels=area%2Fgithub-membership&template=membership.yml&title=REQUEST%3A+New+membership+for+%3Cyour-GH-handle%3E
+Inactive members may be removed by active Codeowners for a given project or TSC members.

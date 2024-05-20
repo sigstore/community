@@ -1,7 +1,7 @@
 name: sync-changes
 
 on:
-  workflow_call:
+  workflow_dispatch:
     inputs:
       preview:
         description: "Dry run of the Pulumi changes"

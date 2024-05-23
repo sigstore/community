@@ -1,4 +1,4 @@
-name: sync-changes
+name: sync-changes-sigstore-conformance
 
 on:
   workflow_dispatch:

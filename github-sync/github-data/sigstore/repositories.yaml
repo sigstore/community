@@ -1558,6 +1558,10 @@ repositories:
         restrictDismissals: true
         pushRestrictions:
           - sigstore-bot
+        dismissalRestrictions:
+          - tuf-root-signing-staging-codeowners
+        pullRequestBypassers:
+          - sigstore-bot
     webCommitSignoffRequired: true
   - name: ruby-sigstore
     owner: sigstore

@@ -1450,7 +1450,6 @@ repositories:
           - sigstore-review-bot
         dismissalRestrictions:
           - tuf-root-signing-codeowners
-          - sigstore-keyholders
         pullRequestBypassers:
           - sigstore-bot
       - pattern: publish
@@ -1468,7 +1467,6 @@ repositories:
           - sigstore-review-bot
         dismissalRestrictions:
           - tuf-root-signing-codeowners
-          - sigstore-keyholders
         pullRequestBypassers:
           - sigstore-bot
       - pattern: test-ceremony/*

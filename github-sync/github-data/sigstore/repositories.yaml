@@ -1393,13 +1393,13 @@ repositories:
     webCommitSignoffRequired: true
   - name: root-signing
     owner: sigstore
-    description: ""
+    description: "TUF repository for Sigstore trust root"
     homepageUrl: ""
     defaultBranch: main
     allowAutoMerge: true
-    allowMergeCommit: false
-    allowRebaseMerge: true
-    allowSquashMerge: true
+    allowMergeCommit: true
+    allowRebaseMerge: false
+    allowSquashMerge: false
     archived: false
     autoInit: false
     deleteBranchOnMerge: true
@@ -1434,7 +1434,7 @@ repositories:
         enforceAdmins: true
         allowsDeletions: false
         allowsForcePushes: false
-        requiredLinearHistory: true
+        requiredLinearHistory: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireLastPushApproval: true
@@ -1444,16 +1444,33 @@ repositories:
           - yamllint
           - test
           - lint
-          - validate
-          - client
         pushRestrictions:
           - tuf-root-signing-codeowners
-          - sigstore-keyholders
           - sigstore-bot
           - sigstore-review-bot
         dismissalRestrictions:
           - tuf-root-signing-codeowners
           - sigstore-keyholders
+        pullRequestBypassers:
+          - sigstore-bot
+      - pattern: publish
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: false
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
+        restrictDismissals: true
+        pushRestrictions:
+          - tuf-root-signing-codeowners
+          - sigstore-bot
+          - sigstore-review-bot
+        dismissalRestrictions:
+          - tuf-root-signing-codeowners
+          - sigstore-keyholders
+        pullRequestBypassers:
+          - sigstore-bot
       - pattern: test-ceremony/*
         enforceAdmins: true
         allowsDeletions: false

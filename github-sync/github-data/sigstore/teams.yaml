@@ -53,6 +53,9 @@ teams:
   - name: model-transparency-codeowners
     privacy: closed
     description: "Code owners for ML model transparency"
+  - name: model-transparency
+    privacy: closed
+    description: "Write access for ML model transparency"
   - name: policy-controller-codeowners
     privacy: closed
     description: Codeowners for sigstore/policy-controller

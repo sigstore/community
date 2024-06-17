@@ -961,6 +961,9 @@ repositories:
       - name: model-transparency-codeowners
         id: 9730895
         permission: admin
+      - name: model-transparency
+        id: 9730895  # TODO: update with the new team ID once team is created
+        permission: push
     branchesProtection:
       - pattern: main
         enforceAdmins: true

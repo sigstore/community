@@ -475,6 +475,11 @@ users:
     teams:
       - name: model-transparency-codeowners
         role: member
+  - username: spencerschrock
+    role: member
+    teams:
+      - name: model-transparency
+        role: member
   - username: steiza
     role: member
     teams:

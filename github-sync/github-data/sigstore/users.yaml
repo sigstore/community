@@ -199,7 +199,7 @@ users:
   - username: font
     role: member
   - username: haydentherapper
-    role: member
+    role: admin
     teams:
       - name: triage
         role: member

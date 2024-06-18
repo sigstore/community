@@ -418,6 +418,8 @@ users:
     teams:
       - name: model-transparency-codeowners
         role: member
+      - name: model-transparency
+        role: member
   - username: mnm678
     role: member
     teams:

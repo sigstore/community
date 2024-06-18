@@ -963,7 +963,7 @@ repositories:
         permission: admin
       - name: model-transparency
         id: 10329477
-        permission: push
+        permission: maintain
     branchesProtection:
       - pattern: main
         enforceAdmins: true

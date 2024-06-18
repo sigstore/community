@@ -29,6 +29,9 @@ teams:
   - name: codeowners-sigstore-website
     privacy: closed
     description: codeowners for sigstores website
+  - name: community-codeowners
+    privacy: closed
+    description: Team for codeowners for community configuration
   - name: cosign-codeowners
     privacy: closed
     description: ""

@@ -962,7 +962,7 @@ repositories:
         id: 9730895
         permission: admin
       - name: model-transparency
-        id: 9730895  # TODO: update with the new team ID once team is created
+        id: 10329477
         permission: push
     branchesProtection:
       - pattern: main

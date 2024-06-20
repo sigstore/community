@@ -1481,7 +1481,7 @@ repositories:
         enforceAdmins: true
         allowsDeletions: false
         allowsForcePushes: false
-        requiredLinearHistory: true
+        requiredLinearHistory: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireLastPushApproval: true
@@ -1500,7 +1500,7 @@ repositories:
         enforceAdmins: true
         allowsDeletions: false
         allowsForcePushes: false
-        requiredLinearHistory: true
+        requiredLinearHistory: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireLastPushApproval: true

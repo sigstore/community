@@ -81,6 +81,19 @@ example:
       permission: push # Must be one of `pull`, `triage`, `push`, `maintain`, or `admin`. Defaults to `pull`.
 ```
 
+> [!WARNING]
+> When adding multiple teams to the same repository, don't duplicate the team
+> ID! Doing so might result in loss of permissions to the team with the
+> duplicated ID. Instead, skip the ID to the new team if not already known
+> (prefer creating a team in one PR and adding it to the repo in a subsequent
+> PR).
+
+> [!TIP]
+> To get the team ID, inspect the URL of the avatar on the team page (e.g., for
+> `https://github.com/orgs/sigstore/teams/model-transparency`, the ID is
+> 10329477 as the avatar URL is
+> https://avatars.githubusercontent.com/t/10329477).
+
 If you need to configure the GitHub Pages you can add the following definition
 
 ```yaml

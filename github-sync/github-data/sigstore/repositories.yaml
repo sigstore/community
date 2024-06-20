@@ -153,6 +153,9 @@ repositories:
       - name: Core Team
         id: 4563391
         permission: admin
+      - name: community-codeowners
+        id: 10339798
+        permission: maintain
     branchesProtection:
       - pattern: main
         enforceAdmins: true
@@ -168,8 +171,10 @@ repositories:
           - DCO
         pushRestrictions:
           - Core Team
+          - community-codeowners
         dismissalRestrictions:
           - Core Team
+          - community-codeowners
     webCommitSignoffRequired: true
   - name: cosign
     owner: sigstore

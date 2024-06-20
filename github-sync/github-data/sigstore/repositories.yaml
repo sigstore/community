@@ -1399,7 +1399,7 @@ repositories:
     description: "TUF repository for Sigstore trust root"
     homepageUrl: ""
     defaultBranch: main
-    allowAutoMerge: true
+    allowAutoMerge: false
     allowMergeCommit: true
     allowRebaseMerge: false
     allowSquashMerge: false

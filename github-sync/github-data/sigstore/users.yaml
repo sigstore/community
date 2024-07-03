@@ -457,6 +457,8 @@ users:
         role: maintainer
       - name: sigstore-oncall
         role: member
+      - name: triage
+        role: member
   - username: sabre1041
     role: member
     teams:

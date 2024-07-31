@@ -33,9 +33,9 @@ Since its founding, Sigstore has grown into one of the top 25 largest and fastes
 
 Sigstore is best thought of as an “umbrella brand”, encompassing [several open source projects](https://github.com/sigstore) and public-good services which are provided to everyone at no cost. These instances aim to adhere to a 99.5% SLO and are supported by a multi-vendor on-call rotation to ensure neutrality and a tight feedback loop between project maintainers and service operators.
 
-## Current Status (as of September 2023)
+## Current Status (as of July 2024)
 
-At the time of writing, the public Rekor signature transparency log contains over 32 million entries representing signatures from more than 17,000 unique open source projects including Kubernetes, CPython, Istio, urllib3, and Tekton (more [adopters](https://github.com/sigstore/friends) can be seen at the Sigstore [project landscape](https://landscape.openssf.org/sigstore)). Sigstore’s certificate authority has issued more than 21 million short-lived code signing certificates based on the OpenID Connect identity binding approach.  
+At the time of writing, the public Rekor signature transparency log contains over 101 million entries representing signatures from more than 33,000 unique open source projects including Kubernetes, CPython, Istio, urllib3, and Tekton (more [adopters](https://github.com/sigstore/friends) can be seen at the Sigstore [project landscape](https://landscape.openssf.org/sigstore)). Sigstore’s certificate authority has issued more than 21 million short-lived code signing certificates based on the OpenID Connect identity binding approach.  
 
 Sigstore announced the [general availability](https://openssf.org/press-release/2022/10/25/sigstore-announces-general-availability-at-sigstorecon/) of its public-good services in October of 2022 which built upon the v1.0 releases of Cosign, Fulcio, and Rekor. The public services have consistently met their 99.5% availability SLO since that milestone.
 
@@ -48,8 +48,8 @@ Sigstore has several implementations of its core signing and verification workfl
 |      Javascript      | [sigstore/sigstore-js](https://github.com/sigstore/sigstore-js)     |         GA        |
 |         Java         | [sigstore/sigstore-java](https://github.com/sigstore/sigstore-java)   |        Beta       |
 |         Rust         | [sigstore/sigstore-rs](https://github.com/sigstore/sigstore-rs)     |        Beta       |
-|        Go            | [sigstore/sigstore-go](https://github.com/sigstore/sigstore-go)     | Under development |
-|         Ruby         | [sigstore/ruby-sigstore](https://github.com/sigstore/ruby-sigstore)   |     pre-Alpha     |
+|        Go            | [sigstore/sigstore-go](https://github.com/sigstore/sigstore-go)     | Beta |
+|         Ruby         | [sigstore/sigstore-ruby](https://github.com/sigstore/sigstore-ruby)   |     pre-Alpha     |
 
 ## Adoption Patterns for Sigstore
 

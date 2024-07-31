@@ -71,9 +71,23 @@ A package manager looking to adopt Sigstore as part of its artifact signing and 
 
 The npm registry, the world's largest open source package manager for the JavaScript ecosystem, [recently announced built-in support for Sigstore-signed SLSA build provenance](https://github.blog/2023-04-19-introducing-npm-package-provenance/) to users. This allows consumers of packages from npm to independently verify the link between a package fetched from the npm registry to the source code from which it was built. The build provenance attestation is cryptographically signed using Sigstore. Other package managers may find the [documentation of npm's Sigstore adoption and resulting design decisions](https://repos.openssf.org/build-provenance-for-all-package-registries) useful.
 
+Homebrew, the predominant package manager for MacOS, recently announced [built-in support build provenance and code signing based on Sigstore](https://blog.sigstore.dev/homebrew-build-provenance/). This means that each bottle (binary package) built by Homebrew will include a cryptographically verifiable statement that binds the bottle's content to the specific workflow and build-time metadata that produced it. Sigstore makes the signing and verification of Homebrew's ~7000 bottles (representing hundreds of millions of downloads per year) boring and easy.  
+
 The Python ecosystem (and its official third party package repository PyPI) are also [working on integrating Sigstore](https://yossarian.net/res/pub/pycon-2023.pdf) into their package publishing and verification workflow via PEPs 458, 480, 691 & 694 based on the recent sigstore-python GA release. 
 
-The Java ecosystem is also working to integrate Sigstore, through a Java-native SDK and integrations with [Maven Central](https://blog.sonatype.com/maven-central-and-sigstore). The Sigstore community is also working closely with the Eclipse Foundation who is exploring adding support for signing and verification of artifacts within Eclipse projects.  
+The Java ecosystem is also working to integrate Sigstore, through a Java-native SDK and integrations with [Maven Central](https://blog.sonatype.com/maven-central-and-sigstore). The Sigstore community is also working closely with the Eclipse Foundation who is exploring adding support for signing and verification of artifacts within Eclipse projects.
+
+The table below summarizes the state of Sigstore adoption across various ecosystems:
+
+| Ecosystem            | State                                     |       Status         |
+|:--------------------:|:-----------------------------------------:|:--------------------:|
+|        npm           | signing + provenance (SLSA)               |         GA           |
+|        Maven         | signing only                              |  In Progress         |
+|      PyPI            | attestation storage & client verification |  In Progress         |
+|         RubyGems     | signing & verfication                     |  In Progress         |
+|  Spring + Gradle     | signing + provenance (SLSA)               |   Early WIP          |
+|        Homebrew      | signing + provenance (SLSA)               |   Beta               |
+|   GitHub Actions     | signing + provenance (SLSA)               |         GA           |
 
 Last but certainly not least, Sigstore has publicly hosted [documentation](https://docs.sigstore.dev) that includes an architectural overview and a community-authored [threat model](https://docs.sigstore.dev/threat-model/) and [claimant models](https://github.com/sigstore/community/tree/main/docs/claimantmodel) for the transparency logs it operates. There are also more detailed [architecture documents](https://docs.google.com/document/d/1-OccxmZwkZZItrfOnO3RP8gku6nRbtJpth1mSW3U1Cc/edit#heading=h.ksk0rwk2ti2e) being created to describe the principles behind our signature transparency log, certificate authority, and public-good instances.
 

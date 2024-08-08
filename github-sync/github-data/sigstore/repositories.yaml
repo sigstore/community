@@ -755,23 +755,16 @@ repositories:
     pages:
       branch: gh-pages
       path: /
-    collaborators:
-      - username: cpanato
-        permission: admin
-      - username: k4leung4
-        permission: maintain
-      - username: sabre1041
-        permission: admin
     teams:
       - name: Core Team
         id: 4563391
         permission: pull
       - name: helm
         id: 5291354
-        permission: push
+        permission: maintain
       - name: sigstore-oncall
         id: 6693572
-        permission: push
+        permission: maintain
     branchesProtection:
       - pattern: main
         enforceAdmins: true
@@ -809,7 +802,7 @@ repositories:
     teams:
       - name: helm
         id: 5291354
-        permission: admin
+        permission: maintain
       - name: helm-sigstore-codeowners
         id: 4807653
         permission: maintain
@@ -1169,25 +1162,11 @@ repositories:
     licenseTemplate: ""
     topics: []
     collaborators:
-      - username: bobcallaway
-        permission: admin
-      - username: cpanato
-        permission: admin
-      - username: haydentherapper
-        permission: maintain
-      - username: k4leung4
-        permission: push
-      - username: vaikas
-        permission: push
-      - username: hectorj2f
-        permission: maintain
       - username: cmurphy
         permission: triage
       - username: jku
         permission: triage
       - username: loosebazooka
-        permission: triage
-      - username: TomHennen
         permission: triage
       - username: javanlacerda
         permission: triage
@@ -1202,7 +1181,7 @@ repositories:
         permission: triage
       - name: sigstore-oncall
         id: 6693572
-        permission: push
+        permission: maintain
     branchesProtection:
       - pattern: main
         enforceAdmins: true
@@ -1436,7 +1415,7 @@ repositories:
         permission: triage
       - name: sigstore-oncall
         id: 6693572
-        permission: push
+        permission: maintain
     branchesProtection:
       - pattern: main
         enforceAdmins: true
@@ -1455,6 +1434,7 @@ repositories:
         pushRestrictions:
           - tuf-root-signing-codeowners
           - sigstore-bot
+          - sigstore-oncall
           - sigstore-review-bot
         dismissalRestrictions:
           - tuf-root-signing-codeowners
@@ -1552,7 +1532,7 @@ repositories:
         permission: triage
       - name: sigstore-oncall
         id: 6693572
-        permission: push
+        permission: maintain
     branchesProtection:
       - pattern: main
         enforceAdmins: true
@@ -1566,6 +1546,7 @@ repositories:
         pushRestrictions:
           - tuf-root-signing-staging-codeowners
           - sigstore-bot
+          - sigstore-oncall
         dismissalRestrictions:
           - tuf-root-signing-staging-codeowners
         pullRequestBypassers:
@@ -1649,18 +1630,13 @@ repositories:
     visibility: public
     licenseTemplate: ""
     topics: []
-    collaborators:
-      - username: cpanato
-        permission: admin
-      - username: priyawadhwa
-        permission: admin
     teams:
       - name: scaffolding-codeowners
         id: 5757921
-        permission: admin
+        permission: maintain
       - name: sigstore-oncall
         id: 6693572
-        permission: push
+        permission: maintain
     branchesProtection:
       - pattern: main
         enforceAdmins: true

@@ -70,6 +70,8 @@ users:
         role: maintainer
       - name: public-good-instance-team
         role: maintainer
+      - name: sigstore-oncall
+        role: member
       - name: tuf-root-signing-codeowners
         role: maintainer
       - name: timestamp-codeowners
@@ -463,7 +465,7 @@ users:
     role: member
     teams:
       - name: helm
-        role: maintainer
+        role: member
       - name: helm-sigstore-codeowners
         role: member
   - username: sallyom

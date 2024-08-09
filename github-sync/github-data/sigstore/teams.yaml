@@ -46,10 +46,10 @@ teams:
     description: ""
   - name: helm
     privacy: closed
-    description: Helm Maintenance
+    description: Team for Helm charts for Sigstore infrastructure
   - name: helm-sigstore-codeowners
     privacy: closed
-    description: ""
+    description: Team for helm-sigstore plugin
   - name: maven-plugin-codeowners
     privacy: closed
     description: ""

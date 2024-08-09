@@ -33,9 +33,9 @@ Since its founding, Sigstore has grown into one of the top 25 largest and fastes
 
 Sigstore is best thought of as an “umbrella brand”, encompassing [several open source projects](https://github.com/sigstore) and public-good services which are provided to everyone at no cost. These instances aim to adhere to a 99.5% SLO and are supported by a multi-vendor on-call rotation to ensure neutrality and a tight feedback loop between project maintainers and service operators.
 
-## Current Status (as of September 2023)
+## Current Status (as of July 2024)
 
-At the time of writing, the public Rekor signature transparency log contains over 32 million entries representing signatures from more than 17,000 unique open source projects including Kubernetes, CPython, Istio, urllib3, and Tekton (more [adopters](https://github.com/sigstore/friends) can be seen at the Sigstore [project landscape](https://landscape.openssf.org/sigstore)). Sigstore’s certificate authority has issued more than 21 million short-lived code signing certificates based on the OpenID Connect identity binding approach.  
+At the time of writing, the public Rekor signature transparency log contains over 101 million entries representing signatures from more than 33,000 unique open source projects including Kubernetes, CPython, Istio, urllib3, and Tekton (more [adopters](https://github.com/sigstore/friends) can be seen at the Sigstore [project landscape](https://landscape.openssf.org/sigstore)). Sigstore’s certificate authority has issued more than 21 million short-lived code signing certificates based on the OpenID Connect identity binding approach.  
 
 Sigstore announced the [general availability](https://openssf.org/press-release/2022/10/25/sigstore-announces-general-availability-at-sigstorecon/) of its public-good services in October of 2022 which built upon the v1.0 releases of Cosign, Fulcio, and Rekor. The public services have consistently met their 99.5% availability SLO since that milestone.
 
@@ -48,8 +48,8 @@ Sigstore has several implementations of its core signing and verification workfl
 |      Javascript      | [sigstore/sigstore-js](https://github.com/sigstore/sigstore-js)     |         GA        |
 |         Java         | [sigstore/sigstore-java](https://github.com/sigstore/sigstore-java)   |        Beta       |
 |         Rust         | [sigstore/sigstore-rs](https://github.com/sigstore/sigstore-rs)     |        Beta       |
-|        Go            | [sigstore/sigstore-go](https://github.com/sigstore/sigstore-go)     | Under development |
-|         Ruby         | [sigstore/ruby-sigstore](https://github.com/sigstore/ruby-sigstore)   |     pre-Alpha     |
+|        Go            | [sigstore/sigstore-go](https://github.com/sigstore/sigstore-go)     | Beta |
+|         Ruby         | [sigstore/sigstore-ruby](https://github.com/sigstore/sigstore-ruby)   |     Alpha     |
 
 ## Adoption Patterns for Sigstore
 
@@ -71,9 +71,25 @@ A package manager looking to adopt Sigstore as part of its artifact signing and 
 
 The npm registry, the world's largest open source package manager for the JavaScript ecosystem, [recently announced built-in support for Sigstore-signed SLSA build provenance](https://github.blog/2023-04-19-introducing-npm-package-provenance/) to users. This allows consumers of packages from npm to independently verify the link between a package fetched from the npm registry to the source code from which it was built. The build provenance attestation is cryptographically signed using Sigstore. Other package managers may find the [documentation of npm's Sigstore adoption and resulting design decisions](https://repos.openssf.org/build-provenance-for-all-package-registries) useful.
 
-The Python ecosystem (and its official third party package repository PyPI) are also [working on integrating Sigstore](https://yossarian.net/res/pub/pycon-2023.pdf) into their package publishing and verification workflow via PEPs 458, 480, 691 & 694 based on the recent sigstore-python GA release. 
+[GitHub Artifact Attestations](https://docs.github.com/en/actions/security-for-github-actions/using-artifact-attestations/using-artifact-attestations-to-establish-provenance-for-builds) is powered by Sigstore and provides a way to securely verify and authenticate the integrity and origin of artifacts produced by GitHub Actions workflows. Artifact attestations enable developers to create unforgeable provenance and integrity guarantees for software they build, playing a crucial role in driving a cultural shift towards knowing exactly where software components come from. 
 
-The Java ecosystem is also working to integrate Sigstore, through a Java-native SDK and integrations with [Maven Central](https://blog.sonatype.com/maven-central-and-sigstore). The Sigstore community is also working closely with the Eclipse Foundation who is exploring adding support for signing and verification of artifacts within Eclipse projects.  
+Homebrew, the predominant package manager for MacOS, recently announced [built-in support build provenance and code signing based on Sigstore](https://blog.sigstore.dev/homebrew-build-provenance/). By leveraging GitHub artifact attestations for build provenance, Homebrew ensures that each bottle (binary package) includes a cryptographically verifiable statement that binds the bottle's content to the specific workflow and build-time metadata that produced it. Sigstore makes the signing and verification of Homebrew's ~7000 bottles (representing hundreds of millions of downloads per year) boring and easy.  
+
+The Python ecosystem (and its official third party package repository PyPI) are also [working on integrating Sigstore](https://yossarian.net/res/pub/pycon-2023.pdf) into their package publishing and verification workflow via PEPs 458, 480, 691 & 694 based on the recent sigstore-python GA release. Additionally, ongoing work on [PEP 740](https://peps.python.org/pep-0740/) aims to pave the way for PyPI's adoption of digitally signed attestations and metadata, enabling downstream users to verify that a package genuinely originates from its claimed source repository.
+
+The Java ecosystem is also working to integrate Sigstore, through a Java-native SDK and integrations with [Maven Central](https://blog.sonatype.com/maven-central-and-sigstore). The Sigstore community is also working closely with the Eclipse Foundation who is exploring adding support for signing and verification of artifacts within Eclipse projects.
+
+The table below summarizes the state of Sigstore adoption across various ecosystems:
+
+| Ecosystem            | State                                     |       Status         |
+|:--------------------:|:-----------------------------------------:|:--------------------:|
+|        npm           | signing + provenance (SLSA)               |         GA           |
+|        Maven         | signing only                              |  In Progress         |
+|      PyPI            | attestation storage & client verification |  In Progress         |
+|         RubyGems     | signing & verfication                     |  In Progress         |
+|  Spring + Gradle     | signing + provenance (SLSA)               |   Early WIP          |
+|        Homebrew      | signing + provenance (SLSA)               |   Beta               |
+|   GitHub Actions     | signing + provenance (SLSA)               |         GA           |
 
 Last but certainly not least, Sigstore has publicly hosted [documentation](https://docs.sigstore.dev) that includes an architectural overview and a community-authored [threat model](https://docs.sigstore.dev/threat-model/) and [claimant models](https://github.com/sigstore/community/tree/main/docs/claimantmodel) for the transparency logs it operates. There are also more detailed [architecture documents](https://docs.google.com/document/d/1-OccxmZwkZZItrfOnO3RP8gku6nRbtJpth1mSW3U1Cc/edit#heading=h.ksk0rwk2ti2e) being created to describe the principles behind our signature transparency log, certificate authority, and public-good instances.
 

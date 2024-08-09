@@ -49,7 +49,7 @@ Sigstore has several implementations of its core signing and verification workfl
 |         Java         | [sigstore/sigstore-java](https://github.com/sigstore/sigstore-java)   |        Beta       |
 |         Rust         | [sigstore/sigstore-rs](https://github.com/sigstore/sigstore-rs)     |        Beta       |
 |        Go            | [sigstore/sigstore-go](https://github.com/sigstore/sigstore-go)     | Beta |
-|         Ruby         | [sigstore/sigstore-ruby](https://github.com/sigstore/sigstore-ruby)   |     pre-Alpha     |
+|         Ruby         | [sigstore/sigstore-ruby](https://github.com/sigstore/sigstore-ruby)   |     Alpha     |
 
 ## Adoption Patterns for Sigstore
 

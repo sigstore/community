@@ -1429,8 +1429,6 @@ repositories:
         statusChecks:
           - DCO
           - yamllint
-          - test
-          - lint
         pushRestrictions:
           - tuf-root-signing-codeowners
           - sigstore-bot

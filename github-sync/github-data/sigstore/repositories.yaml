@@ -963,8 +963,7 @@ repositories:
         id: 10329477
         permission: push
     pages:
-      branch: gh-pages
-      path: /
+      buildType: workflow
     branchesProtection:
       - pattern: main
         enforceAdmins: true

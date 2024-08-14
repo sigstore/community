@@ -974,7 +974,12 @@ repositories:
         restrictDismissals: true
         requireLastPushApproval: true
         statusChecks:
-          - DCO # TODO: probably need to add more to match with all the other checks we enforce
+          - DCO
+          - Lint / Lint whitespace (pull_request)
+          - Lint / Python lint (pull_request)
+          - Lint / Type Check (pull_request)
+          - Run unit tests / Signing with Python 3.11 on Linux (pull_request)
+          - Run unit tests / Signing with Python 3.12 on Linux (pull_request)
         pushRestrictions:
           - model-transparency-codeowners
         dismissalRestrictions:

@@ -975,11 +975,11 @@ repositories:
         requireLastPushApproval: true
         statusChecks:
           - DCO
-          - Lint / Lint whitespace (pull_request)
-          - Lint / Python lint (pull_request)
-          - Lint / Type Check (pull_request)
-          - Run unit tests / Signing with Python 3.11 on Linux (pull_request)
-          - Run unit tests / Signing with Python 3.12 on Linux (pull_request)
+          - Lint whitespace
+          - Python lint
+          - Type Check
+          - Signing with Python 3.11 on Linux
+          - Signing with Python 3.12 on Linux
         pushRestrictions:
           - model-transparency-codeowners
         dismissalRestrictions:

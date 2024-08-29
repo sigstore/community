@@ -1723,7 +1723,7 @@ repositories:
     webCommitSignoffRequired: true
   - name: sigstore-blog
     owner: sigstore
-    description: Codebase for sigstore.dev
+    description: Codebase for blog.sigstore.dev
     homepageUrl: https://blog.sigstore.dev
     defaultBranch: main
     allowAutoMerge: true
@@ -1761,9 +1761,9 @@ repositories:
         permission: triage
     branchesProtection:
       - pattern: main
-        dismissStaleReviews: true
+        dismissStaleReviews: false
         requiredApprovingReviewCount: 3
-        requireConversationResolution: true
+        requireConversationResolution: false
         statusChecks:
           - DCO
     webCommitSignoffRequired: true

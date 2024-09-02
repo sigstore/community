@@ -1433,9 +1433,6 @@ repositories:
         requiredApprovingReviewCount: 1
         requireLastPushApproval: true
         restrictDismissals: true
-        statusChecks:
-          - DCO
-          - yamllint
         pushRestrictions:
           - tuf-root-signing-codeowners
           - sigstore-bot

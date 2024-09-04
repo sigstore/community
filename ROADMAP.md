@@ -84,7 +84,7 @@ The table below summarizes the state of Sigstore adoption across various ecosyst
 | Ecosystem            | State                                     |       Status         |
 |:--------------------:|:-----------------------------------------:|:--------------------:|
 |        npm           | signing + provenance (SLSA)               |         GA           |
-|        Maven         | signing only                              |  In Progress         |
+|        Maven         | signing only                              |         GA           |
 |      PyPI            | attestation storage & client verification |  In Progress         |
 |         RubyGems     | signing & verfication                     |  In Progress         |
 |  Spring + Gradle     | signing + provenance (SLSA)               |   Early WIP          |
@@ -215,14 +215,18 @@ Inclusive of the projects, public-good services, and standardized interfaces, Si
 
 ## Client SDKs
 
-### Short Term (< 6 mo)
+### Completed in 2024
+
+* Releases
+  * [sigstore-java v1 release](https://blog.sigstore.dev/announcing-sigstore-java-1-0/) of signing and verifying API, along with Maven and Gradle plugins
+  * [sigstore-go beta release](https://blog.sigstore.dev/sigstore-go-signing-beta/) of signing and verifying API
+  * [sigstore-python v3 release](https://github.com/sigstore/sigstore-python/releases/tag/v3.0.0) supporting attestations and trusted roots
+  * [cosign v2.4.0 release](https://github.com/sigstore/cosign/releases/tag/v2.4.0) supporting protocol buffer bundles and conformance testing
+
+### Remaining in 2024
 
 * Releases:
-    * sigstore-java v1 release
-    * sigstore-go beta release
     * sigstore-rust v1 release
-    * sigstore-python v2 release
-* FFI Design
 * Support for bundle format across all Sigstore clients
 * Simplifying verification policy
     * Improve Cosign UX for specifying OIDC identities
@@ -231,10 +235,8 @@ Inclusive of the projects, public-good services, and standardized interfaces, Si
 * Client maturity criteria
 * All clients are integrated with the conformance test suite. All tests may not succeed, but tests are run periodically
 
-### Medium Term (6-12 mo)
+### First half of 2025
 
-* FFI Implementation
-* Port at least one language to make use of FFI implementation
 * Releases:
     * sigstore-go v1 release
     * Gitsign v1 release
@@ -250,7 +252,7 @@ Inclusive of the projects, public-good services, and standardized interfaces, Si
 * Reduce size of Cosign binary, fewer dependencies
 * Privacy-preserving telemetry (https://divviup.org/)
 
-### Long Term (12+ mo)
+### Second half of 2025 and beyond
 
 * Plumbing and porcelain model for Cosign, to improve Cosign's user experience
 * Policy: sophisticated verification policies, or deeper integration with a policy evaluation service

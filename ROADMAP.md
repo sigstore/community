@@ -223,7 +223,7 @@ Inclusive of the projects, public-good services, and standardized interfaces, Si
   * [sigstore-python v3 release](https://github.com/sigstore/sigstore-python/releases/tag/v3.0.0) supporting attestations and trusted roots
   * [cosign v2.4.0 release](https://github.com/sigstore/cosign/releases/tag/v2.4.0) supporting protocol buffer bundles and conformance testing
 
-### Remaining in 2024
+### Short Term
 
 * Releases:
     * sigstore-rust v1 release
@@ -235,7 +235,7 @@ Inclusive of the projects, public-good services, and standardized interfaces, Si
 * Client maturity criteria
 * All clients are integrated with the conformance test suite. All tests may not succeed, but tests are run periodically
 
-### First half of 2025
+### Medium Term
 
 * Releases:
     * sigstore-go v1 release
@@ -252,7 +252,7 @@ Inclusive of the projects, public-good services, and standardized interfaces, Si
 * Reduce size of Cosign binary, fewer dependencies
 * Privacy-preserving telemetry (https://divviup.org/)
 
-### Second half of 2025 and beyond
+### Long Term
 
 * Plumbing and porcelain model for Cosign, to improve Cosign's user experience
 * Policy: sophisticated verification policies, or deeper integration with a policy evaluation service

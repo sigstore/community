@@ -7,8 +7,6 @@ users:
   - username: SantiagoTorres
     role: admin
     teams:
-      - name: rekor-monitor-codeowners
-        role: member
       - name: sigstore-keyholders
         role: member
       - name: Core Team
@@ -61,8 +59,6 @@ users:
       - name: protobuf-specs-codeowners
         role: member
       - name: rekor-codeowners
-        role: maintainer
-      - name: rekor-monitor-codeowners
         role: maintainer
       - name: scaffolding-codeowners
         role: maintainer
@@ -323,6 +319,9 @@ users:
     teams:
       - name: model-transparency-codeowners
         role: member
+  - username: linus-sun
+    role: member
+    teams: []
   - username: lkatalin
     role: member
     teams:
@@ -363,8 +362,6 @@ users:
       - name: policy-controller-codeowners
         role: maintainer
       - name: rekor-codeowners
-        role: maintainer
-      - name: rekor-monitor-codeowners
         role: maintainer
       - name: security-response-team
         role: maintainer

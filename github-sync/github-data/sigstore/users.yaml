@@ -100,6 +100,8 @@ users:
         role: maintainer
       - name: sigstore-release-team
         role: maintainer
+      - name: gitsign-codeowners
+        role: member
   - username: cstamas
     role: member
     teams:
@@ -536,4 +538,9 @@ users:
     role: member
     teams:
       - name: codeowners-k8s-manifest-sigstore
+        role: member
+  - username: adityasaky
+    role: member
+    teams:
+      - name: gitsign-codeowners
         role: member

@@ -1330,6 +1330,7 @@ repositories:
           - lint
           - license boilerplate check
           - Run unit tests
+          - Run end-to-end tests
           - dependency-review
           - Analyze (go)
         pushRestrictions:

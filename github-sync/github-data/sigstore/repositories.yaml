@@ -1416,8 +1416,6 @@ repositories:
     collaborators:
       - username: sigstore-bot
         permission: push
-      - username: sigstore-review-bot
-        permission: push
     teams:
       - name: sigstore-keyholders
         id: 4899309
@@ -1445,7 +1443,6 @@ repositories:
           - tuf-root-signing-codeowners
           - sigstore-bot
           - sigstore-oncall
-          - sigstore-review-bot
         dismissalRestrictions:
           - tuf-root-signing-codeowners
         pullRequestBypassers:
@@ -1462,7 +1459,6 @@ repositories:
         pushRestrictions:
           - tuf-root-signing-codeowners
           - sigstore-bot
-          - sigstore-review-bot
         dismissalRestrictions:
           - tuf-root-signing-codeowners
         pullRequestBypassers:

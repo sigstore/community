@@ -2,6 +2,3 @@ users:
   - username: sigstore-bot
     role: member
     teams: []
-  - username: sigstore-review-bot
-    role: member
-    teams: []

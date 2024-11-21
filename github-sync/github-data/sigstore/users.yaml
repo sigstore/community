@@ -544,8 +544,3 @@ users:
     teams:
       - name: gitsign-codeowners
         role: member
-  - username: vagarwal
-    role: member
-    teams:
-      - name: triage
-        role: member

@@ -707,13 +707,13 @@ repositories:
     collaborators:
       - username: di
         permission: admin
-      - username: tetsuo-cpp
-        permission: admin
       - username: woodruffw
         permission: admin
-      - username: tnytown
-        permission: triage
       - username: jku
+        permission: maintain
+      - username: DarkaMaul
+        permission: maintain
+      - username: facutuesca
         permission: maintain
     teams: []
     branchesProtection:
@@ -2225,14 +2225,14 @@ repositories:
         permission: admin
       - username: lukehinds
         permission: admin
-      - username: tetsuo-cpp
-        permission: maintain
       - username: woodruffw
         permission: maintain
       - username: jku
         permission: maintain
-      - username: tnytown
-        permission: triage
+      - username: DarkaMaul
+        permission: maintain
+      - username: facutuesca
+        permission: maintain
     teams:
       - name: Core Team
         id: 4563391

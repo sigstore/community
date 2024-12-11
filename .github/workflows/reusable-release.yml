@@ -40,6 +40,7 @@ jobs:
     env:
       PROJECT_ID: 'projectsigstore'
       RELEASE_TAG: ${{ inputs.release_tag }}
+      REPO: ${{ inputs.repo }}
     steps:
       - name: Check actor access
         if: ${{ !contains( fromJson('["bobcallaway","cpanato","lukehinds","priyawadhwa","haydentherapper"]'), github.actor ) }}
@@ -49,6 +50,7 @@ jobs:
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           path: ./src/github.com/sigstore/${{ inputs.repo }}
+          persist-credentials: false
 
       - name: Set release tag if not specified
         if: ${{ inputs.release_tag == '' }}
@@ -72,4 +74,4 @@ jobs:
 
       - name: Start cloudbuild job
         working-directory: ./src/github.com/sigstore/${{ inputs.repo }}
-        run: gcloud builds submit --no-source --async --config release/cloudbuild.yaml --substitutions _GIT_TAG=${{ env.RELEASE_TAG }},_TOOL_ORG=sigstore,_TOOL_REPO=${{ inputs.repo }},_STORAGE_LOCATION=${{ inputs.repo }}-releases,_KEY_RING=release-cosign,_KEY_NAME=cosign,_GITHUB_USER=sigstore-bot --project=${{ env.PROJECT_ID }}
+        run: gcloud builds submit --no-source --async --config release/cloudbuild.yaml --substitutions _GIT_TAG=${RELEASE_TAG},_TOOL_ORG=sigstore,_TOOL_REPO=${REPO},_STORAGE_LOCATION=${REPO}-releases,_KEY_RING=release-cosign,_KEY_NAME=cosign,_GITHUB_USER=sigstore-bot --project=${PROJECT_ID}

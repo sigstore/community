@@ -1045,9 +1045,9 @@ repositories:
           - license boilerplate check
           - lint
           - verify
-          - e2e tests (v1.27.x)
-          - e2e tests (v1.28.x)
           - e2e tests (v1.29.x)
+          - e2e tests (v1.30.x)
+          - e2e tests (v1.31.x)
           - ClusterImagePolicy e2e tests (v1.27.x, cluster_image_policy)
           - ClusterImagePolicy e2e tests (v1.27.x, cluster_with_scalable)
           - ClusterImagePolicy e2e tests (v1.27.x, cluster_image_policy_with_attestations)

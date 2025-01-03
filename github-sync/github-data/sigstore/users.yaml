@@ -164,6 +164,8 @@ users:
   - username: ejahnGithub
     role: member
     teams:
+      - name: codeowners-rekor-search-ui
+        role: maintainer
       - name: codeowners-sigstore-js
         role: maintainer
   - username: erikaheidi

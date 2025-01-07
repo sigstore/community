@@ -84,7 +84,7 @@ users:
     role: member
     teams:
       - name: policy-controller-codeowners
-        role: maintainer
+        role: member
       - name: security-response-team
         role: member
       - name: sigstore-oncall
@@ -395,7 +395,7 @@ users:
     role: member
     teams:
       - name: policy-controller-codeowners
-        role: maintainer
+        role: member
       - name: sigstore-oncall
         role: member
       - name: timestamp-codeowners

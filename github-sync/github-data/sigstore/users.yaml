@@ -323,9 +323,6 @@ users:
     teams:
       - name: model-transparency-codeowners
         role: member
-  - username: linus-sun
-    role: member
-    teams: []
   - username: lkatalin
     role: member
     teams:
@@ -419,6 +416,8 @@ users:
       - name: model-transparency-codeowners
         role: member
       - name: model-transparency
+        role: member
+      - name: rekor-monitor-codeowners
         role: member
   - username: mnm678
     role: member

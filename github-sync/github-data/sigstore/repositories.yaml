@@ -1320,11 +1320,6 @@ repositories:
     visibility: public
     licenseTemplate: ""
     topics: []
-    collaborators:
-      - username: linus-sun
-        permission: triage
-      - username: mihaimaruseac
-        permission: push
     teams:
       - name: rekor-monitor-codeowners
         id: 4722221

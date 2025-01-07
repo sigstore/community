@@ -83,6 +83,8 @@ users:
   - username: codysoyland
     role: member
     teams:
+      - name: policy-controller-codeowners
+        role: maintainer
       - name: security-response-team
         role: member
       - name: sigstore-oncall
@@ -392,6 +394,8 @@ users:
   - username: malancas
     role: member
     teams:
+      - name: policy-controller-codeowners
+        role: maintainer
       - name: sigstore-oncall
         role: member
       - name: timestamp-codeowners

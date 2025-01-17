@@ -1,0 +1,70 @@
+name: Open workflow issue
+description: Open a github issue for a workflow failure
+# An issue is filed unless one for the same workflow is open already.
+# The issues are identitied by title which is built using the workflow
+# name.
+#
+# Required permissions:
+# * issues: write
+# * actions: read
+
+inputs:
+  comment_for_each_failure:
+    description: 'Should a comment be added to existing issue for every new failure'
+    required: false
+    default: false
+
+runs:
+  using: "composite"
+  steps:
+    - name: Create issue
+      uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+      env:
+        COMMENT_FOR_EACH_FAILURE: ${{ inputs.comment_for_each_failure }}
+      with:
+        script: |
+          var path = require('path');
+
+          const reponame = context.repo.owner + "/" + context.repo.repo
+          const title = `[bug]: Workflow failure '${context.workflow}'`
+          const issues = await github.rest.search.issuesAndPullRequests({
+            q:  `${title}+in:title+label:bug+state:open+type:issue+repo:${reponame}`,
+          })
+          comment_for_each_failure = process.env.COMMENT_FOR_EACH_FAILURE == "true"
+
+          const run = await github.rest.actions.getWorkflowRun( {
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            run_id: context.runId,
+          })
+          const workflow_file = path.basename(run.data.path)
+
+          body = `### Workflow run failed for '${context.workflow}'.\n` +
+                 `Run: ${run.data.html_url}\n` +
+                 `Workflow: ${run.data.repository.html_url}/blob/${context.ref}/${run.data.path}\n` +
+                 `Workflow runs: ${run.data.repository.html_url}/actions/workflows/${workflow_file}\n` +
+                 `Trigger: ${context.eventName} on ${context.ref}\n` +
+                 `Date: ${run.data.run_started_at}`
+
+          if (issues.data.total_count == 0) {
+            console.log("Filing new issue for failing workflow...")
+            await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: title,
+                labels: ["bug"],
+                body: body,
+              })
+          } else if (comment_for_each_failure) {
+            issue = issues.data.items[0].number
+            console.log(`issue ${issue} found, adding a comment`)
+            await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issue,
+                body: body,
+              })
+          } else {
+            issue = issues.data.items[0].number
+            console.log(`issue ${issue} found, not adding a comment`)
+          }

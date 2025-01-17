@@ -13,10 +13,6 @@ inputs:
     description: 'Should a comment be added to existing issue for every new failure'
     required: false
     default: false
-  fyi:
-    description: 'Text to add to the end of every comment; can be used to notify others'
-    required: false
-    default: ''
 
 runs:
   using: "composite"
@@ -25,7 +21,6 @@ runs:
       uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
       env:
         COMMENT_FOR_EACH_FAILURE: ${{ inputs.comment_for_each_failure }}
-        FYI_STRING: ${{ inputs.fyi }}
       with:
         script: |
           var path = require('path');
@@ -49,8 +44,7 @@ runs:
                  `Workflow: ${run.data.repository.html_url}/blob/${context.ref}/${run.data.path}\n` +
                  `Workflow runs: ${run.data.repository.html_url}/actions/workflows/${workflow_file}\n` +
                  `Trigger: ${context.eventName} on ${context.ref}\n` +
-                 `Date: ${run.data.run_started_at}` +
-                 process.env.FYI_STRING != `\n\nFYI: ` + process.env.FYI_STRING : ""
+                 `Date: ${run.data.run_started_at}`
 
           if (issues.data.total_count == 0) {
             console.log("Filing new issue for failing workflow...")

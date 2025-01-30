@@ -104,9 +104,6 @@ users:
     role: member
   - username: developer-guy
     role: member
-    teams:
-      - name: cosign-codeowners
-        role: member
   - username: di
     role: member
     teams:

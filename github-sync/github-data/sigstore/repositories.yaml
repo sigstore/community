@@ -295,15 +295,7 @@ repositories:
       - sigstore
       - rekor
       - fulcio
-    collaborators:
-      - username: Dentrax
-        permission: maintain
-      - username: developer-guy
-        permission: maintain
-      - username: erkanzileli
-        permission: push
-      - username: sozercan
-        permission: push
+    collaborators: []
     teams:
       - name: cosign-codeowners
         id: 4722092
@@ -417,10 +409,6 @@ repositories:
     collaborators:
       - username: ltagliaferri
         permission: admin
-      - username: smythp
-        permission: maintain
-      - username: jonvnadelberg
-        permission: triage
     teams:
       - name: triage
         id: 5643322
@@ -651,8 +639,6 @@ repositories:
       - sigstore
     collaborators:
       - username: imjasonh
-        permission: maintain
-      - username: jyotsna-penumaka
         permission: maintain
       - username: lkatalin
         permission: maintain
@@ -928,9 +914,7 @@ repositories:
     visibility: public
     licenseTemplate: ""
     topics: []
-    collaborators:
-      - username: AndreyKozlov1984
-        permission: maintain
+    collaborators: []
     webCommitSignoffRequired: true
   - name: model-transparency
     owner: sigstore
@@ -1768,8 +1752,6 @@ repositories:
       - conformance
       - tests
     collaborators:
-      - username: asraa
-        permission: push
       - username: bobcallaway
         permission: admin
       - username: haydentherapper
@@ -2066,9 +2048,7 @@ repositories:
     visibility: public
     licenseTemplate: ""
     topics: []
-    collaborators:
-      - username: jvanzyl
-        permission: admin
+    collaborators: []
     template:
       owner: sigstore
       repository: sigstore-project-template
@@ -2484,9 +2464,7 @@ repositories:
     visibility: public
     licenseTemplate: ""
     topics: []
-    collaborators:
-      - username: devmoran
-        permission: push
+    collaborators: []
     teams:
       - name: codeowners-sigstore-website
         id: 4932390

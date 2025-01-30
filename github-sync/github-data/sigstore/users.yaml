@@ -1,9 +1,6 @@
 users:
   - username: Dentrax
     role: member
-    teams:
-      - name: cosign-codeowners
-        role: member
   - username: SantiagoTorres
     role: admin
     teams:
@@ -23,9 +20,6 @@ users:
         role: member
   - username: asraa
     role: member
-    teams:
-      - name: sigstore-rs-codeowners
-        role: member
   - username: bdehamer
     role: member
     teams:
@@ -106,23 +100,10 @@ users:
         role: member
   - username: cstamas
     role: member
-    teams:
-      - name: codeowners-maven-sigstore
-        role: member
   - username: dekkagaijin
     role: member
-    teams:
-      - name: cosign-codeowners
-        role: member
-      - name: cosign-installer-codeowners
-        role: member
-      - name: sigstore-codeowners
-        role: member
   - username: developer-guy
     role: member
-    teams:
-      - name: cosign-codeowners
-        role: member
   - username: di
     role: member
     teams:
@@ -131,10 +112,6 @@ users:
   - username: dlorenc
     role: member
     teams:
-      - name: cosign-installer-codeowners
-        role: maintainer
-      - name: fulcio-codeowners
-        role: maintainer
       - name: helm
         role: maintainer
       - name: policy-controller-codeowners
@@ -297,9 +274,6 @@ users:
         role: maintainer
   - username: jyotsna-penumaka
     role: member
-    teams:
-      - name: sigstore-rs-codeowners
-        role: member
   - username: k4leung4
     role: member
     teams:
@@ -399,21 +373,10 @@ users:
         role: member
   - username: mattmoor
     role: member
-    teams:
-      - name: fulcio-codeowners
-        role: member
-      - name: cosign-codeowners
-        role: member
   - username: mdunbavan
     role: member
-    teams:
-      - name: codeowners-sigstore-website
-        role: member
   - username: michael-o
     role: member
-    teams:
-      - name: codeowners-maven-sigstore
-        role: member
   - username: mihaimaruseac
     role: member
     teams:
@@ -453,9 +416,6 @@ users:
         role: maintainer
   - username: puerco
     role: member
-    teams:
-      - name: triage
-        role: member
   - username: pwelch
     role: member
     teams:

@@ -38,6 +38,9 @@ teams:
   - name: cosign-installer-codeowners
     privacy: closed
     description: ""
+  - name: dep-maintainers
+    privacy: closed
+    description: Team for maintainers across repos who manage dependency updates
   - name: fulcio-codeowners
     privacy: closed
     description: ""

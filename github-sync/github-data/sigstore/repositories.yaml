@@ -1178,8 +1178,6 @@ repositories:
         permission: triage
       - username: loosebazooka
         permission: triage
-      - username: javanlacerda
-        permission: triage
       - username: sigstore-bot
         permission: triage
     teams:

@@ -234,8 +234,8 @@ repositories:
           - license boilerplate check
           - lint
           - validate-release-job
-          - attest / verify-attestation test (v1.27.x, remote)
-          - attest / verify-attestation test (v1.27.x, air-gap)
+          - attest / verify-attestation test (v1.30.x, remote)
+          - attest / verify-attestation test (v1.30.x, air-gap)
         pushRestrictions:
           - cosign-codeowners
       - pattern: release-1.13
@@ -264,7 +264,6 @@ repositories:
           - license boilerplate check
           - lint
           - validate-release-job
-          - attest / verify-attestation test (v1.24.x)
         pushRestrictions:
           - cosign-codeowners
     webCommitSignoffRequired: true

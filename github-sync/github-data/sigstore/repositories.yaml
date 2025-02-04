@@ -2535,6 +2535,9 @@ repositories:
       - name: timestamp-codeowners
         id: 6735686
         permission: maintain
+      - name: dep-maintainers
+        id: 12114078
+        permission: maintain
       - name: triage
         id: 5643322
         permission: triage
@@ -2557,6 +2560,10 @@ repositories:
           - Run unit tests
           - dependency-review
           - Analyze (go)
+        pushRestrictions:
+          - dep-maintainers
+          - timestamp-codeowners
         dismissalRestrictions:
+          - dep-maintainers
           - timestamp-codeowners
     webCommitSignoffRequired: true

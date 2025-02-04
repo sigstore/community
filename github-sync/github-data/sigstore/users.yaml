@@ -92,12 +92,14 @@ users:
         role: member
       - name: cosign-installer-codeowners
         role: maintainer
+      - name: dep-maintainers
+        role: member
+      - name: gitsign-codeowners
+        role: member
       - name: helm
         role: maintainer
       - name: sigstore-release-team
         role: maintainer
-      - name: gitsign-codeowners
-        role: member
   - username: cstamas
     role: member
   - username: dekkagaijin

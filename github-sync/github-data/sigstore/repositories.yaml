@@ -204,8 +204,8 @@ repositories:
       - name: cosign-codeowners
         id: 4722092
         permission: maintain
-      - name: sigstore-release-team
-        id: 4845328
+      - name: dep-maintainers
+        id: 12114078
         permission: maintain
       - name: triage
         id: 5643322
@@ -238,6 +238,10 @@ repositories:
           - attest / verify-attestation test (v1.30.x, air-gap)
         pushRestrictions:
           - cosign-codeowners
+          - dep-maintainers
+        dismissalRestrictions:
+          - cosign-codeowners
+          - dep-maintainers
       - pattern: release-1.13
         enforceAdmins: true
         allowsDeletions: false
@@ -266,6 +270,10 @@ repositories:
           - validate-release-job
         pushRestrictions:
           - cosign-codeowners
+          - dep-maintainers
+        dismissalRestrictions:
+          - cosign-codeowners
+          - dep-maintainers
     webCommitSignoffRequired: true
   - name: cosign-gatekeeper-provider
     owner: sigstore
@@ -511,9 +519,9 @@ repositories:
       - name: fulcio-codeowners
         id: 4721751
         permission: maintain
-      - name: sigstore-release-team
-        id: 4845328
-        permission: push
+      - name: dep-maintainers
+        id: 12114078
+        permission: maintain
       - name: triage
         id: 5643322
         permission: triage
@@ -544,8 +552,10 @@ repositories:
           - CodeQL
         pushRestrictions:
           - fulcio-codeowners
+          - dep-maintainers
         dismissalRestrictions:
           - fulcio-codeowners
+          - dep-maintainers
       - pattern: release-1.0
         enforceAdmins: true
         allowsDeletions: false
@@ -562,8 +572,10 @@ repositories:
           - Analyze (go)
         pushRestrictions:
           - fulcio-codeowners
+          - dep-maintainers
         dismissalRestrictions:
           - fulcio-codeowners
+          - dep-maintainers
     webCommitSignoffRequired: true
   - name: github-sync
     owner: sigstore
@@ -1234,9 +1246,9 @@ repositories:
       - name: rekor-codeowners
         id: 4721448
         permission: maintain
-      - name: sigstore-release-team
-        id: 4845328
-        permission: push
+      - name: dep-maintainers
+        id: 12114078
+        permission: maintain
       - name: triage
         id: 5643322
         permission: triage
@@ -1265,6 +1277,10 @@ repositories:
           - license boilerplate check
         pushRestrictions:
           - rekor-codeowners
+          - dep-maintainers
+        dismissalRestrictions:
+          - rekor-codeowners
+          - dep-maintainers
       - pattern: release-1.0
         enforceAdmins: false
         allowsDeletions: true
@@ -1282,6 +1298,10 @@ repositories:
           - CodeQL
         pushRestrictions:
           - rekor-codeowners
+          - dep-maintainers
+        dismissalRestrictions:
+          - rekor-codeowners
+          - dep-maintainers
     webCommitSignoffRequired: true
   - name: rekor-monitor
     owner: sigstore
@@ -1653,8 +1673,8 @@ repositories:
       - name: sigstore-codeowners
         id: 4722047
         permission: maintain
-      - name: sigstore-release-team
-        id: 4845328
+      - name: dep-maintainers
+        id: 12114078
         permission: maintain
       - name: triage
         id: 5643322
@@ -1678,8 +1698,10 @@ repositories:
           - lint checks
         pushRestrictions:
           - sigstore-codeowners
+          - dep-maintainers
         dismissalRestrictions:
           - sigstore-codeowners
+          - dep-maintainers
     webCommitSignoffRequired: true
   - name: sigstore-blog
     owner: sigstore
@@ -1862,7 +1884,7 @@ repositories:
         allowsForcePushes: false
         requiredLinearHistory: true
         requiredApprovingReviewCount: 1
-        requireCodeOwnerReviews: false
+        requireCodeOwnerReviews: true
         restrictDismissals: true
         requireBranchesUpToDate: false
         dismissStaleReviews: true

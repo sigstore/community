@@ -72,11 +72,15 @@ users:
   - username: cmurphy
     role: member
     teams:
+      - name: cosign-codeowners
+        role: member
       - name: triage
         role: member
   - username: codysoyland
     role: member
     teams:
+      - name: cosign-codeowners
+        role: member
       - name: policy-controller-codeowners
         role: member
       - name: security-response-team
@@ -457,6 +461,8 @@ users:
   - username: steiza
     role: member
     teams:
+      - name: cosign-codeowners
+        role: member
       - name: sigstore-go-codeowners
         role: member
   - username: tetsuo-cpp

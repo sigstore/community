@@ -731,8 +731,8 @@ repositories:
     description: Helm charts for sigstore project
     homepageUrl: ""
     defaultBranch: main
-    allowAutoMerge: false
-    allowMergeCommit: true
+    allowAutoMerge: true
+    allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true
     archived: false

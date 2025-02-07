@@ -19,7 +19,7 @@ updates:
   - package-ecosystem: "github-actions"
     directories:
       - "/"
-      - "/actions"
+      - "/actions/**"
     schedule:
       interval: "daily"
     groups:

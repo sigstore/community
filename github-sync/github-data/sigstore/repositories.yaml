@@ -1700,7 +1700,6 @@ repositories:
           - lint checks (./)
           - lint checks (pkg/signature/kms/aws)
           - lint checks (pkg/signature/kms/azure)
-          - lint checks (pkg/signature/kms/cliplugin)
           - lint checks (pkg/signature/kms/gcp)
           - lint checks (pkg/signature/kms/hashivault)
         pushRestrictions:

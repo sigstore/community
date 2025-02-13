@@ -55,12 +55,13 @@ Core projects enjoy consideration for targeted funding from OpenSSF, Sigstore, o
 
 ### Libraries / clients
 
+* [sigstore-conformance](https://github.com/sigstore/sigstore-conformance)
 * [sigstore-go](https://github.com/sigstore/sigstore-go)  
 * [sigstore-js](https://github.com/sigstore/sigstore-js)  
-* [sigstore-python](https://github.com/sigstore/sigstore-python)  
 * [sigstore-java](https://github.com/sigstore/sigstore-java)  
+* [sigstore-python](https://github.com/sigstore/sigstore-python)  
+* [sigstore-ruby](https://github.com/sigstore/sigstore-ruby)  
 * [cosign-installer](https://github.com/sigstore/cosign-installer)  
-* [sigstore-conformance](https://github.com/sigstore/sigstore-conformance)
 
 ## Community
 
@@ -72,7 +73,4 @@ Core projects enjoy consideration for targeted funding from OpenSSF, Sigstore, o
 * [cosign-gatekeeper-provider](https://github.com/sigstore/cosign-gatekeeper-provider)
 
 ### Libraries / clients
-
-* [sigstore-ruby](https://github.com/sigstore/sigstore-ruby)  
-* [sigstore-rs](https://github.com/sigstore/sigstore-rs)  
 * [model-transparency](https://github.com/sigstore/model-transparency)  

@@ -1,6 +1,6 @@
 # OWNERS (TSC Members)
 
-* Luke Hinds (**[@lukehinds](https://github.com/lukehinds)**), Red Hat
+* Luke Hinds (**[@lukehinds](https://github.com/lukehinds)**), Stacklok
 * Bob Callaway (**[@bobcallaway](https://github.com/bobcallaway)**), Google
 * Santiago Torres-Arias (**[@SantiagoTorres](https://github.com/SantiagoTorres)**), Purdue University
 * Trevor Rosen (**[@trevrosen](https://github.com/trevrosen)**), GitHub

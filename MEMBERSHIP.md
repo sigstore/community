@@ -6,7 +6,6 @@ Responsibilities for roles are scoped to projects, aka repositories, within the 
 
 | Role | Responsibilities | Requirements | Defined by |
 | -----| ---------------- | ------------ | -------|
-| Member | Active contributor in the community | Sponsored by 2 reviewers and multiple contributions to Sigstore projects | Sigstore GitHub org member|
 | Reviewer | Review pull requests, triage issues | History of review and authorship in a project | GitHub "Write" Team membership |
 | Codeowner | Approve and merge contributions, set project direction | Highly experienced subject matter expert, active reviewer and contributor to a project | GitHub "Maintain" Team membership |
 
@@ -24,36 +23,21 @@ roles, policies, procedures, conventions, and technical and/or writing ability.
 Role-specific expectations, responsibilities, and requirements are provided
 below.
 
-## Member
+### Community member requirements
 
-Members are continuously active contributors in the community. They can have
-issues and PRs assigned to them and participate on GitHub and Slack. Members are
-expected to remain active contributors to the community.
-
-**Defined by:** Member of the Sigstore GitHub organization
-
-### Requirements
+The requirements outlined below apply to Reviewers and Codeowners.
 
 - Enabled [two-factor authentication](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/about-two-factor-authentication) on their GitHub account
-- Have made multiple contributions to the project or community.  Contributions may include, but are not limited to:
-    - Authoring or reviewing PRs on GitHub. At least one PR must be **merged**.
+- Have made multiple contributions to the project or community.  Contributions should include:
+    - Authoring or reviewing PRs on GitHub. Multiple PRs must be **merged** to become a Reviewer or Codeowner
     - Filing or commenting on issues on GitHub
     - Contributing to a project, or community discussions (e.g. meetings, Slack, email discussion
       forums, Stack Overflow)
 - Subscribed to https://groups.google.com/g/sigstore-dev
-- Actively contributing to 1 or more projects.
-- Sponsored by 2 reviewers. **Note the following requirements for sponsors**:
-    - Sponsors must have close interactions with the prospective member - e.g. code/design/proposal review, coordinating
-      on issues, etc.
-    - Sponsors must be reviewers or codeowners in at least one GitHub team.
-    - Sponsors must be from multiple member companies to demonstrate community engagement.
-- **[Open an issue][membership request] against the sigstore/community repo**
-   - Ensure your sponsors are @mentioned on the issue
-   - Complete every item on the checklist ([membership template](https://github.com/sigstore/community/issues/new?assignees=&labels=area%2Fgithub-membership&projects=&template=membership.yml&title=REQUEST%3A+New+membership+for+%3Cyour-GH-handle%3E))
-   - Make sure that the list of contributions included is representative of your work on the project.
-- Have your sponsoring reviewers reply confirmation of sponsorship: `+1`
 
-### Responsibilities and privileges
+### Community member responsibilities
+
+The responsibilities outlined below apply to Reviewers and Codeowners.
 
 - Responsive to issues and PRs assigned to them
 - Responsive to mentions of teams they are members of
@@ -61,11 +45,9 @@ expected to remain active contributors to the community.
   - Code is well tested
   - Tests consistently pass
   - Addresses bugs or issues discovered after code is accepted
-- They can be assigned to issues and PRs, and people can ask members for reviews with a `/cc @username`.
-- Tests can be run against their PRs automatically.
 
 **Note:** Members who frequently contribute code are expected to proactively
-perform code reviews and work towards becoming a primary *reviewer* for the
+perform code reviews and work towards becoming a *Reviewer* for the
 project that they are active in.
 
 ## Reviewer

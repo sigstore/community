@@ -1191,6 +1191,8 @@ repositories:
         permission: triage
       - username: javanlacerda
         permission: triage
+      - username: ramonpetgrave64
+        permission: triage
       - username: sigstore-bot
         permission: triage
     teams:

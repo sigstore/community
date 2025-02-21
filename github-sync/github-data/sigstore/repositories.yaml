@@ -220,6 +220,7 @@ repositories:
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: false
         requireLastPushApproval: true
+        restrictDismissals: true
         statusChecks:
           - Check Whitespace
           - DCO
@@ -251,6 +252,7 @@ repositories:
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: false
         requireLastPushApproval: true
+        restrictDismissals: true
         statusChecks:
           - Check Whitespace
           - DCO
@@ -1266,6 +1268,7 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireLastPushApproval: true
+        restrictDismissals: true
         statusChecks:
           - build
           - DCO
@@ -1294,6 +1297,7 @@ repositories:
         requireSignedCommits: false
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
+        restrictDismissals: true
         statusChecks:
           - build
           - DCO
@@ -1459,6 +1463,7 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireLastPushApproval: true
+        restrictDismissals: true
         statusChecks: []
         pushRestrictions:
           - rekor-tiles-codeowners

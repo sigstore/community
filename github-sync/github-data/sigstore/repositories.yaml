@@ -1412,6 +1412,59 @@ repositories:
         dismissalRestrictions:
           - codeowners-rekor-search-ui
     webCommitSignoffRequired: true
+  - name: rekor-tiles
+    owner: sigstore
+    description: Signature Transparency Log designed for ease of use, low cost, and minimal maintenance
+    homepageUrl: https://sigstore.dev
+    defaultBranch: main
+    allowAutoMerge: true
+    allowMergeCommit: false
+    allowRebaseMerge: false
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDiscussions: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - security
+      - supply-chain
+      - provenance
+      - transparency-log
+    teams:
+      - name: rekor-tiles-codeowners
+        id: 12276034
+        permission: maintain
+      - name: rekor-tiles-reviewers
+        id: 12276036
+        permission: push
+      - name: triage
+        id: 5643322
+        permission: triage
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requireCodeOwnerReviews: false
+        requireConversationResolution: false
+        requireSignedCommits: false
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
+        statusChecks: []
+        pushRestrictions:
+          - rekor-tiles-codeowners
+        dismissalRestrictions:
+          - rekor-tiles-codeowners
+    webCommitSignoffRequired: true
   - name: root-signing
     owner: sigstore
     description: "TUF repository for Sigstore trust root"

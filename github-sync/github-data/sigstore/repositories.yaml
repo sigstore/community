@@ -398,8 +398,8 @@ repositories:
     description: Sigstore documentation
     homepageUrl: https://sigstore.dev
     defaultBranch: main
-    allowAutoMerge: false
-    allowMergeCommit: true
+    allowAutoMerge: true
+    allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true
     archived: false
@@ -1110,7 +1110,7 @@ repositories:
     description: Protocol Buffer specifications
     homepageUrl: ""
     defaultBranch: main
-    allowAutoMerge: false
+    allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true

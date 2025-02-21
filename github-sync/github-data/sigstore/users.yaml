@@ -74,6 +74,8 @@ users:
     teams:
       - name: cosign-codeowners
         role: member
+      - name: rekor-tiles-codeowners
+        role: member
       - name: triage
         role: member
   - username: codysoyland
@@ -203,6 +205,8 @@ users:
         role: member
       - name: rekor-monitor-codeowners
         role: member
+      - name: rekor-tiles-codeowners
+        role: member
       - name: sigstore-codeowners
         role: member
       - name: sigstore-go-codeowners
@@ -318,6 +322,8 @@ users:
       - name: codeowners-maven-sigstore
         role: member
       - name: rekor-monitor-codeowners
+        role: member
+      - name: rekor-tiles-codeowners
         role: member
       - name: sigstore-java-codeowners
         role: maintainer

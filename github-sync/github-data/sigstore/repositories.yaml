@@ -1464,7 +1464,12 @@ repositories:
         requiredApprovingReviewCount: 1
         requireLastPushApproval: true
         restrictDismissals: true
-        statusChecks: []
+        statusChecks:
+          - CodeQL
+          - CI Tests
+          - DCO
+          - License Check
+          - Lint
         pushRestrictions:
           - rekor-tiles-codeowners
         dismissalRestrictions:

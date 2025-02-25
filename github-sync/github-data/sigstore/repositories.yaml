@@ -1472,6 +1472,7 @@ repositories:
           - Build CLI
           - Build container
           - Run unit tests
+          - DCO
         pushRestrictions:
           - rekor-tiles-codeowners
         dismissalRestrictions:

@@ -1465,11 +1465,14 @@ repositories:
         requireLastPushApproval: true
         restrictDismissals: true
         statusChecks:
-          - CodeQL
-          - CI Tests
+          - Analyze (Go)
+          - license boilerplate check
+          - License and Vulnerability Scan
+          - lint
+          - Build CLI
+          - Build container
+          - Run unit tests
           - DCO
-          - License Check
-          - Lint
         pushRestrictions:
           - rekor-tiles-codeowners
         dismissalRestrictions:

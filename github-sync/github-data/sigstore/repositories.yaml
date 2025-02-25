@@ -1465,9 +1465,10 @@ repositories:
         requireLastPushApproval: true
         restrictDismissals: true
         statusChecks:
-          - Analyze (Go)
+          - Analyze (go)
+          - CodeQL
           - license boilerplate check
-          - License and Vulnerability Scan
+          - License and Vulnerability Scan / Scan dependencies for license compliance and vulnerabilities
           - lint
           - Build CLI
           - Build container

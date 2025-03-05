@@ -2588,6 +2588,53 @@ repositories:
         pushRestrictions:
           - codeowners-sigstore-website
     webCommitSignoffRequired: true
+  - name: terraform-modules
+    owner: sigstore
+    description: Terraform modules for Sigstore cloud infrastructure
+    homepageUrl: https://sigstore.dev
+    defaultBranch: main
+    allowAutoMerge: true
+    allowMergeCommit: false
+    allowRebaseMerge: false
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDiscussions: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    teams:
+      - name: sigstore-oncall
+        id: 6693572
+        permission: maintain
+      - name: triage
+        id: 5643322
+        permission: triage
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requireCodeOwnerReviews: false
+        requireConversationResolution: false
+        requireSignedCommits: false
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
+        restrictDismissals: true
+        statusChecks: []
+        pushRestrictions:
+          - sigstore-oncall
+        dismissalRestrictions:
+          - sigstore-oncall
+    webCommitSignoffRequired: true
   - name: timestamp-authority
     owner: sigstore
     description: RFC3161 Timestamp Authority

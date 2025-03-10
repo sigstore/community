@@ -1423,7 +1423,7 @@ repositories:
     defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false
-    allowRebaseMerge: false
+    allowRebaseMerge: true
     allowSquashMerge: true
     archived: false
     autoInit: false

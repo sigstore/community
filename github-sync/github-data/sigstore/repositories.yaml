@@ -2629,7 +2629,11 @@ repositories:
         requiredApprovingReviewCount: 1
         requireLastPushApproval: true
         restrictDismissals: true
-        statusChecks: []
+        statusChecks:
+          - DCO
+          - Terraform fmt
+          - Terraform tfsec
+          - Terraform validate
         pushRestrictions:
           - sigstore-oncall
         dismissalRestrictions:

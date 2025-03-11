@@ -934,7 +934,7 @@ repositories:
     description: Supply chain security for ML
     homepageUrl: ""
     defaultBranch: main
-    allowAutoMerge: false
+    allowAutoMerge: true
     allowMergeCommit: false
     allowRebaseMerge: true
     allowSquashMerge: true

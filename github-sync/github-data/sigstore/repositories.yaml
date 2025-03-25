@@ -1451,11 +1451,7 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
-    collaborators:
-      - username: jku
-        permission: triage
-      - username: ramonpetgrave64
-        permission: triage
+    collaborators: []
     branchesProtection:
       - pattern: main
         enforceAdmins: true

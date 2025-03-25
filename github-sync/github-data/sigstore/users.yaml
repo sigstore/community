@@ -267,6 +267,8 @@ users:
         role: member
       - name: tuf-root-signing-codeowners
         role: member
+      - name: rekor-tiles-codeowners
+        role: member
   - username: jleightcap
     role: member
     teams:
@@ -439,7 +441,9 @@ users:
         role: member
   - username: ramonpetgrave64
     role: member
-    teams: []
+    teams:
+      - name: rekor-tiles-codeowners
+        role: member
   - username: sabre1041
     role: member
     teams:

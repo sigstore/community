@@ -52,6 +52,7 @@ Core projects enjoy consideration for targeted funding from OpenSSF, Sigstore, o
 * [Rekor](https://github.com/sigstore/rekor)  
 * [Policy Controller](https://github.com/sigstore/policy-controller/)  
 * [Timestamp Authority](https://github.com/sigstore/timestamp-authority)
+* [rekor-search-ui](https://github.com/sigstore/rekor-search-ui)
 
 ### Libraries / clients
 

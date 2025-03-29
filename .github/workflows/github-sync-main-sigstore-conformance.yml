@@ -15,6 +15,8 @@ on:
       - 'github-sync/github-data/sigstore-conformance/*.yaml'
       - 'github-sync/Pulumi.github-sigstore-conformance.yaml'
 
+permissions: {}
+
 env:
  PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
  GITHUB_OWNER: sigstore-conformance
@@ -23,6 +25,8 @@ jobs:
   Update:
     name: sync-changes-sigstore-conformance
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
 
     steps:
     - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2

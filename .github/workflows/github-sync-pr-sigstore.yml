@@ -8,6 +8,8 @@ on:
       - 'github-sync/github-data/sigstore/*.yaml'
       - 'github-sync/Pulumi.github-prod.yaml'
 
+permissions: {}
+
 env:
  PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
  GITHUB_OWNER: sigstore

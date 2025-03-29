@@ -29,6 +29,7 @@ on:
         type: string
         description: 'The Sigstore repo to release.'
 
+permissions: {}
 
 jobs:
   cut-release:

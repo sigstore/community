@@ -2688,7 +2688,7 @@ repositories:
           - lint
           - license boilerplate check
           - Run unit tests
-          - dependency-review
+          - License and Vulnerability Scan / Scan dependencies for license compliance and vulnerabilities
           - Analyze (go)
         pushRestrictions:
           - dep-maintainers

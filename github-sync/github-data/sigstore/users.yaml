@@ -478,11 +478,6 @@ users:
         role: member
       - name: sigstore-go-codeowners
         role: member
-  - username: tetsuo-cpp
-    role: member
-    teams:
-      - name: sigstore-conformance-codeowners
-        role: member
   - username: TomHennen
     role: member
     teams: []
@@ -516,6 +511,8 @@ users:
       - name: protobuf-specs-codeowners
         role: member
       - name: sigstore-conformance-codeowners
+        role: member
+      - name: architecture-doc-team
         role: member
   - username: yrobla
     role: member

@@ -51,8 +51,6 @@ repositories:
     licenseTemplate: ""
     topics: []
     collaborators:
-      - username: tetsuo-cpp
-        permission: maintain
       - username: woodruffw
         permission: maintain
       - username: jku

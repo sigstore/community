@@ -1860,8 +1860,6 @@ repositories:
         permission: push
       - username: loosebazooka
         permission: push
-      - username: tetsuo-cpp
-        permission: admin
       - username: tnytown
         permission: triage
     teams:

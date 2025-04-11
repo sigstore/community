@@ -964,6 +964,8 @@ repositories:
         permission: push
     pages:
       buildType: workflow
+      branch: main
+      path: /
     branchesProtection:
       - pattern: main
         enforceAdmins: true

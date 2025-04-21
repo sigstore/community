@@ -1478,7 +1478,10 @@ repositories:
           - lint
           - Build CLI
           - Build container
+          - Run E2E tests
+          - Run freeze log tests
           - Run unit tests
+          - Check generated protobufs
           - DCO
         pushRestrictions:
           - rekor-tiles-codeowners

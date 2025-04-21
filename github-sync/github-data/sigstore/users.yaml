@@ -162,9 +162,7 @@ users:
         role: member
   - username: evankanderson
     role: member
-    teams:
-      - name: sigstore-oncall
-        role: member
+    teams: []
   - username: feelepxyz
     role: member
     teams:

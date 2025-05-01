@@ -18,6 +18,9 @@ users:
     teams:
       - name: sigstore-conformance-codeowners
         role: member
+  - username: aaronlew02
+    role: member
+    teams: []
   - username: asraa
     role: member
   - username: bdehamer

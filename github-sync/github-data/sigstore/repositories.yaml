@@ -1456,7 +1456,9 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
-    collaborators: []
+    collaborators:
+      - username: aaronlew02
+        permission: triage
     branchesProtection:
       - pattern: main
         enforceAdmins: true

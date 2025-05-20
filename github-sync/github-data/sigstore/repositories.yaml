@@ -1133,8 +1133,6 @@ repositories:
     collaborators:
       - username: haydentherapper
         permission: admin
-      - username: loosebazooka
-        permission: push
       - username: bdehamer
         permission: push
     teams:

@@ -403,6 +403,9 @@ users:
         role: member
       - name: rekor-monitor-codeowners
         role: member
+  - username: miyunari
+    role: member
+    teams: []
   - username: mnm678
     role: member
     teams:

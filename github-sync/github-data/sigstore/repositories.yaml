@@ -1394,8 +1394,7 @@ repositories:
         id: 5643322
         permission: triage
     pages:
-      branch: main
-      path: /
+      buildType: workflow
       cname: search.sigstore.dev
     branchesProtection:
       - pattern: main

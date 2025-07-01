@@ -1395,6 +1395,8 @@ repositories:
         permission: triage
     pages:
       buildType: workflow
+      branch: main
+      path: /
       cname: search.sigstore.dev
     branchesProtection:
       - pattern: main

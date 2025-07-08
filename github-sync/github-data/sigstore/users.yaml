@@ -445,11 +445,6 @@ users:
         role: member
       - name: triage
         role: member
-  - username: ramonpetgrave64
-    role: member
-    teams:
-      - name: rekor-tiles-codeowners
-        role: member
   - username: sabre1041
     role: member
     teams:

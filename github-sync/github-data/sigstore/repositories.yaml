@@ -1475,10 +1475,12 @@ repositories:
           - license boilerplate check
           - License and Vulnerability Scan / Scan dependencies for license compliance and vulnerabilities
           - lint
+          - shellcheck
           - Build CLI
           - Build container
           - Run E2E tests
           - Run freeze log tests
+          - Run sharding E2E tests
           - Run unit tests
           - Check generated protobufs
           - DCO

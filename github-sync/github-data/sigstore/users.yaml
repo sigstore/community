@@ -168,6 +168,11 @@ users:
   - username: evankanderson
     role: member
     teams: []
+  - username: facutuesca
+    role: member
+    teams:
+      - name: rekor-monitor-codeowners
+        role: member
   - username: feelepxyz
     role: member
     teams:
@@ -444,6 +449,11 @@ users:
       - name: sigstore-oncall
         role: member
       - name: triage
+        role: member
+  - username: ret2libc
+    role: member
+    teams:
+      - name: rekor-monitor-codeowners
         role: member
   - username: sabre1041
     role: member

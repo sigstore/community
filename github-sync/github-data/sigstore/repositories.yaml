@@ -1812,6 +1812,7 @@ repositories:
       owner: sigstore
       repository: sigstore-project-template
     pages:
+      buildType: workflow
       branch: main
       path: /
       cname: blog.sigstore.dev

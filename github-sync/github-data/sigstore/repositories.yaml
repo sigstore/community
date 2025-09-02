@@ -74,7 +74,7 @@ repositories:
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: false
         restrictDismissals: true
-        requireBranchesUpToDate: false
+        requireBranchesUpToDate: true
         dismissStaleReviews: true
         requireLastPushApproval: true
         pushRestrictions:

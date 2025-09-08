@@ -777,8 +777,8 @@ repositories:
         requireLastPushApproval: true
         statusChecks:
           - DCO
-          - Check Helm Docs / readme
-          - Test Charts / test
+          - readme
+          - test
     webCommitSignoffRequired: true
   - name: helm-sigstore
     owner: sigstore

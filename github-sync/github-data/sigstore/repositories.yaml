@@ -1811,6 +1811,10 @@ repositories:
     licenseTemplate: ""
     topics: []
     collaborators: []
+    teams:
+      - name: Core Team
+        id: 4563391
+        permission: admin
     branchesProtection:
       - pattern: main
         enforceAdmins: true

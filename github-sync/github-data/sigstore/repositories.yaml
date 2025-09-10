@@ -1790,6 +1790,42 @@ repositories:
           - sigstore-codeowners
           - dep-maintainers
     webCommitSignoffRequired: true
+  - name: sigstore-a2a
+    owner: sigstore
+    description: Sigstore A2A Agent Signing
+    homepageUrl: ""
+    defaultBranch: main
+    allowAutoMerge: false
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: false
+    hasWiki: false
+    vulnerabilityAlerts: false
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators: []
+    teams:
+      - name: Core Team
+        id: 4563391
+        permission: admin
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        dismissStaleReviews: true
+        requireLastPushApproval: true
+        requiredApprovingReviewCount: 1
+        statusChecks:
+          - DCO
+    webCommitSignoffRequired: true
   - name: sigstore-blog
     owner: sigstore
     description: Codebase for blog.sigstore.dev

@@ -243,6 +243,39 @@ repositories:
         dismissalRestrictions:
           - cosign-codeowners
           - dep-maintainers
+      - pattern: release-2.6
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        requireLastPushApproval: true
+        restrictDismissals: true
+        statusChecks:
+          - Check Whitespace
+          - DCO
+          - Do Not Submit
+          - Run PowerShell E2E tests
+          - Run e2e tests
+          - Run unit tests (macos-latest)
+          - Run unit tests (ubuntu-latest)
+          - Run unit tests (windows-latest)
+          - Verify Docgen
+          - build (macos-latest)
+          - build (ubuntu-latest)
+          - build (windows-latest)
+          - License and Vulnerability Scan / Scan dependencies for license compliance and vulnerabilities
+          - license boilerplate check
+          - lint
+          - validate-release-job
+        pushRestrictions:
+          - cosign-codeowners
+          - dep-maintainers
+        dismissalRestrictions:
+          - cosign-codeowners
+          - dep-maintainers
       - pattern: release-1.13
         enforceAdmins: true
         allowsDeletions: false

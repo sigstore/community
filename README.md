@@ -25,9 +25,8 @@ All recurring and one-off meetings will be shared here.
 
 ### Meetings
 
-We typically meet for a community wide meeting every [Tuesday @ 16:30 UTC
-time](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NGVydDFqNXVsa3ExY2ZraWR0aGFmdm4yY2JfMjAyMzA3MTFUMTYzMDAwWiBmcTRrZ29tMmNlNDNobmNuYmNmamEyY2syMEBn&tmsrc=fq4kgom2ce43hncnbcfja2ck20%40group.calendar.google.com&scp=ALL).
-This is available via the shared calendar above.
+We typically have a community-wide meeting on the third Tuesday of every month @ 16:30 UTC
+time. The details are available via the shared calendar above.
 
 Recordings for all of the above meetings should be on our [YouTube channel](https://www.youtube.com/channel/UCWPVc8glVGOODxsA_ep0VVw)
 

@@ -2431,6 +2431,24 @@ repositories:
           - coverage
           - all-tests-pass
           - conformance
+      - pattern: series/*
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: true
+        requireBranchesUpToDate: true
+        requireLastPushApproval: true
+        statusChecks:
+          - DCO
+          - licenses
+          - check-readme
+          - all-lints-pass
+          - coverage
+          - all-tests-pass
+          - conformance
     webCommitSignoffRequired: true
   - name: sigstore-rs
     owner: sigstore

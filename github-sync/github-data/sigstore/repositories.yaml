@@ -447,10 +447,10 @@ repositories:
     visibility: public
     licenseTemplate: ""
     topics: []
-    collaborators:
-      - username: ltagliaferri
-        permission: admin
     teams:
+      - name: codeowners-sigstore-website
+        id: 4932390
+        permission: maintain
       - name: triage
         id: 5643322
         permission: triage
@@ -2667,7 +2667,7 @@ repositories:
     teams:
       - name: codeowners-sigstore-website
         id: 4932390
-        permission: admin
+        permission: maintain
       - name: triage
         id: 5643322
         permission: triage

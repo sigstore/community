@@ -162,9 +162,7 @@ users:
         role: maintainer
   - username: erikaheidi
     role: member
-    teams:
-      - name: codeowners-sigstore-website
-        role: member
+    teams: []
   - username: evankanderson
     role: member
     teams: []
@@ -231,6 +229,11 @@ users:
         role: member
       - name: protobuf-specs-codeowners
         role: member
+  - username: hayleycd
+    role: member
+    teams:
+      - name: codeowners-sigstore-website
+        role: maintainer
   - username: hectorj2f
     role: member
     teams:

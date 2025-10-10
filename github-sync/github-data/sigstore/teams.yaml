@@ -28,7 +28,7 @@ teams:
     description: sigstore-python maintainers
   - name: codeowners-sigstore-website
     privacy: closed
-    description: codeowners for sigstores website
+    description: codeowners for Sigstore website and docs
   - name: community-codeowners
     privacy: closed
     description: Team for codeowners for community configuration

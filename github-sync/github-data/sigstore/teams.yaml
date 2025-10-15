@@ -131,3 +131,6 @@ teams:
   - name: sigstore-conformance-codeowners
     privacy: closed
     description: "Codeowners for sigstore/sigstore-conformance"
+  - name: sigstore-rekor-types-codeowners
+    privacy: closed
+    description: "Codeowners for sigstore/sigstore-rekor-types"

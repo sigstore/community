@@ -2796,3 +2796,89 @@ repositories:
           - dep-maintainers
           - timestamp-codeowners
     webCommitSignoffRequired: true
+  - name: sigstore-rekor-types
+    owner: sigstore
+    description: Python models for Rekor's API types
+    homepageUrl: "https://sigstore.github.io/sigstore-rekor-types/"
+    defaultBranch: main
+    allowAutoMerge: true
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators: []
+    teams: []
+    pages:
+      buildType: workflow
+      branch: main
+      path: /
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        restrictDismissals: true
+        requireBranchesUpToDate: false
+        dismissStaleReviews: true
+        requireLastPushApproval: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - dep-maintainers
+        dismissalRestrictions:
+          - dep-maintainers
+    webCommitSignoffRequired: true
+  - name: model-validation-operator
+    owner: sigstore
+    description: Kubernetes controller to validate AI models
+    homepageUrl: ""
+    defaultBranch: main
+    allowAutoMerge: true
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators: []
+    teams: []
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        restrictDismissals: true
+        requireBranchesUpToDate: false
+        dismissStaleReviews: true
+        requireLastPushApproval: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - dep-maintainers
+        dismissalRestrictions:
+          - dep-maintainers
+    webCommitSignoffRequired: true

@@ -2817,7 +2817,10 @@ repositories:
     licenseTemplate: ""
     topics: []
     collaborators: []
-    teams: []
+    teams:
+      - name: sigstore-rekor-types-codeowners
+        id: 14580094
+        permission: maintain
     pages:
       buildType: workflow
       branch: main

@@ -122,6 +122,8 @@ users:
     teams:
       - name: sigstore-conformance-codeowners
         role: member
+      - name: sigstore-rekor-types-codeowners
+        role: member
   - username: dlorenc
     role: member
     teams:
@@ -172,6 +174,8 @@ users:
     role: member
     teams:
       - name: rekor-monitor-codeowners
+        role: member
+      - name: sigstore-rekor-types-codeowners
         role: member
   - username: feelepxyz
     role: member
@@ -230,6 +234,8 @@ users:
       - name: timestamp-codeowners
         role: member
       - name: protobuf-specs-codeowners
+        role: member
+      - name: sigstore-rekor-types-codeowners
         role: member
   - username: hectorj2f
     role: member

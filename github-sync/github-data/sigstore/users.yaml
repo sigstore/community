@@ -122,6 +122,8 @@ users:
     teams:
       - name: sigstore-conformance-codeowners
         role: member
+      - name: sigstore-rekor-types-codeowners
+        role: member
   - username: dlorenc
     role: member
     teams:
@@ -170,6 +172,8 @@ users:
     role: member
     teams:
       - name: rekor-monitor-codeowners
+        role: member
+      - name: sigstore-rekor-types-codeowners
         role: member
   - username: feelepxyz
     role: member
@@ -229,6 +233,8 @@ users:
         role: member
       - name: protobuf-specs-codeowners
         role: member
+      - name: sigstore-rekor-types-codeowners
+        role: member
   - username: hayleycd
     role: member
     teams:
@@ -279,6 +285,8 @@ users:
       - name: tuf-root-signing-codeowners
         role: member
       - name: rekor-tiles-codeowners
+        role: member
+      - name: sigstore-rekor-types-codeowners
         role: member
   - username: jleightcap
     role: member
@@ -527,6 +535,8 @@ users:
       - name: sigstore-conformance-codeowners
         role: member
       - name: architecture-doc-team
+        role: member
+      - name: sigstore-rekor-types-codeowners
         role: member
   - username: yrobla
     role: member

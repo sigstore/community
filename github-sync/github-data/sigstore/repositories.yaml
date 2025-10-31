@@ -1934,6 +1934,8 @@ repositories:
       - sigstore
       - conformance
       - tests
+    pages:
+      buildType: workflow
     collaborators:
       - username: bobcallaway
         permission: admin

@@ -164,9 +164,7 @@ users:
         role: maintainer
   - username: erikaheidi
     role: member
-    teams:
-      - name: codeowners-sigstore-website
-        role: member
+    teams: []
   - username: evankanderson
     role: member
     teams: []
@@ -237,6 +235,11 @@ users:
         role: member
       - name: sigstore-rekor-types-codeowners
         role: member
+  - username: hayleycd
+    role: member
+    teams:
+      - name: codeowners-sigstore-website
+        role: maintainer
   - username: hectorj2f
     role: member
     teams:
@@ -282,6 +285,8 @@ users:
       - name: tuf-root-signing-codeowners
         role: member
       - name: rekor-tiles-codeowners
+        role: member
+      - name: sigstore-rekor-types-codeowners
         role: member
   - username: jleightcap
     role: member
@@ -530,6 +535,8 @@ users:
       - name: sigstore-conformance-codeowners
         role: member
       - name: architecture-doc-team
+        role: member
+      - name: sigstore-rekor-types-codeowners
         role: member
   - username: yrobla
     role: member

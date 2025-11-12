@@ -49,6 +49,8 @@ users:
         role: maintainer
       - name: fulcio-codeowners
         role: maintainer
+      - name: infrastructure-team
+        role: member
       - name: maven-plugin-codeowners
         role: maintainer
       - name: policy-controller-codeowners
@@ -76,6 +78,8 @@ users:
     role: member
     teams:
       - name: cosign-codeowners
+        role: member
+      - name: infrastructure-team
         role: member
       - name: rekor-tiles-codeowners
         role: member
@@ -205,6 +209,8 @@ users:
         role: member
       - name: fulcio-codeowners
         role: member
+      - name: infrastructure-team
+        role: member
       - name: model-transparency-codeowners
         role: member
       - name: rekor-codeowners
@@ -276,6 +282,8 @@ users:
   - username: jku
     role: member
     teams:
+      - name: infrastructure-team
+        role: member
       - name: tuf-root-signing-staging-codeowners
         role: member
       - name: tuf-root-signing-codeowners
@@ -339,6 +347,8 @@ users:
     role: member
     teams:
       - name: codeowners-maven-sigstore
+        role: member
+      - name: infrastructure-team
         role: member
       - name: protobuf-specs-codeowners
         role: member

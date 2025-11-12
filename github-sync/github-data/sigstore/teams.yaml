@@ -53,6 +53,9 @@ teams:
   - name: helm-sigstore-codeowners
     privacy: closed
     description: Team for helm-sigstore plugin
+  - name: infrastructure-team
+    privacy: closed
+    description: Team developing Sigstore infrastructure
   - name: maven-plugin-codeowners
     privacy: closed
     description: ""

@@ -796,6 +796,9 @@ repositories:
       - name: helm
         id: 5291354
         permission: maintain
+      - name: infrastructure-team
+        id: 14915800
+        permission: maintain
       - name: sigstore-oncall
         id: 6693572
         permission: maintain
@@ -1219,12 +1222,6 @@ repositories:
     licenseTemplate: ""
     topics: []
     collaborators:
-      - username: cmurphy
-        permission: triage
-      - username: jku
-        permission: triage
-      - username: loosebazooka
-        permission: triage
       - username: miyunari
         permission: triage
       - username: sigstore-bot
@@ -1242,6 +1239,9 @@ repositories:
       - name: triage
         id: 5643322
         permission: triage
+      - name: infrastructure-team
+        id: 14915800
+        permission: maintain
       - name: sigstore-oncall
         id: 6693572
         permission: maintain
@@ -1737,6 +1737,9 @@ repositories:
     licenseTemplate: ""
     topics: []
     teams:
+      - name: infrastructure-team
+        id: 14915800
+        permission: maintain
       - name: scaffolding-codeowners
         id: 5757921
         permission: maintain
@@ -2307,6 +2310,9 @@ repositories:
       owner: sigstore
       repository: sigstore-project-template
     teams:
+      - name: infrastructure-team
+        id: 14915800
+        permission: maintain
       - name: public-good-instance-team
         id: 5623385
         permission: triage
@@ -2710,6 +2716,9 @@ repositories:
     licenseTemplate: ""
     topics: []
     teams:
+      - name: infrastructure-team
+        id: 14915800
+        permission: maintain
       - name: sigstore-oncall
         id: 6693572
         permission: maintain

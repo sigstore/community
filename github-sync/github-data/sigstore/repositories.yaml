@@ -1939,6 +1939,8 @@ repositories:
       - tests
     pages:
       buildType: workflow
+      branch: main
+      path: /
     collaborators:
       - username: bobcallaway
         permission: admin

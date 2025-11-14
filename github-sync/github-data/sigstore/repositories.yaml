@@ -1311,16 +1311,16 @@ repositories:
         requireLastPushApproval: true
         restrictDismissals: true
         statusChecks:
-          - build
+          - Build
           - DCO
-          - e2e
+          - E2E Tests
           - Analyze (go)
           - CodeQL
-          - harness
-          - issue-872-e2e
-          - sharding-e2e
-          - validate-release-job
-          - container-build
+          - Test Harness
+          - Issue 872 E2E Test
+          - Sharding E2E Tests
+          - Validate Release
+          - Container Build
           - license boilerplate check
         pushRestrictions:
           - rekor-codeowners

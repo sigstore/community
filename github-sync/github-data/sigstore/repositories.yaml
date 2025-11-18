@@ -1917,7 +1917,7 @@ repositories:
   - name: sigstore-conformance
     owner: sigstore
     description: Conformance testing for Sigstore clients
-    homepageUrl: https://sigstore.dev
+    homepageUrl: https://sigstore.github.io/sigstore-conformance/
     defaultBranch: main
     allowAutoMerge: true
     allowMergeCommit: false

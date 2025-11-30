@@ -584,6 +584,7 @@ repositories:
           - verify-k8s-deployment (Meta Issuer)
           - oidc-config
           - CodeQL
+          - Verify docker compose functionality with cosign
         pushRestrictions:
           - fulcio-codeowners
           - dep-maintainers

@@ -2879,7 +2879,9 @@ repositories:
     licenseTemplate: ""
     topics: []
     collaborators: []
-    teams: []
+    teams:
+      - name: model-validation-operator
+        permission: maintain
     branchesProtection:
       - pattern: main
         enforceAdmins: true

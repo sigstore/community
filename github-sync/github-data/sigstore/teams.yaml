@@ -65,6 +65,9 @@ teams:
   - name: model-transparency
     privacy: closed
     description: "Write access for ML model transparency"
+  - name: model-validation-operator
+    privacy: closed
+    description: "Team for model-validation-operator repository"
   - name: policy-controller-codeowners
     privacy: closed
     description: Codeowners for sigstore/policy-controller

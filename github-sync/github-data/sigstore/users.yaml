@@ -429,7 +429,9 @@ users:
         role: member
   - username: miyunari
     role: member
-    teams: []
+    teams:
+      - name: model-validation-operator
+        role: member
   - username: mnm678
     role: member
     teams:

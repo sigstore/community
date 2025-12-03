@@ -1854,8 +1854,8 @@ repositories:
     topics: []
     collaborators: []
     teams:
-      - name: sigstore-a2a
-        id:
+      - name: sigstore-a2a-codeowners
+        id: 15226761
         permission: maintain
     branchesProtection:
       - pattern: main

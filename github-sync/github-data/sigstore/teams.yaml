@@ -101,9 +101,9 @@ teams:
   - name: sigstore-sig-public-good-operations
     privacy: closed
     description: "Home of the SIG for public good operations"
-  - name: sigstore-a2a
+  - name: sigstore-a2a-codeowners
     privacy: closed
-    description: "Team for sigstore/sigstore-a2a"
+    description: "Codeowners for sigstore/sigstore-a2a"
   - name: sigstore-codeowners
     privacy: closed
     description: 'Note: this is for the sigstore repo, not for the entire organization'

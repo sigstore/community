@@ -405,6 +405,8 @@ users:
         role: maintainer
       - name: sigstore-blog-maintainers
         role: maintainer
+      - name: sigstore-a2a-codeowners
+        role: member
   - username: malancas
     role: member
     teams:
@@ -558,3 +560,8 @@ users:
   - username: vagarwal
     role: member
     teams: []
+  - username: SequeI
+    role: member
+    teams:
+      - name: sigstore-a2a-codeowners
+        role: member

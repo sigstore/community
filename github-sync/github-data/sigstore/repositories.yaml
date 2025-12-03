@@ -1854,9 +1854,9 @@ repositories:
     topics: []
     collaborators: []
     teams:
-      - name: Core Team
-        id: 4563391
-        permission: admin
+      - name: sigstore-a2a-codeowners
+        id: 15226761
+        permission: maintain
     branchesProtection:
       - pattern: main
         enforceAdmins: true

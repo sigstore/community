@@ -318,7 +318,7 @@ repositories:
     allowMergeCommit: true
     allowRebaseMerge: true
     allowSquashMerge: true
-    archived: false
+    archived: true
     autoInit: false
     deleteBranchOnMerge: false
     hasDownloads: true

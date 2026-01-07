@@ -567,3 +567,8 @@ users:
         role: member
       - name: model-validation-operator
         role: member
+  - username: knrc
+    role: member
+    teams:
+      - name: model-validation-operator
+        role: member

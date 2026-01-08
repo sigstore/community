@@ -1518,7 +1518,7 @@ repositories:
           - lint
           - shellcheck
           - Build CLI
-          - Build container
+          - Build container (gcp)
           - Run E2E tests
           - Run freeze log tests
           - Run sharding E2E tests

@@ -290,6 +290,8 @@ users:
         role: member
       - name: rekor-tiles-codeowners
         role: member
+      - name: sigstore-oncall
+        role: member
       - name: sigstore-rekor-types-codeowners
         role: member
   - username: jleightcap
@@ -358,6 +360,8 @@ users:
         role: member
       - name: sigstore-java-codeowners
         role: maintainer
+      - name: sigstore-oncall
+        role: member
       - name: sigstore-sig-clients
         role: member
       - name: triage
@@ -481,9 +485,7 @@ users:
         role: member
   - username: sallyom
     role: member
-    teams:
-      - name: sigstore-oncall
-        role: member
+    teams: []
   - username: segiddins
     role: member
     teams:

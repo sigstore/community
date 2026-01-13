@@ -43,10 +43,6 @@ jobs:
       RELEASE_TAG: ${{ inputs.release_tag }}
       REPO: ${{ inputs.repo }}
     steps:
-      - name: Check actor access
-        if: ${{ !contains( fromJson('["bobcallaway","cpanato","lukehinds","priyawadhwa","haydentherapper"]'), github.actor ) }}
-        run: exit 1
-
       - name: Checkout out repo
         uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
         with:

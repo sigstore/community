@@ -20,7 +20,7 @@ repositories:
     licenseTemplate: ""
     topics: []
     collaborators:
-      - username: hayden-io
+      - username: Hayden-IO
         permission: maintain
     branchesProtection:
       - pattern: main
@@ -1169,7 +1169,7 @@ repositories:
     licenseTemplate: ""
     topics: []
     collaborators:
-      - username: hayden-io
+      - username: Hayden-IO
         permission: admin
       - username: bdehamer
         permission: push
@@ -1945,7 +1945,7 @@ repositories:
     collaborators:
       - username: bobcallaway
         permission: admin
-      - username: hayden-io
+      - username: Hayden-IO
         permission: push
       - username: jku
         permission: push

@@ -194,7 +194,7 @@ users:
         role: member
   - username: font
     role: member
-  - username: haydentherapper
+  - username: hayden-io
     role: admin
     teams:
       - name: triage

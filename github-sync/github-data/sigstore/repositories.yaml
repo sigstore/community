@@ -1519,7 +1519,7 @@ repositories:
           - shellcheck
           - Build CLI
           - Build container (gcp)
-          - Run E2E tests
+          - Run E2E tests - GCP
           - Run freeze log tests
           - Run sharding E2E tests
           - Run unit tests

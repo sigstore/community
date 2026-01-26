@@ -427,8 +427,6 @@ users:
     teams:
       - name: model-transparency-codeowners
         role: member
-      - name: model-transparency
-        role: member
       - name: rekor-monitor-codeowners
         role: member
   - username: miyunari
@@ -497,7 +495,7 @@ users:
   - username: spencerschrock
     role: member
     teams:
-      - name: model-transparency
+      - name: model-transparency-codeowners
         role: member
   - username: steiza
     role: member
@@ -566,6 +564,13 @@ users:
       - name: sigstore-a2a-codeowners
         role: member
       - name: model-validation-operator
+        role: member
+      - name: model-transparency
+        role: member
+  - username: stefanberger
+    role: member
+    teams:
+      - name: model-transparency
         role: member
   - username: knrc
     role: member

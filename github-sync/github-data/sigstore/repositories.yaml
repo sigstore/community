@@ -1513,10 +1513,13 @@ repositories:
           - license boilerplate check
           - License and Vulnerability Scan / Scan dependencies for license compliance and vulnerabilities
           - lint
+          - zizmor
           - shellcheck
           - Build CLI
           - Build container (gcp)
+          - Build container (posix)
           - Run E2E tests - GCP
+          - Run E2E tests - POSIX
           - Run freeze log tests
           - Run sharding E2E tests
           - Run unit tests

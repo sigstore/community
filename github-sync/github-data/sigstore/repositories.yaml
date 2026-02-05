@@ -1556,9 +1556,6 @@ repositories:
       - username: sigstore-bot
         permission: push
     teams:
-      - name: sigstore-keyholders
-        id: 4899309
-        permission: push
       - name: tuf-root-signing-codeowners
         id: 6378909
         permission: maintain

@@ -15,20 +15,22 @@ Shared docs may be shared directly with this group, so please join this before r
 
 ## Roadmap
 
-sigstore's umbrella roadmap is [available here](./ROADMAP.md)
+Sigstore's umbrella roadmap is [available here](./ROADMAP.md)
 
 ## Community Calendar
 
-We now have a community calendar [available here](https://calendar.google.com/calendar/embed?src=fq4kgom2ce43hncnbcfja2ck20%40group.calendar.google.com&ctz=America%2FNew_York) ([in .ics format](https://calendar.google.com/calendar/ical/fq4kgom2ce43hncnbcfja2ck20%40group.calendar.google.com/public/basic.ics)
+We have a community calendar [available here](https://calendar.google.com/calendar/embed?src=fq4kgom2ce43hncnbcfja2ck20%40group.calendar.google.com&ctz=America%2FNew_York) ([in .ics format](https://calendar.google.com/calendar/ical/fq4kgom2ce43hncnbcfja2ck20%40group.calendar.google.com/public/basic.ics)
 and [shared Google calendar](https://calendar.google.com/calendar/u/0?cid=ZnE0a2dvbTJjZTQzaG5jbmJjZmphMmNrMjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)).
 All recurring and one-off meetings will be shared here.
 
 ### Meetings
 
-We typically have a community-wide meeting on the third Tuesday of every month @ 16:30 UTC
-time. The details are available via the shared calendar above.
+We have a community-wide meeting on the first and third Thursdays of every month.
+Meetings on the first Thursdays are for EMEA/EST timezones, hosted at 10am EST. Meetings on the third Thursdays are for APAC/PST timezones, hosted at 3pm PST.
+Register for the meetings using the [OpenSSF Community Calendar](https://openssf.org/calendar/).
 
-Recordings for all of the above meetings should be on our [YouTube channel](https://www.youtube.com/channel/UCWPVc8glVGOODxsA_ep0VVw)
+Recordings for all of the above meetings will be available on the [OpenSSF YouTube channel](https://www.youtube.com/@OpenSSF/videos).
+Additional community videos can be found on the [Sigstore YouTube channel](https://www.youtube.com/channel/UCWPVc8glVGOODxsA_ep0VVw)
 
 ## Membership
 

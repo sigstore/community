@@ -2160,8 +2160,9 @@ repositories:
         statusChecks:
           - Validation
           - DCO
-          - conformance (17, production)
-          - conformance (11, production)
+          - conformance (21)
+          - conformance (17)
+          - conformance (11)
           - build (17)
           - build (21)
     webCommitSignoffRequired: true

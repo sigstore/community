@@ -125,6 +125,9 @@ teams:
   - name: sigstore-rs-codeowners
     privacy: closed
     description: 'sigstore rust library '
+  - name: sigstore-rust-codeowners
+    privacy: closed
+    description: 'Codeowners for sigstore/sigstore-rust'
   - name: timestamp-codeowners
     privacy: closed
     description: ""

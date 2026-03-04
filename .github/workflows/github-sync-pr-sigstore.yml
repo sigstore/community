@@ -16,6 +16,7 @@ env:
 
 jobs:
   preview:
+    if: github.repository == 'sigstore/community'
     name: changes-sigstore
     runs-on: ubuntu-latest
 

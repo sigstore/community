@@ -23,6 +23,7 @@ env:
 
 jobs:
   Update:
+    if: github.repository == 'sigstore/community'
     name: sync-changes-sigstore-conformance
     runs-on: ubuntu-latest
     permissions:

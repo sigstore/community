@@ -784,9 +784,6 @@ repositories:
     pages:
       branch: gh-pages
       path: /
-    collaborators:
-      - username: vagarwal
-        permission: triage
     teams:
       - name: Core Team
         id: 4563391

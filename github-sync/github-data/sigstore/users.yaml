@@ -524,6 +524,9 @@ users:
         role: maintainer
       - name: scaffolding-codeowners
         role: member
+  - username: wolfv
+    role: member
+    teams: []
   - username: wlynch
     role: member
     teams:
@@ -555,9 +558,6 @@ users:
     teams:
       - name: gitsign-codeowners
         role: member
-  - username: vagarwal
-    role: member
-    teams: []
   - username: SequeI
     role: member
     teams:

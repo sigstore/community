@@ -8,9 +8,6 @@ teams:
   - name: codeowners-k8s-manifest-sigstore
     privacy: closed
     description: Team for codeowners of k8s-manifest-sigstore
-  - name: codeowners-maven-sigstore
-    privacy: closed
-    description: ""
   - name: codeowners-ruby-sigstore
     privacy: closed
     description: ""
@@ -56,9 +53,6 @@ teams:
   - name: infrastructure-team
     privacy: closed
     description: Team developing Sigstore infrastructure
-  - name: maven-plugin-codeowners
-    privacy: closed
-    description: ""
   - name: model-transparency-codeowners
     privacy: closed
     description: "Code owners for ML model transparency"

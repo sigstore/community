@@ -39,8 +39,6 @@ users:
         role: maintainer
       - name: architecture-doc-team
         role: maintainer
-      - name: codeowners-maven-sigstore
-        role: maintainer
       - name: Core Team
         role: maintainer
       - name: cosign-codeowners
@@ -51,8 +49,6 @@ users:
         role: maintainer
       - name: infrastructure-team
         role: member
-      - name: maven-plugin-codeowners
-        role: maintainer
       - name: policy-controller-codeowners
         role: maintainer
       - name: protobuf-specs-codeowners
@@ -306,9 +302,6 @@ users:
         role: member
   - username: jvanzyl
     role: member
-    teams:
-      - name: codeowners-maven-sigstore
-        role: maintainer
   - username: jyotsna-penumaka
     role: member
   - username: k4leung4
@@ -346,8 +339,6 @@ users:
   - username: loosebazooka
     role: member
     teams:
-      - name: codeowners-maven-sigstore
-        role: member
       - name: infrastructure-team
         role: member
       - name: protobuf-specs-codeowners
@@ -442,7 +433,7 @@ users:
   - username: patflynn
     role: member
     teams:
-      - name: codeowners-maven-sigstore
+      - name: sigstore-java-codeowners
         role: member
   - username: phillmv
     role: member

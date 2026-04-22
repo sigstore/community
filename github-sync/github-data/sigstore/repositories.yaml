@@ -2456,6 +2456,51 @@ repositories:
           - all-tests-pass
           - conformance
     webCommitSignoffRequired: true
+  - name: sigstore-rust
+    owner: sigstore
+    description: Sigstore implemented in Rust for Github v0.3 bundles
+    homepageUrl: ""
+    defaultBranch: main
+    allowAutoMerge: true
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics:
+      - cosign
+      - oci
+      - package-management
+      - sigstore
+    collaborators: []
+    teams: []
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        restrictDismissals: true
+        requireBranchesUpToDate: false
+        dismissStaleReviews: true
+        requireLastPushApproval: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - dep-maintainers
+        dismissalRestrictions:
+          - dep-maintainers
+    webCommitSignoffRequired: true
   - name: sigstore-rs
     owner: sigstore
     description: An experimental Rust crate for sigstore

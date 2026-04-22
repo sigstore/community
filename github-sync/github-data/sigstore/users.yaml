@@ -471,6 +471,11 @@ users:
   - username: sallyom
     role: member
     teams: []
+  - username: sampras343
+    role: member
+    teams:
+      - name: sigstore-a2a-codeowners
+        role: member
   - username: segiddins
     role: member
     teams:

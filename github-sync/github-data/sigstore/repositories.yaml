@@ -2427,7 +2427,7 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireCodeOwnerReviews: true
-        requireBranchesUpToDate: true
+        requireBranchesUpToDate: false
         requireLastPushApproval: true
         statusChecks:
           - DCO

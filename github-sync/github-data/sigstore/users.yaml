@@ -497,6 +497,8 @@ users:
         role: member
       - name: sigstore-go-codeowners
         role: member
+      - name: sigstore-codeowners
+        role: member
   - username: TomHennen
     role: member
     teams: []

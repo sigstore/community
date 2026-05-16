@@ -1221,11 +1221,7 @@ repositories:
         permission: triage
       - username: sigstore-bot
         permission: triage
-      - username: ejahngithub
-        permission: triage
       - username: jeffwidman
-        permission: triage
-      - username: ljones140
         permission: triage
     teams:
       - name: public-good-instance-team

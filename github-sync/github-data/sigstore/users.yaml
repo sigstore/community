@@ -148,11 +148,6 @@ users:
     teams:
       - name: codeowners-sigstore-js
         role: maintainer
-  - username: ejahngithub
-    role: member
-    teams:
-      - name: codeowners-sigstore-js
-        role: maintainer
   - username: ejahnGithub
     role: member
     teams:
@@ -160,6 +155,8 @@ users:
         role: maintainer
       - name: codeowners-sigstore-js
         role: maintainer
+      - name: sigstore-oncall
+        role: member
   - username: erikaheidi
     role: member
     teams: []
@@ -352,6 +349,11 @@ users:
       - name: sigstore-sig-clients
         role: member
       - name: triage
+        role: member
+  - username: ljones140
+    role: member
+    teams:
+      - name: sigstore-oncall
         role: member
   - username: ltagliaferri
     role: member

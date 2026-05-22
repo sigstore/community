@@ -148,7 +148,7 @@ users:
     teams:
       - name: codeowners-sigstore-js
         role: maintainer
-  - username: ejahnGithub
+  - username: ejahngithub
     role: member
     teams:
       - name: codeowners-rekor-search-ui

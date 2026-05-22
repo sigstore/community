@@ -90,6 +90,7 @@ The table below summarizes the state of Sigstore adoption across various ecosyst
 |  Spring + Gradle     | signing + provenance (SLSA)               |   Early WIP          |
 |        Homebrew      | signing + provenance (SLSA)               |   Beta               |
 |   GitHub Actions     | signing + provenance (SLSA)               |         GA           |
+| [Tekton (Chains)](https://github.com/tektoncd/chains) | signing + provenance (SLSA) |         GA           |
 
 Last but certainly not least, Sigstore has publicly hosted [documentation](https://docs.sigstore.dev) that includes an architectural overview and a community-authored [threat model](https://docs.sigstore.dev/threat-model/) and [claimant models](https://github.com/sigstore/community/tree/main/docs/claimantmodel) for the transparency logs it operates. There are also more detailed [architecture documents](https://docs.google.com/document/d/1-OccxmZwkZZItrfOnO3RP8gku6nRbtJpth1mSW3U1Cc/edit#heading=h.ksk0rwk2ti2e) being created to describe the principles behind our signature transparency log, certificate authority, and public-good instances.
 

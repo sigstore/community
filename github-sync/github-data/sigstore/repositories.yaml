@@ -2018,7 +2018,7 @@ repositories:
         statusChecks:
           - DCO
           - build (macos-latest)
-          - build (ubuntu-latest)
+          - build (ubuntu-24.04-firewall)
           - build (windows-latest)
           - lint
           - conformance

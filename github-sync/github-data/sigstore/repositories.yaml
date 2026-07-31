@@ -546,6 +546,8 @@ repositories:
     collaborators:
       - username: sigstore-bot
         permission: push
+      - username: loosebazooka
+        permission: push
     teams:
       - name: fulcio-codeowners
         id: 4721751

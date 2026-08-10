@@ -28,6 +28,7 @@ jobs:
       with:
         ref: ${{ github.event.pull_request.head.sha }}
         persist-credentials: false
+        allow-unsafe-pr-checkout: true
 
     - uses: sigstore/github-sync@main
       with:

@@ -309,6 +309,8 @@ users:
   - username: kommendorkapten
     role: member
     teams:
+      - name: architecture-doc-team
+        role: member
       - name: protobuf-specs-codeowners
         role: member
       - name: security-response-team
@@ -334,6 +336,8 @@ users:
   - username: loosebazooka
     role: member
     teams:
+      - name: architecture-doc-team
+        role: member
       - name: infrastructure-team
         role: member
       - name: protobuf-specs-codeowners

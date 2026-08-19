@@ -1511,9 +1511,13 @@ repositories:
           - zizmor
           - shellcheck
           - Build CLI
+          - Build container (aws)
           - Build container (gcp)
+          - Build container (gcpcloudsql)
           - Build container (posix)
+          - Run E2E tests - AWS
           - Run E2E tests - GCP
+          - Run E2E tests - GCP Cloud SQL
           - Run E2E tests - POSIX
           - Run freeze log tests
           - Run sharding E2E tests

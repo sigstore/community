@@ -5,8 +5,7 @@ General sigstore community repository
 ## Slack
 
 The majority of our community conversations happen in our community [Slack instance](https://sigstore.slack.com) - please join us!
-[Invite link](https://sigstore.slack.com/join/shared_invite/zt-mhs55zh0-XmY3bcfWn4XEyMqUUutbUQ#/shared-invite/email)
-
+[Invite link](https://join.slack.com/t/sigstore/shared_invite/zt-47srvpyn6-j8Ek5hGBwKN32IjLw8BvYA)
 ## Mailing List
 
 We use https://groups.google.com/g/sigstore-dev for infrequent communications (e.g. release announcements). The group is public and anyone can join.

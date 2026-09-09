@@ -2483,7 +2483,10 @@ repositories:
       - package-management
       - sigstore
     collaborators: []
-    teams: []
+    teams:
+      - name: sigstore-rust-codeowners
+        id: 17208082
+        permission: maintain
     branchesProtection:
       - pattern: main
         enforceAdmins: true
@@ -2500,6 +2503,7 @@ repositories:
           - DCO
         pushRestrictions:
           - dep-maintainers
+          - sigstore-rust-codeowners
         dismissalRestrictions:
           - dep-maintainers
     webCommitSignoffRequired: true

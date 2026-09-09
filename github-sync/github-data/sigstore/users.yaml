@@ -23,6 +23,11 @@ users:
     teams: []
   - username: asraa
     role: member
+  - username: baszalmstra
+    role: member
+    teams:
+      - name: sigstore-rust-codeowners
+        role: member
   - username: bdehamer
     role: member
     teams:
@@ -275,6 +280,8 @@ users:
   - username: jku
     role: member
     teams:
+      - name: sigstore-rust-codeowners
+        role: member
       - name: infrastructure-team
         role: member
       - name: tuf-root-signing-staging-codeowners
@@ -530,7 +537,9 @@ users:
         role: member
   - username: wolfv
     role: member
-    teams: []
+    teams:
+      - name: sigstore-rust-codeowners
+        role: member
   - username: wlynch
     role: member
     teams:

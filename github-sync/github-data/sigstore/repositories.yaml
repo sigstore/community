@@ -1670,6 +1670,77 @@ repositories:
         pullRequestBypassers:
           - sigstore-bot
     webCommitSignoffRequired: true
+  - name: v2-root-signing-staging
+    owner: sigstore
+    description: "Staging TUF repository for Sigstore v2 trust root"
+    homepageUrl: ""
+    defaultBranch: main
+    allowAutoMerge: false
+    allowMergeCommit: true
+    allowRebaseMerge: false
+    allowSquashMerge: false
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: false
+    hasIssues: true
+    hasProjects: false
+    hasWiki: false
+    pages:
+      buildType: workflow
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators:
+      - username: jku
+        permission: admin
+      - username: sigstore-bot
+        permission: push
+    teams:
+      - name: tuf-root-signing-staging-codeowners
+        id: 8790813
+        permission: maintain
+      - name: triage
+        id: 5643322
+        permission: triage
+      - name: sigstore-oncall
+        id: 6693572
+        permission: maintain
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: false
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
+        restrictDismissals: true
+        pushRestrictions:
+          - tuf-root-signing-staging-codeowners
+          - sigstore-bot
+          - sigstore-oncall
+        dismissalRestrictions:
+          - tuf-root-signing-staging-codeowners
+        pullRequestBypassers:
+          - sigstore-bot
+      - pattern: publish
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: false
+        dismissStaleReviews: true
+        requiredApprovingReviewCount: 1
+        requireLastPushApproval: true
+        restrictDismissals: true
+        pushRestrictions:
+          - sigstore-bot
+        dismissalRestrictions:
+          - tuf-root-signing-staging-codeowners
+        pullRequestBypassers:
+          - sigstore-bot
+    webCommitSignoffRequired: true
   - name: ruby-sigstore
     owner: sigstore
     description: Rubygems sigstore signing plugin

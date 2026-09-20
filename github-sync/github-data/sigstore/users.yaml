@@ -446,6 +446,11 @@ users:
     teams:
       - name: sigstore-java-codeowners
         role: member
+  - username: pavelzw
+    role: member
+    teams:
+      - name: sigstore-rust-codeowners
+        role: member
   - username: phillmv
     role: member
     teams:

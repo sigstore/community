@@ -18,7 +18,6 @@ on:
 permissions: {}
 
 env:
- PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
  GITHUB_OWNER: sigstore-conformance
 
 jobs:
@@ -26,6 +25,7 @@ jobs:
     if: github.repository == 'sigstore/community'
     name: sync-changes-sigstore-conformance
     runs-on: ubuntu-latest
+    environment: github-sync-preview
     permissions:
       contents: read
 

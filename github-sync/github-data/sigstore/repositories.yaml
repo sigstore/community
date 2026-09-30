@@ -1508,6 +1508,7 @@ repositories:
           - license boilerplate check
           - License and Vulnerability Scan / Scan dependencies for license compliance and vulnerabilities
           - lint
+          - go fix
           - zizmor
           - shellcheck
           - Build CLI

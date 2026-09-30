@@ -18,7 +18,6 @@ on:
 permissions: {}
 
 env:
- PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
  GITHUB_OWNER: sigstore-conformance
 
 jobs:

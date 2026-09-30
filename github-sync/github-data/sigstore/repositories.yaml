@@ -1029,7 +1029,7 @@ repositories:
         id: 10329477
         permission: push
     pages:
-      buildType: workflow
+      buildType: legacy
       branch: main
       path: /
     branchesProtection:
@@ -1425,7 +1425,7 @@ repositories:
         id: 5643322
         permission: triage
     pages:
-      buildType: workflow
+      buildType: legacy
       branch: main
       path: /
       cname: search.sigstore.dev
@@ -1959,7 +1959,7 @@ repositories:
       owner: sigstore
       repository: sigstore-project-template
     pages:
-      buildType: workflow
+      buildType: legacy
       branch: main
       path: /
       cname: blog.sigstore.dev
@@ -2006,7 +2006,7 @@ repositories:
       - conformance
       - tests
     pages:
-      buildType: workflow
+      buildType: legacy
       branch: main
       path: /
     collaborators:
@@ -2953,7 +2953,7 @@ repositories:
         id: 14580094
         permission: maintain
     pages:
-      buildType: workflow
+      buildType: legacy
       branch: main
       path: /
     branchesProtection:

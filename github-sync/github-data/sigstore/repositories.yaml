@@ -1029,9 +1029,7 @@ repositories:
         id: 10329477
         permission: push
     pages:
-      buildType: legacy
-      branch: main
-      path: /
+      buildType: workflow
     branchesProtection:
       - pattern: main
         enforceAdmins: true
@@ -1425,9 +1423,7 @@ repositories:
         id: 5643322
         permission: triage
     pages:
-      buildType: legacy
-      branch: main
-      path: /
+      buildType: workflow
       cname: search.sigstore.dev
     branchesProtection:
       - pattern: main
@@ -1959,9 +1955,7 @@ repositories:
       owner: sigstore
       repository: sigstore-project-template
     pages:
-      buildType: legacy
-      branch: main
-      path: /
+      buildType: workflow
       cname: blog.sigstore.dev
     collaborators: []
     teams:
@@ -2006,9 +2000,7 @@ repositories:
       - conformance
       - tests
     pages:
-      buildType: legacy
-      branch: main
-      path: /
+      buildType: workflow
     collaborators:
       - username: bobcallaway
         permission: admin
@@ -2601,9 +2593,6 @@ repositories:
       - rust-lang
       - rust-libraries
       - sigstore
-    pages:
-      branch: gh-pages
-      path: /
     collaborators:
       - username: flavio
         permission: admin
@@ -2953,9 +2942,7 @@ repositories:
         id: 14580094
         permission: maintain
     pages:
-      buildType: legacy
-      branch: main
-      path: /
+      buildType: workflow
     branchesProtection:
       - pattern: main
         enforceAdmins: true

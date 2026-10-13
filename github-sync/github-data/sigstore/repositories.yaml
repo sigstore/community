@@ -1573,11 +1573,13 @@ repositories:
         pushRestrictions:
           - tuf-root-signing-codeowners
           - sigstore-bot
+          - root-signing-tuf-on-ci[bot]
           - sigstore-oncall
         dismissalRestrictions:
           - tuf-root-signing-codeowners
         pullRequestBypassers:
           - sigstore-bot
+          - root-signing-tuf-on-ci[bot]
       - pattern: publish
         enforceAdmins: true
         allowsDeletions: false
@@ -1590,10 +1592,12 @@ repositories:
         pushRestrictions:
           - tuf-root-signing-codeowners
           - sigstore-bot
+          - root-signing-tuf-on-ci[bot]
         dismissalRestrictions:
           - tuf-root-signing-codeowners
         pullRequestBypassers:
           - sigstore-bot
+          - root-signing-tuf-on-ci[bot]
     webCommitSignoffRequired: true
   - name: root-signing-staging
     owner: sigstore
@@ -1645,11 +1649,13 @@ repositories:
         pushRestrictions:
           - tuf-root-signing-staging-codeowners
           - sigstore-bot
+          - root-signing-staging-tuf-on-ci[bot]
           - sigstore-oncall
         dismissalRestrictions:
           - tuf-root-signing-staging-codeowners
         pullRequestBypassers:
           - sigstore-bot
+          - root-signing-staging-tuf-on-ci[bot]
       - pattern: publish
         enforceAdmins: true
         allowsDeletions: false
@@ -1661,10 +1667,12 @@ repositories:
         restrictDismissals: true
         pushRestrictions:
           - sigstore-bot
+          - root-signing-staging-tuf-on-ci[bot]
         dismissalRestrictions:
           - tuf-root-signing-staging-codeowners
         pullRequestBypassers:
           - sigstore-bot
+          - root-signing-staging-tuf-on-ci[bot]
     webCommitSignoffRequired: true
   - name: v2-root-signing-staging
     owner: sigstore
@@ -1716,11 +1724,13 @@ repositories:
         pushRestrictions:
           - tuf-root-signing-staging-codeowners
           - sigstore-bot
+          - v2-root-signing-staging-tuf-on-ci[bot]
           - sigstore-oncall
         dismissalRestrictions:
           - tuf-root-signing-staging-codeowners
         pullRequestBypassers:
           - sigstore-bot
+          - v2-root-signing-staging-tuf-on-ci[bot]
       - pattern: publish
         enforceAdmins: true
         allowsDeletions: false
@@ -1732,10 +1742,12 @@ repositories:
         restrictDismissals: true
         pushRestrictions:
           - sigstore-bot
+          - v2-root-signing-staging-tuf-on-ci[bot]
         dismissalRestrictions:
           - tuf-root-signing-staging-codeowners
         pullRequestBypassers:
           - sigstore-bot
+          - v2-root-signing-staging-tuf-on-ci[bot]
     webCommitSignoffRequired: true
   - name: ruby-sigstore
     owner: sigstore

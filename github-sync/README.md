@@ -46,6 +46,20 @@ and add a new entry following the example
   description: Optional description
 ```
 
+## Add a new GitHub App
+
+App creation or installation is currently not handled by the configuration. Once the
+app is installed its name can be used in repository fields like `pushRestrictions`.
+The name must be postfixed with "[bot]" to prevent username shadowing:
+
+```yaml
+branchesProtection:
+  - pattern: main
+    pushRestrictions:
+      - my-app[bot] # Installed GitHub App "my-app" is allowed to push to main
+    ...
+```
+
 ## Add a new repository or update existing ones
 
 To add a new repository you should edit the file `github-data/repositories.yaml``

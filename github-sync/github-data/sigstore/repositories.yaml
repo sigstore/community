@@ -232,8 +232,12 @@ repositories:
           - license boilerplate check
           - lint
           - validate-release-job
-          - attest / verify-attestation test (v1.30.x, remote)
-          - attest / verify-attestation test (v1.30.x, air-gap)
+          - attest / verify-attestation test (v1.33.x, remote)
+          - attest / verify-attestation test (v1.33.x, air-gap)
+          - attest / verify-attestation test (v1.34.x, remote)
+          - attest / verify-attestation test (v1.34.x, air-gap)
+          - attest / verify-attestation test (v1.35.x, remote)
+          - attest / verify-attestation test (v1.35.x, air-gap)
         pushRestrictions:
           - cosign-codeowners
           - dep-maintainers

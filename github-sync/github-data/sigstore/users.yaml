@@ -489,6 +489,8 @@ users:
     teams:
       - name: sigstore-a2a-codeowners
         role: member
+      - name: model-validation-operator
+        role: member
   - username: segiddins
     role: member
     teams:

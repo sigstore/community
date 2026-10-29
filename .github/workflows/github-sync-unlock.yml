@@ -1,0 +1,50 @@
+name: unlock-pulumi-resource
+
+on:
+  workflow_dispatch:
+    inputs:
+      stack:
+        description: "Pulumi stack name"
+        required: true
+        default: "sigstore/github-prod"
+        type: choice
+        options:
+          - sigstore/github-prod
+          - sigstore/github-sigstore-conformance
+      urn:
+        description: "Full Pulumi URN of the resource to unlock (e.g. urn:pulumi:github-prod::sigstore-github-sync::github:index/membership:Membership::username)"
+        required: true
+        type: string
+
+permissions: {}
+
+jobs:
+  unlock:
+    if: github.repository == 'sigstore/community'
+    name: unlock-pulumi-resource
+    runs-on: ubuntu-latest
+    environment: github-sync-preview
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: pulumi/actions@8e5e406f4007fca908480587cb9893c07090f58d # v7.0.0
+
+      - name: Unprotect Pulumi resource
+        working-directory: ./github-sync
+        env:
+          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+          STACK_NAME: ${{ inputs.stack }}
+          RESOURCE_URN: ${{ inputs.urn }}
+        run: |
+          set -euo pipefail
+          if [[ ! "${RESOURCE_URN}" =~ ^urn:pulumi:[^[:space:]]+$ ]]; then
+            echo "::error::Invalid Pulumi URN: ${RESOURCE_URN}"
+            exit 1
+          fi
+          printf 'name: sigstore-github-sync\nruntime: go\ndescription: Sync GitHub users, collaborators and repositories for an organization\n' > Pulumi.yaml
+          pulumi state unprotect --stack "${STACK_NAME}" --yes "${RESOURCE_URN}"

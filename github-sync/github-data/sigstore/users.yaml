@@ -306,13 +306,6 @@ users:
     role: member
   - username: jyotsna-penumaka
     role: member
-  - username: k4leung4
-    role: member
-    teams:
-      - name: triage
-        role: member
-      - name: scaffolding-codeowners
-        role: member
   - username: kommendorkapten
     role: member
     teams:

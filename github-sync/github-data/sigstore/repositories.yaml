@@ -427,7 +427,7 @@ repositories:
     description: ""
     homepageUrl: ""
     defaultBranch: main
-    allowAutoMerge: false
+    allowAutoMerge: true
     allowMergeCommit: true
     allowRebaseMerge: true
     allowSquashMerge: true
@@ -446,6 +446,12 @@ repositories:
     teams:
       - name: fulcio-codeowners
         id: 4721751
+        permission: maintain
+      - name: infrastructure-team
+        id: 14915800
+        permission: maintain
+      - name: sigstore-oncall
+        id: 6693572
         permission: maintain
     branchesProtection:
       - pattern: main

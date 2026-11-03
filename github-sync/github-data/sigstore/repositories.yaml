@@ -610,17 +610,22 @@ repositories:
         statusChecks:
           - DCO
           - build
+          - Build Docker image (ubuntu-26.04-arm, linux/amd64)
+          - Build Docker image (ubuntu-26.04-arm, linux/arm64)
+          - Build Docker image (ubuntu-latest, linux/amd64)
+          - Build Docker image (ubuntu-latest, linux/arm64)
+          - CodeQL
+          - snapshot
           - Analyze (go)
-          - check-signature
           - license boilerplate check
           - k8s manifest check
-          - validate-release-job
           - License and Vulnerability Scan / Scan dependencies for license compliance and vulnerabilities
+          - go fix
+          - zizmor
           - golangci-lint
           - verify-k8s-deployment (OIDC Issuer)
           - verify-k8s-deployment (Meta Issuer)
           - oidc-config
-          - CodeQL
           - Verify docker compose functionality with cosign
         pushRestrictions:
           - fulcio-codeowners

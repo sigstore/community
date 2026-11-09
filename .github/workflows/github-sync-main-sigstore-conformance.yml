@@ -28,18 +28,27 @@ jobs:
     environment: github-sync-preview
     permissions:
       contents: read
+      id-token: write
 
     steps:
     - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       with:
         persist-credentials: false
+
+    - uses: pulumi/auth-actions@273044cc19e63ea565285da8edd4e059126a0bdb # v2.1.2
+      id: pulumi-auth
+      with:
+        organization: sigstore
+        requested-token-type: urn:pulumi:token-type:access_token:organization
+        export-environment-variables: false
+
     - uses: sigstore/github-sync@main
       if: ${{ inputs.preview }}
       with:
         work_dir: ./github-sync
         config_directory: ./github-sync/github-data
         stack_name: sigstore/github-sigstore-conformance
-        pulumi_access_token: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+        pulumi_access_token: ${{ steps.pulumi-auth.outputs.pulumi-access-token }}
         pulumi_command: preview
         gh_token: ${{ secrets.GITHUB_TOKEN }}
     - uses: sigstore/github-sync@main
@@ -48,6 +57,6 @@ jobs:
         work_dir: ./github-sync
         config_directory: ./github-sync/github-data
         stack_name: sigstore/github-sigstore-conformance
-        pulumi_access_token: ${{ secrets.PULUMI_ACCESS_TOKEN }}
+        pulumi_access_token: ${{ steps.pulumi-auth.outputs.pulumi-access-token }}
         pulumi_command: up
         gh_token: ${{ secrets.GITHUB_TOKEN }}

@@ -32,12 +32,16 @@ jobs:
         with:
           persist-credentials: false
 
+      - uses: pulumi/auth-actions@273044cc19e63ea565285da8edd4e059126a0bdb # v2.1.2
+        with:
+          organization: sigstore
+          requested-token-type: urn:pulumi:token-type:access_token:organization
+
       - uses: pulumi/actions@96c7761824268174e0d2a4e8c7d75671eebd24a7 # v7.1.0
 
       - name: Unprotect Pulumi resource
         working-directory: ./github-sync
         env:
-          PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
           STACK_NAME: ${{ inputs.stack }}
           RESOURCE_URN: ${{ inputs.urn }}
         run: |

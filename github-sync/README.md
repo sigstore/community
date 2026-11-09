@@ -153,6 +153,20 @@ branchesProtection:
       - MyTeam # optional. Specify people, teams, or apps allowed to dismiss pull request reviews.
 ```
 
+## Rotate the GitHub token
+
+The GitHub token Pulumi uses is stored encrypted as `github:token` in the stack config
+(`Pulumi.github-prod.yaml` and `Pulumi.github-sigstore-conformance.yaml`). To rotate it, run
+`pulumi config set --secret github:token <new-token> --stack <stack>` and open a Pull Request
+with the updated stack file.
+
+> [!NOTE]
+> The PR preview job is expected to fail with `401 Bad credentials` on a token rotation PR.
+> For security, the preview only takes `github-data` from the PR and reads the stack config,
+> including the token, from the base commit on `main`, so it still uses the old token.
+> Verify the new token locally with `pulumi preview`, then merge the PR; an admin may need to
+> bypass the failing check. Previews will use the new token once it is on `main`.
+
 ### Remove Users/Collaborators, teams and repositories
 
 All resources, when created, are protected against accidental deletion. If your Pull Request removes a user,

@@ -197,6 +197,8 @@ repositories:
     collaborators:
       - username: sigstore-bot
         permission: push
+      - username: aaronlew02
+        permission: triage
     teams:
       - name: cosign-codeowners
         id: 4722092

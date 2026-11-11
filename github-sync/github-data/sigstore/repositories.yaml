@@ -1246,6 +1246,7 @@ repositories:
         dismissStaleReviews: true
         requiredApprovingReviewCount: 1
         requireLastPushApproval: true
+        requireCodeOwnerReviews: true
         statusChecks:
           - DCO
     webCommitSignoffRequired: true

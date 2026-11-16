@@ -38,7 +38,7 @@ jobs:
     - uses: pulumi/auth-actions@273044cc19e63ea565285da8edd4e059126a0bdb # v2.1.2
       id: pulumi-auth
       with:
-        organization: sigstore
+        organization: sigstore-conformance
         requested-token-type: urn:pulumi:token-type:access_token:organization
         export-environment-variables: false
 

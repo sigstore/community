@@ -2910,6 +2910,53 @@ repositories:
           - dep-maintainers
           - timestamp-codeowners
     webCommitSignoffRequired: true
+  - name: vindex-sigstore
+    owner: sigstore
+    description: Verifiable Index (VIndex) deployment and mapping functions for monitoring identities in Rekor
+    homepageUrl: ""
+    defaultBranch: main
+    allowAutoMerge: true
+    allowMergeCommit: false
+    allowRebaseMerge: true
+    allowSquashMerge: true
+    archived: false
+    autoInit: false
+    deleteBranchOnMerge: true
+    hasDownloads: true
+    hasIssues: true
+    hasProjects: true
+    hasWiki: true
+    vulnerabilityAlerts: true
+    visibility: public
+    licenseTemplate: ""
+    topics: []
+    collaborators: []
+    teams:
+      - name: rekor-tiles-codeowners
+        id: 12276034
+        permission: maintain
+      - name: triage
+        id: 5643322
+        permission: triage
+    branchesProtection:
+      - pattern: main
+        enforceAdmins: true
+        allowsDeletions: false
+        allowsForcePushes: false
+        requiredLinearHistory: true
+        requiredApprovingReviewCount: 1
+        requireCodeOwnerReviews: false
+        restrictDismissals: true
+        requireBranchesUpToDate: false
+        dismissStaleReviews: true
+        requireLastPushApproval: true
+        statusChecks:
+          - DCO
+        pushRestrictions:
+          - rekor-tiles-codeowners
+        dismissalRestrictions:
+          - rekor-tiles-codeowners
+    webCommitSignoffRequired: true
   - name: sigstore-rekor-types
     owner: sigstore
     description: Python models for Rekor's API types

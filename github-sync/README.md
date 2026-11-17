@@ -156,7 +156,7 @@ branchesProtection:
 ## Rotate the GitHub token
 
 The GitHub token Pulumi uses is stored encrypted as `github:token` in the stack config
-(`Pulumi.github-prod.yaml` and `Pulumi.github-sigstore-conformance.yaml`). To rotate it, run
+(`Pulumi.github-prod.yaml`). To rotate it, run
 `pulumi config set --secret github:token <new-token> --stack <stack>` and open a Pull Request
 with the updated stack file.
 

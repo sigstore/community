@@ -10,7 +10,6 @@ on:
         type: choice
         options:
           - sigstore/github-prod
-          - sigstore/github-sigstore-conformance
       urn:
         description: "Full Pulumi URN of the resource to unlock (e.g. urn:pulumi:github-prod::sigstore-github-sync::github:index/membership:Membership::username)"
         required: true

@@ -8,7 +8,7 @@ repositories:
     allowMergeCommit: true
     allowRebaseMerge: true
     allowSquashMerge: true
-    archived: false
+    archived: true
     autoInit: false
     deleteBranchOnMerge: true
     hasDownloads: true
@@ -39,7 +39,7 @@ repositories:
     allowMergeCommit: true
     allowRebaseMerge: true
     allowSquashMerge: true
-    archived: false
+    archived: true
     autoInit: false
     deleteBranchOnMerge: true
     hasDownloads: true

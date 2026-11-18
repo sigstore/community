@@ -2950,8 +2950,8 @@ repositories:
         requireBranchesUpToDate: false
         dismissStaleReviews: true
         requireLastPushApproval: true
-        statusChecks: []
-        #  - DCO
+        statusChecks:
+          - DCO
         pushRestrictions:
           - rekor-tiles-codeowners
         dismissalRestrictions:

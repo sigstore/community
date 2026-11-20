@@ -500,7 +500,7 @@ users:
       - name: model-transparency-codeowners
         role: member
   - username: steiza
-    role: member
+    role: admin
     teams:
       - name: architecture-doc-team
         role: member

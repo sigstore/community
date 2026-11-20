@@ -510,6 +510,8 @@ users:
         role: member
       - name: sigstore-codeowners
         role: member
+      - name: security-response-team
+        role: member
   - username: TomHennen
     role: member
     teams: []
